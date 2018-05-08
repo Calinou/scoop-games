@@ -1,0 +1,42 @@
+{
+    "homepage": "http://spearmint.pw/",
+    "version": "0.6",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/zturtleman/spearmint/releases/download/release-0.6/spearmint-0.6-windows.zip",
+    "hash": "154b2c15c32fca6cc8f19989d0d9aec2e6e1d30aed9563a09f43fed672186139",
+    "extract_dir": "spearmint-0.6-windows",
+    "bin": [
+        [
+            "spearmint_x86_64.exe",
+            "spearmint"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "spearmint_x86_64.exe",
+            "Spearmint Quake 3",
+            "+set fs_game baseq3"
+        ],
+        [
+            "spearmint_x86_64.exe",
+            "Spearmint Quake 3 - Team Arena",
+            "+set fs_game missionpack"
+        ],
+        [
+            "spearmint_x86_64.exe",
+            "Spearmint OpenArena",
+            "+set fs_game baseoa"
+        ]
+    ],
+    "persist": [
+        "settings\\baseq3",
+        "settings\\missionpack",
+        "settings\\baseoa"
+    ],
+    "notes": [
+        "Place game data files (such as pak0.pk3-pak8.pk3) into:",
+        "- Quake 3 Arena         $persist_dir\\baseq3\\",
+        "- Quake 3: Team Arena   $persist_dir\\missionpack\\",
+        "- OpenArena             $persist_dir\\baseoa\\"
+    ]
+}
