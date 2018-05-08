@@ -1,0 +1,50 @@
+{
+    "homepage": "https://icculus.org/twilight/darkplaces/",
+    "version": "autobuild",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://icculus.org/twilight/darkplaces/files/darkplacesenginewindows64onlyautobuild.zip",
+            "hash": "89b7b47a5699bd9ff46a74086b23b2334a372d19b9bec26063bdcdeadd8645a7"
+        },
+        "32bit": {
+            "url": "https://icculus.org/twilight/darkplaces/files/darkplacesenginewindowsonlyautobuild.zip",
+            "hash": "9a7ce78c72e13902ec38c0e444ac345d05d9a246b73b0cdbbc5565fed25742c4"
+        }
+    },
+    "shortcuts": [
+        [
+            "darkplaces.exe",
+            "DarkPlaces (Quake)",
+            "-game id1"
+        ],
+        [
+            "darkplaces.exe",
+            "DarkPlaces (Quake - Scourge of Armagon)",
+            "-game hipnotic"
+        ],
+        [
+            "darkplaces.exe",
+            "DarkPlaces (Quake - Dissolution of Eternity)",
+            "-game rogue"
+        ],
+        [
+            "darkplaces.exe",
+            "DarkPlaces (Quake - Abyss of Pandemonium)",
+            "-game abyss"
+        ]
+    ],
+    "persist": [
+        "id1",
+        "hipnotic",
+        "rogue",
+        "abyss"
+    ],
+    "notes": [
+        "Place game data files (such as pak0.pak and pak1.pak) into:",
+        "- Quake (official campaign)                       $persist_dir\\id1\\",
+        "- Quake Mission Pack 1: Scourge of Armagon        $persist_dir\\hipnotic\\",
+        "- Quake Mission Pack 2: Dissolution of Eternity   $persist_dir\\rogue\\",
+        "- Quake Mission Pack 3: Abyss of Pandemonium      $persist_dir\\abyss\\"
+    ]
+}
