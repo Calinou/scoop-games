@@ -1,7 +1,7 @@
 {
-    "homepage": "http://spearmint.pw/",
+    "homepage": "https://clover.moe/spearmint/",
     "version": "0.6",
-    "license": "GPL-2.0-or-later",
+    "license": "https://github.com/zturtleman/spearmint/blob/master/COPYING.txt",
     "url": "https://github.com/zturtleman/spearmint/releases/download/release-0.6/spearmint-0.6-windows.zip",
     "hash": "154b2c15c32fca6cc8f19989d0d9aec2e6e1d30aed9563a09f43fed672186139",
     "extract_dir": "spearmint-0.6-windows",
