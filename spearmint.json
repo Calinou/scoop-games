@@ -1,5 +1,6 @@
 {
     "homepage": "https://clover.moe/spearmint/",
+    "description": "Modern source port for Quake III Arena, Quake III: Team Arena and OpenArena",
     "version": "0.6",
     "license": "https://github.com/zturtleman/spearmint/blob/master/COPYING.txt",
     "url": "https://github.com/zturtleman/spearmint/releases/download/release-0.6/spearmint-0.6-windows.zip",

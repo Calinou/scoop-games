@@ -1,5 +1,6 @@
 {
     "homepage": "https://ericwa.github.io/ericw-tools/",
+    "description": "Command-line tools for compiling and analyzing Quake maps",
     "version": "0.18.1",
     "license": "GPL-3.0-or-later",
     "architecture": {

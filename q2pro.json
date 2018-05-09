@@ -1,5 +1,6 @@
 {
     "homepage": "http://www.skuller.net/q2pro/",
+    "description": "Quake 2 source port focused on multiplayer gameplay",
     "version": "nightly",
     "license": "GPL-2.0-or-later",
     "url": "http://www.skuller.net/q2pro/nightly/q2pro-client_win32_x86.zip",

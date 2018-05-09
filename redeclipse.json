@@ -1,5 +1,6 @@
 {
     "homepage": "https://redeclipse.net/",
+    "description": "Free arena shooter with parkour elements and a cooperative map editor",
     "version": "1.6.0",
     "license": "Zlib",
     "url": "https://github.com/red-eclipse/base/releases/download/v1.6.0/redeclipse_1.6.0_win.zip",
