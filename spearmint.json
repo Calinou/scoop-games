@@ -34,9 +34,9 @@
         "settings\\baseoa"
     ],
     "notes": [
-        "Place game data files (such as pak0.pk3-pak8.pk3) into:",
-        "- Quake 3 Arena         $persist_dir\\baseq3\\",
-        "- Quake 3: Team Arena   $persist_dir\\missionpack\\",
-        "- OpenArena             $persist_dir\\baseoa\\"
+        "Place game data files (such as pak0.pk3-pak8.pk3) in:",
+        "- Quake 3 Arena:          $persist_dir\\baseq3\\",
+        "- Quake 3 - Team Arena:   $persist_dir\\missionpack\\",
+        "- OpenArena:              $persist_dir\\baseoa\\"
     ]
 }

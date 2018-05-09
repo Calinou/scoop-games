@@ -39,10 +39,10 @@
         "abyss"
     ],
     "notes": [
-        "Place game data files (such as pak0.pak and pak1.pak) into:",
-        "- Quake (official campaign)                       $persist_dir\\id1\\",
-        "- Quake Mission Pack 1: Scourge of Armagon        $persist_dir\\hipnotic\\",
-        "- Quake Mission Pack 2: Dissolution of Eternity   $persist_dir\\rogue\\",
-        "- Quake Mission Pack 3: Abyss of Pandemonium      $persist_dir\\abyss\\"
+        "Place game data files (such as pak0.pak and pak1.pak) in:",
+        "- Quake:                                            $persist_dir\\id1\\",
+        "- Quake Mission Pack 1 - Scourge of Armagon:        $persist_dir\\hipnotic\\",
+        "- Quake Mission Pack 2 - Dissolution of Eternity:   $persist_dir\\rogue\\",
+        "- Quake Mission Pack 3 - Abyss of Pandemonium:      $persist_dir\\abyss\\"
     ]
 }
