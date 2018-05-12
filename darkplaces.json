@@ -1,7 +1,7 @@
 {
     "homepage": "https://icculus.org/twilight/darkplaces/",
     "description": "Modern Quake source port with advanced graphics capabilities",
-    "version": "autobuild",
+    "version": "nightly",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
