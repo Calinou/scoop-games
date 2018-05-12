@@ -6,29 +6,66 @@
     "url": "https://github.com/zturtleman/spearmint/releases/download/release-0.6/spearmint-0.6-windows.zip",
     "hash": "154b2c15c32fca6cc8f19989d0d9aec2e6e1d30aed9563a09f43fed672186139",
     "extract_dir": "spearmint-0.6-windows",
-    "bin": [
-        [
-            "spearmint_x86_64.exe",
-            "spearmint"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "spearmint_x86_64.exe",
-            "Spearmint Quake 3",
-            "+set fs_game baseq3"
-        ],
-        [
-            "spearmint_x86_64.exe",
-            "Spearmint Quake 3 - Team Arena",
-            "+set fs_game missionpack"
-        ],
-        [
-            "spearmint_x86_64.exe",
-            "Spearmint OpenArena",
-            "+set fs_game baseoa"
-        ]
-    ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "spearmint_x86_64.exe",
+                    "spearmint"
+                ],
+                [
+                    "spearmint-server_x86_64.exe",
+                    "spearmint-server"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "spearmint_x86_64.exe",
+                    "Spearmint Quake 3",
+                    "+set fs_game baseq3"
+                ],
+                [
+                    "spearmint_x86_64.exe",
+                    "Spearmint Quake 3 - Team Arena",
+                    "+set fs_game missionpack"
+                ],
+                [
+                    "spearmint_x86_64.exe",
+                    "Spearmint OpenArena",
+                    "+set fs_game baseoa"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "spearmint_x86.exe",
+                    "spearmint"
+                ],
+                [
+                    "spearmint-server_x86.exe",
+                    "spearmint-server"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "spearmint_x86.exe",
+                    "Spearmint Quake 3",
+                    "+set fs_game baseq3"
+                ],
+                [
+                    "spearmint_x86.exe",
+                    "Spearmint Quake 3 - Team Arena",
+                    "+set fs_game missionpack"
+                ],
+                [
+                    "spearmint_x86.exe",
+                    "Spearmint OpenArena",
+                    "+set fs_game baseoa"
+                ]
+            ]
+        }
+    },
     "persist": [
         "settings\\baseq3",
         "settings\\missionpack",
