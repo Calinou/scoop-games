@@ -1,0 +1,36 @@
+{
+    "homepage": "http://www.eduke32.com/",
+    "description": "Modern source port for Duke Nukem 3D",
+    "version": "20180508-6885",
+    "license": "http://www.eduke32.com/buildlic.txt",
+    "architecture": {
+        "64bit": {
+            "url": "http://dukeworld.com/eduke32/synthesis/20180508-6885/eduke32_win64_20180508-6885.7z",
+            "hash": "feb78b0464b82cdab891daa76834e4ef613119390682fca06e1be3dd45411f46"
+        },
+        "32bit": {
+            "url": "http://dukeworld.com/eduke32/synthesis/20180508-6885/eduke32_win32_20180508-6885.7z",
+            "hash": "2e0b73bc4982aa49f07c197acfb895e115b5d5731ba46e7b27c929f5948e4aad"
+        }
+    },
+    "bin": [
+        [
+            "eduke32.exe",
+            "eduke32",
+            "-j $persist_dir\\data"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "eduke32.exe",
+            "EDuke32",
+            "-j data"
+        ]
+    ],
+    "persist": [
+        "data"
+    ],
+    "notes": [
+        "Place GRP files (game data) in:   $persist_dir\\data"
+    ]
+}
