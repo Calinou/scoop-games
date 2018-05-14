@@ -1,0 +1,34 @@
+{
+    "homepage": "https://zdoom.org/",
+    "description": "Modern source port for Doom, Heretic, Hexen and more",
+    "version": "3.3.2",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-3-2-x64.zip",
+            "hash": "d52b2ea369d072401b20c38fc92771adbbc4f7a63ef79f48e47bb6728c96a49b"
+        },
+        "32bit": {
+            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-3-2.zip",
+            "hash": "a0551a6cd1bb466579d0f37bf0393347dfc795d55f3fbdb3f4a8cb6ea6a55256"
+        }
+    },
+    "bin": [
+        "gzdoom.exe"
+    ],
+    "shortcuts": [
+        [
+            "gzdoom.exe",
+            "GZDoom"
+        ]
+    ],
+    "persist": [
+        "iwad"
+    ],
+    "env_set": {
+        "DOOMWADDIR": "$persist_dir\\iwad"
+    },
+    "notes": [
+        "Place WAD files (game data) in:   $persist_dir\\iwad"
+    ]
+}
