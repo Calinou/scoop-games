@@ -1,0 +1,33 @@
+{
+    "homepage": "http://dengine.net/",
+    "description": "Modern source port for Doom, Heretic, Hexen and more",
+    "version": "2.0.3",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "http://api.dengine.net/1/builds?dl=doomsday_2.0.3_x64.zip#/doomsday_2.0.3_x64.zip",
+            "hash": "f68e9f9c2a549a46f6e8a845c52930cf063bcddb220f3e14f7faa71b0aeaa725",
+            "extract_dir": "doomsday_2.0.3_x64"
+        },
+        "32bit": {
+            "url": "http://api.dengine.net/1/builds?dl=doomsday_2.0.3_x86.zip#/doomsday_2.0.3_x86.zip",
+            "hash": "a2ede07156e9cf743b42deb7ab1b2057dc0605dd4d9953e1d4ee17f337501314",
+            "extract_dir": "doomsday_2.0.3_x86"
+        }
+    },
+    "bin": [
+        "bin/Doomsday.exe"
+    ],
+    "shortcuts": [
+        [
+            "bin/Doomsday.exe",
+            "Doomsday Engine"
+        ]
+    ],
+    "persist": [
+        "data"
+    ],
+    "notes": [
+        "Place WAD files (game data) in:   $persist_dir\\data"
+    ]
+}
