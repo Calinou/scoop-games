@@ -1,0 +1,19 @@
+{
+    "homepage": "https://teeworlds.com/",
+    "description": "2D retro multiplayer shooter",
+    "version": "0.6.4",
+    "license": "Zlib",
+    "url": "https://github.com/teeworlds/teeworlds/releases/download/0.6.4-release/teeworlds-0.6.4-win32.zip",
+    "hash": "4d81eda99c625ab648d7b29476f24c16a6b3f0b4d28a1766b43f76c7d3097930",
+    "extract_dir": "teeworlds-0.6.4-win32",
+    "bin": [
+        "teeworlds.exe",
+        "teeworlds_srv.exe"
+    ],
+    "shortcuts": [
+        [
+            "teeworlds.exe",
+            "Teeworlds"
+        ]
+    ]
+}
