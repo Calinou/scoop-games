@@ -10,7 +10,38 @@
     "shortcuts": [
         [
             "crispy-doom.exe",
-            "Crispy Doom"
+            "Crispy Doom (Doom 2)",
+            "-iwad doom2.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (The Ultimate Doom)",
+            "-iwad doom.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (The Plutonia Experiment)",
+            "-iwad plutonia.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (TNT Evilution)",
+            "-iwad tnt.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (Freedoom Phase 1)",
+            "-iwad freedoom1.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (Freedoom Phase 2)",
+            "-iwad freedoom2.wad"
+        ],
+        [
+            "crispy-doom.exe",
+            "Crispy Doom (FreeDM)",
+            "-iwad freedm.wad"
         ],
         [
             "crispy-doom-setup.exe",
