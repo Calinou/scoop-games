@@ -1,0 +1,26 @@
+{
+    "homepage": "https://www.yamagi.org/quake2/",
+    "description": "Conservative Quake 2 source port focused on singleplayer gameplay",
+    "version": "7.20",
+    "license": "GPL-2.0-or-later",
+    "url": "https://deponie.yamagi.org/quake2/windows/quake2-7.20.zip",
+    "hash": "3cfd15f3ed70c6f91075737aeb486ae3c095da072384cb81b69e201932f155ad",
+    "extract_dir": "quake2",
+    "bin": [
+        "yquake2.exe",
+        "q2ded.exe"
+    ],
+    "shortcuts": [
+        [
+            "yquake2.exe",
+            "Yamagi Quake 2"
+        ]
+    ],
+    "persist": [
+        "baseq2"
+    ],
+    "notes": [
+        "Place game data files (such as pak0.pak-pak2.pak) in:",
+        "- Quake 2:                  $persist_dir\\baseq2\\"
+    ]
+}
