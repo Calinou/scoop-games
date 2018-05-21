@@ -1,0 +1,27 @@
+
+{
+    "homepage": "https://zandronum.com/",
+    "description": "Modern multiplayer-oriented source port for Doom",
+    "version": "3.0",
+    "license": "https://zdoom.org/wiki/license",
+    "url": "https://zandronum.com/downloads/zandronum3.0-win32-base.zip",
+    "hash": "c261ecbc6931bf5245d5447f4702e8aa8b59445c93a5b5cadebcb0fdc0747551",
+    "bin": [
+        "zandronum.exe"
+    ],
+    "shortcuts": [
+        [
+            "zandronum.exe",
+            "Zandronum"
+        ]
+    ],
+    "persist": [
+        "iwad"
+    ],
+    "env_set": {
+        "DOOMWADDIR": "$persist_dir\\iwad"
+    },
+    "notes": [
+        "Place WAD files (game data) in:   $persist_dir\\iwad"
+    ]
+}
