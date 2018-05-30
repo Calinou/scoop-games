@@ -1,10 +1,10 @@
 # scoop-games
 
-A Scoop bucket for open source/freeware games and game-related tools.
+A [Scoop](https://scoop.sh/) bucket for open source/freeware games and game-related tools.
 
 ## Usage
 
-After installing [Scoop](http://scoop.sh/), enter the following line in a
+After installing [Scoop](https://scoop.sh/), enter the following line in a
 Command Prompt or PowerShell window:
 
 ```powershell
