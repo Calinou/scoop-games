@@ -1,0 +1,16 @@
+{
+    "homepage": "http://sauerbraten.org/",
+    "description": "First-person shooter featuring a real-time cooperative map editor",
+    "version": "collect-edition",
+    "license": "http://sauerbraten.org/README.html#license",
+    "url": "https://github.com/Calinou/scoop-games-data/releases/download/latest/sauerbraten-collect-edition-windows.7z",
+    "hash": "ac232ca1ea43a1dbd8c191c7a3aa58f7584d141af5dded1e0625aeddf1ff7f13",
+    "shortcuts": [
+        [
+            "sauerbraten.bat",
+            "Sauerbraten",
+            "",
+            "docs/favicon.ico"
+        ]
+    ]
+}
