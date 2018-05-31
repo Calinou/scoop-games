@@ -1,0 +1,20 @@
+
+{
+    "homepage": "https://assault.cubers.net/",
+    "description": "Semi-realistic first-person shooter based on the Cube engine",
+    "version": "1.2.0.2",
+    "license": "https://assault.cubers.net/docs/license.html",
+    "url": "https://github.com/Calinou/scoop-games-data/releases/download/latest/assaultcube-1.2.0.2-windows.7z",
+    "hash": "bc2a57da6415d32c8de2b937b194d61f20144b672ebcc211b677ebbdd411ae70",
+    "shortcuts": [
+        [
+            "assaultcube.bat",
+            "AssaultCube",
+            "",
+            "docs/images/favicon.ico"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/assaultcube/AC"
+    }
+}
