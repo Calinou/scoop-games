@@ -1,0 +1,20 @@
+{
+    "homepage": "http://digitalpaint.org/",
+    "description": "Fast-paced paintball first-person shooter based on the Quake 2 engine",
+    "version": "build041",
+    "license": "Custom",
+    "url": "https://github.com/Calinou/scoop-games-data/releases/download/latest/paintball2-build041-windows.7z",
+    "hash": "0aa71ceb476f05040733a7fe94f04fc96c5228f564cc8fbd911d5fde7521baaf",
+    "bin": [
+        "paintball2.exe"
+    ],
+    "shortcuts": [
+        [
+            "paintball2.exe",
+            "Paintball 2"
+        ]
+    ],
+    "persist": [
+        "pball\\configs"
+    ]
+}
