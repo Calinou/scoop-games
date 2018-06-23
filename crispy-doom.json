@@ -48,13 +48,11 @@
             "Setup Crispy Doom"
         ]
     ],
-    "persist": [
-        "iwad"
-    ],
+    "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
     "env_set": {
-        "DOOMWADDIR": "$persist_dir\\iwad"
+        "DOOMWADDIR": "$persist_dir\\..\\_doom"
     },
     "notes": [
-        "Place WAD files (game data) in:   $persist_dir\\iwad"
+        "Place WAD files (game data) in:   $persist_dir\\..\\_doom"
     ]
 }
