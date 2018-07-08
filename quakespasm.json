@@ -1,18 +1,18 @@
 {
     "homepage": "http://quakespasm.sourceforge.net/",
     "description": "Conservative Quake source port for singleplayer gameplay",
-    "version": "0.93.0",
+    "version": "0.93.1",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/quakespasm/Windows/quakespasm-0.93.0_win64.zip",
-            "hash": "1705d61dac61cce9826febb1e8c895ce62edbd277fd225efdf7ac6f684ee9f66",
-            "extract_dir": "quakespasm-0.93.0_win64"
+            "url": "https://downloads.sourceforge.net/project/quakespasm/Windows/quakespasm-0.93.1_win64.zip",
+            "hash": "348035345bca0655e7bba9e5af4fc1fd90c631b1ec2d129d9edb8c7b3a89d3a1",
+            "extract_dir": "quakespasm-0.93.1_win64"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/quakespasm/Windows/quakespasm-0.93.0_windows.zip",
-            "hash": "28b13c9cdd5527cc7e2105b081c6332b112d47fd6128c49cff46db4dd7fd20a0",
-            "extract_dir": "quakespasm-0.93.0_windows"
+            "url": "https://downloads.sourceforge.net/project/quakespasm/Windows/quakespasm-0.93.1_windows.zip",
+            "hash": "c158ce9967d5d67b220fa510ce32f34402e705afbf5fdca7599772a3fa964bee",
+            "extract_dir": "quakespasm-0.93.1_windows"
         }
     },
     "shortcuts": [
