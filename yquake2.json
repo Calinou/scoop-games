@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.yamagi.org/quake2/",
-    "description": "Conservative Quake 2 source port focused on singleplayer gameplay",
-    "version": "7.20",
+    "description": "Conservative Quake 2 source port focused on singleplayer and cooperative gameplay",
+    "version": "7.21",
     "license": "GPL-2.0-or-later",
-    "url": "https://deponie.yamagi.org/quake2/windows/quake2-7.20.zip",
-    "hash": "3cfd15f3ed70c6f91075737aeb486ae3c095da072384cb81b69e201932f155ad",
+    "url": "https://deponie.yamagi.org/quake2/windows/quake2-7.21.zip",
+    "hash": "3a163a960f6747ad4b256510d5a8dace0692c6542284e0c71c14142a2d0e97e0",
     "extract_dir": "quake2",
     "bin": [
         "yquake2.exe",
