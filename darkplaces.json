@@ -13,22 +13,22 @@
     },
     "shortcuts": [
         [
-            "darkplaces.exe",
+            "darkplaces-sdl.exe",
             "DarkPlaces (Quake)",
             "-game id1"
         ],
         [
-            "darkplaces.exe",
+            "darkplaces-sdl.exe",
             "DarkPlaces (Quake - Scourge of Armagon)",
             "-game hipnotic"
         ],
         [
-            "darkplaces.exe",
+            "darkplaces-sdl.exe",
             "DarkPlaces (Quake - Dissolution of Eternity)",
             "-game rogue"
         ],
         [
-            "darkplaces.exe",
+            "darkplaces-sdl.exe",
             "DarkPlaces (Quake - Abyss of Pandemonium)",
             "-game abyss"
         ]
