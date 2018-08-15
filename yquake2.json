@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "url": "https://deponie.yamagi.org/quake2/windows/quake2-7.21.zip",
     "hash": "3a163a960f6747ad4b256510d5a8dace0692c6542284e0c71c14142a2d0e97e0",
-    "extract_dir": "quake2",
+    "extract_dir": "quake2-7.21",
     "bin": [
         "yquake2.exe",
         "q2ded.exe"
