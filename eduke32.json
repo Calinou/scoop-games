@@ -1,16 +1,16 @@
 {
     "homepage": "http://www.eduke32.com/",
     "description": "Modern source port for Duke Nukem 3D",
-    "version": "20180802-6963",
+    "version": "20180809-6969",
     "license": "http://www.eduke32.com/buildlic.txt",
     "architecture": {
         "64bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20180802-6963/eduke32_win64_20180802-6963.7z",
-            "hash": "97c8362a2ef35c62dba0c06aded4324d872ea5f3e455b54f587304fd2bb94712"
+            "url": "https://dukeworld.com/eduke32/synthesis/20180809-6969/eduke32_win64_20180809-6969.7z",
+            "hash": "756d0a9a3d4ea3acb025dd0da56b6bdd6f4ce9e8d8f6f1dc7f7eef60e1ee190a"
         },
         "32bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20180802-6963/eduke32_win32_20180802-6963.7z",
-            "hash": "85fa2093a60f530890888515885cee1004866adf6edb496f0fd6513067880140"
+            "url": "https://dukeworld.com/eduke32/synthesis/20180809-6969/eduke32_win32_20180809-6969.7z",
+            "hash": "9ea360dcaf603622ff83cb5888c88f108439988805d335567ec6b6f227e8c0ef"
         }
     },
     "bin": [
