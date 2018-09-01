@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-5-1-x64.zip",
-            "hash": "a07fbb977231f8c5def39d45d47e139c3869f93d1d0423b2da9e43ffa612cfab"
+            "hash": "6ae6843087219a55c4f6b53c40c56badb3988fec1864c6fe9538f3bc143aee6d"
         },
         "32bit": {
             "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-5-1.zip",
