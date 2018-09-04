@@ -9,7 +9,6 @@
             "url": "https://downloads.sourceforge.net/project/odamex/Odamex/0.7.0/odamex-win64-0.7.0.zip",
             "hash": "1540ff988edd81dbf662015a839f87208769f98976cbf75dcdfa09c9584172e2",
             "extract_dir": "odamex-win64-0.7.0"
-
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/odamex/Odamex/0.7.0/odamex-win32-0.7.0.zip",
