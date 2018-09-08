@@ -28,6 +28,8 @@
         "data"
     ],
     "notes": [
-        "Place WAD files (game data) in:   $persist_dir\\data"
+        "Place WAD files (game data) in:",
+        "",
+        "\t$persist_dir\\data"
     ]
 }

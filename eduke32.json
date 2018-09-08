@@ -31,6 +31,8 @@
         "data"
     ],
     "notes": [
-        "Place GRP files (game data) in:   $persist_dir\\data"
+        "Place GRP files (game data) in:",
+        "",
+        "\t$persist_dir\\data"
     ]
 }

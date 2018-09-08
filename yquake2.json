@@ -21,6 +21,7 @@
     ],
     "notes": [
         "Place game data files (such as pak0.pak-pak2.pak) in:",
-        "- Quake 2:                  $persist_dir\\baseq2\\"
+        "",
+        "\t$persist_dir\\baseq2\\"
     ]
 }

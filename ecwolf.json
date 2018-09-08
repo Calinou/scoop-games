@@ -23,6 +23,8 @@
         ]
     ],
     "notes": [
-        "Place WL6/SOD/SD1/SD2/SD3 files (game data) in:   %APPDATA%\\ECWolf"
+        "Place WL6/SOD/SD1/SD2/SD3 files (game data) in:",
+        "",
+        "\t%APPDATA%\\ECWolf"
     ]
 }

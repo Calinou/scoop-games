@@ -83,6 +83,7 @@
     },
     "notes": [
         "Place game data files (such as pak0.pk3, sp_pak1.pk3-sp_pak4.pk3, mp_*.pk3) in:",
-        "- Return to Castle Wolfenstein:   $persist_dir\\Main\\"
+        "",
+        "\t$persist_dir\\Main\\"
     ]
 }
