@@ -1,16 +1,16 @@
 {
     "homepage": "https://zdoom.org/",
     "description": "Modern source port for Doom, Heretic, Hexen and more",
-    "version": "3.5.1",
+    "version": "3.6.0",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-5-1-x64.zip",
-            "hash": "6ae6843087219a55c4f6b53c40c56badb3988fec1864c6fe9538f3bc143aee6d"
+            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-6-0-x64.zip",
+            "hash": "622feaef3e55443b2164d53875992bca9f2ba0aa36356c8e23acaef0c60d5054"
         },
         "32bit": {
-            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-5-1.zip",
-            "hash": "785a0592a2c6b2fbcb9d768b259fe356db2a9cabdf0fd5716f7bdbe785dc4a07"
+            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-6-0.zip",
+            "hash": "0c15b07d14cee4f64c16b19ed428917b53bbc6ada6393912f0865d04139e4e87"
         }
     },
     "bin": [
