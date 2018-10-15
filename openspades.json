@@ -1,0 +1,21 @@
+{
+    "homepage": "https://openspades.yvt.jp/",
+    "description": "Voxel first-person shooter compatible with Ace of Spades 0.75",
+    "version": "0.1.2",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/yvt/openspades/releases/download/v0.1.2/OpenSpades-0.1.2-Windows.zip",
+    "hash": "d792598ec6a4423c7e447264724869fbffd99bdd0a951de06209255e794f4437",
+    "extract_dir": "OpenSpades-0.1.2-Windows",
+    "bin": [
+        "OpenSpades.exe"
+    ],
+    "shortcuts": [
+        [
+            "OpenSpades.exe",
+            "OpenSpades"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/yvt/openspades"
+    }
+}
