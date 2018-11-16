@@ -8,7 +8,7 @@ After installing [Scoop](https://scoop.sh/), enter the following line in a
 Command Prompt or PowerShell window:
 
 ```powershell
-scoop bucket add games https://github.com/Calinou/scoop-games.git
+scoop bucket add games
 ```
 
 Once this is done, you can install any app from this bucket (check the list
