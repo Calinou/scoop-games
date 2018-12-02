@@ -5,7 +5,11 @@ jobs:
   # Installs and uninstalls every package in the bucket
   # This is done to ensure URLs used in manifests are still functional
   - job: test
-    condition: eq(variables['Build.Reason'], 'Schedule')
+    condition: >-
+      or(
+        eq(variables['Build.Reason'], 'Schedule'),
+        eq(variables['Build.Reason'], 'Manual')
+      )
     pool:
       vmImage: vs2017-win2016
       steps:
