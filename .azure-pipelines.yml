@@ -16,6 +16,7 @@ jobs:
       - powershell: |
           # Install Scoop
           iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+          scoop bucket add extras
 
           # Install packages
           Get-ChildItem *.json | Foreach-Object {
