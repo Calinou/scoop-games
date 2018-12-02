@@ -12,14 +12,14 @@ jobs:
       )
     pool:
       vmImage: vs2017-win2016
-      steps:
-        - powershell: |
-            # Install Scoop
-            Set-ExecutionPolicy RemoteSigned -scope CurrentUser
-            iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+    steps:
+      - powershell: |
+          # Install Scoop
+          Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+          iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 
-            # Install packages
-            Get-ChildItem *.json | Foreach-Object {
-                scoop install "$($_.BaseName).json"
-                scoop uninstall "$($_.BaseName)"
-            }
+          # Install packages
+          Get-ChildItem *.json | Foreach-Object {
+              scoop install "$($_.BaseName).json"
+              scoop uninstall "$($_.BaseName)"
+          }
