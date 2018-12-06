@@ -16,7 +16,6 @@
         }
     },
     "bin": "EndlessSky.exe",
-    "hash": "39ad38ad9b73cd9445251350c8009805d102e9508b105ee876099ac1fd85729f",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
