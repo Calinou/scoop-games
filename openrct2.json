@@ -2,7 +2,7 @@
     "description": "An open source re-implementation of RollerCoaster Tycoon 2",
     "homepage": "https://github.com/OpenRCT2/OpenRCT2",
     "version": "0.2.1",
-    "license": "GPL3",
+    "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
             "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.2.1/OpenRCT2-0.2.1-windows-portable-x64.zip",
