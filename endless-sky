@@ -1,0 +1,33 @@
+{
+    "description": "A 2D space trading and combat game similar to the classic Escape Velocity series",
+    "homepage": "https://github.com/endless-sky/endless-sky",
+    "version": "0.9.8",
+    "license": "GPL3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/endless-sky/endless-sky/releases/download/v0.9.8/endless-sky-win64-0.9.8.zip",
+            "hash": "b1d43be211197a2c230f093de904e4a8a55b38a07653fb79d1fde53d64bfa90b",
+            "extract_dir": "endless-sky-win64-0.9.8"
+        },
+        "32bit": {
+            "url": "https://github.com/endless-sky/endless-sky/releases/download/v0.9.8/endless-sky-win32-0.9.8.zip",
+            "hash": "d6800f329d13a7aa327fc4a798c59369c0883e4ad502be16f844ed0467db8ef8",
+            "extract_dir": "endless-sky-win32-0.9.8"
+        }
+    },
+    "bin": "EndlessSky.exe",
+    "hash": "39ad38ad9b73cd9445251350c8009805d102e9508b105ee876099ac1fd85729f",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/endless-sky/endless-sky/releases/download/v$version/endless-sky-win64-$version.zip",
+                "extract_dir": "endless-sky-win64-$version"
+            },
+            "32bit": {
+                "url": "https://github.com/endless-sky/endless-sky/releases/download/v$version/endless-sky-win32-$version.zip",
+                "extract_dir": "endless-sky-win32-$version"
+            }
+        }
+    }
+}
