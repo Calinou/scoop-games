@@ -1,0 +1,25 @@
+{
+    "description": " Roguelite dungeon crawl shooter similar to The Binding of Isaac.",
+    "homepage": "https://github.com/Cirrus-Minor/witchblast",
+    "version": "0.7.5",
+    "license": "GPL3",
+    "url": [
+		"https://github.com/Cirrus-Minor/witchblast/releases/download/v0.7.5/Witch.Blast.v0.7.5.zip",
+		"https://gist.githubusercontent.com/MCOfficer/eba18d17fa6b3cc0ad807c3ca94238c6/raw/b374114166c34eaf4e3c977f3af52bc21f26f70f/run_working_dir.cmd"
+	],
+    "hash": [
+		"2ed55f51f5a7a1a59d45175242bd62ae602361fc70d337ef7406d5b516398661",
+		"ad8faa4910abe1bd1cc11036b4c0d9956621224473a13a086230c5750cd3226f"
+	],
+    "extract_dir": "Witch Blast v0.7.5",
+    "bin": [
+		[
+			"run_working_dir.cmd",
+			"WitchBlast",
+			".",
+			"\"Witch Blast.exe\""
+		]
+	],
+    "checkver": "github",
+	"##": "Note: No Autoupdate due to inconsistent releases, downloads etc. Also, a new release seems unlikely"
+}
