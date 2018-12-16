@@ -3,23 +3,24 @@
     "homepage": "https://github.com/Cirrus-Minor/witchblast",
     "version": "0.7.5",
     "license": "GPL3",
-    "url": [
-		"https://github.com/Cirrus-Minor/witchblast/releases/download/v0.7.5/Witch.Blast.v0.7.5.zip",
-		"https://gist.githubusercontent.com/MCOfficer/eba18d17fa6b3cc0ad807c3ca94238c6/raw/b374114166c34eaf4e3c977f3af52bc21f26f70f/run_working_dir.cmd"
-	],
-    "hash": [
-		"2ed55f51f5a7a1a59d45175242bd62ae602361fc70d337ef7406d5b516398661",
-		"ad8faa4910abe1bd1cc11036b4c0d9956621224473a13a086230c5750cd3226f"
-	],
+    "url": "https://github.com/Cirrus-Minor/witchblast/releases/download/v0.7.5/Witch.Blast.v0.7.5.zip",
+    "hash": "2ed55f51f5a7a1a59d45175242bd62ae602361fc70d337ef7406d5b516398661",
     "extract_dir": "Witch Blast v0.7.5",
-    "bin": [
-		[
-			"run_working_dir.cmd",
-			"WitchBlast",
-			".",
-			"\"Witch Blast.exe\""
-		]
-	],
+    "shortcuts": [
+        [
+            "Witch Blast.exe",
+            "Witch Blast"
+        ]
+    ],
+    "pre_install": [
+        "if(!(Test-Path \"$dir\\config.dat\")) { Set-Content -Value $null -Path \"$dir\\config.dat\" }",
+        "if(!(Test-Path \"$dir\\game.sav\")) { Set-Content -Value $null -Path \"$dir\\game.sav\" }"
+    ],
+    "persist": [
+        "config.dat",
+        "game.sav",
+        "data"
+    ],
     "checkver": "github",
-	"##": "Note: No Autoupdate due to inconsistent releases, downloads etc. Also, a new release seems unlikely"
+    "##": "Note: No Autoupdate due to inconsistent releases, downloads etc. Also, a new release seems unlikely"
 }
