@@ -3,8 +3,8 @@
     "description": "Semi-realistic first-person shooter based on the Cube engine",
     "version": "1.2.0.2",
     "license": "https://assault.cubers.net/docs/license.html",
-    "url": "https://github.com/Calinou/scoop-games-data/releases/download/latest/assaultcube-1.2.0.2-windows.7z",
-    "hash": "bc2a57da6415d32c8de2b937b194d61f20144b672ebcc211b677ebbdd411ae70",
+    "url": "https://github.com/assaultcube/AC/releases/download/v1.2.0.2/AssaultCube_v1.2.0.2.exe/#dl.7z",
+    "hash": "679cd987564d68e56b64c603e5d15269c3c00864535305c7025022751d77703b",
     "shortcuts": [
         [
             "assaultcube.bat",
@@ -13,6 +13,7 @@
             "docs/images/favicon.ico"
         ]
     ],
+    "post_install": "Move-Item \"$dir\\bin_win32\\openal32_RemoveThisPartToUseOpenAL-Soft.dll\" \"$dir\\bin_win32\\openal32.dll\"",
     "checkver": {
         "github": "https://github.com/assaultcube/AC"
     }
