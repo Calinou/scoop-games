@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/iortcw/iortcw",
     "description": "Source port for Return to Castle Wolfenstein",
-    "version": "1.51",
+    "version": "1.51b",
     "license": "https://github.com/iortcw/iortcw/blob/master/SP/COPYING.txt",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/iortcw/iortcw/releases/download/1.51/iortcw-1.51-win-x64.zip",
-            "hash": "479bcd96c56528f3bb6e1fb825ee487f1a3ff5721da66c1cc19f4c230776bec1",
-            "extract_dir": "iortcw-1.51-win-x64",
+            "url": "https://github.com/iortcw/iortcw/releases/download/1.51b/iortcw-1.51b-win-x64.zip",
+            "hash": "061d7da4dfcda32357db687ebe6e35604b9ab65b1f89cd34d6ce335672cf6fdc",
+            "extract_dir": "iortcw-1.51b-win-x64",
             "bin": [
                 [
                     "ioWolfSP.x86_64.exe",
@@ -34,9 +34,9 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/iortcw/iortcw/releases/download/1.51/iortcw-1.51-win-x86.zip",
-            "hash": "97c4fd06c33357b0242ba599f0dba0cb559aea2c135f3380202a1e6904c749f2",
-            "extract_dir": "iortcw-1.51-win-x86",
+            "url": "https://github.com/iortcw/iortcw/releases/download/1.51b/iortcw-1.51b-win-x86.zip",
+            "hash": "3cce7c3333ba96895997a20920ce8a46fdd77f3920f658ca70a6d5abcfe4bbbd",
+            "extract_dir": "iortcw-1.51b-win-x86",
             "bin": [
                 [
                     "ioWolfSP.x86.exe",
@@ -65,7 +65,8 @@
     },
     "persist": "Main",
     "checkver": {
-        "github": "https://github.com/iortcw/iortcw"
+        "github": "https://github.com/iortcw/iortcw",
+        "regex": "/releases/tag/(?:v|V)?([\\w.]+)"
     },
     "autoupdate": {
         "architecture": {
@@ -82,6 +83,6 @@
     "notes": [
         "Place game data files (such as pak0.pk3, sp_pak1.pk3-sp_pak4.pk3, mp_*.pk3) in:",
         "",
-        "	$persist_dir\\Main\\"
+        "\t$persist_dir\\Main\\"
     ]
 }
