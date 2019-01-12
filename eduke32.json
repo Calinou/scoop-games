@@ -1,16 +1,16 @@
 {
     "homepage": "http://www.eduke32.com/",
     "description": "Modern source port for Duke Nukem 3D",
-    "version": "20181223-7299",
+    "version": "20190111-7309",
     "license": "http://www.eduke32.com/buildlic.txt",
     "architecture": {
         "64bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20181223-7299/eduke32_win64_20181223-7299.7z",
-            "hash": "d9566218edfa445c9c766479bab9394f5884d40c95034652474d15acf52c60a1"
+            "url": "https://dukeworld.com/eduke32/synthesis/20190111-7309/eduke32_win64_20190111-7309.7z",
+            "hash": "0444800fc55937a7099ed385c5ad82148510fd5e4508ac4df60e41f7e2c78b0d"
         },
         "32bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20181223-7299/eduke32_win32_20181223-7299.7z",
-            "hash": "ce6d448015debdc15a6836cd0dc6c0d10a7df26efed160fac8b79368bdfe9887"
+            "url": "https://dukeworld.com/eduke32/synthesis/20190111-7309/eduke32_win32_20190111-7309.7z",
+            "hash": "fa51baca2d8fdc6396c109f8aa4147ed284cf6e9b94152c432d2677e0d628edb"
         }
     },
     "bin": [
@@ -27,12 +27,24 @@
             "-j data"
         ]
     ],
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "notes": [
         "Place GRP files (game data) in:",
         "",
         "\t$persist_dir\\data"
-    ]
+    ],
+    "checkver": {
+        "url": "https://dukeworld.com/eduke32/synthesis/",
+        "regex": "<strong>(\\d{8}-\\d{4,})</strong>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dukeworld.com/eduke32/synthesis/$version/eduke32_win64_$version.7z"
+            },
+            "32bit": {
+                "url": "https://dukeworld.com/eduke32/synthesis/$version/eduke32_win32_$version.7z"
+            }
+        }
+    }
 }
