@@ -1,11 +1,20 @@
 {
     "homepage": "https://teeworlds.com/",
     "description": "2D retro multiplayer shooter",
-    "version": "0.6.4",
+    "version": "0.7.2",
     "license": "Zlib",
-    "url": "https://github.com/teeworlds/teeworlds/releases/download/0.6.4-release/teeworlds-0.6.4-win32.zip",
-    "hash": "4d81eda99c625ab648d7b29476f24c16a6b3f0b4d28a1766b43f76c7d3097930",
-    "extract_dir": "teeworlds-0.6.4-win32",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/teeworlds/teeworlds/releases/download/0.7.2/teeworlds-0.7.2-win64.zip",
+            "hash": "bf375e5512b34e99c07e7ba737eff5dce23ff5f6012a6d1deffe425ae11938cd",
+            "extract_dir": "teeworlds-0.7.2-win64"
+        },
+        "32bit": {
+            "url": "https://github.com/teeworlds/teeworlds/releases/download/0.7.2/teeworlds-0.7.2-win32.zip",
+            "hash": "fd70ed43e325e6218ba5ecc90b1f1a6fdb1ded893d65440528b5374bea3864e8",
+            "extract_dir": "teeworlds-0.7.2-win32"
+        }
+    },
     "bin": [
         "teeworlds.exe",
         "teeworlds_srv.exe"
@@ -15,5 +24,20 @@
             "teeworlds.exe",
             "Teeworlds"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/teeworlds/teeworlds"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/teeworlds/teeworlds/releases/download/$version/teeworlds-$version-win64.zip",
+                "extract_dir": "teeworlds-$version-win64"
+            },
+            "32bit": {
+                "url": "https://github.com/teeworlds/teeworlds/releases/download/$version/teeworlds-$version-win32.zip",
+                "extract_dir": "teeworlds-$version-win32"
+            }
+        }
+    }
 }
