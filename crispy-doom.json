@@ -1,12 +1,11 @@
-
 {
     "homepage": "https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom",
     "description": "Faithful enhanced-resolution source port for Doom",
-    "version": "5.3",
+    "version": "5.4",
     "license": "GPL-2.0-or-later",
-    "url": "http://www.greffrath.com/~fabian/crispy-doom_5.3.zip",
-    "hash": "431f156f0300eefdbf81ac939cc05928e613616a0cd124444c1ce4bbdbe5f6ab",
-    "extract_dir": "crispy-doom_5.3",
+    "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-5.4/crispy-doom_5.4.zip",
+    "hash": "376d1ec4883fa5d8db9f8a5a03ee5aec70ef15c38114e3b435c107a8f3490c7a",
+    "extract_dir": "crispy-doom_5.4",
     "shortcuts": [
         [
             "crispy-doom.exe",
@@ -51,6 +50,14 @@
     "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
     "env_set": {
         "DOOMWADDIR": "$persist_dir\\..\\_doom"
+    },
+    "checkver": {
+        "github": "https://github.com/fabiangreffrath/crispy-doom",
+        "regex": "/releases/tag/crispy-doom-([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-$version/crispy-doom_$version.zip",
+        "extract_dir": "crispy-doom_$version"
     },
     "notes": [
         "Place WAD files (game data) in:",
