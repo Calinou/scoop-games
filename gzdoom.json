@@ -1,16 +1,16 @@
 {
     "homepage": "https://zdoom.org/",
     "description": "Modern source port for Doom, Heretic, Hexen and more",
-    "version": "3.7.1",
+    "version": "3.7.2",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-7-1-x64.zip",
-            "hash": "12a8ecea91ca187986033ff21eff4e95f291f4fed95fa26c6a6a5a6171bb2cb3"
+            "url": "https://github.com/coelckers/gzdoom/releases/download/g3.7.2/gzdoom-bin-3-7-2-x64.zip",
+            "hash": "7e8256fa1b6235132539db948e6d6a8217e534ca614fb357ef0226daa26331a6"
         },
         "32bit": {
-            "url": "https://zdoom.org/files/gzdoom/bin/gzdoom-bin-3-7-1.zip",
-            "hash": "0d2dc61815202c8c48e05223cbd6f1c38b02ab118593c4b08e6b0a5d23873248"
+            "url": "https://github.com/coelckers/gzdoom/releases/download/g3.7.2/gzdoom-bin-3-7-2.zip",
+            "hash": "948b8819004dd02cc32582a98b127fa7a25e6539acc5e8ed0df0a697b2563478"
         }
     },
     "bin": [
@@ -25,6 +25,10 @@
     "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
     "env_set": {
         "DOOMWADDIR": "$persist_dir\\..\\_doom"
+    },
+    "checkver": {
+        "github": "https://github.com/coelckers/gzdoom",
+        "regex": "/releases/tag/(?:g)?([\\w.]+)"
     },
     "notes": [
         "Place WAD files (game data) in:",
