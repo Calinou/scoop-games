@@ -1,0 +1,42 @@
+{
+    "homepage": "https://www.minetest.net/",
+    "description": "Minecraft-like infinite-world multiplayer sandbox game",
+    "version": "5.0.0",
+    "license": "LGPL-2.1-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/minetest/minetest/releases/download/5.0.0/minetest-5.0.0-win64.zip",
+            "hash": "16b86aa9f38133a80e80c399c8e57fc394e9309fc2454192c61907663a12ac33",
+            "extract_dir": "minetest-5.0.0-win64"
+        },
+        "32bit": {
+            "url": "https://github.com/minetest/minetest/releases/download/5.0.0/minetest-5.0.0-win32.zip",
+            "hash": "1050df9af488ac949e717b2af38961498cb6908ab172d5125a9b347cef135b0e",
+            "extract_dir": "minetest-5.0.0-win32"
+        }
+    },
+    "shortcuts": [
+        [
+            "bin\\minetest.exe",
+            "Minetest",
+            "--config ..\\config\\minetest.conf"
+        ]
+    ],
+    "persist": "config",
+    "post_install": "New-Item -ErrorAction Ignore -Type file \"$persist_dir\\config\\minetest.conf\"",
+    "checkver": {
+        "github": "https://github.com/minetest/minetest"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/minetest/minetest/releases/download/$version/minetest-$version-win64.zip",
+                "extract_dir": "minetest-$version-win64"
+            },
+            "32bit": {
+                "url": "https://github.com/minetest/minetest/releases/download/$version/minetest-$version-win32.zip",
+                "extract_dir": "minetest-$version-win32"
+            }
+        }
+    }
+}

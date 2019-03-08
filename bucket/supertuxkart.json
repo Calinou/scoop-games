@@ -1,0 +1,23 @@
+{
+    "homepage": "https://supertuxkart.net/Main_Page",
+    "description": "Arcade 3D racer with a variety of characters, tracks and modes",
+    "version": "0.9.3",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/0.9.3/supertuxkart-0.9.3-win64.exe#/dl.7z",
+            "hash": "73978600ee03042eaaecae126f1ecd2239588340f0ce4325564364b4342e9dcf"
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/0.9.3/supertuxkart-0.9.3-win32.exe#/dl.7z",
+            "hash": "e560b3e62d0b4e8fab7639be72f058383c80adcd8ed0a11e9516f0c888876f6e"
+        }
+    },
+    "bin": "supertuxkart.exe",
+    "shortcuts": [
+        [
+            "supertuxkart.exe",
+            "SuperTuxKart"
+        ]
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "homepage": "https://zdoom.org/",
+    "description": "Experimental source port for Doom, Heretic, Hexen and more",
+    "version": "2.1.0",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://zdoom.org/files/qzdoom/bin/qzdoom-bin-2-1-0-x64.zip",
+            "hash": "d3ffd98af5ce59dab6437bd0787e5e31fd0a013346a21803b1ebb6bea8cbcd5a"
+        },
+        "32bit": {
+            "url": "https://zdoom.org/files/qzdoom/bin/qzdoom-bin-2-1-0.zip",
+            "hash": "5c32ceecb2bc19c6431784b37ca4bb793e34f385a28cf7bcc5da178ebec05e2b"
+        }
+    },
+    "bin": [
+        "qzdoom.exe"
+    ],
+    "shortcuts": [
+        [
+            "qzdoom.exe",
+            "QZDoom"
+        ]
+    ],
+    "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
+    "env_set": {
+        "DOOMWADDIR": "$persist_dir\\..\\_doom"
+    },
+    "notes": [
+        "Place WAD files (game data) in:",
+        "",
+        "\t$persist_dir\\..\\_doom"
+    ]
+}

@@ -1,5 +1,7 @@
 # scoop-games
 
+[![Repo size](https://img.shields.io/github/repo-size/Calinou/scoop-games.svg?style=flat-square)](https://github.com/Calinou/scoop-games) [![Mentioned in Awesome Scoop](https://awesome.re/mentioned-badge.svg)](https://github.com/scoopinstaller/awesome-scoop)
+
 A [Scoop](https://scoop.sh/) bucket for open source/freeware games and game-related tools.
 
 ## Usage
