@@ -32,6 +32,6 @@
     "notes": [
         "Place WAD files (game data) in:",
         "",
-        "\t$persist_dir\\..\\_doom"
+        "    $persist_dir\\..\\_doom"
     ]
 }

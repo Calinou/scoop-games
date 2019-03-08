@@ -13,9 +13,7 @@
             "hash": "b541f23b53659a2d2117632f77e421f5bce77a98e8e2b252988983c0a48d1ed3"
         }
     },
-    "bin": [
-        "ecwolf.exe"
-    ],
+    "bin": "ecwolf.exe",
     "shortcuts": [
         [
             "ecwolf.exe",
@@ -25,6 +23,6 @@
     "notes": [
         "Place WL6/SOD/SD1/SD2/SD3 files (game data) in:",
         "",
-        "\t%APPDATA%\\ECWolf"
+        "    %APPDATA%\\ECWolf"
     ]
 }

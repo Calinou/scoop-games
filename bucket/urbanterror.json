@@ -1,4 +1,3 @@
-
 {
     "homepage": "https://www.urbanterror.info/home/",
     "description": "Multiplayer semi-realistic first-person shooter running on ioquake3",
@@ -13,7 +12,5 @@
             "Urban Terror"
         ]
     ],
-    "persist": [
-        "q3ut4"
-    ]
+    "persist": "q3ut4"
 }

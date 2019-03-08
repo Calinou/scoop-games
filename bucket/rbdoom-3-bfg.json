@@ -15,7 +15,7 @@
     "notes": [
         "Place game data in:",
         "",
-        "	$persist_dir\\base",
+        "    $persist_dir\\base",
         "",
         "In case of errors about a missing XAudio library, set up DirectX using the installer below:",
         "",

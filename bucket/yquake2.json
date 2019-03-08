@@ -20,7 +20,7 @@
     "notes": [
         "Place game data files (such as pak0.pak-pak2.pak) in:",
         "",
-        "	$persist_dir\\baseq2\\"
+        "    $persist_dir\\baseq2\\"
     ],
     "checkver": {
         "re": "Yamagi Quake II version <strong>(\\d+\\.\\d+)</strong> was released"

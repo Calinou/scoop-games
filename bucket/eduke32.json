@@ -31,7 +31,7 @@
     "notes": [
         "Place GRP files (game data) in:",
         "",
-        "	$persist_dir\\data"
+        "    $persist_dir\\data"
     ],
     "checkver": {
         "url": "https://dukeworld.com/eduke32/synthesis/",

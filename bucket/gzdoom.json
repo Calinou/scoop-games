@@ -13,9 +13,7 @@
             "hash": "948b8819004dd02cc32582a98b127fa7a25e6539acc5e8ed0df0a697b2563478"
         }
     },
-    "bin": [
-        "gzdoom.exe"
-    ],
+    "bin": "gzdoom.exe",
     "shortcuts": [
         [
             "gzdoom.exe",
@@ -33,6 +31,6 @@
     "notes": [
         "Place WAD files (game data) in:",
         "",
-        "\t$persist_dir\\..\\_doom"
+        "    $persist_dir\\..\\_doom"
     ]
 }

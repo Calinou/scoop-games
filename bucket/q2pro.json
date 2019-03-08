@@ -16,12 +16,10 @@
             "Q2PRO"
         ]
     ],
-    "persist": [
-        "baseq2"
-    ],
+    "persist": "baseq2",
     "notes": [
         "Place game data files (such as pak0.pak-pak2.pak) in:",
         "",
-        "\t$persist_dir\\baseq2\\"
+        "    $persist_dir\\baseq2\\"
     ]
 }
