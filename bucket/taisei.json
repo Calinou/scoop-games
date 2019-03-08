@@ -1,0 +1,34 @@
+{
+    "description": "Free and open-source Touhou Project clone and fangame",
+    "homepage": "https://github.com/taisei-project/taisei",
+    "version": "1.2",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/taisei-project/taisei/releases/download/v1.2/Taisei-1.2-windows-x86_64.zip",
+            "hash": "fb44dda2421a26ff4f7ad11840b28499d596594120fd5b4ff65ea8eed0a8b6c3"
+        },
+        "32bit": {
+            "url": "https://github.com/taisei-project/taisei/releases/download/v1.2/Taisei-1.2-windows-x86.zip",
+            "hash": "72aa580f6eddbcbb4256e8b9443ea2c7c5c7e7db904267067b860aff678e0b74"
+        }
+    },
+    "bin": "taisei.exe",
+    "shortcuts": [
+        [
+            "taisei.exe",
+            "Taisei"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/taisei-project/taisei/releases/download/v$version/Taisei-$version-windows-x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/taisei-project/taisei/releases/download/v$version/Taisei-$version-windows-x86.zip"
+            }
+        }
+    }
+}
