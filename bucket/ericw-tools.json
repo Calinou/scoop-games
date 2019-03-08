@@ -37,7 +37,5 @@
             }
         }
     },
-    "depends": [
-        "extras/vcredist2013"
-    ]
+    "depends": "extras/vcredist2013"
 }

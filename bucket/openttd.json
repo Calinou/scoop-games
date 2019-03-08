@@ -38,9 +38,7 @@
         "Move-Item \"$dir\\opensfx-0.2.3\" \"$dir\\baseset\"",
         "Move-Item \"$dir\\openmsx-0.3.1\" \"$dir\\baseset\""
     ],
-    "bin": [
-        "openttd.exe"
-    ],
+    "bin": "openttd.exe",
     "shortcuts": [
         [
             "openttd.exe",

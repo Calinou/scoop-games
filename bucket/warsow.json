@@ -14,9 +14,7 @@
             "pre_install": "Set-Content -Path \"$dir\\warsow.bat\" -Value \"pushd $dir && warsow_x86.exe && popd\""
         }
     },
-    "bin": [
-        "warsow.bat"
-    ],
+    "bin": "warsow.bat",
     "shortcuts": [
         [
             "warsow.bat",

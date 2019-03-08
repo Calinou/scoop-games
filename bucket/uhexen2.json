@@ -24,6 +24,6 @@
     "notes": [
         "Place game data files (pak0.pak, pak1.pak) in:",
         "",
-        "\t$persist_dir\\data1\\"
+        "    $persist_dir\\data1\\"
     ]
 }

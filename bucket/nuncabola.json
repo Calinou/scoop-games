@@ -13,8 +13,6 @@
         ]
     ],
     "suggest": {
-        "JDK": [
-            "java/adoptopenjdk-hotspot-jre"
-        ]
+        "JDK": "java/adoptopenjdk-hotspot-jre"
     }
 }

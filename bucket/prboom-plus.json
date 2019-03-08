@@ -1,4 +1,3 @@
-
 {
     "homepage": "http://prboom-plus.sourceforge.net/",
     "description": "Enhanced, highly-compatible source port for Doom",
@@ -51,6 +50,6 @@
     "notes": [
         "Place WAD files (game data) in:",
         "",
-        "\t$persist_dir\\..\\_doom"
+        "    $persist_dir\\..\\_doom"
     ]
 }

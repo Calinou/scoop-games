@@ -14,9 +14,7 @@
             "pre_install": "Set-Content -Path \"$dir\\xonotic.bat\" -Value \"pushd $dir && xonotic-x86.exe && popd\""
         }
     },
-    "bin": [
-        "xonotic.bat"
-    ],
+    "bin": "xonotic.bat",
     "shortcuts": [
         [
             "xonotic.bat",

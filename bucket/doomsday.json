@@ -15,21 +15,17 @@
             "extract_dir": "doomsday_2.1.0_x86"
         }
     },
-    "bin": [
-        "bin\\Doomsday.exe"
-    ],
+    "bin": "bin\\Doomsday.exe",
     "shortcuts": [
         [
             "bin\\Doomsday.exe",
             "Doomsday Engine"
         ]
     ],
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "notes": [
         "Place WAD files (game data) in:",
         "",
-        "\t$persist_dir\\data"
+        "    $persist_dir\\data"
     ]
 }

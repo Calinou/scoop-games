@@ -47,9 +47,7 @@
             ]
         }
     },
-    "persist": [
-        "Main"
-    ],
+    "persist": "Main",
     "checkver": {
         "github": "https://github.com/rtcwcoop/rtcwcoop"
     },
@@ -68,6 +66,6 @@
     "notes": [
         "Place game data files (such as pak0.pk3, sp_pak1.pk3-sp_pak4.pk3, mp_*.pk3) in:",
         "",
-        "\t$persist_dir\\Main\\"
+        "    $persist_dir\\Main\\"
     ]
 }
