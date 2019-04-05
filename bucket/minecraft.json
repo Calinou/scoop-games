@@ -7,7 +7,7 @@
         "url": "https://account.mojang.com/terms"
     },
     "url": "https://launcher.mojang.com/download/Minecraft.exe",
-    "hash": "a76c2c056fc762f875471d1d49c108ecf23939b9abde5f38b59529af250469ef",
+    "hash": "f391a3c42bd3cc19bf76cf62de164b263ee2a6e9b3994120c3c613fb30af7476",
     "##": "Using the `current` junction prevents Minecraft from loading the login screen.",
     "bin": "../java-edition/Minecraft.exe",
     "shortcuts": [
