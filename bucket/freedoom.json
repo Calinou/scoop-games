@@ -13,9 +13,9 @@
     ],
     "post_install": [
         "New-Item -Type Directory -Force -Path \"$persist_dir\\..\\_doom\"",
-        "Move-Item \"$dir\\freedoom-0.11.3\\freedoom1.wad\" \"$persist_dir\\..\\_doom\"",
-        "Move-Item \"$dir\\freedoom-0.11.3\\freedoom2.wad\" \"$persist_dir\\..\\_doom\"",
-        "Move-Item \"$dir\\freedm-0.11.3\\freedm.wad\" \"$persist_dir\\..\\_doom\""
+        "Move-Item \"$dir\\freedoom-$version\\freedoom1.wad\" \"$persist_dir\\..\\_doom\"",
+        "Move-Item \"$dir\\freedoom-$version\\freedoom2.wad\" \"$persist_dir\\..\\_doom\"",
+        "Move-Item \"$dir\\freedm-$version\\freedm.wad\" \"$persist_dir\\..\\_doom\""
     ],
     "uninstaller": {
         "script": [
