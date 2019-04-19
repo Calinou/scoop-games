@@ -24,6 +24,9 @@
             "Remove-Item \"$persist_dir\\..\\_doom\\freedm.wad\""
         ]
     },
+    "checkver": {
+        "github": "https://github.com/freedoom/freedoom"
+    },
     "suggest": {
         "Doom source port": [
             "gzdoom",
