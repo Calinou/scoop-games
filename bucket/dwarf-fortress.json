@@ -13,7 +13,7 @@
     ],
     "checkver": {
         "url": "http://www.bay12games.com/dwarves",
-        "re": "DOWNLOAD DWARF FORTRESS ([\\d\\.]+)"
+        "re": "DWARF FORTRESS CLASSIC ([\\d\\.]+)"
     },
     "autoupdate": {
         "url": "http://www.bay12games.com/dwarves/df_$minorVersion_$patchVersion_win.zip"
