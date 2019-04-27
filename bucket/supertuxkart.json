@@ -2,7 +2,7 @@
     "homepage": "https://supertuxkart.net/Main_Page",
     "description": "Arcade 3D racer with a variety of characters, tracks and modes",
     "version": "1.0",
-    "license": "GPL-2.0-or-later",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/supertuxkart/SuperTuxKart/1.0/SuperTuxKart%201.0%20installer-64bit.exe#/dl.7z",
