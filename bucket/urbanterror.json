@@ -12,5 +12,9 @@
             "Urban Terror"
         ]
     ],
-    "persist": "q3ut4"
+    "persist": "q3ut4",
+    "checkver": {
+        "url": "https://www.urbanterror.info/downloads/",
+        "re": "Current version \\(([\\d.]+)\\)"
+    }
 }
