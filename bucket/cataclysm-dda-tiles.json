@@ -1,0 +1,22 @@
+{
+    "version": "0.D",
+    "homepage": "https://cataclysmdda.org",
+    "license": "CC-BY-SA-3.0",
+    "bin": "cataclysm-tiles.exe",
+    "shortcuts": [
+        [
+            "cataclysm-tiles.exe",
+            "Cataclysm DDA Tiles"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.D/cataclysmdda-0.D-8574-Win64-Tiles.zip",
+            "hash": "AA19EA7B2A201DE7EE30D9A3BA95B9BB290347A02198AE4F4E2601631F5DBF09"
+        },
+        "32bit": {
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.D/cataclysmdda-0.D-8574-Win-Tiles.zip",
+            "hash": "232E2FDBA375E8E6B3BA5CF996EE33DC7D381E2DF6EB21683CEDD70C8CC8C2CC"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "version": "0.D",
+    "homepage": "https://cataclysmdda.org",
+    "license": "CC-BY-SA-3.0",
+    "bin": "cataclysm.exe",
+    "shortcuts": [
+        [
+            "cataclysm.exe",
+            "Cataclysm DDA"
+        ]
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.D/cataclysmdda-0.D-8574-Win64-Curses.zip",
+            "hash": "806B0664F03E8C2756C0B5F21465E7BE874B0290C74251842563E7A37DA81EA1"
+        },
+        "32bit": {
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.D/cataclysmdda-0.D-8574-Win-Curses.zip",
+            "hash": "3B02E98801EF578FBA2E73429D173A7C534D8DF04B99B4BC9D8BA0EF05E2A9E6"
+        }
+    }
+}
