@@ -1,0 +1,30 @@
+{
+    "version": "79",
+    "description": "A sandbox tower-defense game made with libGDX.",
+    "homepage": "https://mindustrygame.github.io/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/Anuken/Mindustry/blob/master/LICENSE"
+    },
+    "url": "https://github.com/Anuken/Mindustry/releases/download/v79/desktop-release.jar",
+    "hash": "fac217e56e86ca242330bf9e54d3fd261503daf02f6037bae718d1df4340aafa",
+    "shortcuts": [
+        [
+            "desktop-release.jar",
+            "Mindustry"
+        ]
+    ],
+    "suggest": {
+        "Java": [
+            "oraclejdk",
+            "adopt8-hotspot-jre"
+        ]
+    },
+    "checkver": {
+        "url": "https://github.com/Anuken/Mindustry/releases",
+        "regex": "Anuken\\/Mindustry\\/tree\\/v(\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/desktop-release.jar"
+    }
+}
