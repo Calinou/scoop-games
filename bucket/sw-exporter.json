@@ -2,9 +2,9 @@
     "homepage": "https://github.com/Xzandro/sw-exporter",
     "description": "This tool will parse intercepted data from Summoner's War and extract information on the monsters and runes of the user. They can then be uploaded to https://swarfarm.com/ for example.",
     "license": "Apache-2.0",
-    "version": "0.0.25",
-    "url": "https://github.com/Xzandro/sw-exporter/releases/download/0.0.25/sw-exporter-0.0.25.exe#/sw-exporter.exe",
-    "hash": "546fed0f6ff5aaf1ca5f541e9af1c31b66d76d6869f943f2181737a5fb885c7f",
+    "version": "0.0.26",
+    "url": "https://github.com/Xzandro/sw-exporter/releases/download/0.0.26/sw-exporter-0.0.26.exe#/sw-exporter.exe",
+    "hash": "df7dca8396746d0d1f94a2257e10b1531a08de7fed5fbeb69993728dd19fcfca",
     "bin": "sw-exporter.exe",
     "shortcuts": [
         [
