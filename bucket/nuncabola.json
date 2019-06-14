@@ -13,6 +13,6 @@
         ]
     ],
     "suggest": {
-        "JDK": "java/adoptopenjdk-hotspot-jre"
+        "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
     }
 }
