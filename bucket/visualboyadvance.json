@@ -13,7 +13,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/OpenRA/OpenRA/releases",
+        "url": "https://sourceforge.net/projects/vba/files/VisualBoyAdvance/",
         "regex": "\\/projects\\/vba\\/files\\/VisualBoyAdvance\\/([\\d]+[\\.][\\d]+[\\.][\\d]+)"
     },
     "autoupdate": {
