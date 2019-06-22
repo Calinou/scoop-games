@@ -1,0 +1,29 @@
+{
+    "homepage": "https://github.com/OrangeNote/RuneBook",
+    "description": "Arcane Rune Pages manager for League of Legends",
+    "version": "1.8.9",
+    "license": "MIT",
+    "url": "https://github.com/OrangeNote/RuneBook/releases/download/v1.8.9/RuneBook-1.8.9.exe#/RuneBook-installer.exe",
+    "hash": "427f9210914b9c11abb24938539095981ffa803ea8b0d41573d7ab031c172cae",
+    "depends": "7ziP",
+    "installer": {
+        "script": [
+            "7z e \"$dir\\RuneBook-installer.exe\" -o\"$dir\" '$PLUGINSDIR\\app-64.7z'",
+            "7z x \"$dir\\app-64.7z\" -o\"$dir\"",
+            "Remove-Item \"$dir\\RuneBook-installer.exe\", \"$dir\\app-64.7z\""
+        ]
+    },
+    "bin": "RuneBook.exe",
+    "shortcuts": [
+        [
+            "RuneBook.exe",
+            "RuneBook"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/OrangeNote/RuneBook/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/OrangeNote/RuneBook/releases/download/v$version/RuneBook-$version.exe#/RuneBook-installer.exe"
+    }
+}
