@@ -1,16 +1,16 @@
 {
     "homepage": "https://zdoom.org/",
     "description": "Modern source port for Doom, Heretic, Hexen and more",
-    "version": "4.1.2",
+    "version": "4.1.3",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/coelckers/gzdoom/releases/download/g4.1.2/gzdoom-bin-4-1-2b-x64.zip",
-            "hash": "2c613c46cc99380309dca8d308751f72fb40637aa3312cb9c85b0638649030b4"
+            "url": "https://github.com/coelckers/gzdoom/releases/download/g4.1.3/gzdoom-bin-4-1-3-x64.zip",
+            "hash": "226447a663e4bd414ed6300e084625753eb37a886f316fb9ebb38604e04b68ee"
         },
         "32bit": {
-            "url": "https://github.com/coelckers/gzdoom/releases/download/g4.1.2/gzdoom-bin-4-1-2b.zip",
-            "hash": "5ecc38885e71f719143f6838fca4dce6d8851ee5ac32321966694ac2b0b98d66"
+            "url": "https://github.com/coelckers/gzdoom/releases/download/g4.1.3/gzdoom-bin-4-1-3.zip",
+            "hash": "a91207a42968fe2ba82c0942e860bddeb481d53a70a569632cc594251c5ecdca"
         }
     },
     "bin": "gzdoom.exe",
