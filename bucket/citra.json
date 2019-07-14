@@ -1,0 +1,28 @@
+{
+    "homepage": "https://citra-emu.org/",
+    "description": "Open-Source emulator for Nintendo 3DS, capable of playing many of your favorite games.",
+    "license": "MIT",
+    "version": "1299-20190714",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1299/citra-windows-mingw-20190714-1c5a55b.7z",
+    "hash": "44df89fda733f8fca32a02f7db9ab9dc9726cb2ba46c50056a39bec07c10dc4c",
+    "extract_dir": "nightly-mingw",
+    "bin": [
+        "citra.exe",
+        "citra-qt.exe",
+        "citra-room.exe"
+    ],
+    "shortcuts": [
+        [
+            "citra-qt.exe",
+            "Citra"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/citra-emu/citra-nightly",
+        "regex": "download/nightly-(?<build>[\\d]+)/citra-windows-mingw-(?<date>[\\d]+)-(?<random>[a-fA-F\\d]+).7z",
+        "replace": "${1}-${2}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-$matchBuild/citra-windows-mingw-$matchDate-$matchRandom.7z"
+    }
+}
