@@ -10,5 +10,16 @@
             "wesnoth.exe",
             "The Battle for Wesnoth"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://wiki.wesnoth.org/Download",
+        "regex": "wesnoth-([\\d.]+)-win32.exe"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/wesnoth/files/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win32.exe#/dl.7z",
+        "hash": {
+            "url": "https://wiki.wesnoth.org/Download",
+            "regex": "(?sm)$version-win32.exe.sha256\">SHA256</a>:[\\n\\s]+<code>$sha256</code>"
+        }
+    }
 }
