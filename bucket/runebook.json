@@ -1,16 +1,14 @@
 {
     "homepage": "https://runebook.app/",
     "description": "Arcane Rune Pages manager for League of Legends",
-    "version": "1.8.9",
+    "version": "1.8.11",
     "license": "MIT",
-    "url": "https://github.com/OrangeNote/RuneBook/releases/download/v1.8.9/RuneBook-1.8.9.exe#/RuneBook-installer.exe",
-    "hash": "427f9210914b9c11abb24938539095981ffa803ea8b0d41573d7ab031c172cae",
-    "depends": "7ziP",
+    "url": "https://github.com/OrangeNote/RuneBook/releases/download/v1.8.11/RuneBook-1.8.11.exe#/RuneBook-installer.exe#/dl.7z",
+    "hash": "003805a22c4868ce81017f597c3af45bd4e39f52193825e34f4daf3938863d96",
     "installer": {
         "script": [
-            "7z e \"$dir\\RuneBook-installer.exe\" -o\"$dir\" '$PLUGINSDIR\\app-64.7z'",
-            "7z x \"$dir\\app-64.7z\" -o\"$dir\"",
-            "Remove-Item \"$dir\\RuneBook-installer.exe\", \"$dir\\app-64.7z\""
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse"
         ]
     },
     "bin": "RuneBook.exe",
@@ -24,6 +22,6 @@
         "github": "https://github.com/OrangeNote/RuneBook/"
     },
     "autoupdate": {
-        "url": "https://github.com/OrangeNote/RuneBook/releases/download/v$version/RuneBook-$version.exe#/RuneBook-installer.exe"
+        "url": "https://github.com/OrangeNote/RuneBook/releases/download/v$version/RuneBook-$version.exe#/RuneBook-installer.exe#/dl.7z"
     }
 }
