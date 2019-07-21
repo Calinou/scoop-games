@@ -14,13 +14,30 @@
         [
             "yquake2.exe",
             "Yamagi Quake 2"
+        ],
+	    [
+            "yquake2.exe",
+            "Yamagi Quake 2 (Ground Zero)",
+	        "+set game rogue"
+        ],
+	    [
+            "yquake2.exe",
+            "Yamagi Quake 2 (The Reckoning)",
+	        "+set game xatrix"
         ]
     ],
-    "persist": "baseq2",
+    "persist": ["baseq2", "rogue", "xatrix"],
     "notes": [
         "Place game data files (such as pak0.pak-pak2.pak) in:",
         "",
-        "    $persist_dir\\baseq2\\"
+	    "- Quake 2:",
+        "    $persist_dir\\baseq2\\",
+	    "",
+	    "- Quake 2 - Ground Zero:",
+        "    $persist_dir\\rogue\\",
+	    "",
+	    "- Quake 2 - The Reckoning:",
+        "    $persist_dir\\xatrix\\"
     ],
     "checkver": {
         "re": "Yamagi Quake II version <strong>(\\d+\\.\\d+)</strong> was released"
