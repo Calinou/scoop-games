@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.wesnoth.org/",
     "description": "Turn-based singleplayer and multiplayer strategy game with a high fantasy theme",
-    "version": "1.14.5",
+    "version": "1.14.7",
     "license": "GPL-2.0-or-later",
-    "url": "https://downloads.sourceforge.net/project/wesnoth/wesnoth-1.14/wesnoth-1.14.5/wesnoth-1.14.5-win32.exe#/dl.7z",
-    "hash": "8cc97ce344b07179df210ba6139124b53134d11e8ab24efe7121be88db8f5543",
+    "url": "https://downloads.sourceforge.net/project/wesnoth/wesnoth-1.14/wesnoth-1.14.7/wesnoth-1.14.7-win32.exe#/dl.7z",
+    "hash": "31b2acfa65cb383012c04c8adbe903b6c3a6ef6a7a32d02a5c49e2e8fcd8ca26",
     "shortcuts": [
         [
             "wesnoth.exe",
@@ -16,10 +16,9 @@
         "regex": "wesnoth-([\\d.]+)-win32.exe"
     },
     "autoupdate": {
-        "url": "https://sourceforge.net/projects/wesnoth/files/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win32.exe#/dl.7z",
+        "url": "https://downloads.sourceforge.net/project/wesnoth/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win32.exe#/dl.7z",
         "hash": {
-            "url": "https://wiki.wesnoth.org/Download",
-            "regex": "(?sm)$version-win32.exe.sha256\">SHA256</a>:[\\n\\s]+<code>$sha256</code>"
+            "url": "https://files.wesnoth.org/releases/wesnoth-$version-win32.exe.sha256"
         }
     }
 }
