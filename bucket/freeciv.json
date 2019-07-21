@@ -3,8 +3,8 @@
     "description": "A Free and Open Source empire-building strategy game.",
     "version": "2.6.0",
     "license": "GPL-2.0-or-later",
-    "url": "http://prdownloads.sourceforge.net/freeciv/Freeciv-2.6.0-win32-gtk3-setup.exe#/setup.7z",
-    "hash": "971f161c8730ada48929d5b2a5d5cc463f252ca42b4d1bdffb4988292b214842",
+    "url": "https://downloads.sourceforge.net/project/freeciv/Freeciv%202.6/2.6.0/Freeciv-2.6.0-win32-gtk3-setup.exe#/setup.7z",
+    "hash": "sha1:81f17d0b7ed4d47979d98d0012c3001f3890cd44",
     "bin": [
         "freeciv-gtk3.exe",
         "freeciv-mp-gtk3.exe",
@@ -29,6 +29,6 @@
         "regex": "Freeciv-([\\d.]+)-win32"
     },
     "autoupdate": {
-        "url": "http://prdownloads.sourceforge.net/freeciv/Freeciv-$version-win32-gtk3-setup.exe#/setup.7z"
+        "url": "https://downloads.sourceforge.net/project/freeciv/Freeciv%20$majorVersion.$minorVersion/$version/Freeciv-$version-win32-gtk3-setup.exe#/setup.7z"
     }
 }
