@@ -20,7 +20,7 @@
         "regex": "0ad-([\\w.]+)-alpha-win32.exe"
     },
     "autoupdate": {
-        "url": "http://releases.wildfiregames.com/0ad-$version-alpha-win32.exe#/setup.exe",
+        "url": "https://releases.wildfiregames.com/0ad-$version-alpha-win32.exe#/setup.exe",
         "hash": {
             "url": "$url.sha1sum"
         }
