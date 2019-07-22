@@ -1,0 +1,24 @@
+{
+    "homepage": "https://crawl.develz.org/",
+    "description": "A rogue-like adventure game through dungeons. (graphical tiles version)",
+    "version": "0.23.2",
+    "license": "GPL-2.0-or-later",
+    "url": "https://crawl.develz.org/release/0.23/stone_soup-0.23.2-tiles-win32.zip",
+    "hash": "67b3a747794019d0dfb11f228b717e42bc71202789cad85289f8729863723352",
+    "extract_dir": "stone_soup-tiles-0.23",
+    "bin": "crawl.exe",
+    "shortcuts": [
+        [
+            "crawl.exe",
+            "Dungeon Crawl - tiles"
+        ]
+    ],
+    "checkver": {
+        "url": "https://crawl.develz.org/download.htm",
+        "regex": "Latest Stable Version: <strong>([\\d.]+)</strong>"
+    },
+    "autoupdate": {
+        "url": "https://crawl.develz.org/release/$majorVersion.$minorVersion/stone_soup-$version-tiles-win32.zip",
+        "extract_dir": "stone_soup-tiles-$majorVersion.$minorVersion"
+    }
+}
