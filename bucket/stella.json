@@ -1,0 +1,35 @@
+{
+    "homepage": "https://stella-emu.github.io/",
+    "description": "A multi-platform Atari 2600 VCS emulator",
+    "version": "6.0.1",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/stella-emu/stella/releases/download/6.0.1/Stella-6.0.1-windows.zip",
+    "hash": "a0018c052ff1f641384bcd83448807d91c3ba2f54cebd591c0a8da419c0ad29b",
+    "extract_dir": "Stella-6.0.1",
+    "architecture": {
+        "32bit": {
+            "shortcuts": [
+                [
+                    "32-bit/Stella.exe",
+                    "Stella"
+                ]
+            ]
+        },
+        "64bit": {
+            "shortcuts": [
+                [
+                    "64-bit/Stella.exe",
+                    "Stella"
+                ]
+            ]
+        }
+    },
+    "persist": "config",
+    "checkver": {
+        "github": "https://github.com/stella-emu/stella"
+    },
+    "autoupdate": {
+        "url": "https://github.com/stella-emu/stella/releases/download/$version/Stella-$version-windows.zip",
+        "extract_dir": "Stella-$version"
+    }
+}
