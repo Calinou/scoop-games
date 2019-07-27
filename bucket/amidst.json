@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/toolbox4minecraft/amidst",
     "description": "Minecraft interface and data/structure tracking tool",
-    "version": "4.3-beta6",
+    "version": "4.3",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/toolbox4minecraft/amidst/releases/download/v4.3-beta6/amidst-v4-3-beta6.jar#/amidst.jar",
-    "hash": "b7080ee2324fef850a906a84b4b178345f1e4f5a3451e17ac8a1e5f4d5b4c70c",
+    "url": "https://github.com/toolbox4minecraft/amidst/releases/download/v4.3/amidst-v4-3.jar#/amidst.jar",
+    "hash": "9feffda94e4adc2d132c0732b7e9de47a6087ee84adc9a0bb15c4b86c92e1c56",
     "bin": "amidst.bat",
     "shortcuts": [
         [
@@ -16,5 +16,8 @@
     "suggest": {
         "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
     },
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/toolbox4minecraft/amidst/releases/download/v$version/amidst-v$dashVersion.jar#/amidst.jar"
+    }
 }
