@@ -1,0 +1,28 @@
+{
+    "homepage": "https://blitz.gg/",
+    "description": "App that helps find runes and builds in League of Legends's champion selection phase",
+    "version": "nightly",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://blitzesports.com/tos"
+    },
+    "url": "https://dl.blitz.gg/download/windows#/dl.7z",
+    "depends": "7zip",
+    "installer": {
+        "script": [
+            "7z x \"$dir\\Blitz-*-full.nupkg\" -o\"$dir\" lib\\net45",
+            "Move-Item -Path \"$dir\\lib\\net45\\*\" -Destination \"$dir\" -Force",
+            "Remove-Item -Path \"$dir\\Blitz-*-full.nupkg\""
+        ]
+    },
+    "uninstaller": {
+        "script": "taskkill /F /IM Blitz.exe /FI \"status eq running\""
+    },
+    "bin": "Blitz.exe",
+    "shortcuts": [
+        [
+            "Blitz.exe",
+            "Blitz"
+        ]
+    ]
+}
