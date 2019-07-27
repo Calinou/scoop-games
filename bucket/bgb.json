@@ -1,6 +1,6 @@
 {
     "homepage": "http://bgb.bircd.org/",
-    "description": "A GameBoy emulator/debugger",
+    "description": "GameBoy emulator/debugger",
     "version": "1.5.7",
     "license": "Freeware",
     "architecture": {

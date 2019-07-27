@@ -1,6 +1,6 @@
 {
     "homepage": "https://citra-emu.org/",
-    "description": "Open-Source emulator for Nintendo 3DS, capable of playing many of your favorite games.",
+    "description": "Emulator for Nintendo 3DS, capable of playing many of your favorite games",
     "license": "MIT",
     "version": "1315-20190725",
     "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1315/citra-windows-mingw-20190725-45ff10c.7z",

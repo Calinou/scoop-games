@@ -1,6 +1,6 @@
 {
     "homepage": "https://citra-emu.org/",
-    "description": "Open-Source emulator for Nintendo 3DS, capable of playing many of your favorite games.",
+    "description": "Emulator for Nintendo 3DS, capable of playing many of your favorite games",
     "license": "MIT",
     "version": "1410-20190724",
     "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-1410/citra-windows-mingw-20190724-ee6f374.7z",
