@@ -22,8 +22,16 @@
             "--config ..\\config\\minetest.conf"
         ]
     ],
-    "persist": "config",
-    "post_install": "New-Item -ErrorAction Ignore -Type file \"$persist_dir\\config\\minetest.conf\"",
+    "persist": [
+        "config",
+        "mods",
+        "worlds"
+    ],
+    "post_install": [
+        "if(!(Test-Path \"$dir\\config\\minetest.conf\")) {",
+            "New-Item -ErrorAction Ignore -Type file \"$dir\\config\\minetest.conf\" | Out-Null",
+        "}"
+    ],
     "checkver": {
         "github": "https://github.com/minetest/minetest"
     },
