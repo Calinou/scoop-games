@@ -1,0 +1,33 @@
+{
+    "homepage": "https://nethack.org",
+    "version": "3.6.2",
+    "description": "A single player dungeon exploration game in the style of Rogue",
+    "license": "NGPL",
+    "url": "https://nethack.org/download/3.6.2/NetHack-362-win-x86.zip",
+    "hash": "md5:b189c83e58a87319a89e578846af28ae",
+    "bin": [
+        "NetHack.exe",
+        "NetHackW.exe"
+    ],
+    "shortcuts": [
+        [
+            "NetHackW.exe",
+            "NetHack (graphical interface)"
+        ],
+        [
+            "Guidebook.pdf",
+            "NetHack guidebook"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://nethack.org/download/$version/NetHack-$cleanVersion-win-x86.zip",
+        "hash": {
+            "url": "https://nethack.org/v$cleanVersion/ports/download-win.html",
+            "find": "$md5"
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/NetHack/NetHack/releases/latest",
+        "re": "NetHack-(?<version>[^_]*)"
+    }
+}
