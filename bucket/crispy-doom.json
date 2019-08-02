@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom",
     "description": "Faithful enhanced-resolution source port for Doom",
-    "version": "5.5.2",
+    "version": "5.6",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-5.5.2/crispy-doom-5.5.2-win32.zip",
-    "hash": "78c759d4a146db6b2240c37ed27ced43f1b1719fbbfbd0120a99b2ef3bb52bf1",
+    "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-5.6/crispy-doom-5.6-win32.zip",
+    "hash": "72c78c41577cc6b95a57cf9ef299f9b1c1a917c3d57aca66626605c69a85e68c",
     "shortcuts": [
         [
             "crispy-doom.exe",
