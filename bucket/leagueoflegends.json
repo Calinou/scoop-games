@@ -1,0 +1,50 @@
+{
+    "##": [
+        "BitRock installer. Requires admin privileges. Some of the unwanted behavior fixed in the post_install",
+        "Probably wanted behavior: adds a firewall rule.",
+        "Unwanted behavior: creates desktop and start menu shortcuts, adds a registry key for 'Programs and Features' uninstallation."
+    ],
+    "version": "nightly",
+    "homepage": "http://leagueoflegends.com/",
+    "description": "MOBA game published by Riot Games.",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://euw.leagueoflegends.com/en/legal/termsofuse"
+    },
+    "url": "https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20EUW.exe#/installer_euw.exe",
+    "persist": [
+        "Config"
+    ],
+    "shortcuts": [
+        [
+            "LeagueClient.exe",
+            "League of Legends"
+        ]
+    ],
+    "pre_install": [
+        "$currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())",
+        "if (-Not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {",
+        "    Remove-Item $dir\\.. -Recurse",
+        "    Write-Host \"This installation requires elevated privileges. Rerun the command as an administrator.\" -ForegroundColor Red",
+        "    Exit",
+        "}"
+    ],
+    "installer": {
+        "file": "installer_euw.exe",
+        "args": [
+            "--mode", "unattended",
+            "--installdir", "$dir",
+            "--license_agreement", "1"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$Env:PUBLIC\\Desktop\\League of Legends.lnk\"",
+        "$d = \"$Env:ALLUSERSPROFILE\\Microsoft\\Windows\\Start Menu\\Programs\\League of Legends\"",
+        "Remove-Item \"$d\\League of Legends.lnk\"",
+        "Remove-Item \"$d\\Uninstall League of Legends.lnk\"",
+        "if ((Get-ChildItem $d -Recurse -File | Measure-Object).Count -eq 0) { Remove-Item $d }"
+    ],
+    "uninstaller": {
+        "script": "Start-Process -FilePath \"$dir\\Uninstall League of Legends.exe\" -ArgumentList \"--mode unattended\" -Wait"
+    }
+}
