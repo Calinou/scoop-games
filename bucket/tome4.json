@@ -1,0 +1,37 @@
+{
+    "version": "1.5.10",
+    "license": "GPL-3.0-only",
+    "extract_dir": "t-engine4-windows-1.5.10",
+    "url": "http://te4.org/dl/t-engine/t-engine4-windows-1.5.10.zip",
+    "homepage": "https://te4.org",
+    "hash": "906b1fe7ba12185bdeb7034561a3e19c627a8e671dda64a9f09b1f67217c580c",
+    "persist": "game\\addons",
+    "bin": [
+        [
+            "t-engine.exe",
+            "tome4"
+        ],
+        [
+            "t-engine-launcher.exe",
+            "tome4-launcher"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "t-engine.exe",
+            "Tales of Maj'Eyal"
+        ],
+        [
+            "t-engine-launcher.exe",
+            "Tales of Maj'Eyal Launcher"
+        ]
+    ],
+    "checkver": {
+        "url": "https://te4.org/download",
+        "re": "Tales of Maj'Eyal Installer (.*) for Windows"
+    },
+    "autoupdate": {
+        "url": "http://te4.org/dl/t-engine/t-engine4-windows-$version.zip",
+        "extract_dir": "t-engine4-windows-$version"
+    }
+}
