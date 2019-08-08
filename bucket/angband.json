@@ -1,0 +1,27 @@
+{
+    "version": "4.1.3",
+    "description": "A free single-player dungeon exploration game",
+    "homepage": "https://rephial.org/",
+    "license": "GPL-2.0",
+    "url": "https://github.com/angband/angband/releases/download/4.1.3/angband-win-4.1.3.zip",
+    "hash": "8194a73383d3ee9d6dcc7a9b3f98f3173420354034d96b44f71358850485a829",
+    "bin": "angband.exe",
+    "extract_dir": "angband-4.1.3",
+    "shortcuts": [
+        [
+            "angband.exe",
+            "Angband"
+        ],
+        [
+            "Manual.pdf",
+            "Angband Manual"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/angband/angband"
+    },
+    "autoupdate": {
+        "url": "https://github.com/angband/angband/releases/download/$version/angband-win-$version.zip",
+        "extract_dir": "angband-$version"
+    }
+}
