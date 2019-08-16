@@ -1,10 +1,10 @@
 {
     "homepage": "https://mindustrygame.github.io/",
     "description": "A sandbox tower-defense game",
-    "version": "85",
+    "version": "86",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Anuken/Mindustry/releases/download/v85/desktop-release.jar",
-    "hash": "aae6f765f214fc53f2f123049beedc7dd1515f3a62e7b8b1000a71f69c117a35",
+    "url": "https://github.com/Anuken/Mindustry/releases/download/v86/desktop-release.jar",
+    "hash": "20a3e0b31834d526b2cf2ca9a7737122321cc444eaac47e3fe58e67dae950c34",
     "bin": "mindustry.bat",
     "shortcuts": [
         [
