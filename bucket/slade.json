@@ -1,10 +1,10 @@
 {
     "homepage": "http://slade.mancubus.net/",
     "description": "Level and resource editor for Doom engine games",
-    "version": "3.1.5",
+    "version": "3.1.6",
     "license": "GPL-2.0-or-later",
-    "url": "http://slade.mancubus.net/files/3.1.5/slade_3.1.5.7z",
-    "hash": "7dc8af4ff73d847f2ffc960d52e5d54621bf1e7a753a53a2c6c8e36e4c85c0bc",
+    "url": "http://slade.mancubus.net/files/3.1.6/slade_3.1.6.7z",
+    "hash": "b97d9a8a10cb4f5931a53fa91ca49923f690210d89714459843200a7216055ca",
     "bin": "SLADE.exe",
     "shortcuts": [
         [
