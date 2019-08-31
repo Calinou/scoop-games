@@ -1,13 +1,13 @@
 {
     "homepage": "https://blitz.gg/",
     "description": "App that helps find runes and builds in League of Legends's champion selection phase",
-    "version": "1.2.9",
+    "version": "1.2.10",
     "license": {
         "identifier": "Freeware",
         "url": "https://blitzesports.com/tos"
     },
-    "url": "https://dl.blitz.gg/download/1.2.9/Blitz-1.2.9-full.nupkg",
-    "hash": "sha1:ae2d1c77a3f58c6a7ce17a2dd33e4c8b71f5cf03",
+    "url": "https://dl.blitz.gg/download/1.2.10/Blitz-1.2.10-full.nupkg",
+    "hash": "sha1:0d611dc3050ae411e8e2bd02c0920284aae5590a",
     "extract_dir": "lib\\net45",
     "uninstaller": {
         "script": "taskkill /F /IM Blitz.exe /FI \"status eq running\""
