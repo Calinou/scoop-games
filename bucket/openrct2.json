@@ -24,5 +24,11 @@
                 "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v$version/OpenRCT2-$version-windows-portable-win32.zip"
             }
         }
-    }
+    },
+    "shortcuts": [
+        [
+            "OpenRCT2.exe",
+            "OpenRCT2"
+        ]
+    ]
 }
