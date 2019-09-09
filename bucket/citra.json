@@ -2,9 +2,9 @@
     "homepage": "https://citra-emu.org/",
     "description": "Emulator for Nintendo 3DS, capable of playing many of your favorite games",
     "license": "MIT",
-    "version": "1350-20190906",
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1350/citra-windows-mingw-20190906-4bc22aa.7z",
-    "hash": "8f325370ebce7426efbffce5ff93ce9b6bbe96af77aeff3d79e9ca00d013739c",
+    "version": "1351-20190908",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1351/citra-windows-mingw-20190908-24ec11f.7z",
+    "hash": "d1b61d018984688ce63bba002e96318c46bff7b70556db99138f8cbad484bcc4",
     "extract_dir": "nightly-mingw",
     "bin": [
         "citra.exe",
