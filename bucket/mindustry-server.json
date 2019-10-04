@@ -3,7 +3,7 @@
     "description": "Server-side program for Mindustry, a sandbox tower-defense game",
     "version": "96",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Anuken/Mindustry/releases/download/v96/server-release.jar",
+    "url": "https://github.com/Anuken/Mindustry/releases/download/v96/server-release.jar#/Mindustry-Server.jar",
     "hash": "a861e31217cc32e289739c99dec025b64c907a4cb182e1b4f0826499a6a911c4",
     "bin": "mindustry-server.bat",
     "shortcuts": [
@@ -12,15 +12,16 @@
             "Mindustry Server"
         ]
     ],
-    "pre_install": "Set-Content -Path \"$dir\\mindustry-server.bat\" -Value \"pushd $dir && java -jar server-release.jar && popd\"",
+    "pre_install": "Set-Content -Path \"$dir\\mindustry-server.bat\" -Value \"pushd $dir && java -jar Mindustry-Server.jar && popd\"",
     "suggest": {
-        "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
+        "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre",
+        "Mindustry": "games/mindustry"
     },
     "checkver": {
         "url": "https://github.com/Anuken/Mindustry/releases",
         "regex": "Anuken\\/Mindustry\\/tree\\/v(\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/server-release.jar"
+        "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/server-release.jar#/Mindustry-Server.jar"
     }
 }

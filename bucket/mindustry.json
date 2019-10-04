@@ -1,10 +1,10 @@
 {
     "homepage": "https://mindustrygame.github.io/",
     "description": "A sandbox tower-defense game",
-    "version": "89",
+    "version": "96",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Anuken/Mindustry/releases/download/v89/desktop-release.jar",
-    "hash": "c4e4a3200485c266f48f44e5ccb6716f65b9aa4db8f54730d1561bfe20aa5621",
+    "url": "https://github.com/Anuken/Mindustry/releases/download/v96/Mindustry.jar",
+    "hash": "30d1f984c6924af1d22f7317819a42042393488ca53e7ceed509bab74f70304d",
     "bin": "mindustry.bat",
     "shortcuts": [
         [
@@ -12,7 +12,7 @@
             "Mindustry"
         ]
     ],
-    "pre_install": "Set-Content -Path \"$dir\\mindustry.bat\" -Value \"pushd $dir && javaw -jar desktop-release.jar && popd\"",
+    "pre_install": "Set-Content -Path \"$dir\\mindustry.bat\" -Value \"pushd $dir && javaw -jar Mindustry.jar && popd\"",
     "suggest": {
         "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
     },
@@ -21,6 +21,6 @@
         "regex": "Anuken\\/Mindustry\\/tree\\/v(\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/desktop-release.jar"
+        "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/Mindustry.jar"
     }
 }
