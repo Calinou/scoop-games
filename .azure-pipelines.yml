@@ -1,4 +1,4 @@
-# Copyright © 2018 Hugo Locurcio and contributors - CC0 1.0 Universal
+# Copyright © 2018-2019 Hugo Locurcio and contributors - CC0 1.0 Universal
 # See `LICENSE.md` included in the source distribution for details.
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
           scoop bucket add extras
 
           # Install packages
-          Get-ChildItem *.json | Foreach-Object {
-              scoop install "$($_.BaseName).json"
+          Get-ChildItem "./bucket/*.json" | Foreach-Object {
+              scoop install "./bucket/$($_.BaseName).json"
               scoop uninstall "$($_.BaseName)"
           }
