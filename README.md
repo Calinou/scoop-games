@@ -23,7 +23,7 @@ scoop install ericw-tools
 
 ## License
 
-Copyright © 2018 Hugo Locurcio and contributors
+Copyright © 2018-2019 Hugo Locurcio and contributors
 
 Files in this repository are licensed under CC0 1.0 Universal,
 see [LICENSE.md](LICENSE.md) for more information.
