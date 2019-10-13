@@ -10,9 +10,7 @@
         "gog-plugins-downloader-games.exe",
         "gog-plugins-downloader-emulators.exe"
     ],
-    "checkver": {
-        "github": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases/download/v0.0.3/gog-plugins-downloader-v$version.zip"
     },
