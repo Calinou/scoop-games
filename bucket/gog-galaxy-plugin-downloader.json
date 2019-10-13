@@ -12,7 +12,7 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases/download/v0.0.3/gog-plugins-downloader-v$version.zip"
+        "url": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases/download/v$version/gog-plugins-downloader-v$version.zip"
     },
     "notes": [
         "Install or update GOG Galaxy 2.0 plugins by running these commands:",
