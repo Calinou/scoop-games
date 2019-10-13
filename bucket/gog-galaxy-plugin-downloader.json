@@ -2,7 +2,7 @@
     "homepage": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader",
     "description": "Automatically downloads plugins for GOG Galaxy 2.0",
     "version": "0.0.3",
-    "license": "GNU General Public License v3.0",
+    "license": "GPL-3.0",
     "url": "https://github.com/Slashbunny/gog-galaxy-plugin-downloader/releases/download/v0.0.3/gog-plugins-downloader-v0.0.3.zip",
     "hash": "5ae591f7f5d4c0905faa27f5a512864c095efbc49deb15c9228fead1f03b7dd7",
     "bin": [
