@@ -1,7 +1,7 @@
 {
     "version": "5.7.10",
     "description": "A single player roguelike based on Lord of the Rings",
-    "homepage": "umoria.org",
+    "homepage": "https://umoria.org/",
     "license": "GPL-2.0",
     "checkver": {
         "github": "https://github.com/dungeons-of-moria/umoria"
