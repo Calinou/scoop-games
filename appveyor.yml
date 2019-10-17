@@ -1,4 +1,4 @@
-version: "{build}-{branch}"
+version: '{build}-{branch}'
 
 branches:
   except:
@@ -8,14 +8,14 @@ build: off
 deploy: off
 clone_depth: 49
 
-image:
-- Visual Studio 2017
+image: Visual Studio 2019
 
 environment:
   scoop: C:\projects\scoop
   scoop_home: C:\projects\scoop
   matrix:
     - PowerShell: 5
+    - PowerShell: 6
 
 cache:
   - '%USERPROFILE%\Documents\WindowsPowerShell\Modules -> appveyor.yml'
@@ -34,3 +34,10 @@ for:
     - ps: . "$env:SCOOP_HOME\test\bin\init.ps1"
   test_script:
     - ps: . "$env:SCOOP_HOME\test\bin\test.ps1" -TestPath "$env:APPVEYOR_BUILD_FOLDER"
+- matrix:
+    only:
+      - PowerShell: 6
+  install:
+    - pwsh: . "$env:SCOOP_HOME\test\bin\init.ps1"
+  test_script:
+    - pwsh: . "$env:SCOOP_HOME\test\bin\test.ps1" -TestPath "$env:APPVEYOR_BUILD_FOLDER"
