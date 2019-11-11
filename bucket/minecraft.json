@@ -1,20 +1,22 @@
 {
+    "version": "nightly",
+    "description": "Official launcher for Minecraft, a sandbox voxel game.",
     "homepage": "https://minecraft.net/",
-    "description": "Official launcher for Minecraft, a sandbox voxel game",
-    "version": "java-edition",
     "license": {
-        "identifier": "Freeware",
+        "identifier": "Proprietary",
         "url": "https://account.mojang.com/terms"
     },
     "url": "https://launcher.mojang.com/download/Minecraft.exe",
-    "hash": "a541356a3103201145eac713c3a056674253634d895810b249f87d2d7a654d17",
-    "##": "Using the `current` junction prevents Minecraft from loading the login screen.",
-    "bin": "../java-edition/Minecraft.exe",
+    "notes": "This is only the launcher; you need to log in with a premium account to play Minecraft.",
+    "bin": "Minecraft.exe",
     "shortcuts": [
         [
-            "../java-edition/Minecraft.exe",
+            "Minecraft.exe",
             "Minecraft"
         ]
     ],
-    "notes": "This is only the launcher; you need to log in with a premium account to play Minecraft."
+    "persist": [
+        "game",
+        "runtime"
+    ]
 }
