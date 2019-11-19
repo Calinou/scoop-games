@@ -1,10 +1,10 @@
 {
-    "version": "1.6.0",
+    "version": "1.6.1",
     "license": "GPL-3.0-only",
-    "extract_dir": "t-engine4-windows-1.6.0",
-    "url": "http://te4.org/dl/t-engine/t-engine4-windows-1.6.0.zip",
+    "extract_dir": "t-engine4-windows-1.6.1",
+    "url": "http://te4.org/dl/t-engine/t-engine4-windows-1.6.1.zip",
     "homepage": "https://te4.org",
-    "hash": "6a759ab8965aaf7624d9d4b8d7b07045497b18945db3f7074ea766f4fd935647",
+    "hash": "bd276314568cfbed67b37ef36e7c3572f883f7536c1fef10cc3d80228ff452cc",
     "persist": "game\\addons",
     "bin": [
         [
