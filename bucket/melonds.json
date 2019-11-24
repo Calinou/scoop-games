@@ -1,0 +1,32 @@
+{
+    "homepage": "http://melonds.kuribo64.net/",
+    "description": "A Nintendo DS emulator aiming for fast and accurate emulation",
+    "license": "GPL-3.0-or-later",
+    "version": "0.8.3",
+    "url": "https://github.com/Arisotura/melonDS/releases/download/0.8.3/melonDS_0.8.3_win64.7z",
+    "hash": "c670470b2c5d93ac865eae9bc4ba66bdde9945d35f6c346d3d606c06d3dd5cb2",
+    "bin": "melonDS.exe",
+    "shortcuts": [
+        [
+            "melonDS.exe",
+            "melonDS"
+        ]
+    ],
+    "persist": [
+        "bios7.bin",
+        "bios9.bin",
+        "firmware.bin",
+        "melonDS.ini"
+    ],
+    "notes": [
+        "ATTENTION: MelonDS requires BIOS and firmware files dumped from a Nintendo DS to function.",
+        "Place these files inside melonDS's persist directory, NOT the same directory as the executable.",
+        "Visit http://melonds.kuribo64.net/faq.php for more information."
+    ],
+    "checkver": {
+        "github": "https://github.com/Arisotura/melonDS"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Arisotura/melonDS/releases/download/$version/melonDS_$version_win64.7z"
+    }
+}
