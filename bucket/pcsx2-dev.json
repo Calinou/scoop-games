@@ -1,0 +1,45 @@
+{
+    "homepage": "https://pcsx2.net/",
+    "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
+    "license": "LGPL-3.0-or-later",
+    "version": "1.5.0-3315",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3315-gf6600ec83&platform=windows-x86#/dl.7z",
+    "hash": "66d46158ec701439d52c59db4e754b5b6a15bc41f31fba08ed9bdf4f14deb84c",
+    "extract_dir": "pcsx2-v1.5.0-dev-3315-gf6600ec83-windows-x86",
+    "bin": "pcsx2.exe",
+    "persist": [
+        "bios",
+        "cheats",
+        "cheats_ws",
+        "docs",
+        "inis",
+        "Langs",
+        "logs",
+        "memcards",
+        "plugins",
+        "shaders",
+        "snaps",
+        "sstates",
+        "cheats_ws.zip"
+    ],
+    "shortcuts": [
+        [
+            "pcsx2.exe",
+            "PCSX2"
+        ]
+    ],
+    "checkver": {
+        "url": "https://buildbot.orphis.net/pcsx2/index.php",
+        "regex": "1.5.0-dev-(?<build>[\\d]+)-(?<garbage>.{10})",
+        "replace": "1.5.0-${build}"
+    },
+    "autoupdate": {
+        "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-$matchBuild-$matchGarbage&platform=windows-x86#/dl.7z",
+        "extract_dir": "pcsx2-v1.5.0-dev-$matchBuild-$matchGarbage-windows-x86"
+    },
+    "notes": [
+        "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
+        "Place the BIOS file in PCSX2's bios directory, you can see the path it is looking in on first setup.",
+        "Learn more at https://pcsx2.net/config-guide/official-english-pcsx2-configuration-guide.html#Bios"
+    ]
+}
