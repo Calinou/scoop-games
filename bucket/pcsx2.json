@@ -11,16 +11,13 @@
         "bios",
         "cheats",
         "cheats_ws",
-        "docs",
         "inis",
-        "Langs",
         "logs",
         "memcards",
-        "plugins",
-        "shaders",
+        "shaders\\GSdx_FX_Settings.ini",
         "snaps",
         "sstates",
-        "cheats_ws.zip"
+        "portable.ini"
     ],
     "shortcuts": [
         [
@@ -28,6 +25,12 @@
             "PCSX2"
         ]
     ],
+    "suggest": {
+        "Visual Studio redist 2015": [
+            "vcredist",
+            "vcredist2015"
+        ]
+    },
     "notes": [
         "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
         "Place the BIOS file in PCSX2's bios directory, you can see the path it is looking in on first setup.",
