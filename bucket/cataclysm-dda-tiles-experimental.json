@@ -1,16 +1,16 @@
 {
     "homepage": "https://cataclysmdda.org",
     "description": "Turn-based survival game set in a post-apocalyptic world (with graphical tiles, experimental build)",
-    "version": "9950",
+    "version": "9952",
     "license": "CC-BY-SA-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b9950/cataclysmdda-0.D-Windows_x64-Tiles-9950.zip",
-            "hash": "60475242a0411c452c86ad210b84e5d0eb83e814905c7fe1eeb9644419a7f3b5"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b9952/cataclysmdda-0.D-Windows_x64-Tiles-9952.zip",
+            "hash": "956c9964ca879d62278a26870fa7375a9305025139e9bf1acebf0ebbe28b298f"
         },
         "32bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b9950/cataclysmdda-0.D-Windows-Tiles-9950.zip",
-            "hash": "b112eba70b8ce8cd5ad3c508873f2c4d690db1c2e6b756eaf5ceae04fd4c3e63"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b9952/cataclysmdda-0.D-Windows-Tiles-9952.zip",
+            "hash": "8f505bf34de6f93f067589a904f19fa298eecaaf8be4e6cdc1d6e2bc42e5f46d"
         }
     },
     "shortcuts": [
