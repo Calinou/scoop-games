@@ -1,6 +1,6 @@
 {
     "homepage": "https://mgba.io/",
-    "description": "mgba",
+    "description": "A fast, accurate, and portable GBA emulator",
     "license": "MPL-2.0",
     "version": "0.8-b1",
     "architecture": {
