@@ -50,8 +50,8 @@
     ],
     "checkver": {
         "url": "https://mgba.io",
-        "regex": "(?<build>[\\d]+)-",
-        "replace": "0.7.3-${1}"
+        "regex": "Release:\\s+<[^>]+>(?<version>[\\d.]+)</a>[\\s\\S]+Version:\\s+<[^>]+>(?<build>[a-f\\d-]+)</a>",
+        "replace": "${1}-${2}"
     },
     "autoupdate": {
         "architecture": {
