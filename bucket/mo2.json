@@ -4,7 +4,7 @@
     "version": "2.2.2.1",
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/ModOrganizer2/modorganizer/releases/download/v2.2.2.1/Mod.Organizer-2.2.2.1.7z",
-    "hash": "sha256:65B254431AC5F3BA23251694D8F7B8910243A412EE9D8AEDE1C3259705565FAF",
+    "hash": "65b254431ac5f3ba23251694d8f7b8910243a412ee9d8aede1c3259705565faf",
     "bin": "ModOrganizer.exe",
     "shortcuts": [
         [
