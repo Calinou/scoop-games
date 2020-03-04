@@ -2,7 +2,7 @@
     "homepage": "http://openmw.org/",
     "description": "An open-source open-world RPG game engine that supports playing Morrowind. (nightly version)",
     "version": "bbca1f3d1",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe#/dl.7z",
