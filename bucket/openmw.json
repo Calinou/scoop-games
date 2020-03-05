@@ -16,12 +16,11 @@
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
     ],
-    "bin": ["openmw.exe", "openmw-cs.exe", "openmw-launcher.exe", "openmw-wizard.exe"],
+    "bin": ["openmw.exe", "openmw-cs.exe", "openmw-launcher.exe"],
     "shortcuts": [
         ["openmw.exe", "OpenMW"],
         ["openmw-cs.exe", "OpenMW Construction Set"],
-        ["openmw-launcher.exe", "OpenMW Launcher"],
-        ["openmw-wizard.exe", "OpenMW Wizard"]
+        ["openmw-launcher.exe", "OpenMW Launcher"]
     ],
     "checkver": {
         "github": "https://github.com/OpenMW/openmw"
