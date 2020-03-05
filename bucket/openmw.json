@@ -22,6 +22,7 @@
         ["openmw-cs.exe", "OpenMW Construction Set"],
         ["openmw-launcher.exe", "OpenMW Launcher"]
     ],
+    "notes": "Please run the OpenMW Launcher in the start menu to configure the game data path. Otherwise, OpenMW won't start correctly.",
     "checkver": {
         "url": "https://github.com/OpenMW/openmw/releases/latest",
         "regex": "\/releases\/tag\/openmw-(?:v|V)?([\\d.]+)"
