@@ -23,7 +23,8 @@
         ["openmw-launcher.exe", "OpenMW Launcher"]
     ],
     "checkver": {
-        "github": "https://github.com/OpenMW/openmw"
+        "url": "https://github.com/OpenMW/openmw/releases/latest",
+        "regex": "\/releases\/tag\/openmw-(?:v|V)?([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

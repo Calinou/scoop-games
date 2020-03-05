@@ -5,20 +5,12 @@
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe#/dl.7z",
-            "hash": "md5:5fb55ae356ed59c9afc9792d070cc9cb",
-            "checkver": {
-                "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe.md5",
-                "regex": "nightlies\/OpenMW-([a-z0-9]+)-win64"
-            }
+            "url": "http://www.lysator.liu.se/~ace/OpenMW/nightlies/OpenMW-bbca1f3d1-win64.exe#/dl.7z",
+            "hash": "md5:5fb55ae356ed59c9afc9792d070cc9cb"
         },
         "32bit": {
-            "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win32.exe#/dl.7z",
-            "hash": "md5:89dd37f46352043b591475ceccedbd4c",
-            "checkver": {
-                "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win32.exe.md5",
-                "regex": "nightlies\/OpenMW-([a-z0-9]+)-win32"
-            }
+            "url": "http://www.lysator.liu.se/~ace/OpenMW/nightlies/OpenMW-bbca1f3d1-win32.exe#/dl.7z",
+            "hash": "md5:89dd37f46352043b591475ceccedbd4c"
         }
     },
     "post_install": [
@@ -30,17 +22,21 @@
         ["openmw-cs.exe", "OpenMW Construction Set"],
         ["openmw-launcher.exe", "OpenMW Launcher"]
     ],
+    "checkver": {
+        "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe.md5",
+        "regex": "nightlies\/OpenMW-([a-z0-9]+)-win64"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe#/dl.7z",
+                "url": "http://www.lysator.liu.se/~ace/OpenMW/nightlies/OpenMW-$version-win64.exe#/dl.7z",
                 "hash": {
                     "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win64.exe.md5",
                     "find": "([A-Fa-f0-9]{32})"
                 }
             },
             "32bit": {
-                "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win32.exe#/dl.7z",
+                "url": "http://www.lysator.liu.se/~ace/OpenMW/nightlies/OpenMW-$version-win32.exe#/dl.7z",
                 "hash": {
                     "url": "http://www.lysator.liu.se/~ace/OpenMW/OpenMW-latest-win32.exe.md5",
                     "find": "([A-Fa-f0-9]{32})"
