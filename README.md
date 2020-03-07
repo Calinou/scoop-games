@@ -14,7 +14,9 @@ scoop bucket add games
 ```
 
 Once this is done, you can install any app from this bucket (check the list
-of files in this repository). For instance, use the following command:
+of files in the
+[`bucket/` directory](https://github.com/Calinou/scoop-games/tree/master/bucket)).
+For instance, use the following command:
 
 ```powershell
 # Don't include the .json file extension in the app name
