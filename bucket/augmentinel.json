@@ -15,5 +15,6 @@
             "Augmentinel.exe",
             "Augmentinel"
         ]
-    ]
+    ],
+    "notes": "If you get an error about missing XAudio DLLs, try installing the DirectX End-User Runtime: https://www.microsoft.com/en-us/download/confirmation.aspx?id=8109"
 }
