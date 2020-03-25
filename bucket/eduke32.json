@@ -29,7 +29,7 @@
     ],
     "persist": "data",
     "notes": [
-        "Place GRP files (game data) in:",
+        "Place GRP and RTS files (game data) in:",
         "",
         "    $persist_dir\\data"
     ],
