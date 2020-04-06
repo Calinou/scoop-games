@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.openttd.org/",
     "description": "Simulation game based upon Transport Tycoon Deluxe",
-    "version": "1.9.3",
+    "version": "1.10.0",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
