@@ -11,5 +11,6 @@
             "Zenith.exe",
             "Zenith"
         ]
-    ]
+    ],
+    "notes": "If you get an error on startup, try installing the OpenAL Runtime: http://www.openal.org/downloads/"
 }
