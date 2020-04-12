@@ -36,6 +36,11 @@
     "suggest": {
         "Mednaffe": "mednaffe"
     },
+    "notes": [
+        "ATTENTION: Mednafen requires BIOS/firmware files for Playstation 1, PC Engine, and PC FX emulation.",
+        "It is recommended to place these in $persist_dir\\firmware.",
+        "See https://mednafen.github.io/documentation/#Section_firmware_bios for more information."
+    ],
     "checkver": {
         "regex": "mednafen-(?<version>[\\d.]+)(?<dev>-UNSTABLE)?.tar.xz",
         "replace": "${1}"
