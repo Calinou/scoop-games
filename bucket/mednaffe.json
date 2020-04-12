@@ -1,0 +1,56 @@
+{
+    "homepage": "https://github.com/AmatCoder/mednaffe/",
+    "description": "Front-end for Mednafen",
+    "version": "0.8.8",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/AmatCoder/mednaffe/releases/download/0.8.8/mednaffe-0.8.8-win.zip",
+    "hash": "99ee8c8c439ada70eb8d457f5066e06c2e120c93df8fafe1252a65306bf3317e",
+    "bin": "mednaffe.exe",
+    "shortcuts": [
+        [
+            "mednaffe.exe",
+            "Mednaffe"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "$medinst = 0",
+            "if (Test-Path \"$scoopdir\\apps\\mednafen-dev\\current\\mednafen.exe\") {",
+            "   $medinst = 1",
+            "}",
+            "if (Test-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") {",
+            "   $medinst = 2",
+            "}",
+            "switch ( $medinst ) {",
+            "   0 { Write-Warning \"Mednaffe must be installed AFTER mednafen or mednafen-dev. Install either of them, delete $persist_dir, then reinstall mednaffe!\"",
+            "       Break",
+            "   }",
+            "   1 { if (!(Test-Path \"$persist_dir\\mednaffe.ini\")) {",
+            "       New-Item \"$dir\\mednaffe.ini\" | Out-Null",
+            "       $path = ((Resolve-Path \"$scoopdir\\apps\\mednafen-dev\\current\\mednafen.exe\") -Replace \"\\\\\", \"\\\\\")",
+            "       Add-Content \"$dir\\mednaffe.ini\" -Value \"[GUI]`nBin=$path\"",
+            "       }",
+            "   Break",
+            "   }",
+            "   2 { if (!(Test-Path \"$persist_dir\\mednaffe.ini\")) {",
+            "       New-Item \"$dir\\mednaffe.ini\" | Out-Null",
+            "       $path = ((Resolve-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") -Replace \"\\\\\", \"\\\\\")",
+            "       Add-Content \"$dir\\mednaffe.ini\" -Value \"[GUI]`nBin=$path\"",
+            "       }",
+            "   Break",
+            "   }",
+            "}"
+        ]
+    },
+    "persist": "mednaffe.ini",
+    "suggest": {
+        "Mednafen": [
+            "mednafen",
+            "mednafen-dev"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+                "url": "https://github.com/AmatCoder/mednaffe/releases/download/$version/mednaffe-$version-win.zip"
+        }
+}
