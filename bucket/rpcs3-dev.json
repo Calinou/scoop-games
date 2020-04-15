@@ -2,9 +2,9 @@
     "homepage": "https://rpcs3.net/",
     "description": "Open-source Sony PlayStation 3 emulator (development version)",
     "license": "GPL-2.0-only",
-    "version": "0.0.9-10212",
-    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-bc3b70c338005530ef0629e795a1dc3203965300/rpcs3-v0.0.9-10212-bc3b70c3_win64.7z",
-    "hash": "745fa2341ccd1f42a919cf967591e9eedb36bd22dd590c625533dea2908369ac",
+    "version": "0.0.9-10214",
+    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-20f53e65eb53248462bf0be17d90bf7e4b5a05b2/rpcs3-v0.0.9-10214-20f53e65_win64.7z",
+    "hash": "40fd1d121f3eddfe217bdc8359003a9ba6e810c856dd9741baab6fd2b8f74ba3",
     "bin": "rpcs3.exe",
     "depends": "vcredist2019",
     "persist": [
