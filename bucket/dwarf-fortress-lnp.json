@@ -1,10 +1,10 @@
 {
     "homepage": "http://dffd.bay12games.com/file.php?id=7622",
     "description": "Peridexis Errant's Lazy Newb Pack for Dwarf Fortress",
-    "version": "0.44.12-r08",
+    "version": "0.47.04-r04",
     "license": "Custom",
-    "url": "http://dffd.bay12games.com/download.php?id=7622&f=PeridexisErrant%27s+Starter+Pack+0.44.12-r08.zip#/dl.7z",
-    "hash": "433c56e25479c3be43dffe2952a9daafdda18fbd9b659fa6fc29c590655aa9ba",
+    "url": "http://dffd.bay12games.com/download.php?id=7622&f=PeridexisErrant%27s+Starter+Pack+0.47.04-r04.zip#/dl.7z",
+    "hash": "05ef208b594c0725666f14e9a053c0dea8b126340f8b28e333ab088052969fac",
     "bin": [
         [
             "Starter Pack Launcher (PyLNP).exe",
