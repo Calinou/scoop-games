@@ -4,7 +4,7 @@
     "version": "1.2.10",
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/Nexus-Mods/Vortex/releases/download/v1.2.10/vortex-setup-1.2.10.exe#/dl.7z",
-    "hash": "sha256:51a3bd071b3218d2cc7c2ff0a16262d46def5d254868b79a810d4fbb96f579e7",
+    "hash": "ce38d714ac0dda0fa4d7cf21df13678b3d6531c852d99e07f881507e5efe62df",
     "architecture": {
         "64bit": {
             "installer": {
