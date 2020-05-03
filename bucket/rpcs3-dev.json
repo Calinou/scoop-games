@@ -4,7 +4,7 @@
     "license": "GPL-2.0-only",
     "version": "0.0.9-10309",
     "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-2b75df22d92e386c55ca34fc08689a0125c17cec/rpcs3-v0.0.9-10309-2b75df22_win64.7z",
-    "hash": "498ebff14a2acdc381c49ca60a4004a783cbc1b4e2773f5d35ea9f1b05f02407",
+    "hash": "a5a7646617cdae4b32feb8f5d356ecc87f49b594eccc5e61eb217ee20760d6fe",
     "bin": "rpcs3.exe",
     "depends": "vcredist2019",
     "persist": [
