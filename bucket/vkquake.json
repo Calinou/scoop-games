@@ -15,6 +15,7 @@
             "extract_dir": "vkquake-1.04.1_win32"
         }
     },
+    "depends": "extras/vcredist2019",
     "shortcuts": [
         [
             "vkQuake.exe",
@@ -57,12 +58,6 @@
         }
     },
     "notes": [
-        "vkQuake requires the Visual C++ Redistributable for Visual Studio 2019:",
-        "",
-        "- 32 bit: https://go.microsoft.com/fwlink/?LinkId=746571",
-        "",
-        "- 64 bit: https://go.microsoft.com/fwlink/?LinkId=746572",
-        "",
         "Place game data files (such as pak0.pak and pak1.pak) in:",
         "",
         "- Quake:",
