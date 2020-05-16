@@ -15,7 +15,13 @@
             "extract_dir": "quakespasm-0.93.2_windows"
         }
     },
-    "bin": "quakespasm.exe",
+    "bin": [
+        [
+            "quakespasm.exe",
+            "quakespasm",
+            "-basedir $persist_dir"
+        ]
+    ],
     "shortcuts": [
         [
             "quakespasm.exe",
