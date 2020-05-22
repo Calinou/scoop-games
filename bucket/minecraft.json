@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "https://launchercontent.mojang.com/launcherPatchNotes.json",
-        "jsonPath": "$.entries[0].versionWindows"
+        "jsonpath": "$.entries[0].versionWindows"
     },
     "autoupdate": {
         "url": "https://launcher.mojang.com/download/Minecraft.exe"
