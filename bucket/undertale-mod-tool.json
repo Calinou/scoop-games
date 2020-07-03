@@ -19,6 +19,6 @@
         ["UndertaleModTool.exe", "Undertale Mod Tool"]
     ],
     "post_install": [
-        "Get-ChildItem $dir 'ExperimentalScripts\*.csx' | Copy-Item -Destination { "$dir\SampleScripts\exp_" + $_.Name } -Force"
+        "Get-ChildItem \"$dir/ExperimentalScripts/*.csx\" | Copy-Item -Destination { \"$dir/SampleScripts/exp_\" + $_.Name } -Force"
     ]
 }
