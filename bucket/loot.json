@@ -13,7 +13,7 @@
             "LOOT"
         ]
     ],
-    "suggests": {
+    "suggest": {
         "Visual C++ Redistributable 2019": "extras/vcredist2019"
     },
     "checkver": {
