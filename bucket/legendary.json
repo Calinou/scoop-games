@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/derrod/legendary",
-    "description": "Alternative game launcher for Epic Games store.",
+    "description": "Alternative command-line game downloader and launcher for Epic Games Store",
     "license": "GPL-3.0-or-later",
     "version": "0.0.19",
     "notes": "See https://github.com/derrod/legendary/blob/master/README.md for instructions about how to run the program.",
