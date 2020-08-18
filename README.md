@@ -4,6 +4,11 @@
 
 A [Scoop](https://scoop.sh/) bucket for open source/freeware games and game-related tools.
 
+## List of applications in this bucket
+
+See [this page](https://rasa.github.io/scoop-directory/by-score#Calinou_scoop-games)
+for a list of applications in this bucket with descriptions.
+
 ## Usage
 
 After installing [Scoop](https://scoop.sh/), enter the following line in a
