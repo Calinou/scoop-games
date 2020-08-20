@@ -2,15 +2,15 @@
     "homepage": "https://mgba.io/",
     "description": "A fast, accurate, and portable GBA emulator (development version)",
     "license": "MPL-2.0",
-    "version": "0.8.3-6453",
+    "version": "0.8.3-6461",
     "architecture": {
         "64bit": {
             "url": "https://s3.amazonaws.com/mgba/mGBA-build-latest-win64.7z",
-            "hash": "9298a686916c0d09f0a87faa2dd7941fc6524ca0658b8955360f3041a60553e2"
+            "hash": "935e059c7791fd07bbd122def204c3a97f2866c885151067b8ad2031f25e5d32"
         },
         "32bit": {
             "url": "https://s3.amazonaws.com/mgba/mGBA-build-latest-win32.7z",
-            "hash": "215133bc07972552d59eb1767b63f4204ea6b997a2b2d8623dddabaee0e2948b"
+            "hash": "d632924f2fec4ba6acabd2d251786d980aa4be2f0480991c1e0d685f30c41c20"
         }
     },
     "installer": {
