@@ -4,7 +4,7 @@
     "license": "GPL-3.0-or-later",
     "version": "0.9",
     "url": "https://github.com/Arisotura/melonDS/releases/download/0.9/melonDS_0.9_win64.7z",
-    "hash": "E4A13994308AC2A5D347CFC2021322352CC03213DA48B0EAD23214B521E2FBAD",
+    "hash": "e4a13994308ac2a5d347cfc2021322352cc03213da48b0ead23214b521e2fbad",
     "installer": {
         "script": [
             "$FILE = 'bios7.bin'",
