@@ -1,0 +1,34 @@
+﻿{
+    "version": "1.2.4.2",
+    "license": "Freeware",
+    "homepage": "https://www.supersmashflash.com/",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.supersmashflash.com/ssf2/downloads/3a41a266/SSF2BetaWindows.v.1.2.4.2.portable.zip",
+            "hash": "6a89e5d404d78f0b3103f4bca7307b37731f439fb3838c6f93212de221aaecc2",
+            "shortcuts": [
+                [
+                  "SSF2BetaWindows.v.1.2.4.2.portable\\SSF2.exe",
+                  "Super Smash Flash 2"
+                ]
+            ],
+            "bin": "SSF2BetaWindows.v.1.2.4.2.portable\\SSF2.exe"
+        },
+        "32bit": {
+            "url": "https://cdn.supersmashflash.com/ssf2/downloads/3a41a266/SSF2BetaWindows.32bit.v.1.2.4.2.portable.zip",
+            "hash": "bff5c9519b885f1677b56316ee12b9b47ce4dcf7384c379ae1b3b7a1dd7fc710",
+            "shortcuts": [
+                [
+                  "SSF2BetaWindows.32bit.v.1.2.4.2.portable\\SSF2.exe",
+                  "Super Smash Flash 2"
+                ]
+            ],
+            "bin": "SSF2BetaWindows.32bit.v.1.2.4.2.portable\\SSF2.exe"
+        }
+    },
+    "checkver": {
+        "url": "https://www.supersmashflash.com/play/ssf2/downloads/",
+        "regex": "SSF2 Beta \\(([\\d\\.]+) beta\\)"
+    },
+    "notes": "If you updated to a new version:\n1. Start the OLD version and EXPORT your data\n2. Start the NEW version and IMPORT your data\n3. Now it is safe to delete the old version through \"scoop cleanup ssf2\""
+}
