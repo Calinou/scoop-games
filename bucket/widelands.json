@@ -3,7 +3,7 @@
     "license": "GPL-2.0-only",
     "homepage": "https://www.widelands.org/",
     "description": "Build an ever growing settlement. Real-time strategy, single and multiplayer",
-    "innosetup": "true",
+    "innosetup": true,
     "architecture": {
         "64bit": {
             "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win64.exe",
