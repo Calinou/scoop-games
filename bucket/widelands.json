@@ -6,20 +6,12 @@
     "innosetup": "true",
     "architecture": {
         "64bit": {
-            "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win64.exe#dl.7z",
-            "hash": "md5:73e99c2daa373e8d78e5f87dbcc61b1c",
-            "pre_install": [
-                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
-            ]
+            "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win64.exe",
+            "hash": "md5:73e99c2daa373e8d78e5f87dbcc61b1c"
         },
         "32bit": {
-            "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win32.exe#dl.7z",
-            "hash": "md5:90367fcb9bca70a4fae0a7bf0c0021a8",
-            "pre_install": [
-                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
-            ]
+            "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win32.exe",
+            "hash": "md5:90367fcb9bca70a4fae0a7bf0c0021a8"
         }
     },
     "bin": "widelands.exe",
@@ -36,13 +28,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://launchpad.net/widelands/build$version/build$version/+download/widelands-build$version-win64.exe#dl.7z",
+                "url": "https://launchpad.net/widelands/build$version/build$version/+download/widelands-build$version-win64.exe",
                 "hash": {
                     "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win64.exe/+md5"
                 }
             },
             "32bit": {
-                "url": "https://launchpad.net/widelands/build$version/build$version/+download/widelands-build$version-win32.exe#dl.7z",
+                "url": "https://launchpad.net/widelands/build$version/build$version/+download/widelands-build$version-win32.exe",
                 "hash": {
                     "url": "https://launchpad.net/widelands/build21/build21/+download/widelands-build21-win32.exe/+md5"
                 }
