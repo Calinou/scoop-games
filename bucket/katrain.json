@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/sanderland/katrain",
-    "description": "A tool for analyzing and playing go with AI feedback from KataGo.",
+    "description": "A tool for analyzing and playing go with AI feedback from KataGo",
     "version": "1.7",
     "license": "MIT",
     "url": "https://github.com/sanderland/katrain/releases/download/1.7/KaTrain.zip",
