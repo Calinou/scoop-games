@@ -18,7 +18,7 @@
             "-q",
             "-dir $dir"
         ],
-        "keep": "true"
+        "keep": true
     },
     "bin": "TripleA.exe",
     "shortcuts": [
