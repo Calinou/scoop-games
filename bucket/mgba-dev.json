@@ -2,7 +2,7 @@
     "homepage": "https://mgba.io/",
     "description": "A fast, accurate, and portable GBA emulator (development version)",
     "license": "MPL-2.0",
-    "version": "6783",
+    "version": "6783-20210215",
     "architecture": {
         "64bit": {
             "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2021-02-15-win64-6783-232aab5a088543d11712fc9e18bfe56f616e1f73.7z",
@@ -50,15 +50,16 @@
     ],
     "checkver": {
         "url": "https://mgba.io/builds/1/",
-        "regex": "build-(?<year>20\\d{2})-(?<month>\\d{2})-(?<day>\\d{2})-win32-(?<version>[\\d]+)-(?<git>\\w{40})\\.7z"
+        "regex": "build-(?<year>20\\d{2})-(?<month>\\d{2})-(?<day>\\d{2})-win32-(?<ver>[\\d]+)-(?<git>\\w{40})\\.7z",
+        "replace": "$4-$1$2$3"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-$matchYear-$matchMonth-$matchDay-win64-$version-$matchGit.7z"
+                "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-$matchYear-$matchMonth-$matchDay-win64-$matchVer-$matchGit.7z"
             },
             "32bit": {
-                "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-$matchYear-$matchMonth-$matchDay-win32-$version-$matchGit.7z"
+                "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-$matchYear-$matchMonth-$matchDay-win32-$matchVer-$matchGit.7z"
             }
         }
     }
