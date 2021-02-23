@@ -30,8 +30,7 @@
     ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/gdkchan/ryujinx/branch/master",
-        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>.*?)\"",
-        "replace": "${2}"
+        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>.*?)\""
     },
     "autoupdate": {
         "architecture": {
@@ -41,7 +40,7 @@
         }
     },
     "notes": [
-        "ATTENTION: Ryujinx requires Ninetendo Switch firmware and a prod.keys file to function.",
+        "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
         "Learn more at https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide",
         "Be sure to disable auto-update in Ryujinx's settings!",
         "You must only do this once."
