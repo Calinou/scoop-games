@@ -11,7 +11,7 @@
             "Dwarf Fortress"
         ]
     ],
-    "bin":["Dwarf Fortress.exe"],
+    "bin":[["Dwarf Fortress.exe", "df"]],
     "checkver": {
         "url": "http://www.bay12games.com/dwarves",
         "re": "DWARF FORTRESS CLASSIC ([\\d\\.]+)"
