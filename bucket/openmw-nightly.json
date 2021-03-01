@@ -1,16 +1,16 @@
 {
     "homepage": "http://openmw.org/",
     "description": "An open-source open-world RPG game engine that supports playing Morrowind. (nightly version)",
-    "version": "20210226-28be5a25",
+    "version": "20210301-eb11e1fc",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/artifacts/28be5a25/download?job=Windows_Ninja_Engine_Release#/dl.7z",
-            "hash": "8241ce96d9d9632dea3a2584faa1717e419021fab01f9ff8a85d2c48f29a8f76"
+            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/artifacts/eb11e1fc/download?job=Windows_Ninja_Engine_Release#/dl.7z",
+            "hash": "14335467f1244a11efee976c620f0f81ae3306ed9ada02627e22dadeddff42f3"
         }
     },
-    "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Release_master*.zip\" \"$dir\"",
-    "post_install": "Remove-Item \"$dir\\MSVC2019_64_Ninja\", \"$dir\\chocolatey.log\", \"$dir\\OpenMW_MSVC2019_64_Release_master*.zip\" -Force -Recurse",
+    "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Engine_Release_master*.zip\" \"$dir\"",
+    "post_install": "Remove-Item \"$dir\\MSVC2019_64_Ninja\", \"$dir\\chocolatey.log\", \"$dir\\OpenMW_MSVC2019_64_Engine_Release_master*.zip\" -Force -Recurse",
     "bin": [
         "openmw.exe",
         "openmw-launcher.exe",
