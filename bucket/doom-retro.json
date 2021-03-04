@@ -1,0 +1,48 @@
+{
+    "homepage": "https://www.doomretro.com/",
+    "description": "A classic redefined DOOM source port",
+    "license": "GPL-3.0-or-later",
+    "version": "4.0.4",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bradharding/doomretro/releases/download/v4.0.4/doomretro-4.0.4-win64.zip",
+            "hash": "61b3c25b9f32b78b61ebf5f2912e7cfc098b5eb985d88c4e8304f24c52367600"
+        },
+        "32bit": {
+            "url": "https://github.com/bradharding/doomretro/releases/download/v4.0.4/doomretro-4.0.4-win32.zip",
+            "hash": "62b75d8eaaa4f0ade1169487ba55cd2eb9b78c32297919e40c884e1b4c9f3d6f"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\\savegames\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\screenshots\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\doomretro.cfg\" -ItemType File | Out-Null",
+        "}"
+    ],
+    "bin": "doomretro.exe",
+    "shortcuts": [
+        [
+            "doomretro.exe",
+            "DOOM Retro"
+        ]
+    ],
+    "persist": [
+        "savegames",
+        "screenshots",
+        "doomretro.cfg"
+    ],
+    "checkver": {
+        "github": "https://github.com/bradharding/doomretro/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/bradharding/doomretro/releases/download/v$version/doomretro-$version-win64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/bradharding/doomretro/releases/download/v$version/doomretro-$version-win32.zip"
+            }
+        }
+    }
+}
