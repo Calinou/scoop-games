@@ -1,17 +1,17 @@
 {
     "homepage": "https://mednafen.github.io/",
     "description": "Multi-system emulator",
-    "version": "1.24.1",
+    "version": "1.26.1",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mednafen.github.io/releases/files/mednafen-1.24.1-win64.zip",
-            "hash": "ad3a7906521f0ce45737c2f0f7ea1117799548e60d10a746ac74ddd26d944cbb",
+            "url": "https://mednafen.github.io/releases/files/mednafen-1.26.1-win64.zip",
+            "hash": "1d776e9355208c2fc81bea5ce036e955c5aea02f1176dc311df0a74ec17e6b48",
             "bin": "mednafen.exe"
         },
         "32bit": {
-            "url": "https://mednafen.github.io/releases/files/mednafen-1.24.1-win32.zip",
-            "hash": "d26456eb711feac679e424968edee579b69c38ce1972a93bed10355b04ff21cd",
+            "url": "https://mednafen.github.io/releases/files/mednafen-1.26.1-win32.zip",
+            "hash": "7ba91c81e7c40179adbd066fb390d8d696fdf3f9222c87090576f62359c9e7fb",
             "bin": "mednafen.exe"
         }
     },
@@ -33,11 +33,6 @@
         "snaps",
         "mednafen.cfg"
     ],
-    "notes": [
-        "ATTENTION: Mednafen requires BIOS/firmware files for Playstation 1, PC Engine, and PC FX emulation.",
-        "It is recommended to place these in $persist_dir\\firmware.",
-        "See https://mednafen.github.io/documentation/#Section_firmware_bios for more information."
-    ],
     "suggest": {
         "Mednaffe": "mednaffe"
     },
@@ -54,5 +49,10 @@
                 "url": "https://mednafen.github.io/releases/files/mednafen-$matchVersion-win32.zip"
             }
         }
-    }
+    },
+    "notes": [
+        "ATTENTION: Mednafen requires BIOS/firmware files for Playstation 1, PC Engine, and PC FX emulation.",
+        "It is recommended to place these in $persist_dir\\firmware.",
+        "See https://mednafen.github.io/documentation/#Section_firmware_bios for more information."
+    ]
 }
