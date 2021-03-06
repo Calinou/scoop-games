@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/AmatCoder/mednaffe/",
     "description": "Front-end for Mednafen",
-    "version": "0.8.8",
+    "version": "0.9.1",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/AmatCoder/mednaffe/releases/download/0.8.8/mednaffe-0.8.8-win.zip",
-    "hash": "99ee8c8c439ada70eb8d457f5066e06c2e120c93df8fafe1252a65306bf3317e",
+    "url": "https://github.com/AmatCoder/mednaffe/releases/download/0.9.1/mednaffe-0.9.1-win.zip",
+    "hash": "a19860a17257619315c286c64ae9131b8cd666472bc753dd8cb9a0137c23d895",
     "bin": "mednaffe.exe",
     "shortcuts": [
         [
@@ -18,39 +18,36 @@
             "if (Test-Path \"$scoopdir\\apps\\mednafen-dev\\current\\mednafen.exe\") {",
             "   $medinst = 1",
             "}",
-            "if (Test-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") {",
+            "elseif (Test-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") {",
             "   $medinst = 2",
             "}",
+            "if ((Test-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") -and (Test-Path \"$scoopdir\\apps\\mednafen-dev\\current\\mednafen.exe\")) {",
+            "   Write-Host -ForegroundColor Yellow \"Mednafen and Mednafen-dev were found on this system.\"",
+            "   Write-Host -ForegroundColor Yellow \"Choose one to use mednaffe with, 1 (stable) or 2 (dev)\"",
+            "   $medinst = Read-Host -Prompt \"[1 / 2]\"",
+            "}",
             "switch ( $medinst ) {",
-            "   0 { Write-Warning \"Mednaffe must be installed AFTER mednafen or mednafen-dev. Install either of them, delete $persist_dir, then reinstall mednaffe!\"",
-            "       Break",
+            "   0 { Write-Warning \"Mednaffe must be installed AFTER mednafen or mednafen-dev. Install either of them, then install mednaffe!\"",
+            "       exit 1",
             "   }",
-            "   1 { if (!(Test-Path \"$persist_dir\\mednaffe.ini\")) {",
-            "       New-Item \"$dir\\mednaffe.ini\" | Out-Null",
-            "       $path = ((Resolve-Path \"$scoopdir\\apps\\mednafen-dev\\current\\mednafen.exe\") -Replace \"\\\\\", \"\\\\\")",
-            "       Add-Content \"$dir\\mednaffe.ini\" -Value \"[GUI]`nBin=$path\"",
+            "   1 { if (!(Test-Path \"$persist_dir\\mednafen.cfg\")) {",
+            "       New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
+            "       sudo New-Item -ItemType HardLink -Path \"$persist_dir\\mednafen.cfg\" -Target \"$scoopdir\\persist\\mednafen-dev\\mednafen.cfg\" | Out-Null",
             "       }",
             "   Break",
             "   }",
-            "   2 { if (!(Test-Path \"$persist_dir\\mednaffe.ini\")) {",
-            "       New-Item \"$dir\\mednaffe.ini\" | Out-Null",
-            "       $path = ((Resolve-Path \"$scoopdir\\apps\\mednafen\\current\\mednafen.exe\") -Replace \"\\\\\", \"\\\\\")",
-            "       Add-Content \"$dir\\mednaffe.ini\" -Value \"[GUI]`nBin=$path\"",
+            "   2 { if (!(Test-Path \"$persist_dir\\mednafen.cfg\")) {",
+            "       New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
+            "       sudo New-Item -ItemType HardLink -Path \"$persist_dir\\mednafen.cfg\" -Target \"$scoopdir\\persist\\mednafen\\mednafen.cfg\" | Out-Null",
             "       }",
             "   Break",
             "   }",
             "}"
         ]
     },
-    "persist": "mednaffe.ini",
-    "suggest": {
-        "Mednafen": [
-            "mednafen",
-            "mednafen-dev"
-        ]
-    },
+    "persist": "mednafen.cfg",
     "checkver": "github",
     "autoupdate": {
-                "url": "https://github.com/AmatCoder/mednaffe/releases/download/$version/mednaffe-$version-win.zip"
-        }
+        "url": "https://github.com/AmatCoder/mednaffe/releases/download/$version/mednaffe-$version-win.zip"
+    }
 }
