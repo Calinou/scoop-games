@@ -22,6 +22,7 @@
         "if ($medinst -eq 0) {",
         "   Write-Error -Message \"Mednaffe must be installed AFTER mednafen or mednafen-dev. Install either of them, then install mednaffe!\" -Category NotInstalled",
         "   scoop uninstall mednaffe",
+        "   exit 1",
         "}"
     ],
     "bin": "mednaffe.exe",
