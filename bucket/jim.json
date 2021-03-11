@@ -10,5 +10,6 @@
             "item_manager.exe",
             "Jengerer's Item Manager"
         ]
-    ]
+    ],
+    "depends": "extras/vcredist2010"
 }
