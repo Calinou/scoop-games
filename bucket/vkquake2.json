@@ -18,8 +18,7 @@
     "bin": [
         [
             "Quake2.exe",
-            "vkQuake2",
-            "-basedir $persist_dir"
+            "vkQuake2"
         ]
     ],
     "shortcuts": [
