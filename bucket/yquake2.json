@@ -4,7 +4,7 @@
     "version": "7.45a",
     "license": "GPL-2.0-or-later",
     "url": "https://deponie.yamagi.org/quake2/windows/quake2-7.45a.zip",
-    "hash": "F536888BB408EE7340B511ADCFA769EF023990B9CCF93CBAC51BA2198D119D43",
+    "hash": "f536888bb408ee7340b511adcfa769ef023990b9ccf93cbac51ba2198d119d43",
     "extract_dir": "quake2-7.45a",
     "bin": [
         "yquake2.exe",
