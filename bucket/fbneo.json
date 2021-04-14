@@ -18,8 +18,8 @@
         ]
     ],
     "checkver": "github",
-    "autoupdate": {	
-        "url": "https://github.com/finalburnneo/FBNeo/releases/download/$version/fbneo.zip"	
+    "autoupdate": {
+        "url": "https://github.com/finalburnneo/FBNeo/releases/download/$version/fbneo.zip"
     },
     "notes": [
         "",
@@ -28,7 +28,7 @@
         "Either use a wrapper like dgVoodoo 2 or change the renderer to use DirectX 9 by going to Video > Select blitter.",
         ""
     ],
-    "suggest": { 
+    "suggest": {
         "dgVoodoo2": "dgvoodoo2"
     }
 }
