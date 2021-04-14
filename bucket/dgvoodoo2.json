@@ -6,8 +6,8 @@
     "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v2.74/dgVoodoo2_74.zip",
     "hash": "c309fc13d13b85aa24a137015682d746076077feb3aea9568811f9fcbdd4b08d",
     "checkver": "github",
-    "autoupdate": {	
-		"url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v$version/dgVoodoo$underscoreVersion.zip"	
+    "autoupdate": {
+        "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v$version/dgVoodoo$underscoreVersion.zip"	
     },
     "notes": [
         "",
