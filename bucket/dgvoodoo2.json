@@ -13,13 +13,13 @@
         "",
         "An excellent guide for using the software can be found here: https://www.pcgamingwiki.com/wiki/DgVoodoo_2",
         "",
-        "Basically you take the DLL for whatever API you need to convert and copy it to the directory of the application you want to run.",
+        "Basically you take the DLLs for whatever API you need to convert and copy them to the directory of the application you want to run.",
         "",
         "Then if you want to customize any settings, copy dgVoodooCpl.exe and dgVoodoo.conf to the app directory as well.",
         "",
         "dgVoodooCpl.exe gives you a GUI to configure your settings, while dgVoodoo.conf is edited with a text editor.",
         "",
-        "Some advanced features are not available through the dgVoodooCpl program, but can be set manually in the dgVoodoo.conf file.",
+        "Some advanced features are not available through the dgVoodooCpl app, but can be set manually in the dgVoodoo.conf file.",
         ""
     ]
 }
