@@ -1,6 +1,6 @@
 {
 	"homepage": "https://github.com/dege-diosg/dgVoodoo2",
-	"description": "Glide/DirectX implementation on D3D11/12. Play your old Glide and DirectX games even on the latest, modern version of Windows.",
+	"description": "Glide/DirectX implementation on D3D11/12. Play your old Glide and DirectX games even on the latest, modern versions of Windows.",
 	"version": "2.74",
 	"license": "http://dege.freeweb.hu/dgVoodoo2/ReadmeGeneral/#redistributionrights",
     "url": "https://github.com/dege-diosg/dgVoodoo2/releases/download/v2.74/dgVoodoo2_74.zip",
