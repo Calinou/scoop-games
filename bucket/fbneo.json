@@ -23,12 +23,9 @@
     },
     "notes": [
         "",
-        "Windows 10 users will get an error message upon startup because the default renderer is using DirectX 7.",
+        "Some Windows 10 users will get an error message when they first startup the emulator because the default renderer is using Direct3D 7.",
         "",
-        "Either use a wrapper like dgVoodoo 2 or change the renderer to use DirectX 9 by going to Video > Select blitter.",
+        "To change the renderer to use DirectX 9 or DirectDraw 7 instead, go to Video > Select blitter.",
         ""
-    ],
-    "suggest": {
-        "dgVoodoo2": "dgvoodoo2"
-    }
+    ]
 }
