@@ -1,34 +1,34 @@
 {
-	"homepage": "https://github.com/finalburnneo/FBNeo",
-	"description": "Emulator for arcade games & select consoles.",
-	"version": "1.0.0.0",
-	"license": "https://github.com/finalburnneo/FBNeo/blob/master/src/license.txt",
+    "homepage": "https://github.com/finalburnneo/FBNeo",
+    "description": "Emulator for arcade games & select consoles.",
+    "version": "1.0.0.0",
+    "license": "https://github.com/finalburnneo/FBNeo/blob/master/src/license.txt",
     "url": "https://github.com/finalburnneo/FBNeo/releases/download/v1.0.0.0/fbneo.zip",
     "hash": "c73ec1cdd38b623fee000b8bcb36a6f731e38dd80f824f2ee7bd1f94c6448118",
-	"bin": [
-		[
-			"fbneo.exe",
-			"FinalBurn Neo"
-		]
-	],
-	"shortcuts": [
-		[
-			"fbneo.exe",
-       		"FinalBurn Neo"
-       	]
+    "bin": [
+        [
+            "fbneo.exe",
+            "FinalBurn Neo"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "fbneo.exe",
+            "FinalBurn Neo"
+        ]
     ],
     "checkver": "github",
     "autoupdate": {	
-		"url": "https://github.com/finalburnneo/FBNeo/releases/download/$version/fbneo.zip"	
-	},
-	"notes": [
-		"",
-		"Windows 10 users will get an error message upon startup because the default renderer is using DirectX 7.",
-		"",
-		"Either use a wrapper like dgVoodoo 2 or change the renderer to use DirectX 9 by going to Video > Select blitter.",
-		""
+        "url": "https://github.com/finalburnneo/FBNeo/releases/download/$version/fbneo.zip"	
+    },
+    "notes": [
+        "",
+        "Windows 10 users will get an error message upon startup because the default renderer is using DirectX 7.",
+        "",
+        "Either use a wrapper like dgVoodoo 2 or change the renderer to use DirectX 9 by going to Video > Select blitter.",
+        ""
     ],
-	"suggest": { 
-		"dgVoodoo2": "dgvoodoo2"
-	}
+    "suggest": { 
+        "dgVoodoo2": "dgvoodoo2"
+    }
 }
