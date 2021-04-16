@@ -5,12 +5,7 @@
     "license": "https://github.com/finalburnneo/FBNeo/blob/master/src/license.txt",
     "url": "https://github.com/finalburnneo/FBNeo/releases/download/v1.0.0.0/fbneo.zip",
     "hash": "c73ec1cdd38b623fee000b8bcb36a6f731e38dd80f824f2ee7bd1f94c6448118",
-    "bin": [
-        [
-            "fbneo.exe",
-            "FinalBurn Neo"
-        ]
-    ],
+    "bin": "fbneo.exe",
     "shortcuts": [
         [
             "fbneo.exe",
