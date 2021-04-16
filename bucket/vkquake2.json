@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/kondrak/vkQuake2",
-    "description": "Quake II source port based on v3.21 with Vulkan support.",
+    "description": "Quake II source port based on v3.21 with Vulkan support",
     "version": "1.5.7",
     "license": "GPL-2.0-or-later",
     "architecture": {
