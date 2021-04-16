@@ -15,12 +15,6 @@
             "extract_dir": "vkquake2-1.5.7_win32"
         }
     },
-    "bin": [
-        [
-            "Quake2.exe",
-            "vkQuake2"
-        ]
-    ],
     "shortcuts": [
         [
             "Quake2.exe",
