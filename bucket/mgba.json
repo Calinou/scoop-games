@@ -2,17 +2,17 @@
     "homepage": "https://mgba.io/",
     "description": "A fast, accurate, and portable GBA emulator",
     "license": "MPL-2.0",
-    "version": "0.8.4",
+    "version": "0.9.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.4/mGBA-0.8.4-win64.7z",
-            "hash": "777f8fe2802826fb7a16256e44295dbe878a99d9cc46d6478a1eb5d806dba6a5",
-            "extract_dir": "mGBA-0.8.4-win64"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.0/mGBA-0.9.0-win64.7z",
+            "hash": "8de5c72cae08e9dd2d7eb30df21ecc6701a0d89715bd1396df9a76af2d06c506",
+            "extract_dir": "mGBA-0.9.0-win64"
         },
         "32bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.4/mGBA-0.8.4-win32.7z",
-            "hash": "ddd7b233cdf38c9ebcae89f4df00895a1aa7baaef42f828369e0d4ae5876c673",
-            "extract_dir": "mGBA-0.8.4-win32"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.0/mGBA-0.9.0-win32.7z",
+            "hash": "61e8cd2744ed336c3e9760e380fc532688376a0f852130fe6b8a414ecb4aef14",
+            "extract_dir": "mGBA-0.9.0-win32"
         }
     },
     "installer": {
