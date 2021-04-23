@@ -1,0 +1,15 @@
+{
+    "version": "0.0.6",
+    "description": "A commandline Minecraft server manager",
+    "homepage": "https://github.com/CrazyWillBear/MinecraftServerManager",
+    "license": "MIT",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://github.com/CrazyWillBear/MinecraftServerManager/releases/download/v0.0.6-alpha/v0.0.6-alpha.zip#/mcservman.zip",
+    "hash": "ddd3bba7ca8861abccefed9778cfb9c6d850a753c699851c225c58ecbb52b58e",
+    "bin": [ [ "MCServMan.exe", "mcservman" ] ],
+}
