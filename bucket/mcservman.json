@@ -7,6 +7,5 @@
         "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
     },
     "url": "https://github.com/CrazyWillBear/MinecraftServerManager/releases/download/v0.0.6-alpha/v0.0.6-alpha.zip#/mcservman.zip",
-    "hash": "ddd3bba7ca8861abccefed9778cfb9c6d850a753c699851c225c58ecbb52b58e",
     "bin": "MCServMan.exe"
 }
