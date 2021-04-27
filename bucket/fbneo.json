@@ -22,5 +22,15 @@
         "",
         "To change the renderer to use DirectX 9 or DirectDraw 7 instead, go to Video > Select blitter.",
         ""
+    ],
+    "persist": [
+        "avi",
+        "config",
+        "neocdiso",
+        "recordings",
+        "roms",
+        "savestates",
+        "screenshots",
+        "support"
     ]
 }
