@@ -1,10 +1,11 @@
 {
     "homepage": "https://github.com/finalburnneo/FBNeo",
     "description": "Emulator for arcade games and select consoles",
-    "version": "1.0.0.0",
+    "version": "1.0.0.2",
     "license": "https://github.com/finalburnneo/FBNeo/blob/master/src/license.txt",
-    "url": "https://github.com/finalburnneo/FBNeo/releases/download/v1.0.0.0/fbneo.zip",
-    "hash": "c73ec1cdd38b623fee000b8bcb36a6f731e38dd80f824f2ee7bd1f94c6448118",
+    "url": "https://github.com/finalburnneo/FBNeo/releases/download/v1.0.0.2/fbneo.zip",
+    "hash": "9d09d210b007745c91143df61da46190d60a344b192ad79e3b6bc1f1140e0ec1",
+    "extract_dir": "fbneo",
     "bin": "fbneo.exe",
     "shortcuts": [
         [
