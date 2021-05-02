@@ -1,5 +1,6 @@
 {
     "homepage": "http://www.mameui.info/",
+    "description": "GUI frontend for MAME, the multi-purpose emulation framework",
     "version": "nightly",
     "license": "GPL-2.0-or-later",
     "architecture": {
@@ -15,6 +16,16 @@
             ]
         }
     },
+    "persist": [
+        "cfg",
+        "diff",
+        "ini",
+        "inp",
+        "memcard",
+        "nvram",
+        "snap",
+        "sta"
+    ],
     "checkver": {
         "regex": "MAMEUI v\\.([\\d]+) Download",
         "replace": "0.${1}"
