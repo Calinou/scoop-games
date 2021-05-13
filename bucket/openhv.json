@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "OpenHV.exe",
-            "Hard Vacuum"
+            "Hard Vacuum (OpenHV)"
         ]
     ],
     "checkver": {
