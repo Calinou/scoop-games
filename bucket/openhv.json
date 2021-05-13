@@ -3,7 +3,6 @@
     "description": "Open Hard Vacuum. 90s Pixelart Science-Fiction Real-time strategy game with multiplayer support, competent skirmish AI and an integrated map editor",
     "homepage": "https://openhv.itch.io/openhv",
     "license": "GPL-3.0,...",
-    "persist": "mods",
     "architecture": {
         "64bit": {
             "url": "https://github.com/OpenHV/OpenHV/releases/download/20210321/OpenHV-20210321-x64-winportable.zip",
@@ -18,7 +17,7 @@
     "shortcuts": [
         [
             "OpenHV.exe",
-            "Launch OpenHV"
+            "Hard Vacuum"
         ]
     ],
     "checkver": {
