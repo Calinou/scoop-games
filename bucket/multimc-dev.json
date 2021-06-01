@@ -1,10 +1,10 @@
 {
-    "version": "1481",
+    "version": "2085",
     "description": "Launcher for Minecraft that allows for multiple, cleanly separated instances of Minecraft.",
     "homepage": "https://multimc.org/",
     "license": "Apache-2.0",
-    "url": "https://teamcity.multimc.org/app/rest/builds/number:1481/artifacts/content/package.tar.gz?guest=1",
-    "hash": "524542e2abb9e1648590184c970fbb0327b43f82f3ba90196dad64789ebd5264",
+    "url": "https://teamcity.multimc.org/app/rest/builds/number:2085/artifacts/content/package.tar.gz?guest=1",
+    "hash": "9b951529d768f26e0f64fe8b5732a0a95897e6dbe38a7b8ce5aca8e3b19f489f",
     "extract_dir": "MultiMC",
     "pre_install": [
         "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",

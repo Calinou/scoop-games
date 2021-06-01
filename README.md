@@ -28,6 +28,17 @@ For instance, use the following command:
 scoop install ericw-tools
 ```
 
+## Updating applications in this bucket
+
+For manifests that contain an `autoupdate` section, there's a bot run by
+@r15ch13 that runs every day and commits updated manifests to the repository.
+No need to open a pull request to update those manifests.
+
+For manifests that don't contain an `autoupdate` section, feel free to open a
+pull request to update them to the latest version. You can also
+[add an `autoupdate` section to the manifest](https://github.com/lukesampson/scoop/wiki/App-Manifest-Autoupdate)
+to ensure the application always remains up-to-date in the future.
+
 ## License
 
 Copyright © 2018-2020 Hugo Locurcio and contributors
