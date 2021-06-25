@@ -5,7 +5,6 @@
   "hash": "60c4f12c86f24814417310b7e55d85b488fcf9e7d97fce9779aec49bf05ca8b7",
   "url": "https://downloads.ttoffline.com/launcher/ttoff-setup-win.exe#dl.7z",
   "license": "Proprietary",
-  "notes": "This is only the launcher, an account is required to play.",
   "pre_install": ["Remove-Item $dir -Recurse -Force  -Include * -Exclude 'Toontown Offline.exe'", "Rename-Item -Path $dir/'Toontown Offline.exe' -NewName $dir/ToontownOffline.exe"],
   "bin": "ToontownOffline.exe",
   "shortcuts": [
