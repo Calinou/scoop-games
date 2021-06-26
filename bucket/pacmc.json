@@ -1,7 +1,7 @@
 {
     "version": "0.1.2",
     "description": "An easy to use package manager for Fabric Minecraft mods.",
-    "license": "GPLv3 or later",
+    "license": "GPL-3.0-or-later",
     "url": "https://github.com/bluefireoly/pacmc/releases/download/0.1.2/pacmc-0.1.2.zip",
     "extract_dir": "pacmc-0.1.2",
     "bin": "bin/pacmc.bat",
