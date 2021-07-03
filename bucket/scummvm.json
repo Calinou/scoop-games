@@ -1,0 +1,47 @@
+{
+    "version": "v2.1.1",
+    "description": "ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files. The clever part about this: ScummVM just replaces the executables shipped with the games, allowing you to play them on systems for which they were never designed!",
+    "homepage": "https://www.scummvm.org/",
+    "license": "GPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.scummvm.org/frs/scummvm/2.1.1/scummvm-2.1.1a-win32-x86_64.zip",
+            "hash": "562e9bd4e750dc9b8be9d988ac204f1a4e11c1c2b6c733588a558f4476be0691",
+            "extract_dir": "scummvm-2.1.1a-win32-x86_64"
+        },
+        "32bit": {
+            "url": "https://www.scummvm.org/frs/scummvm/2.1.1/scummvm-2.1.1a-win32.zip",
+            "hash": "5f3cf35b749466b6c2c337c7732dfbe3b918531bbc44b3f8318df97547f53196",
+            "extract_dir": "scummvm-2.1.1a-win32"
+        }
+    },
+    "bin": "scummvm.exe",
+    "shortcuts": [
+        [
+            "scummvm.exe",
+            "ScummVM"
+        ],
+        [
+            "README.html",
+            "README"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/scummvm/scummvm"
+    },
+    "autoupdate": {
+    "architecture": {
+        "64bit": {
+            "url": "https://www.scummvm.org/frs/scummvm/$version/scummvm-$version-win32-x86_64.zip",
+            "extract_dir": "scummvm-$version-win32-x86_64"
+        },
+        "32bit": {
+            "url": "https://www.scummvm.org/frs/scummvm/$version/scummvm-$version-win32.zip",
+            "extract_dir": "scummvm-$version-win32"
+        }
+    },
+    "hash": {
+        "url": "$url.sha256"
+    }
+}
+}
