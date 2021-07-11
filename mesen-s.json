@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.mesen.ca",
-    "description": "A high-accuracy NES and Famicom emulator and NSF player.",
+    "description": "A high-accuracy NES and Famicom emulator and NSF player",
     "version": "0.4.0",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "url": "https://github.com/SourMesen/Mesen-S/releases/download/0.4.0/Mesen-S.0.4.0.zip",
-    "hash": "CE4EE543DD3AAA4A10E8597D5AA4735FBE9252C8D679E5772DBEE827CFAA2D96",
+    "hash": "ce4ee543dd3aaa4a10e8597d5aa4735fbe9252c8d679e5772dbee827cfaa2d96",
     "pre_install": [
         "if(!(Test-Path(\"$persist_dir\\settings.xml\"))) { New-Item \"$dir\\settings.xml\" | Out-Null }",
         "if(!(Test-Path(\"$persist_dir\\MesenDB.txt\"))) { New-Item \"$dir\\MesenDB.txt\" | Out-Null }"
