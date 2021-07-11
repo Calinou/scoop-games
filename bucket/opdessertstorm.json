@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "description": "The best Toontown experience, brought to you by people who love and care for the game.",
+    "description": "Third-party private server for the massively multiplayer online game Toontown",
     "homepage": "https://opdessertstorm.com/",
     "hash": "9ebe3befca55c29e68cdf95f369e31ef4353d737d3483b3510c04f6685cd7995",
     "url": "https://github.com/ODSOperations/releases/raw/master/ods_setup.exe#dl.7z",
