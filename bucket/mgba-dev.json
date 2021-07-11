@@ -15,7 +15,9 @@
     },
     "installer": {
         "script": [
-            "Copy-item -Path \"$dir\\$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\" -Recurse",
+            "Move-Item -Path \"$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\"",
+            "Set-Location -Path $dir", //This is a little hacky but not much we can do
+            "Remove-Item -Path $(Get-ChildItem -Path $dir -Name -Include mGBA-build*)", //This is a little hacky but not much we can do
             "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
             "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
             "}",
