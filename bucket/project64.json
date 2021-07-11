@@ -1,5 +1,6 @@
 {
     "homepage": "https://www.pj64-emu.com/",
+    "description": "Nintendo 64 emulator",
     "version": "3.0.1",
     "license": "GPL-2.0-only",
     "url": "https://www.pj64-emu.com/file/setup-project64-3-0-0-5632-f83bee9",
