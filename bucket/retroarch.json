@@ -1,0 +1,57 @@
+{
+    "homepage": "https://www.retroarch.com/",
+    "version": "1.9.5",
+    "license": "GPL-3.0-only",
+    "description": "Frontend for emulators, game engines and media players.",
+    "architecture": {
+        "64bit": {
+            "url": "https://buildbot.libretro.com/stable/1.9.5/windows/x86_64/RetroArch.7z",
+            "hash": "f8c3c6e15559af9dae7ae575554298ad3fd5de2e7245ba9845e9d297f02d454b"
+        },
+        "32bit": {
+            "url": "https://buildbot.libretro.com/stable/1.9.5/windows/x86/RetroArch.7z",
+            "hash": "07f63c669f064de5be3a0bda5e1bf17a3e2f2e54ac6bccd14fd2961461353983"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\retroarch.cfg\")) {",
+        "    New-Item \"$dir\\retroarch.cfg\" -Type File | Out-Null",
+        "}"
+    ],
+    "bin": "retroarch.exe",
+    "shortcuts": [
+        [
+            "retroarch.exe",
+            "RetroArch"
+        ]
+    ],
+    "persist": [
+        "assets\\wallpapers",
+        "cores",
+        "cheats",
+        "overlays",
+        "playlists",
+        "records",
+        "recordings",
+        "saves",
+        "screenshots",
+        "states",
+        "system",
+        "thumbnails",
+        "retroarch.cfg"
+    ],
+    "checkver": {
+        "url": "https://www.retroarch.com/?page=platforms",
+        "regex": "The current stable version is: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://buildbot.libretro.com/stable/$version/windows/x86_64/RetroArch.7z"
+            },
+            "32bit": {
+                "url": "https://buildbot.libretro.com/stable/$version/windows/x86/RetroArch.7z"
+            }
+        }
+    }
+}
