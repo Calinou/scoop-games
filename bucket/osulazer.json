@@ -1,0 +1,25 @@
+{
+    "version": "2021.707.0-lazer",
+    "description": "A free-to-win rhythm game. Rhythm is just a click away!",
+    "homepage": "https://osu.ppy.sh/",
+    "hash": "dff267e5edf8261549bdbd486dacf0865951e50e10a9200e22db857b8f6f1f7f",
+    "url": "https://github.com/ppy/osu/releases/download/2021.707.0-lazer/osulazer-2021.707.0-full.nupkg#dl.7z",
+    "license": "MIT",
+    "extract_dir": "lib\net45",
+    "pre_install": [
+        "Rename-Item -Path $dir/osu!.exe -NewName $dir/osulazer.exe"
+    ],
+    "bin": "osulazer.exe",
+    "shortcuts": [
+        [
+            "osulazer.exe",
+            "osu! Lazer"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ppy/osu"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ppy/osu/releases/download/$version/osulazer-$version-full.nupkg#dl.7z"
+    }
+}
