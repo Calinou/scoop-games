@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/loganmc10/m64p/",
+    "description": "mupen64plus + paraLLEl-RDP + a GUI",
+    "license": "GPL-3.0-only",
+    "version": "v2021.8.9",
+    "hash": "3611a205519a917789fb409df25efeb5610dfc76799fd21de4377a9381f48184",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/loganmc10/m64p/releases/download/v2021.8.9/m64p-win64-4229fad.zip"
+        }
+    },
+    "bin": [
+        [
+            "mupen64plus-gui.exe"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "mupen64plus-gui.exe",
+            "m64p"
+        ]
+    ],
+    "extract_dir": "mupen64plus",
+    "persist": [
+        "mupen64plus.ini"
+    ],
+    "checkver": {
+        "github": "https://github.com/loganmc10/m64p"
+    }
+}
