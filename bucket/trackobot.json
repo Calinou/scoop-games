@@ -1,0 +1,18 @@
+{
+    "version": "0.9.0",
+    "description": "The friendly Hearthstone Tracker",
+    "url": "https://github.com/stevschmid/track-o-bot/releases/download/0.9.0/Track-o-Bot_0.9.0.exe",
+    "homepage": "https://trackobot.com/",
+    "license": "LGPL-2.1-or-later",
+    "bin": "Track-o-Bot_0.9.0.exe",
+    "shortcuts": [
+        [
+            "Track-o-Bot_0.9.0.exe",
+            "Track-O-Bot"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/stevschmid/track-o-bot/releases/download/$version/Track-o-Bot_$version.exe"
+    }
+}
