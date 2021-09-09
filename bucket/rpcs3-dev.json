@@ -9,7 +9,14 @@
     "depends": "vcredist2019",
     "persist": [
         "GuiConfigs",
-        "dev_hdd0"
+        "dev_hdd0",
+        "dev_flash",
+        "cache",
+        "config.yml",
+        "config",
+        "games.yml",
+        "Icons",
+        "patches"
     ],
     "shortcuts": [
         [
