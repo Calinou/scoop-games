@@ -24,6 +24,16 @@
             "RPCS3-dev"
         ]
     ],
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\config.yml\")) {",
+            "    New-Item \"$dir\\config.yml\" -Type File | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\games.yml\")) {",
+            "    New-Item \"$dir\\games.yml\" -Type File | Out-Null",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://rpcs3.net/compatibility?b",
         "regex": "/rpcs3-binaries-win/releases/download/build-(?<fullhash>[0-9a-f]+)/rpcs3-v(?<build>[0-9]+\\.[0-9]+\\.[0-9]+\\-[0-9]+)-(?<shorthash>[0-9a-f]{8})",
