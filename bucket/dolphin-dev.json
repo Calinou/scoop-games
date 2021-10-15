@@ -2,15 +2,14 @@
     "homepage": "https://dolphin-emu.org/",
     "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
     "license": "GPL-2.0-or-later",
-    "version": "5.0-14095",
-    "url": "https://dl.dolphin-emu.org/builds/f6/3d/dolphin-master-5.0-14095-x64.7z",
-    "hash": "58a298c391ec189b11ae4dff201016fe9d322229a4ccdd2615422c0cb42d53dd",
+    "version": "5.0-15341",
+    "url": "https://dl.dolphin-emu.org/builds/09/b1/dolphin-master-5.0-15341-x64.7z",
+    "hash": "67a4c36fbb58b41d4f7dff0d39b3708a9f40c43293217e383614770ca1c61204",
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
         "   New-item \"$persist_dir\\User\" -ItemType Directory | Out-Null",
-        "   New-item \"$persist_dir\\portable.txt\" -ItemType File | Out-Null",
         "   if (Test-Path \"$env:USERPROFILE\\Documents\\Dolphin Emulator\") {",
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Dolphin Emulator\\*\" -Destination \"$persist_dir\\User\" -Recurse",
@@ -22,12 +21,13 @@
     "shortcuts": [
         [
             "Dolphin.exe",
-            "Dolphin"
+            "Dolphin (Development)"
         ]
     ],
     "persist": "User",
+    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
     "checkver": {
-        "url": "https://dolphin-emu.org/download/",
+        "url": "https://dolphin-emu.org/download/list/master/1/",
         "regex": "\\/(?<rand1>.{2})\\/(?<rand2>.{2})\\/dolphin-master-(?<major>[\\d\\.]+)-(?<build>[\\d]+)",
         "replace": "${major}-${build}"
     },

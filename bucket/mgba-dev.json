@@ -2,20 +2,22 @@
     "homepage": "https://mgba.io/",
     "description": "A fast, accurate, and portable GBA emulator (development version)",
     "license": "MPL-2.0",
-    "version": "7005-20210515",
+    "version": "7135-20211014",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2021-05-15-win64-7005-9f24c96ded50fe465b8c561aa29d87f059835896.7z",
-            "hash": "c9f0b28176782168ec7d0cc92b4f6f788fcf2b1845dab25d060c7d1ef6f79f53"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2021-10-14-win64-7135-f696619b11d74c09e49485caa7d916753c6fc3f4.7z",
+            "hash": "c99c9cb8a9d677adfc40cb281ba706c96780b7ba86f12d985776760dba95b66d"
         },
         "32bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2021-05-15-win32-7005-9f24c96ded50fe465b8c561aa29d87f059835896.7z",
-            "hash": "81172af57de608c0ea784c4b0ac53e667c3d9aab21c189ac1b70bc3b3dab26b4"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2021-10-14-win32-7135-f696619b11d74c09e49485caa7d916753c6fc3f4.7z",
+            "hash": "2fa4e355da7f455a9502a88345d68ee417c546422bba856133fafadb6175309b"
         }
     },
     "installer": {
         "script": [
-            "Copy-item -Path \"$dir\\$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\" -Recurse",
+            "Move-Item -Path \"$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\"",
+            "Set-Location -Path $dir",
+            "Remove-Item -Path $(Get-ChildItem -Path $dir -Name -Include mGBA-build*)",
             "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
             "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
             "}",
@@ -35,7 +37,7 @@
     "shortcuts": [
         [
             "mGBA.exe",
-            "mGBA"
+            "mGBA (Development)"
         ]
     ],
     "persist": [

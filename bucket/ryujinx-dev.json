@@ -2,11 +2,11 @@
     "homepage": "https://ryujinx.org/",
     "description": "A simple, experimental Nintendo Switch emulator written in C#.",
     "license": "MIT",
-    "version": "1.0.6875",
+    "version": "1.0.7074",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/xaf7y9uhf5abmsoe/artifacts/ryujinx-1.0.6875-win_x64.zip",
-            "hash": "37eaa07beada3456a83997fcafd2123445e471f80467a10afd7c53a94051440d"
+            "url": "https://ci.appveyor.com/api/buildjobs/huhmaa7j185a3hs8/artifacts/ryujinx-1.0.7074-win_x64.zip",
+            "hash": "28c45ea3766eb53fa769d624af26c0669de0309c5b9e23d0f50eed1f54484de9"
         }
     },
     "extract_dir": "publish",

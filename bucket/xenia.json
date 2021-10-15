@@ -1,12 +1,12 @@
 {
     "homepage": "https://xenia.jp",
     "description": "Xbox 360 Research Emulator",
-    "version": "1.0.2405",
+    "version": "1.0.2502",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/x0elg8jtn85rgkmw/artifacts/xenia_master.zip",
-            "hash": "8c4ac8b105155c73f2f575f315b48116194930fce17974d8f23d1c78656f1f8f"
+            "url": "https://ci.appveyor.com/api/buildjobs/2lipt7x17fwlr625/artifacts/xenia_master.zip",
+            "hash": "c6a2cddf047979b8e0e84a7d953ec2b7599de1aad866e0895086cf62b9474184"
         }
     },
     "pre_install": [
@@ -14,6 +14,8 @@
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
         "   New-item \"$persist_dir\\portable.txt\" -ItemType File | Out-Null",
         "   New-item \"$persist_dir\\xenia.config.toml\" -ItemType File | Out-Null",
+        "   New-item \"$persist_dir\\content\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\cache\" -ItemType Directory | Out-Null",
         "   if (Test-Path \"$env:USERPROFILE\\Documents\\Xenia\") {",
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\\*\" -Destination \"$persist_dir\" -Recurse",
