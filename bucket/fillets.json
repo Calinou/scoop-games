@@ -19,6 +19,6 @@
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/fillets/Fish%20Fillets%20-%20Next%20Generation/$version/fillets-ng-all-win32-$version.zip",
-        "extract_url": "fillets-ng-all-win32-$version"
+        "extract_dir": "fillets-ng-all-win32-$version"
     }
 }
