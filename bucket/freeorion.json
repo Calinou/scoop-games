@@ -18,6 +18,5 @@
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/freeorion/files/FreeOrion/FreeOrion%20Version%20$majorVersion.$minorVersion.$patchVersion/FreeOrion_v$version_$matchFile_Win32_Setup.exe#/dl.zip"
-    },
-    "notes": "User data are stored in C:\\Users\\[USERNAME]\\AppData\\Roaming\\FreeOrion"
+    }
 }
