@@ -18,7 +18,12 @@
         "64bit": {
             "url": "http://bgb.bircd.org/bgbw64.zip",
             "hash": "8685fc9daf09ceb384330ce543d05471fcc1d427c65de0d68875a97a57532763",
-            "bin": "bgb64.exe",
+            "bin": [
+                [
+                    "bgb64.exe",
+                    "bgb"
+                ]
+            ],
             "shortcuts": [
                 [
                     "bgb64.exe",
@@ -27,9 +32,11 @@
             ]
         }
     },
-    "persist": "bgb.ini",
+    "persist": [
+        "bgb.ini",
+        "scrnshot"
+    ],
     "checkver": {
-        "url": "http://bgb.bircd.org/",
         "regex": "\\(current version: BGB ([\\d]+[\\.][\\d]+[\\.][\\d]+)\\)<\\/title>"
     },
     "autoupdate": {
