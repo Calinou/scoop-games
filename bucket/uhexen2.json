@@ -10,7 +10,7 @@
         },
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/uhexen2/Hammer%20of%20Thyrion/1.5.9/Win64/hexen2-1.5.9-win64.zip",
-            "hash": "sha1:0d66d982959240ffbfb138372ac181e7f2511156"
+            "hash": "938d5e4bc394bd91aafa2e81cea78630bcefd0f00211d59238cf06cbc6c62c2a"
         }
     },
     "extract_dir": "hexen2-1.5.9",
