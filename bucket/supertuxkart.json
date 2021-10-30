@@ -25,11 +25,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://github.com/supertuxkart/stk-code/releases/download/$version/SuperTuxKart-$version-installer-i686.exe#/dl.7z"
-            },
             "64bit": {
                 "url": "https://github.com/supertuxkart/stk-code/releases/download/$version/SuperTuxKart-$version-installer-x86_64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/supertuxkart/stk-code/releases/download/$version/SuperTuxKart-$version-installer-i686.exe#/dl.7z"
             }
         }
     }
