@@ -2,7 +2,7 @@
     "version": "1.10.1",
     "description": "A community-lead fork of the much-loved minimalist roguelike game, Brogue",
     "homepage": "https://github.com/tmewett/BrogueCE",
-    "license": "AGPL-3.0",
+    "license": "AGPL-3.0-or-later",
     "pre_install": "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
     "architecture": {
         "64bit": {
