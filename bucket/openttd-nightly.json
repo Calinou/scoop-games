@@ -60,5 +60,5 @@
             "find": "checksum-$basename[\\s\\S]*?([a-fA-F\\d]{64})"
         }
     },
-    "notes": "To save the data in persist folder, run OpenTTD from the Start menu or openttd-nightly-persist.exe on CLI"
+    "notes": "To save the data in persist folder, run OpenTTD from the Start menu or openttd-nightly.exe on CLI"
 }
