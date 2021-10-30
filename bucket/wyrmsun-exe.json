@@ -1,0 +1,34 @@
+{
+    "homepage": "https://andrettin.github.io/",
+    "description": "Binary for the Wyrmsun on Windows",
+    "version": "5.2.3",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/Andrettin/Wyrmsun/releases/download/v5.2.3/wyrmsun.exe",
+    "hash": "fedd4c41873e35ad7e85526e553289f9c92dfed7e06abcb6b9c3752795240217",
+    "suggest": {
+        "wyrmsun": "wyrmsun"
+    },
+    "post_install": [
+        "if (Test-Path \"$(appdir wyrmsun)\\current\") {",
+        "   if (Test-Path \"$(appdir wyrmsun)\\$version\") {",
+        "       Copy-Item \"$dir\\wyrmsun.exe\" \"$(appdir wyrmsun)\\$version\" -Force",
+        "   } else {",
+        "       Write-Host \"Incomplete installation due to different version of wyrmsun\" -ForegroundColor Red",
+        "       Write-Host \"Update wyrmsun to complete the installation\" -ForegroundColor Red",
+        "   }",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$(appdir wyrmsun)\\$version\\wyrmsun.exe\") {",
+            "   Remove-Item \"$(appdir wyrmsun)\\$version\\wyrmsun.exe\"",
+            "}"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/Andrettin/Wyrmsun"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Andrettin/Wyrmsun/releases/download/v$version/wyrmsun.exe"
+    }
+}
