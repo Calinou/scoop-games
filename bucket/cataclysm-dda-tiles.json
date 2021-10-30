@@ -34,11 +34,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cataclysmdda-$majorVersion.$minorVersion-Windows-Tiles-$version.zip"
-            },
             "64bit": {
                 "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cataclysmdda-$majorVersion.$minorVersion-Windows_x64-Tiles-$version.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cataclysmdda-$majorVersion.$minorVersion-Windows-Tiles-$version.zip"
             }
         }
     }
