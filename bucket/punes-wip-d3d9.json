@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/punesemu/puNES",
     "description": "Cycle-accurate NES/FDS emulator (WIP Build D3D9 version)",
-    "version": "wip.939a4de.223",
+    "version": "wip.b8d8698.224",
     "license": "GPL-2.0",
     "architecture": {
         "32bit": {
-            "url": "https://ci.appveyor.com/api/projects/punesemu/puNES/artifacts/punes32.wip.d3d9.zip",
-            "hash": "da1d42000fa551f4243cf1bec06b554761e5eb7a1f81d5d514a1ba0fbe0060fb"
+            "url": "https://ci.appveyor.com/api/buildjobs/fl47wc6mu6rxt67k/artifacts/punes32.wip.d3d9.zip",
+            "hash": "c54a726f04ecb388b76420811a1110f550aa3d959df6543921a69f8ae0bedc64"
         },
         "64bit": {
-            "url": "https://ci.appveyor.com/api/projects/punesemu/puNES/artifacts/punes64.wip.d3d9.zip",
-            "hash": "28dfc67db93fcd030fae7b7c4131df139083281a775edc311bfb12c4ca8302a1"
+            "url": "https://ci.appveyor.com/api/buildjobs/fl47wc6mu6rxt67k/artifacts/punes64.wip.d3d9.zip",
+            "hash": "031f1f93731e1faa36d8d3879827a411656952fd86e3deefe91283569335c6f0"
         }
     },
     "installer": {
@@ -40,15 +40,15 @@
     ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/punesemu/punes/",
-        "regex": "\"version\":\"(.*?)\".*\"commitId\""
+        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>.*?)\""
     },
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://ci.appveyor.com/api/projects/punesemu/puNES/artifacts/punes32.wip.d3d9.zip"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/punes32.wip.d3d9.zip"
             },
             "64bit": {
-                "url": "https://ci.appveyor.com/api/projects/punesemu/puNES/artifacts/punes64.wip.d3d9.zip"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/punes64.wip.d3d9.zip"
             }
         }
     },
