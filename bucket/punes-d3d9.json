@@ -1,0 +1,84 @@
+{
+    "homepage": "https://github.com/punesemu/puNES",
+    "description": "Cycle-accurate NES/FDS emulator (D3D9 version)",
+    "version": "0.107",
+    "license": "GPL-2.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/punesemu/puNES/releases/download/v0.107/punes-0.107-i686-win-d3d9.zip",
+            "hash": "2fdb6832c51cc9391f7e9fcbe7d2531af7d0476bfd09a6fcd236dc149cbf2f50",
+            "installer": {
+                "script": "Move-Item \"$dir\\punes32.exe\" \"$dir\\punes32_p.exe\""
+            },
+            "bin": [
+                [
+                    "punes32_p.exe",
+                    "punes-d3d9"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "punes32_p.exe",
+                    "puNES\\puNES (D3D9)"
+                ]
+            ]
+        },
+        "64bit": {
+            "url": "https://github.com/punesemu/puNES/releases/download/v0.107/punes-0.107-x86_64-win-d3d9.zip",
+            "hash": "7999d78332e14554bdb804c23d568f0d128b218fdc79a58e3b3230c7a7a6dc25",
+            "installer": {
+                "script": "Move-Item \"$dir\\punes64.exe\" \"$dir\\punes64_p.exe\""
+            },
+            "bin": [
+                [
+                    "punes64_p.exe",
+                    "punes-d3d9"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "punes64_p.exe",
+                    "puNES\\puNES (D3D9)"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "bios",
+        "cheat",
+        "diff",
+        "pgs",
+        "prb",
+        "save",
+        "screenshot",
+        "shp"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/punesemu/puNES/releases/download/v$version/punes-$version-i686-win-d3d9.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/punesemu/puNES/releases/download/v$version/punes-$version-x86_64-win-d3d9.zip"
+            }
+        }
+    },
+    "post_install": [
+        "'puNES.cfg', 'input.cfg', 'recent.cfg' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_.bak\")) {",
+        "        New-Item -ItemType File \"$dir\\$_\" | Out-Null",
+        "    } else {",
+        "        Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\" -Force",
+        "    }",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "'puNES.cfg', 'input.cfg', 'recent.cfg' | ForEach-Object {",
+            "    Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
+            "}"
+        ]
+    },
+    "notes": "Configuration files cannot be persisted, but will be retained during the update"
+}
