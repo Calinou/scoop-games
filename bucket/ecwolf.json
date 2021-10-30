@@ -31,11 +31,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://files.dengine.net/archive/doomsday_$version_x86.zip"
-            },
             "64bit": {
-                "url": "https://files.dengine.net/archive/doomsday_$version_x64.zip"
+                "url": "http://maniacsvault.net/ecwolf/files/ecwolf/1.x/ecwolf-$version_x64.zip"
+            },
+            "32bit": {
+                "url": "http://maniacsvault.net/ecwolf/files/ecwolf/1.x/ecwolf-$version_x86.zip"
             }
         }
     }
