@@ -16,8 +16,7 @@
     "installer": {
         "script": [
             "Move-Item -Path \"$(Get-ChildItem -Path $dir)\\*\" -Destination \"$dir\"",
-            "Set-Location -Path $dir",
-            "Remove-Item -Path $(Get-ChildItem -Path $dir -Name -Include mGBA-build*)",
+            "Remove-Item -Path \"$dir\\$(Get-ChildItem -Path $dir -Name -Include mGBA-build*)\"",
             "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
             "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
             "}",
@@ -31,7 +30,11 @@
     "bin": [
         [
             "mGBA.exe",
-            "mgba-sdl.exe"
+            "mgba-dev"
+        ],
+        [
+            "mgba-sdl.exe",
+            "mgba-dev-sdl"
         ]
     ],
     "shortcuts": [
