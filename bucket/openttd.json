@@ -30,7 +30,7 @@
     "bin": [
         [
             "openttd.exe",
-            "openttd-persist",
+            "openttd",
             "-c \"$persist_dir\\openttd.cfg\""
         ]
     ],
