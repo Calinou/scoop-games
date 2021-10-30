@@ -4,7 +4,7 @@
     "version": "2.5",
     "license": "GPL-2.0-or-later",
     "url": "https://downloads.sourceforge.net/project/ufoai/UFO_AI%202.x/2.5/ufoai-2.5-win32.exe#/dl.7z",
-    "hash": "89aab99f6ef664b853f6eeddf7959240751870cbfa2ab4d3745bd09b568222d8",
+    "hash": "sha1:cfd6d284dd2529bec5e5ebe78a9c29c3ead22ded",
     "bin": [
         "ufo.exe",
         "ufoded.exe",
@@ -15,5 +15,12 @@
             "ufo.exe",
             "UFO - Alien Invasion"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://ufoai.org/wiki/Download",
+        "regex": "The latest stable release is version ([\\d.r]+)\\."
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/ufoai/UFO_AI%202.x/$version/ufoai-$version-win32.exe#/dl.7z"
+    }
 }
