@@ -30,7 +30,7 @@
     "bin": [
         [
             "openttd.exe",
-            "openttd-nightly-persist"
+            "openttd-nightly"
         ]
     ],
     "shortcuts": [
