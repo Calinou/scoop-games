@@ -1,0 +1,40 @@
+{
+    "description": "A roguelike by Brian Walker (Community Edition)",
+    "homepage": "https://github.com/tmewett/BrogueCE/",
+    "license": "AGPL-3.0,CC-BY-4.0",
+    "version": "1.10.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tmewett/BrogueCE/releases/download/v1.10.1/BrogueCE-1.10.1-windows-x86_64.zip",
+            "hash": "bea19b303273d52f8da0fe167e6518f3ae6f51cc3f6e582a249fb909a47dea39"
+        }
+    },
+    "extract_dir": "BrogueCE-windows",
+    "pre_install": "New-Item -ItemType File \"$dir\\broguece.cmd\" | Out-Null",
+    "post_install": [
+        "Set-Content \"$dir\\broguece.cmd\" \"pushd `\"$persist_dir`\"\"",
+        "Add-Content \"$dir\\broguece.cmd\" \"`\"$dir\\brogue.exe`\" --data-dir `\"$dir`\"\"",
+        "Add-Content \"$dir\\broguece.cmd\" \"popd\""
+    ],
+    "bin": "broguece.cmd",
+    "shortcuts": [
+        [
+            "broguece.cmd",
+            "Brogue\\Brogue CE"
+        ],
+        [
+            "README.txt",
+            "Brogue\\Brogue CE ReadMe"
+        ]
+    ],
+    "persist": "broguece.cmd",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tmewett/BrogueCE/releases/download/$version/BrogueCE-$version-windows-x86_64.zip"
+            }
+        }
+    },
+    "notes": "To save the data in persist folder, run Brogue CE from the Start menu or broguece.cmd"
+}
