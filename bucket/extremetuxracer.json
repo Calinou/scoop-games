@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.0/ExtremeTuxRacer_0.8.0_x64.msi",
-            "hash": "722fbfd0aaeff3394de5067a32d17b330dd312d67ebb3e492422af475ff3cd28"
+            "hash": "sha1:bd4f570b57da207aab1ba85b8119d94ed28bcf62"
         }
     },
     "extract_dir": "PFiles\\Extreme TuxRacer",
@@ -16,5 +16,15 @@
             "Extreme Tux Racer"
         ]
     ],
-    "depends": "extras/vcredist2015"
+    "depends": "extras/vcredist2015",
+    "checkver": {
+        "regex": "ExtremeTuxRacer_([\\d.-]+)_x[\\d]{2}\\.msi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/$version/ExtremeTuxRacer_$version_x64.msi"
+            }
+        }
+    }
 }
