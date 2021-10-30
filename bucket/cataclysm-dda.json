@@ -2,10 +2,7 @@
     "homepage": "https://cataclysmdda.org",
     "description": "Roguelike in a post-apocalyptic world (with text-based graphics)",
     "version": "0.D",
-    "license": {
-        "identifier": "CC-BY-SA-3.0,GPL-2.0+,OFL-1.0,BSL-1.0,Zlib,MIT,BSD(libbacktrace)",
-        "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/master/LICENSE.txt"
-    },
+    "license": "CC-BY-SA-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.D/cataclysmdda-0.D-8574-Win64-Curses.zip",
