@@ -6,7 +6,7 @@
     "architecture": {
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/uhexen2/Hammer%20of%20Thyrion/1.5.9/Windows/hexen2-1.5.9-win32.zip",
-            "hash": "sha1:39c7497c1430b626c6a9b8cdb476ba83491d3e21"
+            "hash": "ae180c355416d10a17beded7e50c4d3e2e3c0f95646262ebf411e9d38e16e1a4"
         },
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/uhexen2/Hammer%20of%20Thyrion/1.5.9/Win64/hexen2-1.5.9-win64.zip",
