@@ -25,6 +25,6 @@
         "regex": "neverball-([\\d.-]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/sanderland/katrain/releases/download/$version/KaTrainWindows.zip"
+        "url": "https://neverball.org/neverball-$version.zip"
     }
 }
