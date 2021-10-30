@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.0/ExtremeTuxRacer_0.8.0_x64.msi",
-            "hash": "sha1:bd4f570b57da207aab1ba85b8119d94ed28bcf62"
+            "hash": "722fbfd0aaeff3394de5067a32d17b330dd312d67ebb3e492422af475ff3cd28"
         }
     },
     "extract_dir": "PFiles\\Extreme TuxRacer",
