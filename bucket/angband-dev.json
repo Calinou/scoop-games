@@ -1,11 +1,11 @@
 {
-    "version": "4.2.3-103-gc3a0624e8",
+    "version": "4.2.3-105-g882742f53",
     "description": "A free single-player dungeon exploration Roguelike (Pre-release)",
     "homepage": "https://rephial.org/",
     "license": "GPL-2.0",
-    "url": "https://github.com/angband/angband/releases/download/4.2.3-103-gc3a0624e8/Angband-4.2.3-103-gc3a0624e8-win.zip",
-    "hash": "8c51f0f6285b243aae82848ceb9c0551236f653084b2d2c6c61fea019247d47f",
-    "extract_dir": "angband-4.2.3-103-gc3a0624e8",
+    "url": "https://github.com/angband/angband/releases/download/4.2.3-105-g882742f53/Angband-4.2.3-105-g882742f53-win.zip",
+    "hash": "b907e9b381c505f76de05a33f0dd73557d368c69e4dae81c708936d85a7de0b7",
+    "extract_dir": "angband-4.2.3-105-g882742f53",
     "shortcuts": [
         [
             "angband.exe",
