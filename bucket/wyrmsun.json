@@ -12,19 +12,8 @@
         "22e64575b7129b8bd17b6f3e26421a9ece57238423e1ac316aa835ca4177b7e9"
     ],
     "extract_dir": "Wyrmsun-5.2.3",
-    "depends": "wyrmsun-exe",
     "installer": {
-        "script": [
-            "if (Test-Path \"$(appdir wyrmsun-exe)\\current\") {",
-            "   if (Test-Path \"$(appdir wyrmsun-exe)\\$version\\wyrmsun-exe\") {",
-            "       Copy-Item \"$(appdir wyrmsun-exe)\\$version\\wyrmsun-exe\" \"$dir\"",
-            "   } else {",
-            "       Write-Host \"Incomplete installation due to different version of wyrmsun-exe\" -ForegroundColor Red",
-            "       Write-Host \"Update wyrmsun-exe to complete the installation\" -ForegroundColor Red",
-            "       New-Item -ItemType File \"$dir\\wyrmsun.exe\" | Out-Null",
-            "   }",
-            "}"
-        ]
+        "script": "Invoke-WebRequest -Uri \"https://github.com/Andrettin/Wyrmsun/releases/download/v$version/wyrmsun.exe\" -OutFile \"$dir\\wyrmsun.exe\""
     },
     "persist": "wyr",
     "bin": "wyrmsun.exe",
