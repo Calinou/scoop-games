@@ -14,14 +14,10 @@
             "cddagl\\resources\\launcher.ico"
         ]
     ],
-    "persist": "cdda",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/remyroy/CDDA-Game-Launcher/releases/download/v$version/cddagl_portable_v$version.zip",
         "extract_dir": "cddagl_portable_v$version"
     },
-    "notes": [
-        "Select apps\\cdda-game-launcher\\current\\cdda to install CDDA",
-        "Configs file is C:\\Users\\[USERNAME]\\AppData\\Local\\configs.db"
-    ]
+    "notes": "Configs file is C:\\Users\\[USERNAME]\\AppData\\Local\\CDDA Game Launcher\\configs.db"
 }
