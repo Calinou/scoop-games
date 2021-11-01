@@ -12,9 +12,7 @@
         "22e64575b7129b8bd17b6f3e26421a9ece57238423e1ac316aa835ca4177b7e9"
     ],
     "extract_dir": "Wyrmsun-5.2.3",
-    "installer": {
-        "script": "Invoke-WebRequest -Uri \"https://github.com/Andrettin/Wyrmsun/releases/download/v$version/wyrmsun.exe\" -OutFile \"$dir\\wyrmsun.exe\""
-    },
+    "pre_install": "dl \"https://github.com/Andrettin/Wyrmsun/releases/download/v$version/wyrmsun.exe\" \"$dir\\wyrmsun.exe\" $false $true",
     "persist": "wyr",
     "bin": "wyrmsun.exe",
     "shortcuts": [
