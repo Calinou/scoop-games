@@ -1,0 +1,44 @@
+{
+    "homepage": "https://rvgl.re-volt.io/",
+    "description": "Modern reimplementation of the classic RC racing game Re-Volt (Includes content for playing online and alternative soundtrack)",
+    "version": "21.0930a-1",
+    "license": "CC-BY-NC-4.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://distribute.re-volt.io/releases/rvgl_full_win64_online.zip",
+            "hash": "f1c69efccd917e270b6434e3f43baa2b4b6aed6eb105bac75c95399b0b934ec9"
+        },
+        "32bit": {
+            "url": "https://distribute.re-volt.io/releases/rvgl_full_win32_online.zip",
+            "hash": "74a10188f00c56edad03f2ef49e651f9a9ed096a4c747b41f7b6b996ca4ce464"
+        }
+    },
+    "shortcuts": [
+        [
+            "rvgl.exe",
+            "RVGL"
+        ]
+    ],
+    "persist": [
+        "packs",
+        "profiles"
+    ],
+    "checkver": {
+        "regex": "rvgl_([a-zA-Z\\d.\\-]+)_win64.7z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://distribute.re-volt.io/releases/rvgl_full_win64_online.zip"
+            },
+            "32bit": {
+                "url": "https://distribute.re-volt.io/releases/rvgl_full_win32_online.zip"
+            }
+        }
+    },
+    "notes": [
+        "Includes:",
+        "Content Packs/ Track Collection, Car Collection, Bonus Content, Soundtrack, LMS & Tag Collection, Clockwork Collection",
+        "Additional contents are available at https://re-volt.io/downloads"
+    ]
+}
