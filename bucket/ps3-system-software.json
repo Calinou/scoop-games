@@ -8,8 +8,8 @@
     "url": "http://dus01.ps3.update.playstation.net/update/ps3/image/us/2020_0331_cf9cb4ba53a83ad557501417837c8de9/PS3UPDAT.PUP",
     "hash": "14ad0a4716d2bdf096dab9ecf77b9b838cc64435db7925837a38979fa05f4012",
     "checkver": {
-        "url": "https://www.playstation.com/en-us/support/system-updates/ps3/",
-        "regex": "(?sm)Latest Version: ([\\d.]+).*?ps3/image/us/(?<time>[\\w_]+)/PS3UPDAT.PUP"
+        "url": "https://www.playstation.com/en-us/support/hardware/ps3/system-software/",
+        "regex": "(?sm)PlayStation®3 System Software Update ((?:\\d+)?(?:\\.?\\d*)).*?ps3/image/us/(?<time>[\\w_]+)/PS3UPDAT.PUP"
     },
     "autoupdate": {
         "url": "http://dus01.ps3.update.playstation.net/update/ps3/image/us/$matchTime/PS3UPDAT.PUP"
