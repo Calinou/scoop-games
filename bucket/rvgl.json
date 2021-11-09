@@ -16,7 +16,7 @@
     "shortcuts": [
         [
             "rvgl.exe",
-            "RVGL"
+            "RVGL (Original package)"
         ]
     ],
     "persist": [
@@ -24,7 +24,7 @@
         "profiles"
     ],
     "checkver": {
-        "regex": "rvgl_([a-zA-Z\\d.\\-]+)_win64.7z"
+        "regex": "Current version:.*?>([a-zA-Z\\d.\\-]+)<"
     },
     "autoupdate": {
         "architecture": {
@@ -37,8 +37,10 @@
         }
     },
     "notes": [
-        "Includes:",
+        "Contents included:",
         "Miscellaneous/Game Files/ Game assets, Soundtrack(DC), Additional Content(DC)",
-        "Additional contents are available at https://re-volt.io/downloads"
+        "",
+        "Additional contents are available at https://re-volt.io/downloads",
+        ""
     ]
 }
