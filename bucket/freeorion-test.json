@@ -5,16 +5,15 @@
     "license": "GPL-2.0",
     "url": "https://sourceforge.net/projects/freeorion/files/FreeOrion/Test/FreeOrion_2021-11-01.5ee748c_Test_Win32_Setup.exe/download#/dl.zip",
     "hash": "ac04831eb23f7c43eb84d470b570494d358aa7cbb94de8018085240fcb02feb9",
-    "bin": [
-        [
-            "FreeOrion.exe",
-            "freeorion-test"
-        ]
-    ],
     "shortcuts": [
         [
             "FreeOrion.exe",
-            "FreeOrion (Test Build)"
+            "FreeOrion Windowed (Test Build)"
+        ],
+        [
+            "FreeOrion.exe",
+            "FreeOrion Fullscreen (Test Build)",
+            "-f"
         ]
     ],
     "checkver": {
