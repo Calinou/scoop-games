@@ -5,67 +5,64 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://ioquake3.org/files/jenkins/latest/gcc/no_options/release-mingw32-x86_64.zip",
+            "url": "https://files.ioquake3.org/Windows.zip",
+            "pre_install": "Expand-7zipArchive \"$dir\\release-mingw64-x86_64.zip\" \"$dir\" -Removal",
             "bin": [
                 [
                     "ioquake3.x86_64.exe",
-                    "ioquake3"
+                    "ioquake3",
+                    "+set fs_homepath \"$persist_dir\""
                 ],
                 [
                     "ioq3ded.x86_64.exe",
-                    "ioq3ded"
+                    "ioq3ded",
+                    "+set fs_homepath \"$persist_dir\""
                 ]
             ],
             "shortcuts": [
                 [
                     "ioquake3.x86_64.exe",
                     "ioquake3",
-                    "+set fs_game baseq3"
+                    "+set fs_homepath \"$persist_dir\" +set fs_game baseq3"
                 ],
                 [
                     "ioquake3.x86_64.exe",
                     "ioquake3 - Team Arena",
-                    "+set fs_game missionpack"
-                ]
-            ]
-        },
-        "32bit": {
-            "url": "https://ioquake3.org/files/jenkins/latest/gcc/no_options/release-mingw32-x86.zip",
-            "bin": [
-                [
-                    "ioquake3.x86.exe",
-                    "ioquake3"
-                ],
-                [
-                    "ioq3ded.x86.exe",
-                    "ioq3ded"
-                ]
-            ],
-            "shortcuts": [
-                [
-                    "ioquake3.x86.exe",
-                    "ioquake3",
-                    "+set fs_game baseq3"
-                ],
-                [
-                    "ioquake3.x86.exe",
-                    "ioquake3 - Team Arena",
-                    "+set fs_game missionpack"
+                    "+set fs_homepath \"$persist_dir\" +set fs_game missionpack"
                 ]
             ]
         }
+    },
+    "installer": {
+        "script": [
+            "$persistFolders = @(",
+            "   \"baseq3\"",
+            "   \"missionpack\"",
+            ")",
+            "$persistFolders | ForEach-Object {",
+            "   if (Test-Path \"$persist_dir\\$_\") {",
+            "      Copy-Item -Force -Recurse \"$dir\\$_\\*\" \"$persist_dir\\$_\"",
+            "   }",
+            "}"
+        ]
     },
     "persist": [
         "baseq3",
         "missionpack"
     ],
     "notes": [
+        "To save the data in persist folder, run from the Start menu or CLI",
+        "",
         "Place game data files (such as pak0.pk3-pak8.pk3) in:",
         "",
         "- Quake 3 Arena:",
         "    $persist_dir\\baseq3\\",
         "",
         "- Quake 3 - Team Arena:",
-        "    $persist_dir\\missionpack\\"
+        "    $persist_dir\\missionpack\\",
+        "",
+        "If you're missing some of the Quake 3 or Team Arena patch pk3s (pak1 or higher),",
+        "they are available at http://ioquake3.org/extras/patch-data/",
+        ""
     ]
 }
