@@ -6,7 +6,23 @@
     "url": "https://deponie.yamagi.org/quake2/windows/quake2-8.00.zip",
     "hash": "86390febd8b50aabd4acf4aaa9852b8c95704a439e1b6355e0db6365b026e8a3",
     "extract_dir": "quake2-8.00",
-    "bin": [
+    "installer": {
+        "script": [
+            "$persistFolders = @(",
+            "   \"baseq2\"",
+            "   \"ctf\"",
+            "   \"rogue\"",
+            "   \"xatrix\"",
+            "   \"zaero\"",
+            ")",
+            "$persistFolders | ForEach-Object {",
+            "   if (Test-Path \"$persist_dir\\$_\") {",
+            "      Copy-Item -Force -Recurse \"$dir\\$_\\*.dll\" \"$persist_dir\\$_\"",
+            "   }",
+            "}"
+        ]
+    },
+        "bin": [
         "yquake2.exe",
         "q2ded.exe"
     ],
@@ -33,6 +49,8 @@
     ],
     "persist": [
         "baseq2",
+        "ctf",
+        "music",
         "rogue",
         "xatrix",
         "zaero"
