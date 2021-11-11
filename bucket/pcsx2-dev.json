@@ -43,7 +43,7 @@
     },
     "checkver": {
         "url": "https://buildbot.orphis.net/pcsx2/index.php",
-        "regex": "(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
+        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
         "replace": "${basever}-${build}"
     },
     "autoupdate": {
