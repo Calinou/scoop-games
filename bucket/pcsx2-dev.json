@@ -43,12 +43,12 @@
     },
     "checkver": {
         "url": "https://buildbot.orphis.net/pcsx2/index.php",
-        "regex": "(?<basever>[\\d\\.]+)-dev-(?<build>[\\d]+)-(?<commit>g[a-f\\d]{10})",
+        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
         "replace": "${basever}-${build}"
     },
     "autoupdate": {
-        "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v$matchBasever-dev-$matchBuild-$matchCommit&platform=windows-x86#/dl.7z",
-        "extract_dir": "pcsx2-v$matchBasever-dev-$matchBuild-$matchCommit-windows-x86"
+        "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v$matchBasever.$matchBuild&platform=windows-x86#/dl.7z",
+        "extract_dir": "pcsx2-v$matchBasever.$matchBuild-windows-x86"
     },
     "notes": [
         "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
