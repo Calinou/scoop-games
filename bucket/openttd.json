@@ -12,10 +12,10 @@
                 "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
-                "263f0b51d9630a1ef60538e822de064138ea3599f1ace4cc070943e81aa5bc4d",
-                "d419c0f5f22131de15f66ebefde464df3b34eb10e0645fe218c59cbc26c20774",
-                "6831b651b3dc8b494026f7277989a1d757961b67c17b75d3c2e097451f75af02",
-                "92e293ae89f13ad679f43185e83fb81fb8cad47fe63f4af3d3d9f955130460f5"
+                "fe909797a3aa9ef1f7080b28685f7a668b8b47fed4db427109e65c3de9468304",
+                "928fcf34efd0719a3560cbab6821d71ce686b6315e8825360fba87a7a94d7846",
+                "e0a218b7dd9438e701503b0f84c25a97c1c11b7c2f025323fb19d6db16ef3759",
+                "5a4277a2e62d87f2952ea5020dc20fb2f6ffafdccf9913fbf35ad45ee30ec762"
             ]
         },
         "32bit": {
@@ -26,10 +26,10 @@
                 "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
-                "4f10643582e0c57afeb8b327364d4ff20f3c28e10399d8be7ddf83104b3806cf",
-                "d419c0f5f22131de15f66ebefde464df3b34eb10e0645fe218c59cbc26c20774",
-                "6831b651b3dc8b494026f7277989a1d757961b67c17b75d3c2e097451f75af02",
-                "92e293ae89f13ad679f43185e83fb81fb8cad47fe63f4af3d3d9f955130460f5"
+                "d071b3d8ca71d4df217f3924b371d7e1743d15111a8e4f056470d584eb84d5a1",
+                "928fcf34efd0719a3560cbab6821d71ce686b6315e8825360fba87a7a94d7846",
+                "e0a218b7dd9438e701503b0f84c25a97c1c11b7c2f025323fb19d6db16ef3759",
+                "5a4277a2e62d87f2952ea5020dc20fb2f6ffafdccf9913fbf35ad45ee30ec762"
             ]
         }
     },
