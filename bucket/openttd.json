@@ -6,10 +6,10 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://cdn.openttd.org/openttd-releases/1.10.0/openttd-1.10.0-windows-win64.zip",
-                "https://cdn.openttd.org/opengfx-releases/0.6.0/opengfx-0.6.0-all.zip",
-                "https://cdn.openttd.org/opensfx-releases/0.2.3/opensfx-0.2.3-all.zip",
-                "https://cdn.openttd.org/openmsx-releases/0.3.1/openmsx-0.3.1-all.zip"
+                "https://cdn.openttd.org/openttd-releases/12.1/openttd-12.1-windows-win64.zip",
+                "https://cdn.openttd.org/opengfx-releases/7.1/opengfx-7.1-all.zip",
+                "https://cdn.openttd.org/opensfx-releases/1.0.3/opensfx-1.0.3-all.zip",
+                "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
                 "263f0b51d9630a1ef60538e822de064138ea3599f1ace4cc070943e81aa5bc4d",
@@ -20,10 +20,10 @@
         },
         "32bit": {
             "url": [
-                "https://cdn.openttd.org/openttd-releases/1.10.0/openttd-1.10.0-windows-win32.zip",
-                "https://cdn.openttd.org/opengfx-releases/0.6.0/opengfx-0.6.0-all.zip",
-                "https://cdn.openttd.org/opensfx-releases/0.2.3/opensfx-0.2.3-all.zip",
-                "https://cdn.openttd.org/openmsx-releases/0.3.1/openmsx-0.3.1-all.zip"
+                "https://cdn.openttd.org/openttd-releases/12.1/openttd-12.1-windows-win32.zip",
+                "https://cdn.openttd.org/opengfx-releases/7.1/opengfx-7.1-all.zip",
+                "https://cdn.openttd.org/opensfx-releases/1.0.3/opensfx-1.0.3-all.zip",
+                "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
                 "4f10643582e0c57afeb8b327364d4ff20f3c28e10399d8be7ddf83104b3806cf",
