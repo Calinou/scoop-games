@@ -35,11 +35,10 @@
     },
     "pre_install": [
         "Get-ChildItem -LiteralPath \"$dir\\openttd-12.1-windows-win64\" -Recurse -Force | Move-Item -Destination \"$dir\"",
-		"Move-Item \"$dir\\opengfx-7.1.tar\" \"$dir\\baseset\"",
+        "Move-Item \"$dir\\opengfx-7.1.tar\" \"$dir\\baseset\"",
         "Move-Item \"$dir\\opensfx-1.0.3.tar\" \"$dir\\baseset\"",
         "Move-Item \"$dir\\openmsx-0.4.2.tar\" \"$dir\\baseset\""
    ],
-	
     "bin": "openttd.exe",
     "shortcuts": [
         [
