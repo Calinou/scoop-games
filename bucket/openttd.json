@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.openttd.org/",
     "description": "Simulation game based upon Transport Tycoon Deluxe",
-    "version": "1.10.0",
+    "version": "12.1",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
@@ -34,10 +34,12 @@
         }
     },
     "pre_install": [
-        "Move-Item \"$dir\\opengfx-0.6.0.tar\" \"$dir\\baseset\"",
-        "Move-Item \"$dir\\opensfx-0.2.3\" \"$dir\\baseset\"",
-        "Move-Item \"$dir\\openmsx-0.3.1\" \"$dir\\baseset\""
-    ],
+        "Get-ChildItem -LiteralPath \"$dir\\openttd-12.1-windows-win64\" -Recurse -Force | Move-Item -Destination \"$dir\"",
+		"Move-Item \"$dir\\opengfx-7.1.tar\" \"$dir\\baseset\"",
+        "Move-Item \"$dir\\opensfx-1.0.3.tar\" \"$dir\\baseset\"",
+        "Move-Item \"$dir\\openmsx-0.4.2.tar\" \"$dir\\baseset\""
+   ],
+	
     "bin": "openttd.exe",
     "shortcuts": [
         [
