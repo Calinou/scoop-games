@@ -15,7 +15,7 @@
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\doomretro.cfg\")) {",
-        "   New-Item -ItemType File \"$dir\\doomretro.cfg\" | Out-Null", 
+        "   New-Item -ItemType File \"$dir\\doomretro.cfg\" | Out-Null",
         "}",
         "if (!(Test-Path \"$scoopdir\\persist\\_doom\")) {",
         "   New-item \"$scoopdir\\persist\\_doom\" -ItemType Directory | Out-Null",
