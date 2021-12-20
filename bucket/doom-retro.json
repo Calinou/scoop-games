@@ -47,7 +47,7 @@
         }
     },
     "notes": [
-        "ATTENTION: DOOM Retro requires WAD files, e.g. from a commercial DOOM copy (DOOM 1, 2, Ultimate DOOM, etc)",
+        "ATTENTION: DOOM Retro requires WAD files, e.g. from a commercial DOOM copy (DOOM 1, 2, Ultimate DOOM, etc).",
         "Place WAD files in the _doom directory under: $persist_dir",
         "",
         "If you want to bind controls in the config file, here are some examples:",
