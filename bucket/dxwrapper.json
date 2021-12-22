@@ -1,6 +1,6 @@
 {
   "homepage": "https://github.com/elishacloud/dxwrapper",
-  "description": "DxWrapper let's you wrap DirectX APIs to fix compatibility issues with older games.",
+  "description": "Wrapper for legacy DirectX APIs to fix compatibility issues with old games",
   "version": "1.0.6542.21",
   "license": "Zlib",
   "url": "https://github.com/elishacloud/dxwrapper/releases/download/v1.0.6542.21/dxwrapper.zip",
