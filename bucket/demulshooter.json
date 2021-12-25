@@ -16,5 +16,10 @@
     "autoupdate": {
         "url": "https://github.com/argonlefou/DemulShooter/releases/download/v$version/DemulShooter_v$version.zip"
     },
-    "persist": "config.ini"
+    "persist": "config.ini",
+    "notes": [
+        "",
+        "The usage instructions for the app can be found here: https://github.com/argonlefou/DemulShooter/wiki/Usage",
+        ""
+    ]
 }
