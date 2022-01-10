@@ -1,0 +1,27 @@
+{
+    "homepage": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+    "license": {
+        "identifier": "GPL-3.0",
+        "URL": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/main/COPYING"
+    },
+    "version": "2.0.2",
+    "architecture":{
+        "64bit": {
+            "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.2/Heroic-2.0.2.exe#dl.7z",
+            "hash": "sha256:1A48E435EC5A1D173991DE87F345DD6EEEFCF6709D6285D9CEDAF62469922801",
+            "checkver": {
+                "autoupdate": "github",
+                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/$ver/Heroic-$ver.exe#dl.7z"
+            }
+        }
+    },
+    "extract_dir": "$PLUGINSDIR",
+    "pre_install": "7z e \"$dir\\app-64.7z\" -o\"$dir\" -y",
+    "bin": "Heroic.exe",
+    "shortcuts": [
+        [
+            "Heroic.exe",
+            "Heroic"
+        ]
+    ]
+}
