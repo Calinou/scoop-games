@@ -1,5 +1,5 @@
 {
-    "version": "20211124-52fe4031",
+    "version": "20220112-d5ccebbc",
     "description": "A roguelike game set in the early 20th century",
     "homepage": "https://sites.google.com/site/infraarcana/home",
     "license": {
@@ -8,9 +8,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/martin-tornqvist/ia/-/jobs/1817150837/artifacts/download#/dl.zip",
-            "hash": "46eabcdd4620eb5deb1a885bc3969481f82f65a55a5ba0a2dafec62ebbbff422",
-            "extract_dir": "ia windows x64 52fe4031 2021-11-24"
+            "url": "https://gitlab.com/martin-tornqvist/ia/-/jobs/1968599307/artifacts/download#/dl.zip",
+            "hash": "8e25610c68aab0334d239f2b18731c7a2e04292c8ef4e99266daf04397a0e903",
+            "extract_dir": "ia windows x64 d5ccebbc 2022-01-12"
         }
     },
     "shortcuts": [
