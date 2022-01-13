@@ -15,7 +15,6 @@
             "bin": [["JoyShockMapper_Win32\\JoyShockMapper.exe", "jsm"]],
         }
     },
-    
     "persist": [
         "OnReset.txt",
         "OnStartup.txt",
