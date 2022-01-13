@@ -2,7 +2,7 @@
     "homepage": "https://github.com/Electronicks/JoyShockMapper",
     "description": "A tool for PC gamers to play games with DualShock 4s, JoyCons, and Pro Controllers. Gyro aiming, flick stick.",
     "license": "MIT",
-    "version": "v3.3.0",
+    "version": "3.3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v3.3.0/JoyShockMapper_x64.zip",
@@ -31,10 +31,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/$matchBuild/JoyShockMapper_x64.zip"
+                "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v$version/JoyShockMapper_x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/$matchBuild/JoyShockMapper_Win32.zip"
+                "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v$version/JoyShockMapper_Win32.zip"
             }
         }
     }
