@@ -7,12 +7,14 @@
         "64bit": {
             "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v3.3.0/JoyShockMapper_x64.zip",
             "hash": "1B3C3B5C1B1D2B09075221AE283D171820ED5198021C8DB6417CAA6BD1994DCE",
-            "bin": [["JoyShockMapper_x64\\JoyShockMapper.exe", "jsm"]]
+            "bin": [["JoyShockMapper_x64\\JoyShockMapper.exe", "jsm"]],
+            "extract_dir": "JoyShockMapper_x64"
         },
         "32bit": {
             "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v3.3.0/JoyShockMapper_Win32.zip",
             "hash": "AAD648244BCC7201A8EA86209CF54AF7A558017B237CBB630E7B63A9370E5DCC",
-            "bin": [["JoyShockMapper_Win32\\JoyShockMapper.exe", "jsm"]]
+            "bin": [["JoyShockMapper_Win32\\JoyShockMapper.exe", "jsm"]],
+            "extract_dir": "JoyShockMapper_Win32"
         }
     },
     "persist": [
