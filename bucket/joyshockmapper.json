@@ -7,16 +7,15 @@
         "64bit": {
             "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v3.3.0/JoyShockMapper_x64.zip",
             "hash": "1b3c3b5c1b1d2b09075221ae283d171820ed5198021c8db6417caa6bd1994dce",
-            "bin": [["JoyShockMapper_x64\\JoyShockMapper.exe", "jsm"]],
             "extract_dir": "JoyShockMapper_x64"
         },
         "32bit": {
             "url": "https://github.com/Electronicks/JoyShockMapper/releases/download/v3.3.0/JoyShockMapper_Win32.zip",
             "hash": "aad648244bcc7201a8ea86209cf54af7a558017b237cbb630e7b63a9370e5dcc",
-            "bin": [["JoyShockMapper_Win32\\JoyShockMapper.exe", "jsm"]],
             "extract_dir": "JoyShockMapper_Win32"
         }
     },
+    "bin": "JoyShockMapper.exe",
     "persist": [
         "OnReset.txt",
         "OnStartup.txt",
