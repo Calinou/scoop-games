@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.pj64-emu.com/",
     "description": "Nintendo 64 emulator",
-    "version": "4.0.0-5732-16667ec",
+    "version": "4.0.0-5733-8559be5",
     "license": "GPL-2.0-only",
-    "url": "https://www.pj64-emu.com/file/setup-project64-Dev-4-0-0-5732-16667ec/",
-    "hash": "74b74da034f9c61b82424a97a7fe8b2f2d30890bd2944bfbeb412bf3fc679fdf",
+    "url": "https://www.pj64-emu.com/file/setup-project64-Dev-4-0-0-5733-8559be5/",
+    "hash": "418332878d1317f643c64335449782a37b00c2bede6f83d8b7fa730d1c8e7e0f",
     "innosetup": true,
     "shortcuts": [
         [
