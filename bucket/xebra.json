@@ -31,7 +31,7 @@
         "url": "https://drhell.web.fc2.com/ps1/xebra$version.zip"
     },
     "notes": [
-        "ATTENTION: XEBRA.INI does not be persisted because of version incompatibilities",
+        "Warning: XEBRA.INI is not persisted across updates because of version incompatibilities.",
         "If you use BIOS with XEBRA, rename BIOS as \"OSROM\" and overwrite $dir\\OSROM",
         "If you use Video plugin with XEBRA, rename plugin as \"VIDEO.DLL\" and overwrite $dir\\VIDEO.DLL,",
         "and check \"View\">\"Video Output\">\"Use VIDEO.DLL\"",
