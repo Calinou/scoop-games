@@ -1,6 +1,6 @@
 {
     "homepage": "https://m64p.github.io/",
-    "description": "Nintendo64 emulator bundled with paraLLEl-RDP for graphics",
+    "description": "Nintendo 64 emulator bundled with paraLLEl-RDP for graphics",
     "version": "2021.10.28",
     "license": "GPL-3.0",
     "url": "https://github.com/loganmc10/m64p/releases/download/v2021.10.28/m64p-win64-661626c.zip",
