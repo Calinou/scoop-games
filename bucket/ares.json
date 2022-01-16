@@ -1,12 +1,12 @@
 {
     "homepage": "https://ares-emulator.github.io/",
     "description": "Multi-system emulator focused on accuracy and preservation",
-    "version": "124",
+    "version": "126",
     "license": "ISC",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ares-emulator/ares/releases/download/v124/ares-windows.zip",
-            "hash": "439d91934b847cc6912b19bf28ec71986ffe6ab4ef878192da1ec8339c35148a"
+            "url": "https://github.com/ares-emulator/ares/releases/download/v126/ares-windows.zip",
+            "hash": "0c3573c55ce31e3d00633017f69730b1a34c2857d8beaccd95a326467291e300"
         }
     },
     "extract_dir": "ares-v124",
