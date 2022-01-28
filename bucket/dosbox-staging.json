@@ -1,6 +1,6 @@
 {
     "version": "0.78.1",
-    "description": "DOSBox Staging is DOS/x86 emulator focusing on ease of use. Based on DOSBox.",
+    "description": "A DOS/x86 emulator based on DOSBox which focuses on ease of use.",
     "homepage": "https://dosbox-staging.github.io/",
     "license": "GPL-2.0-or-later",
     "architecture": {
@@ -14,7 +14,10 @@
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\dosbox-staging.conf\")) { New-Item -ItemType File \"$dir\\dosbox-staging.conf\" | Out-Null }",
-    "bin": "dosbox.exe",
+    "bin": [
+        "dosbox.exe",
+        "dosbox_with_debugger.exe"
+    ],
     "shortcuts": [
         [
             "dosbox.exe",
@@ -40,9 +43,5 @@
             }
         }
     },
-    "notes": [
-        "",
-        "Config file examples can be found on the project's wiki here: https://github.com/dosbox-staging/dosbox-staging/wiki/Config-file-examples",
-        ""
-    ]
+    "notes": "For config file examples see: https://github.com/dosbox-staging/dosbox-staging/wiki/Config-file-examples"
 }
