@@ -58,9 +58,9 @@
         "bind 's' +back",
         "bind mouse1 +fire",
         "",
-        "Basically it's: bind control +action",
+        "Basically it's: bind control +action, where singular letters and signs need to have apostrophes surrounding them in the config file.",
         "",
-        "See the corresponding wiki section here for reference: https://github.com/bradharding/doomretro/wiki/THE-CONTROLS",
+        "See the corresponding wiki section here for reference: https://github.com/bradharding/doomretro/wiki/CONSOLE-COMMANDS#ACTIONS",
         ""
     ]
 }
