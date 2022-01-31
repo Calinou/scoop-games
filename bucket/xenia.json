@@ -31,12 +31,10 @@
         ]
     ],
     "persist": [
-        [
-            "portable.txt",
-            "xenia.config.toml",
-            "content",
-            "cache"
-        ]
+        "portable.txt",
+        "xenia.config.toml",
+        "content",
+        "cache"
     ],
     "checkver": {
         "github": "https://github.com/xenia-project/release-builds-windows",
