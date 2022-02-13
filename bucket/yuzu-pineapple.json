@@ -10,17 +10,30 @@
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\user\" -ItemType Folder | Out-Null",
+        "   if (Test-Path \"$env:APPDATA\\yuzu\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\yuzu\\*\" -Destination \"$persist_dir\" -Recurse",
+        "       Remove-Item -Path \"$env:APPDATA\\yuzu\" -Recurse",
+        "   }",
+        "}"
+    ],
     "bin": [
-        [
             "yuzu.exe",
-            "yuzu-pineapple"
-        ]
+            "yuzu-cmd.exe"
     ],
     "shortcuts": [
         [
             "yuzu.exe",
-            "Yuzu"
+            "Yuzu (Development)"
         ]
+    ],
+    "persist": [
+        "user",
+        "plugins"
     ],
     "checkver": {
         "github": "https://github.com/pineappleEA/pineapple-src",
