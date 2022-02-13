@@ -32,7 +32,7 @@
     "shortcuts": [
         [
             "pcsx2.exe",
-            "PCSX2-dev"
+            "PCSX2"
         ]
     ],
     "suggest": {

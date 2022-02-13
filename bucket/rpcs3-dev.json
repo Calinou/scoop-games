@@ -31,7 +31,7 @@
     "shortcuts": [
         [
             "rpcs3.exe",
-            "RPCS3-dev"
+            "RPCS3"
         ]
     ],
     "installer": {

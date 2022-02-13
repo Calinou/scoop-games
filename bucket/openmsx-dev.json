@@ -1,6 +1,6 @@
 {
     "homepage": "https://openmsx.fixato.net/",
-    "description": "Cycle-accurate MSX emulator (Development builds)",
+    "description": "Cycle-accurate MSX emulator (development version)",
     "version": "17.0-287-gc9cfbc0a2",
     "license": "GPL-2.0",
     "architecture": {
@@ -18,11 +18,11 @@
     "shortcuts": [
         [
             "openmsx.exe",
-            "openMSX\\openMSX (Development)"
+            "openMSX\\openMSX"
         ],
         [
             "Catapult\\bin\\Catapult.exe",
-            "openMSX\\Catapult (Development)"
+            "openMSX\\Catapult"
         ]
     ],
     "checkver": {

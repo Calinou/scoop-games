@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.pj64-emu.com/",
-    "description": "Nintendo 64 emulator",
+    "description": "Nintendo 64 emulator (development version)",
     "version": "4.0.0-5749-6225654",
     "license": "GPL-2.0-only",
     "url": "https://www.pj64-emu.com/file/setup-project64-Dev-4-0-0-5749-6225654/",
@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "Project64.exe",
-            "Project64 (Development)"
+            "Project64"
         ]
     ],
     "persist": [

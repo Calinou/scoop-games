@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.ppsspp.org",
-    "description": "Sony PSP emulator (Development)",
+    "description": "Sony PSP emulator (development version)",
     "version": "1.12.3-905",
     "license": "GPL-2.0-or-later",
     "architecture": {
@@ -16,7 +16,7 @@
             "shortcuts": [
                 [
                     "PPSSPPWindows64.exe",
-                    "PPSSPP (development)"
+                    "PPSSPP"
                 ]
             ]
         },
@@ -32,7 +32,7 @@
             "shortcuts": [
                 [
                     "PPSSPPWindows.exe",
-                    "PPSSPP (development)"
+                    "PPSSPP"
                 ]
             ]
         }
