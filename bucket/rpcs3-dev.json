@@ -6,7 +6,6 @@
     "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-7895d43a98f93241624d347fb744489d30e55de8/rpcs3-v0.0.20-13273-7895d43a_win64.7z",
     "hash": "9ff28513c243d7d2cac5ac2479a67aa5699b26dbc3fb02eb1f4cb34f5ed411ae",
     "bin": "rpcs3.exe",
-    "depends": "vcredist2019",
     "persist": [
         "dev_flash",
         "dev_flash2",
@@ -58,7 +57,8 @@
         }
     },
     "suggest": {
-        "PS3 System Software": "games/ps3-system-software"
+        "PS3 System Software": "games/ps3-system-software",
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     },
     "notes": [
         "ATTENTION: RPCS3 requires a copy of the official PS3 firmware to function.",
