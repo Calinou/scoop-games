@@ -51,7 +51,7 @@
         "missionpack"
     ],
     "notes": [
-        "To save the data in persist folder, run from the Start menu or CLI",
+        "To save the data in persist folder, run from the Start menu or CLI instead of double-clicking the executable in the persist folder.",
         "",
         "Place game data files (such as pak0.pk3-pak8.pk3) in:",
         "",
