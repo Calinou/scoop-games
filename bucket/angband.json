@@ -40,5 +40,5 @@
             "}"
         ]
     },
-    "notes": "Configuration files cannot be persisted, but will be retained during the update"
+    "notes": "Configuration files cannot be persisted, but will be retained during package updates."
 }
