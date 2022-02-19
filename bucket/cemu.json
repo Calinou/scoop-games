@@ -1,7 +1,7 @@
 {
     "homepage": "https://cemu.info/",
     "description": "Experimental software to emulate Wii U applications on PC",
-    "version": "1.26.2e",
+    "version": "1.26.2f",
     "license": "Freeware",
     "architecture": {
         "64bit": {
