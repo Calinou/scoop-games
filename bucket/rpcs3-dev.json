@@ -2,14 +2,26 @@
     "homepage": "https://rpcs3.net/",
     "description": "Open-source Sony PlayStation 3 emulator (development version)",
     "license": "GPL-2.0-only",
-    "version": "0.0.17-12437",
-    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-770a607ba5a528338723ebf031bedf85d1f8b61c/rpcs3-v0.0.17-12437-770a607b_win64.7z",
-    "hash": "fdbc65600071dfeb5cefa567d3f2670e872395d902ff9f7b5d82360e744a3c65",
+    "version": "0.0.20-13298",
+    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-9214df482e6d87ce505ddf0a440c247bde72c176/rpcs3-v0.0.20-13298-9214df48_win64.7z",
+    "hash": "6558ab89328904f4a8a859a26334aa29ce1ca8cce2539d95ecfe1b0caf79ec3c",
     "bin": "rpcs3.exe",
-    "depends": "vcredist2019",
     "persist": [
+        "dev_flash",
+        "dev_flash2",
+        "dev_flash3",
+        "dev_hdd0",
+        "dev_hdd1",
+        "dev_usb000",
+        "cache",
+        "captures",
+        "config.yml",
+        "config",
+        "firmware",
+        "games.yml",
         "GuiConfigs",
-        "dev_hdd0"
+        "Icons",
+        "patches"
     ],
     "shortcuts": [
         [
@@ -17,6 +29,16 @@
             "RPCS3-dev"
         ]
     ],
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\config.yml\")) {",
+            "    New-Item \"$dir\\config.yml\" -Type File | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\games.yml\")) {",
+            "    New-Item \"$dir\\games.yml\" -Type File | Out-Null",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://rpcs3.net/compatibility?b",
         "regex": "/rpcs3-binaries-win/releases/download/build-(?<fullhash>[0-9a-f]+)/rpcs3-v(?<build>[0-9]+\\.[0-9]+\\.[0-9]+\\-[0-9]+)-(?<shorthash>[0-9a-f]{8})",
@@ -30,7 +52,8 @@
         }
     },
     "suggest": {
-        "PS3 System Software": "games/ps3-system-software"
+        "PS3 System Software": "games/ps3-system-software",
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     },
     "notes": [
         "ATTENTION: RPCS3 requires a copy of the official PS3 firmware to function.",

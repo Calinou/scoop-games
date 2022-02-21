@@ -1,12 +1,13 @@
 {
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://ryujinx.org/",
     "description": "A simple, experimental Nintendo Switch emulator written in C#.",
     "license": "MIT",
-    "version": "1.0.6945",
+    "version": "1.1.46",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/5bu0p0fray31kx9i/artifacts/ryujinx-1.0.6945-win_x64.zip",
-            "hash": "efb5ede73549633359def236ed0dc77aa6e9b63860a4147305248730582a00c6"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.46/ryujinx-1.1.46-win_x64.zip",
+            "hash": "ce7c7ec43ae9add3c910527e3d4c88d39f0d222f05af9e3eb1f3b873cef77778"
         }
     },
     "extract_dir": "publish",
@@ -29,13 +30,12 @@
     ],
     "persist": "portable",
     "checkver": {
-        "url": "https://ci.appveyor.com/api/projects/gdkchan/ryujinx/branch/master",
-        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>.*?)\""
+        "github": "https://github.com/Ryujinx/release-channel-master"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/ryujinx-$version-win_x64.zip"
+                "url": "https://github.com/Ryujinx/release-channel-master/releases/download/$version/ryujinx-$version-win_x64.zip"
             }
         }
     },

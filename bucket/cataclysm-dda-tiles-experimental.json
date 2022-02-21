@@ -1,35 +1,41 @@
 {
     "homepage": "https://cataclysmdda.org",
-    "description": "Turn-based survival game set in a post-apocalyptic world (with graphical tiles, experimental build)",
-    "version": "10442",
+    "description": "Roguelike in a post-apocalyptic world (with sprite-based graphics, experimental build)",
+    "version": "2022-02-20-2211",
     "license": "CC-BY-SA-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b10442/cataclysmdda-0.D-Windows_x64-Tiles-10442.zip",
-            "hash": "93ecf2a9db357a5af4185a6ea3061f1b0fec379b62631b3ab29aca7ef2c381ea"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-02-20-2211/cdda-windows-tiles-x64-2022-02-20-2211.zip",
+            "hash": "c94f501b10685a8fe98d825645a86aa2a12e7ca87ca630aa1e24723280ece10f"
         },
         "32bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b10442/cataclysmdda-0.D-Windows-Tiles-10442.zip",
-            "hash": "45892f29fb859b8390d3f288e3a591ccb3dd7f56ce569c84a9047cc1a575f2e6"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-02-20-2211/cdda-windows-tiles-x32-2022-02-20-2211.zip",
+            "hash": "cd306115fec22b4c83b796bf4dececfb31adaca6b062c86dc2c9558b782cdc0c"
         }
     },
     "shortcuts": [
         [
             "cataclysm-tiles.exe",
-            "Cataclysm DDA Tiles (Experimental)"
+            "Cataclysm DDA\\Cataclysm DDA Tiles (Experimental)"
         ]
+    ],
+    "persist": [
+        "config",
+        "save",
+        "sound",
+        "templates"
     ],
     "checkver": {
         "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/",
-        "re": "Cataclysm-DDA experimental build #(.*)[<]"
+        "re": "Cataclysm-DDA experimental build ([\\d.-]+)(<)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b$version/cataclysmdda-0.D-Windows_x64-Tiles-$version.zip"
+                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-$version/cdda-windows-tiles-x64-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-jenkins-b$version/cataclysmdda-0.D-Windows-Tiles-$version.zip"
+                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-$version/cdda-windows-tiles-x32-$version.zip"
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-    "version": "0.10.2.0",
+    "version": "0.11.0.0",
     "license": "BSD-3",
     "extract_dir": "LambdaHackTheGame",
     "homepage": "https://github.com/LambdaHack/LambdaHack",
@@ -12,12 +12,12 @@
     "checkver": "github",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/LambdaHack/LambdaHack/releases/download/v0.10.2.0/LambdaHack_0.10.2.0_windows-x86_64.zip",
-            "hash": "ba0ae2b220206a79d1c89a321459ccbdf3bd7dd91ab0253e14bda265c8104ac2"
+            "url": "https://github.com/LambdaHack/LambdaHack/releases/download/v0.11.0.0/LambdaHack_0.11.0.0_windows-x86_64.zip",
+            "hash": "7588920ac3987e4fbea80980e14854aadc8983783bc5ce1e50edb6b16d25003c"
         },
         "32bit": {
-            "url": "https://github.com/LambdaHack/LambdaHack/releases/download/v0.10.2.0/LambdaHack_0.10.2.0_windows-i686.zip",
-            "hash": "a54595574c39fedf7f8f03b8c90f91d72bd4dbfa7e9b6b0d1690116db43e7ea5"
+            "url": "https://github.com/LambdaHack/LambdaHack/releases/download/v0.11.0.0/LambdaHack_0.11.0.0_windows-i686.zip",
+            "hash": "250e0982874cc55d812e8d83806a14e77b68483669764c2a5ff3f5d6f50a9947"
         }
     },
     "autoupdate": {

@@ -1,14 +1,15 @@
 {
     "homepage": "https://cemu.info/",
-    "version": "1.23.1b",
+    "description": "Experimental software to emulate Wii U applications on PC",
+    "version": "1.26.2f",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://cemu.info/releases/cemu_1.23.1.zip",
-            "hash": "1e2396de6fe63b7c93495352f06011ada86914b0ae0628bfaf6733786871af08"
+            "url": "https://cemu.info/releases/cemu_1.26.2.zip",
+            "hash": "b0e3abf5048f78e352b42c3e1660a2c6e85d6905cd9f60d06ca2f2318fa3152c"
         }
     },
-    "extract_dir": "cemu_1.23.1",
+    "extract_dir": "cemu_1.26.2",
     "shortcuts": [
         [
             "cemu.exe",
@@ -17,17 +18,20 @@
     ],
     "installer": {
         "script": [
-            "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
-            "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
+            "'cemuhook.dll', 'keystone.dll' | ForEach-Object {",
+            "   if (Test-Path \"$(versiondir 'cemuhook' 'current' $global)\\$_\") {",
+            "       Copy-Item \"$(versiondir 'cemuhook' 'current' $global)\\$_\" \"$dir\"",
+            "   }",
             "}"
         ]
     },
     "persist": [
-        "settings.xml",
         "controllerProfiles",
         "gameProfiles",
         "graphicPacks",
-        "mlc01"
+        "mlc01",
+        "sharedFonts",
+        "shaderCache\\transferable"
     ],
     "suggest": {
         "vcredist": "extras/vcredist2015",
@@ -43,5 +47,22 @@
             }
         },
         "extract_dir": "cemu_$matchVersion"
-    }
+    },
+    "post_install": [
+        "'settings.xml' | ForEach-Object {",
+        "   if (Test-Path \"$persist_dir\\$_.bak\") {",
+        "       Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\"  -Force",
+        "   } else {",
+        "       New-Item -ItemType File \"$dir\\$_\" | Out-Null",
+        "   }",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "'settings.xml' | ForEach-Object {",
+            "   Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
+            "}"
+        ]
+    },
+    "notes": "Configuration files cannot be persisted, but will be retained during the update"
 }

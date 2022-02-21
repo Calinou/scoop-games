@@ -2,26 +2,11 @@
     "homepage": "http://melonds.kuribo64.net/",
     "description": "A Nintendo DS emulator aiming for fast and accurate emulation",
     "license": "GPL-3.0-or-later",
-    "version": "0.9.2",
-    "url": "https://github.com/Arisotura/melonDS/releases/download/0.9.2/melonDS_0.9.2_win64.7z",
-    "hash": "aabed26e6056697b73ab7388b5c18a08318c66684f1fe7b907e7772f74ed6c94",
+    "version": "0.9.3",
+    "url": "https://github.com/Arisotura/melonDS/releases/download/0.9.3/melonDS_0.9.3_win_x64.7z",
+    "hash": "108693998ce58175b4acb02788177f80e9e277658fa2cc9c62a2c7ae34181b10",
     "installer": {
         "script": [
-            "$FILE = 'bios7.bin'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    Write-Host 'No' $FILE 'found. Creating dummy' $FILE'.' -f Yellow",
-            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
-            "}",
-            "$FILE = 'bios9.bin'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    Write-Host 'No' $FILE 'found. Creating dummy' $FILE'.' -f Yellow",
-            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
-            "}",
-            "$FILE = 'firmware.bin'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    Write-Host 'No' $FILE 'found. Creating dummy' $FILE'.' -f Yellow",
-            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
-            "}",
             "$FILE = 'melonDS.ini'",
             "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
             "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
@@ -35,21 +20,15 @@
             "melonDS"
         ]
     ],
-    "persist": [
-        "bios7.bin",
-        "bios9.bin",
-        "firmware.bin",
-        "melonDS.ini"
-    ],
+    "persist": "melonDS.ini",
     "notes": [
         "ATTENTION: MelonDS requires BIOS and firmware files dumped from a Nintendo DS to function.",
-        "Replace the dummy bios7.bin, bios9.bin, and firmware.bin files inside $persist_dir You must only do this once.",
         "Visit http://melonds.kuribo64.net/faq.php for more information."
     ],
     "checkver": {
         "github": "https://github.com/Arisotura/melonDS"
     },
     "autoupdate": {
-        "url": "https://github.com/Arisotura/melonDS/releases/download/$version/melonDS_$version_win64.7z"
+        "url": "https://github.com/Arisotura/melonDS/releases/download/$version/melonDS_$version_win_64.7z"
     }
 }

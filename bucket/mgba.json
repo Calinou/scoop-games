@@ -2,17 +2,17 @@
     "homepage": "https://mgba.io/",
     "description": "A fast, accurate, and portable GBA emulator",
     "license": "MPL-2.0",
-    "version": "0.9.1",
+    "version": "0.9.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.1/mGBA-0.9.1-win64.7z",
-            "hash": "239224df0e061894bce5f5ea5fc2b2d2a7eaf781f15e2e32220134a451bbff28",
-            "extract_dir": "mGBA-0.9.1-win64"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.3/mGBA-0.9.3-win64.7z",
+            "hash": "a84ba662a2808f2d47de6f00d437981359194b807447043860a33ce15b3f5468",
+            "extract_dir": "mGBA-0.9.3-win64"
         },
         "32bit": {
-            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.1/mGBA-0.9.1-win32.7z",
-            "hash": "1b17f795f41f3dce33fff80f91aa54d77a2893ab4208e607be1498e1cb4aae95",
-            "extract_dir": "mGBA-0.9.1-win32"
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.3/mGBA-0.9.3-win32.7z",
+            "hash": "54df53ba5bb463395da0b85db8692234259c2ab7210781d49426b78e5a259757",
+            "extract_dir": "mGBA-0.9.3-win32"
         }
     },
     "installer": {
@@ -50,19 +50,17 @@
         "config.ini"
     ],
     "checkver": {
-        "github": "https://github.com/mgba-emu/mgba",
-        "regex": "mGBA-(?<ver>[\\d.]+)((?<beta>-b1)?)",
-        "replace": "${2}${1}"
+        "github": "https://github.com/mgba-emu/mgba"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win64.7z",
-                "extract_dir": "mGBA-$matchVer$matchBeta-win64"
+                "url": "https://github.com/mgba-emu/mgba/releases/download/$version/mGBA-$version-win64.7z",
+                "extract_dir": "mGBA-$version-win64"
             },
             "32bit": {
-                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win32.7z",
-                "extract_dir": "mGBA-$matchVer$matchBeta-win32"
+                "url": "https://github.com/mgba-emu/mgba/releases/download/$version/mGBA-$version-win32.7z",
+                "extract_dir": "mGBA-$version-win32"
             }
         }
     }

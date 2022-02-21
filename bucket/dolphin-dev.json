@@ -2,9 +2,9 @@
     "homepage": "https://dolphin-emu.org/",
     "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
     "license": "GPL-2.0-or-later",
-    "version": "5.0-14344",
-    "url": "https://dl.dolphin-emu.org/builds/06/aa/dolphin-master-5.0-14344-x64.7z",
-    "hash": "49b2019d46778887d91de591638d62defafe75eeb5d4d38288ee73f751ce693d",
+    "version": "5.0-16073",
+    "url": "https://dl.dolphin-emu.org/builds/7b/8b/dolphin-master-5.0-16073-x64.7z",
+    "hash": "0a4a6c9503aa2894449eeeeeeb3fadbffe21adb80a5a08e1bda78654d540cacb",
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
@@ -21,13 +21,13 @@
     "shortcuts": [
         [
             "Dolphin.exe",
-            "Dolphin"
+            "Dolphin (Development)"
         ]
     ],
     "persist": "User",
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
     "checkver": {
-        "url": "https://dolphin-emu.org/download/",
+        "url": "https://dolphin-emu.org/download/list/master/1/",
         "regex": "\\/(?<rand1>.{2})\\/(?<rand2>.{2})\\/dolphin-master-(?<major>[\\d\\.]+)-(?<build>[\\d]+)",
         "replace": "${major}-${build}"
     },

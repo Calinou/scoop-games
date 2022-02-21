@@ -1,11 +1,11 @@
 {
-    "version": "0.1.3",
+    "version": "0.4.2",
     "description": "An easy to use package manager for Fabric Minecraft mods",
-    "homepage": "https://github.com/bluefireoly/pacmc",
+    "homepage": "https://github.com/jakobkmar/pacmc",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/bluefireoly/pacmc/releases/download/0.1.3/pacmc-0.1.3.zip",
-    "hash": "0468fdb74aadf4fd4330c698b3a089ad7b5eb1cee2cb54e85c7b50600d8e266e",
-    "extract_dir": "pacmc-0.1.3",
+    "url": "https://github.com/jakobkmar/pacmc/releases/download/0.4.2/pacmc-0.4.2.zip",
+    "hash": "41e2542633c9cf795b6b29565f8dd810cb1aeb3c633fc8afc4e199668f714ad4",
+    "extract_dir": "pacmc-0.4.2",
     "bin": "bin/pacmc.bat",
     "suggest": {
         "JDK": [
@@ -14,10 +14,10 @@
         ]
     },
     "checkver": {
-        "github": "https://github.com/bluefireoly/pacmc"
+        "github": "https://github.com/jakobkmar/pacmc"
     },
     "autoupdate": {
-        "url": "https://github.com/bluefireoly/pacmc/releases/download/$version/pacmc-$version.zip",
+        "url": "https://github.com/jakobkmar/pacmc/releases/download/$version/pacmc-$version.zip",
         "extract_dir": "pacmc-$version"
     }
 }
