@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/bsnes-emu/bsnes/releases/download/v115/bsnes_v$version-windows.zip"
+                "url": "https://github.com/bsnes-emu/bsnes/releases/download/v$version/bsnes_v$version-windows.zip"
             }
         }
     }
