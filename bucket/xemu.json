@@ -9,6 +9,22 @@
             "hash": "c5859c7ac639160950048e4b5ff67984417533e24fc91de65369394d2f9aba51"
         }
     },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mborgerson/xemu/releases/download/gh-release%2F$version/xemu-win-release.zip"
+            }
+        }
+    },
+    "bin": "xemu.exe",
+    "checkver": {
+        "github": "https://github.com/mborgerson/xemu",
+        "regex": "([\\d\\.]+-\\d{1,2}-g[a-f0-9]+)"
+    },
+    "persist": [
+        "bios",
+        "data"
+    ],
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -16,26 +32,10 @@
         "   New-item \"$persist_dir\\data\" -ItemType Directory | Out-Null",
         "}"
     ],
-    "bin": "xemu.exe",
     "shortcuts": [
         [
             "xemu.exe",
             "Xemu"
         ]
-    ],
-    "persist": [
-        "bios",
-        "data"
-    ],
-    "checkver": {
-        "github": "https://github.com/mborgerson/xemu",
-        "regex": "([\\d\\.]+-\\d{1,2}-g[a-f0-9]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/mborgerson/xemu/releases/download/gh-release%2F$version/xemu-win-release.zip"
-            }
-        }
-    }
+    ]
 }

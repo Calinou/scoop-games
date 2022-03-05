@@ -6,12 +6,6 @@
     "url": "https://www.pj64-emu.com/file/setup-project64-3-0-0-5632-f83bee9/",
     "hash": "93f3db8dc5642d39fcc44eaf43811cdbdf912690f95041e924e038e76f36f921",
     "innosetup": true,
-    "shortcuts": [
-        [
-            "Project64.exe",
-            "Project64"
-        ]
-    ],
     "persist": [
         "Config",
         "Logs",
@@ -20,5 +14,11 @@
         "Textures",
         "Games",
         "ROMs"
+    ],
+    "shortcuts": [
+        [
+            "Project64.exe",
+            "Project64"
+        ]
     ]
 }

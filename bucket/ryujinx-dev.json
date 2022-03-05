@@ -1,15 +1,27 @@
 {
     "homepage": "https://ryujinx.org/",
     "description": "A simple, experimental Nintendo Switch emulator written in C#.",
-    "license": "MIT",
     "version": "1.1.60",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.60/ryujinx-1.1.60-win_x64.zip",
             "hash": "9c76cde8b1f26987dcb894223403177588576f774bd0e8992ec28355bc5d7e73"
         }
     },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Ryujinx/release-channel-master/releases/download/$version/ryujinx-$version-win_x64.zip"
+            }
+        }
+    },
+    "bin": "Ryujinx.exe",
+    "checkver": {
+        "github": "https://github.com/Ryujinx/release-channel-master"
+    },
     "extract_dir": "publish",
+    "persist": "portable",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\\portable\" -ItemType Directory | Out-Null",
@@ -20,28 +32,10 @@
         "   }",
         "}"
     ],
-    "bin": "Ryujinx.exe",
     "shortcuts": [
         [
             "Ryujinx.exe",
             "Ryujinx"
         ]
-    ],
-    "persist": "portable",
-    "checkver": {
-        "github": "https://github.com/Ryujinx/release-channel-master"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/Ryujinx/release-channel-master/releases/download/$version/ryujinx-$version-win_x64.zip"
-            }
-        }
-    },
-    "notes": [
-        "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
-        "Learn more at https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide",
-        "Be sure to disable auto-update in Ryujinx's settings!",
-        "You must only do this once."
     ]
 }
