@@ -6,7 +6,10 @@
     "hash": "edef11a77ff331bfa1555616dfa1904036bf62e461d382661a7229296ab40d08",
     "notes": "This is only the launcher, an account is required to play.",
     "license": "Proprietary",
-    "pre_install": ["Remove-Item $dir -Recurse -Force  -Include * -Exclude Launcher.exe", "Rename-Item -Path $dir/Launcher.exe -NewName $dir/ToontownRewritten.exe"],
+    "pre_install": [
+        "Remove-Item $dir -Recurse -Force  -Include * -Exclude Launcher.exe",
+        "Rename-Item -Path $dir/Launcher.exe -NewName $dir/ToontownRewritten.exe"
+    ],
     "bin": "ToontownRewritten.exe",
     "persist": [
         "OpenAL32.dll",

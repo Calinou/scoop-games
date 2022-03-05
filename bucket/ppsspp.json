@@ -28,6 +28,6 @@
         "replace": "${major}.${minor}.${patch}"
     },
     "autoupdate": {
-         "url": "https://ppsspp.org/files/${major}_${minor}_${patch}/ppsspp_win.zip"
+        "url": "https://ppsspp.org/files/${major}_${minor}_${patch}/ppsspp_win.zip"
     }
 }

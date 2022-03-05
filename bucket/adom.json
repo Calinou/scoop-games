@@ -8,10 +8,10 @@
     "url": "https://www.adom.de/home/download/current/adom_windows_3.3.3.zip",
     "bin": "adom.exe",
     "shortcuts": [
-      [
-        "adom.exe",
-        "Ancient Domains of Mystery (ASCII)"
-      ]
+        [
+            "adom.exe",
+            "Ancient Domains of Mystery (ASCII)"
+        ]
     ],
     "checkver": {
         "url": "https://www.adom.de/home/downloads.html",
