@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.retroarch.com/",
     "description": "Frontend for emulators, game engines and media players",
-    "version": "1.10.0",
+    "version": "1.10.1",
     "license": "GPL-3.0-only",
     "notes": [
         "ATTENTION: Retroarch requires BIOS/firmware files for some emulation.",
@@ -15,8 +15,8 @@
             "extract_dir": "RetroArch-Win32"
         },
         "64bit": {
-            "url": "https://buildbot.libretro.com/stable/1.10.0/windows/x86_64/RetroArch.7z",
-            "hash": "81c820f2f7775563bf2facc66b77381303efe9f120fee965a19f6bb08ce56f0f",
+            "url": "https://buildbot.libretro.com/stable/1.10.1/windows/x86_64/RetroArch.7z",
+            "hash": "a0f4e74317c5e399c0d5bf1472d082801fd349b85950f5a6b56c6fc0dd0f5675",
             "extract_dir": "RetroArch-Win64"
         }
     },

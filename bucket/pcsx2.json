@@ -6,7 +6,7 @@
     "notes": [
         "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
         "Place the BIOS file in $persist_dir\\bios",
-        "Learn more at https://pcsx2.net/config-guide/official-english-pcsx2-configuration-guide.html#Bios"
+        "Learn more at https://wiki.pcsx2.net/Setting_up_Windows_version#BIOS"
     ],
     "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.6.0/pcsx2-1.6.0-binaries.7z",
     "hash": "f3401d6f74a4306797d9aab298d58c3b3898eb563495c463993f378c9f4801cb",
@@ -48,9 +48,6 @@
         ]
     ],
     "suggest": {
-        "Visual Studio redist 2015": [
-            "vcredist",
-            "vcredist2015"
-        ]
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     }
 }

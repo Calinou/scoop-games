@@ -31,7 +31,7 @@
     "bin": [
         [
             "retroarch.exe",
-            "retroarch"
+            "retroarch-nightly"
         ]
     ],
     "persist": [
@@ -57,7 +57,7 @@
     "shortcuts": [
         [
             "retroarch.exe",
-            "RetroArch"
+            "RetroArch (nightly)"
         ]
     ]
 }

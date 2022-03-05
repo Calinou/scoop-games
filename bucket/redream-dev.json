@@ -1,6 +1,6 @@
 {
     "homepage": "https://redream.io",
-    "description": "Sega Dreamcast emulator that can render games in HD and 4K (nightly)",
+    "description": "Sega Dreamcast emulator that can render games in HD and 4K (development)",
     "version": "1.5.0-1026-g7b7ec5d",
     "license": "",
     "architecture": {
@@ -35,7 +35,7 @@
     "shortcuts": [
         [
             "redream.exe",
-            "Redream"
+            "Redream (dev)"
         ]
     ]
 }

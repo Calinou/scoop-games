@@ -11,7 +11,7 @@
             "shortcuts": [
                 [
                     "snes9x.exe",
-                    "Snes9X"
+                    "Snes9X (dev)"
                 ]
             ]
         },
@@ -27,7 +27,7 @@
             "shortcuts": [
                 [
                     "snes9x-x64.exe",
-                    "Snes9X"
+                    "Snes9X (dev)"
                 ]
             ]
         }
@@ -50,5 +50,9 @@
         "Saves",
         "snes9x.conf"
     ],
-    "pre_install": "If(!(Test-Path(\"$persist_dir\\snes9x.conf\"))){New-Item -ItemType File \"$dir\\snes9x.conf\" | Out-Null }"
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\snes9x.conf\")) {",
+        "    New-Item \"$dir\\snes9x.conf\" -Type File | Out-Null",
+        "}"
+    ]
 }

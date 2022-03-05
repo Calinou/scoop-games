@@ -4,7 +4,7 @@
     "version": "1.3.2",
     "license": "Proprietary",
     "notes": "This is only the launcher, an account is required to play.",
-    "url": "https://cdn.toontownrewritten.com/launcher/windows/TTRInstaller-v1.3.2.exe#dl.7z",
+    "url": "https://cdn.toontownrewritten.com/launcher/windows/TTRInstaller-v1.3.2.exe#/dl.7z",
     "hash": "edef11a77ff331bfa1555616dfa1904036bf62e461d382661a7229296ab40d08",
     "bin": "ToontownRewritten.exe",
     "persist": [

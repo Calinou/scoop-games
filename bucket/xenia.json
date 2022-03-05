@@ -2,7 +2,10 @@
     "homepage": "https://xenia.jp",
     "description": "Xbox 360 Research Emulator",
     "version": "1.0.2589",
-    "license": "BSD-3-Clause",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://github.com/xenia-project/xenia/blob/master/LICENSE"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2589-master/xenia_master.zip",
@@ -31,6 +34,7 @@
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
         "   New-item \"$persist_dir\\portable.txt\" -ItemType File | Out-Null",
+        "   New-item \"$persist_dir\\xenia.config.toml\" -ItemType File | Out-Null",
         "   if (Test-Path \"$env:USERPROFILE\\Documents\\Xenia\") {",
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\\*\" -Destination \"$persist_dir\" -Recurse",

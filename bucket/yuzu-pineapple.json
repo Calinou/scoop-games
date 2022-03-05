@@ -2,7 +2,10 @@
     "homepage": "https://github.com/pineappleEA/pineapple-src",
     "description": "A Yuzu Early Access fork with Linux-specific patches",
     "version": "EA-2527",
-    "license": "GPL-2.0-or-later",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/pineappleEA/pineapple-src/blob/main/LICENSE"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2527/Windows-Yuzu-EA-2527.7z",
@@ -17,7 +20,10 @@
         }
     },
     "bin": [
-        "yuzu.exe",
+        [
+            "yuzu.exe",
+            "yuzu-dev"
+        ],
         "yuzu-cmd.exe"
     ],
     "checkver": {

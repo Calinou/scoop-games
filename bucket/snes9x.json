@@ -60,5 +60,9 @@
         "SPCs",
         "snes9x.conf"
     ],
-    "pre_install": "If(!(Test-Path(\"$persist_dir\\snes9x.conf\"))){New-Item -ItemType File \"$dir\\snes9x.conf\" | Out-Null }"
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\snes9x.conf\")) {",
+        "    New-Item \"$dir\\snes9x.conf\" -Type File | Out-Null",
+        "}"
+    ]
 }
