@@ -3,7 +3,6 @@
     "description": "Experimental software to emulate Wii U applications on PC",
     "version": "1.26.2f",
     "license": "Freeware",
-    "notes": "Configuration files cannot be persisted, but will be retained during the update",
     "architecture": {
         "64bit": {
             "url": "https://cemu.info/releases/cemu_1.26.2.zip",
@@ -18,6 +17,7 @@
         },
         "extract_dir": "cemu_$matchVersion"
     },
+    "bin": "Cemu.exe",
     "checkver": {
         "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
     },
@@ -28,25 +28,20 @@
             "   if (Test-Path \"$(versiondir 'cemuhook' 'current' $global)\\$_\") {",
             "       Copy-Item \"$(versiondir 'cemuhook' 'current' $global)\\$_\" \"$dir\"",
             "   }",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
+            "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
             "}"
         ]
     },
     "persist": [
+        "settings.xml",
         "controllerProfiles",
         "gameProfiles",
         "graphicPacks",
         "mlc01",
         "sharedFonts",
         "shaderCache\\transferable"
-    ],
-    "post_install": [
-        "'settings.xml' | ForEach-Object {",
-        "   if (Test-Path \"$persist_dir\\$_.bak\") {",
-        "       Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\"  -Force",
-        "   } else {",
-        "       New-Item -ItemType File \"$dir\\$_\" | Out-Null",
-        "   }",
-        "}"
     ],
     "shortcuts": [
         [
@@ -57,12 +52,5 @@
     "suggest": {
         "cemuhook": "cemuhook",
         "vcredist": "extras/vcredist2015"
-    },
-    "uninstaller": {
-        "script": [
-            "'settings.xml' | ForEach-Object {",
-            "   Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
-            "}"
-        ]
     }
 }

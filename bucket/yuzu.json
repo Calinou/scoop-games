@@ -2,7 +2,10 @@
     "homepage": "https://yuzu-emu.org/",
     "description": "Experimental emulator for the Nintendo Switch",
     "version": "0-942",
-    "license": "GPL-2.0-or-later",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/yuzu-emu/yuzu-mainline/blob/master/license.txt"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-942/yuzu-windows-msvc-20220305-ed691f09c.7z",

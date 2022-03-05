@@ -8,6 +8,12 @@
     "autoupdate": {
         "url": "https://www.pj64-emu.com/file/setup-project64-Dev-$dashVersion/"
     },
+    "bin": [
+        [
+            "Project64.exe",
+            "Project64-dev"
+        ]
+    ],
     "checkver": {
         "url": "https://www.pj64-emu.com/nightly-builds",
         "regex": "((?<major>[\\d]+)\\.(?<minor>[\\d]+)\\.(?<patch>[\\d]+)-(?<build>[\\d]+)-(?<commit>[\\da-f]+))"
@@ -25,7 +31,7 @@
     "shortcuts": [
         [
             "Project64.exe",
-            "Project64 (Development)"
+            "Project64 (development)"
         ]
     ]
 }

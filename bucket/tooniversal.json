@@ -4,7 +4,7 @@
     "version": "1.1.0.1",
     "license": "Proprietary",
     "notes": "This is only the launcher, an account is required to play.",
-    "url": "https://cdn.tooniversal.com/release/tooniversal_setup.exe#dl.7z",
+    "url": "https://cdn.tooniversal.com/release/tooniversal_setup.exe#/dl.7z",
     "hash": "EC2D254CB5557630E513748BA02A3EF8E87E1D90CF032A4606AC471118F986C0",
     "bin": "Tooniversal-Launcher.exe",
     "persist": [

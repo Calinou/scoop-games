@@ -3,7 +3,6 @@
     "description": "A high-accuracy NES and Famicom emulator and NSF player.",
     "version": "0.9.9",
     "license": "GPL-3.0",
-    "notes": "Configuration files cannot be persisted, but will be retained during the update",
     "url": "https://github.com/SourMesen/Mesen/releases/download/0.9.9/Mesen.0.9.9.zip",
     "hash": "91bd2b1ba007c9349864a96e490dbdaada78033d51e0be1aabbf442a4b9a7cda",
     "autoupdate": {
@@ -14,6 +13,7 @@
         "github": "https://github.com/SourMesen/Mesen/"
     },
     "persist": [
+        "settings.xml",
         "FdsBios.bin",
         "Avi",
         "GoogleDrive",
@@ -25,27 +25,14 @@
         "Screenshots",
         "Wave"
     ],
-    "post_install": [
-        "'settings.xml' | ForEach-Object {",
-        "    if (!(Test-Path \"$persist_dir\\$_.bak\")) {",
-        "        New-Item -ItemType File \"$dir\\$_\" | Out-Null",
-        "    } else {",
-        "        Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\" -Force",
-        "    }",
-        "}"
+    "pre_install": [
+        "if(!(Test-Path(\"$persist_dir\\FdsBios.bin\"))) { New-Item \"$dir\\FdsBios.bin\" | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\settings.xml\")) { New-Item -ItemType File \"$dir\\settings.xml\" | Out-Null }"
     ],
-    "pre_install": "if(!(Test-Path(\"$persist_dir\\FdsBios.bin\"))) { New-Item \"$dir\\FdsBios.bin\" | Out-Null }",
     "shortcuts": [
         [
             "Mesen.exe",
             "Mesen"
         ]
-    ],
-    "uninstaller": {
-        "script": [
-            "'settings.xml' | ForEach-Object {",
-            "    Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
-            "}"
-        ]
-    }
+    ]
 }

@@ -2,7 +2,10 @@
     "homepage": "https://github.com/stenzek/duckstation/",
     "description": "A fast PlayStation 1 emulator for PC and Android",
     "version": "20220118-g50db81a",
-    "license": "GPL-3.0-only",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/stenzek/duckstation/blob/master/LICENSE"
+    },
     "notes": [
         "ATTENTION: Duckstation requires a PSX BIOS to function.",
         "Place the BIOS file in $persist_dir\\bios",
@@ -22,7 +25,10 @@
         }
     },
     "bin": [
-        "duckstation-nogui-x64-ReleaseLTCG.exe",
+        [
+            "duckstation-nogui-x64-ReleaseLTCG.exe",
+            "duckstation"
+        ],
         "duckstation-qt-x64-ReleaseLTCG.exe"
     ],
     "checkver": {

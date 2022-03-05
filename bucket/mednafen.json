@@ -11,13 +11,11 @@
     "architecture": {
         "32bit": {
             "url": "https://mednafen.github.io/releases/files/mednafen-1.29.0-win32.zip",
-            "hash": "f1c78dd0190129efaeeaa8e96553fb4d83d0120041caaaa6d4e7f440a573d811",
-            "bin": "mednafen.exe"
+            "hash": "f1c78dd0190129efaeeaa8e96553fb4d83d0120041caaaa6d4e7f440a573d811"
         },
         "64bit": {
             "url": "https://mednafen.github.io/releases/files/mednafen-1.29.0-win64.zip",
-            "hash": "26c6676354d44e7d2c31b002f0abb097940e0846e449ed080fb79e6b64db0be2",
-            "bin": "mednafen.exe"
+            "hash": "26c6676354d44e7d2c31b002f0abb097940e0846e449ed080fb79e6b64db0be2"
         }
     },
     "autoupdate": {
@@ -30,6 +28,7 @@
             }
         }
     },
+    "bin": "mednafen.exe",
     "checkver": {
         "regex": "mednafen-(?<version>[\\d.]+).tar.xz",
         "replace": "${1}"
@@ -51,6 +50,12 @@
         "sav",
         "snaps",
         "mednafen.cfg"
+    ],
+    "shortcuts": [
+        [
+            "mednafen.exe",
+            "mednafen"
+        ]
     ],
     "suggest": {
         "Mednaffe": "mednaffe"

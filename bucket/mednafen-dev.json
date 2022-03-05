@@ -28,7 +28,12 @@
             }
         }
     },
-    "bin": "mednafen.exe",
+    "bin": [
+        [
+            "mednafen.exe",
+            "mednafen-dev"
+        ]
+    ],
     "checkver": {
         "regex": "mednafen-(?<version>[\\d.]+)(?<dev>-UNSTABLE)?.tar.xz",
         "replace": "${1}"
@@ -50,6 +55,12 @@
         "sav",
         "snaps",
         "mednafen.cfg"
+    ],
+    "shortcuts": [
+        [
+            "mednafen.exe",
+            "mednafen (dev)"
+        ]
     ],
     "suggest": {
         "Mednaffe": "mednaffe"

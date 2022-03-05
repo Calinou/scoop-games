@@ -1,17 +1,62 @@
 {
     "homepage": "https://pcsx2.net/",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
-    "version": "1.7-2414",
+    "version": "1.7.2414",
     "license": "LGPL-3.0-or-later",
-    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.2414&platform=windows-x86#/dl.7z",
-    "hash": "84c088b2a844a25073a241b2153ec869c95e10b5bffd5799452472c7efe2229b",
-    "bin": "pcsx2.exe",
-    "checkver": {
-        "url": "https://buildbot.orphis.net/pcsx2/index.php",
-        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
-        "replace": "${basever}-${build}"
+    "notes": [
+        "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
+        "Place the BIOS file in $persist_dir\\bios",
+        "Learn more at https://wiki.pcsx2.net/Setting_up_Windows_version#BIOS"
+    ],
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2414/pcsx2-v1.7.2414-windows-32bit-AVX2.7z",
+            "hash": "b237bed3f9a164d3871789de14661c57a622e08df883cfbdbe8204c33d7ccc6b",
+            "bin": [
+                [
+                    "pcsx2-avx2.exe",
+                    "pcsx2-dev"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "pcsx2-avx2.exe",
+                    "PCSX2 (development)"
+                ]
+            ]
+        },
+        "64bit": {
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2414/pcsx2-v1.7.2414-windows-64bit-AVX2.7z",
+            "hash": "d22ce1322c6aaac382eb6f1a11f622d29693aacfb53a77de973c27acabd494cf",
+            "bin": [
+                [
+                    "pcsx2x64-avx2.exe",
+                    "pcsx2-dev"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "pcsx2x64-avx2.exe",
+                    "PCSX2 (development)"
+                ]
+            ]
+        }
     },
-    "extract_dir": "pcsx2-v1.7.2412-windows-x86",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-32bit-AVX2.7z"
+            },
+            "64bit": {
+                "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-64bit-AVX2.7z"
+            }
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/PCSX2/pcsx2/releases.atom",
+        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
+        "replace": "${basever}.${build}"
+    },
     "persist": [
         "bios",
         "cheats",
@@ -34,16 +79,7 @@
         "   }",
         "}"
     ],
-    "shortcuts": [
-        [
-            "pcsx2.exe",
-            "PCSX2-dev"
-        ]
-    ],
     "suggest": {
-        "Visual Studio redist 2015": [
-            "vcredist",
-            "vcredist2015"
-        ]
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     }
 }

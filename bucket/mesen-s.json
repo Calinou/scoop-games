@@ -14,6 +14,7 @@
         "github": "https://github.com/SourMesen/Mesen-S/"
     },
     "persist": [
+        "settings.xml",
         "Avi",
         "Cheats",
         "Firmware",
@@ -24,26 +25,11 @@
         "Screenshots",
         "Wave"
     ],
-    "post_install": [
-        "'settings.xml' | ForEach-Object {",
-        "    if (!(Test-Path \"$persist_dir\\$_.bak\")) {",
-        "        New-Item -ItemType File \"$dir\\$_\" | Out-Null",
-        "    } else {",
-        "        Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\" -Force",
-        "    }",
-        "}"
-    ],
+    "pre_install": "if (!(Test-Path \"$persist_dir\\settings.xml\")) { New-Item -ItemType File \"$dir\\settings.xml\" | Out-Null }",
     "shortcuts": [
         [
             "Mesen-S.exe",
             "Mesen-S"
         ]
-    ],
-    "uninstaller": {
-        "script": [
-            "'settings.xml' | ForEach-Object {",
-            "    Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
-            "}"
-        ]
-    }
+    ]
 }

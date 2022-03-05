@@ -2,7 +2,10 @@
     "homepage": "http://mamedev.org",
     "description": "Arcade machine emulator",
     "version": "0.241",
-    "license": "GPL-2.0-or-later",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/mamedev/mame/blob/master/COPYING"
+    },
     "architecture": {
         "32bit": {
             "url": "https://file-examples-com.github.io/uploads/2017/02/file_example_JSON_1kb.json",
