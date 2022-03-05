@@ -9,6 +9,24 @@
             "hash": "b4648860385fe460f2210cf05b0d3959badcfa8336616de5c5978829af2d129b"
         }
     },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip"
+            }
+        }
+    },
+    "bin": "Vita3K.exe",
+    "checkver": {
+        "github": "https://github.com/Vita3K/Vita3K",
+        "regex": "([a-f0-9]{6})"
+    },
+    "persist": [
+        "data",
+        "lang",
+        "shaders-builtin",
+        "config.yml"
+    ],
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -16,28 +34,10 @@
         "   New-Item \"$persist_dir\\config.yml\" -Type File | Out-Null",
         "}"
     ],
-    "bin": "Vita3K.exe",
     "shortcuts": [
         [
             "Vita3K.exe",
             "Vita3K"
         ]
-    ],
-    "persist": [
-        "data",
-        "lang",
-        "shaders-builtin",
-        "config.yml"
-    ],
-    "checkver": {
-        "github": "https://github.com/Vita3K/Vita3K",
-        "regex": "([a-f0-9]{6})"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip"
-            }
-        }
-    }
+    ]
 }

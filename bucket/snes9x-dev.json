@@ -32,15 +32,6 @@
             ]
         }
     },
-    "pre_install": "If(!(Test-Path(\"$persist_dir\\snes9x.conf\"))){New-Item -ItemType File \"$dir\\snes9x.conf\" | Out-Null }",
-    "persist": [
-        "Saves",
-        "snes9x.conf"
-    ],
-    "checkver": {
-        "url": "https://ci.appveyor.com/api/projects/snes9x/snes9x",
-        "regex": "\"jobId\":\"(?<win32>.*?)\".*?arch=win32,.*?\"jobId\":\"(?<x64>.*?)\".*?arch=win32-x64,.*\"version\":\"(?<version>.*?)\".*\"commitId\":\"(?<commit>.{7}).*\""
-    },
     "autoupdate": {
         "architecture": {
             "32bit": {
@@ -50,5 +41,14 @@
                 "url": "https://ci.appveyor.com/api/buildjobs/$matchX64/artifacts/snes9x-$matchVersion-$matchCommit-win32-x64.zip"
             }
         }
-    }
+    },
+    "checkver": {
+        "url": "https://ci.appveyor.com/api/projects/snes9x/snes9x",
+        "regex": "\"jobId\":\"(?<win32>.*?)\".*?arch=win32,.*?\"jobId\":\"(?<x64>.*?)\".*?arch=win32-x64,.*\"version\":\"(?<version>.*?)\".*\"commitId\":\"(?<commit>.{7}).*\""
+    },
+    "persist": [
+        "Saves",
+        "snes9x.conf"
+    ],
+    "pre_install": "If(!(Test-Path(\"$persist_dir\\snes9x.conf\"))){New-Item -ItemType File \"$dir\\snes9x.conf\" | Out-Null }"
 }

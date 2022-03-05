@@ -1,22 +1,17 @@
 {
     "homepage": "https://pcsx2.net/",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
-    "license": "LGPL-3.0-or-later",
     "version": "1.7-2414",
+    "license": "LGPL-3.0-or-later",
     "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.2414&platform=windows-x86#/dl.7z",
     "hash": "84c088b2a844a25073a241b2153ec869c95e10b5bffd5799452472c7efe2229b",
-    "extract_dir": "pcsx2-v1.7.2414-windows-x86",
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\")) {",
-        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
-        "   if (Test-Path \"$env:USERPROFILE\\Documents\\PCSX2\") {",
-        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
-        "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\\*\" -Destination \"$persist_dir\" -Recurse",
-        "       Remove-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\" -Recurse",
-        "   }",
-        "}"
-    ],
     "bin": "pcsx2.exe",
+    "checkver": {
+        "url": "https://buildbot.orphis.net/pcsx2/index.php",
+        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
+        "replace": "${basever}-${build}"
+    },
+    "extract_dir": "pcsx2-v1.7.2412-windows-x86",
     "persist": [
         "bios",
         "cheats",
@@ -29,6 +24,16 @@
         "sstates",
         "portable.ini"
     ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:USERPROFILE\\Documents\\PCSX2\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\\*\" -Destination \"$persist_dir\" -Recurse",
+        "       Remove-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\" -Recurse",
+        "   }",
+        "}"
+    ],
     "shortcuts": [
         [
             "pcsx2.exe",
@@ -40,19 +45,5 @@
             "vcredist",
             "vcredist2015"
         ]
-    },
-    "checkver": {
-        "url": "https://buildbot.orphis.net/pcsx2/index.php",
-        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
-        "replace": "${basever}-${build}"
-    },
-    "autoupdate": {
-        "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v$matchBasever.$matchBuild&platform=windows-x86#/dl.7z",
-        "extract_dir": "pcsx2-v$matchBasever.$matchBuild-windows-x86"
-    },
-    "notes": [
-        "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
-        "Place the BIOS file in $persist_dir\\bios",
-        "Learn more at https://pcsx2.net/config-guide/official-english-pcsx2-configuration-guide.html#Bios"
-    ]
+    }
 }
