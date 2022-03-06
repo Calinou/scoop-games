@@ -1,14 +1,63 @@
 {
-    "json.schemas": [
-        {
-            "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
-            "fileMatch": [
-                "bucket/*.json"
-            ]
-        }
+    "cSpell.words": [
+        "appdata",
+        "autoupdate",
+        "basever",
+        "beyondmeat",
+        "Calinou",
+        "checkurls",
+        "checkver",
+        "citra",
+        "createconfig",
+        "ctrlr",
+        "hermanjustnu",
+        "HOMEDRIVE",
+        "HOMEPATH",
+        "lukesampson",
+        "MAME",
+        "memstick",
+        "mesen",
+        "mklink",
+        "msvc",
+        "ppsspp",
+        "Retroarch",
+        "RPCS",
+        "useb",
+        "visualboyadvance",
+        "yuzu"
     ],
-    "files.exclude": {
-        "**/.git": true,
-        "**/.DS_Store": true
-    }
+    "sortJSON.orderOverride": ["identifier",
+        "homepage",
+        "description",
+        "version",
+        "license",
+        "notes",
+        "url",
+        "hash",
+        "pre-install",
+        "post-install"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.sortJSON": true
+      },
+
+    "sort-json.settings.orderOverride": [
+        "homepage",
+        "description",
+        "version",
+        "license",
+        "notes",
+        "url",
+        "hash",
+        "pre-install",
+        "post-install"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.defaultFormatter": "richie5um2.vscode-sort-json",
+    "editor.formatOnSave": true,
+    "prettier.enable": false,
+    "html.format.enable": false
 }
