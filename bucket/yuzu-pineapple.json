@@ -24,7 +24,10 @@
             "yuzu.exe",
             "yuzu-dev"
         ],
-        "yuzu-cmd.exe"
+        [
+            "yuzu-cmd.exe",
+            "yuzu-cmd-dev"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/pineappleEA/pineapple-src",
