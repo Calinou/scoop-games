@@ -41,7 +41,7 @@ to ensure the application always remains up-to-date in the future.
 
 ## License
 
-Copyright © 2018-2020 Hugo Locurcio and contributors
+Copyright © 2018-2022 Hugo Locurcio and contributors
 
 Files in this repository are licensed under CC0 1.0 Universal,
 see [LICENSE.md](LICENSE.md) for more information.
