@@ -1,0 +1,42 @@
+{
+    "homepage": "https://vba-m.com",
+    "description": "Community-maintained, improved version of the VisualBoyAdvance Game Boy emulator (nightly)",
+    "version": "nightly",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "32bit": {
+            "url": "https://nightly.vba-m.com/visualboyadvance-m-Win-x86_32.zip"
+        },
+        "64bit": {
+            "url": "https://nightly.vba-m.com/visualboyadvance-m-Win-x86_64.zip"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v$version/visualboyadvance-m-Win-32bit.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v$version/visualboyadvance-m-Win-64bit.zip"
+            }
+        }
+    },
+    "bin": [
+        [
+            "visualboyadvance-m.exe",
+            "visualboyadvance-m-nightly"
+        ]
+    ],
+    "persist": [
+        "Battery",
+        "Recording",
+        "Screenshot",
+        "State"
+    ],
+    "shortcuts": [
+        [
+            "visualboyadvance-m.exe",
+            "VisualBoyAdvance-M (nightly)"
+        ]
+    ]
+}
