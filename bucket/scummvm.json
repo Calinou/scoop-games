@@ -33,6 +33,12 @@
     "checkver": {
         "github": "https://github.com/scummvm/scummvm"
     },
+    "persist": [
+        "scummvm.ini",
+        "saves",
+        "themes",
+        "extras"
+    ],
     "shortcuts": [
         [
             "scummvm.exe",
