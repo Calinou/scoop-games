@@ -21,15 +21,15 @@
     "extract_dir": "PCSX2 1.6.0",
     "persist": [
         "bios",
-        "cheats",
         "cheats_ws",
+        "cheats",
         "inis",
         "logs",
         "memcards",
+        "portable.ini",
         "shaders\\GSdx_FX_Settings.ini",
         "snaps",
-        "sstates",
-        "portable.ini"
+        "sstates"
     ],
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
