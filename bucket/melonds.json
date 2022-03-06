@@ -2,7 +2,10 @@
     "homepage": "http://melonds.kuribo64.net/",
     "description": "A Nintendo DS emulator aiming for fast and accurate emulation",
     "version": "0.9.3",
-    "license": "GPL-3.0-or-later",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/Arisotura/melonDS/blob/master/LICENSE"
+    },
     "notes": [
         "ATTENTION: MelonDS requires BIOS and firmware files dumped from a Nintendo DS to function.",
         "Visit http://melonds.kuribo64.net/faq.php for more information."

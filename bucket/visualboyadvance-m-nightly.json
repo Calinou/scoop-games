@@ -2,7 +2,10 @@
     "homepage": "https://vba-m.com",
     "description": "Community-maintained, improved version of the VisualBoyAdvance Game Boy emulator (nightly)",
     "version": "nightly",
-    "license": "GPL-2.0-or-later",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    },
     "architecture": {
         "32bit": {
             "url": "https://nightly.vba-m.com/visualboyadvance-m-Win-x86_32.zip"

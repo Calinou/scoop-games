@@ -2,7 +2,10 @@
     "homepage": "http://www.snes9x.com/",
     "description": "SNES (Super Nintendo Entertainment System) emulator",
     "version": "1.61-1040",
-    "license": "Freeware",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/snes9xgit/snes9x/blob/master/LICENSE"
+    },
     "architecture": {
         "32bit": {
             "url": "https://ci.appveyor.com/api/buildjobs/17iqv5olr6xl4qs0/artifacts/snes9x-1.61-1040-7e97bb5-win32.zip",

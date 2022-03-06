@@ -2,7 +2,10 @@
     "homepage": "https://ryujinx.org/",
     "description": "A simple, experimental Nintendo Switch emulator",
     "version": "1.1.60",
-    "license": "MIT",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/Ryujinx/Ryujinx/blob/master/LICENSE.txt"
+    },
     "notes": [
         "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
         "Learn more at https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide"
