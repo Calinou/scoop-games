@@ -26,16 +26,29 @@
         "visualboyadvance",
         "yuzu"
     ],
-    "sortJSON.orderOverride": ["identifier",
-        "homepage",
-        "description",
+    "sortJSON.orderOverride": [
         "version",
+        "description",
+        "homepage",
         "license",
         "notes",
+        "depends",
+        "suggest",
         "url",
         "hash",
-        "pre-install",
-        "post-install"
+        "extract_dir",
+        "extract_to",
+        "pre_install",
+        "installer",
+        "post_install",
+        "env_add_path",
+        "env_set",
+        "bin",
+        "shortcuts",
+        "persist",
+        "uninstaller",
+        "checkver",
+        "autoupdate"
     ],
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
@@ -43,15 +56,28 @@
       },
 
     "sort-json.settings.orderOverride": [
-        "homepage",
-        "description",
         "version",
+        "description",
+        "homepage",
         "license",
         "notes",
+        "depends",
+        "suggest",
         "url",
         "hash",
-        "pre-install",
-        "post-install"
+        "extract_dir",
+        "extract_to",
+        "pre_install",
+        "installer",
+        "post_install",
+        "env_add_path",
+        "env_set",
+        "bin",
+        "shortcuts",
+        "persist",
+        "uninstaller",
+        "checkver",
+        "autoupdate"
     ],
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
