@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/bsnes-emu/bsnes",
-    "description": "Sega Wii emulator",
+    "description": "Super Nintendo Entertainment System (SNES) emulator",
     "version": "115",
     "license": {
         "identifier": "GPL-2.0",
