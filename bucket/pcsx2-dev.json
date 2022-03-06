@@ -2,7 +2,10 @@
     "homepage": "https://pcsx2.net/",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
     "version": "1.7.2415",
-    "license": "LGPL-3.0-or-later",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/PCSX2/pcsx2/blob/master/COPYING.GPLv3"
+    },
     "notes": [
         "ATTENTION: PCSX2 requires a dump of the PS2 BIOS to function.",
         "Place the BIOS file in $persist_dir\\bios",
