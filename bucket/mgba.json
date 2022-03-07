@@ -6,18 +6,14 @@
         "url": "https://github.com/mgba-emu/mgba/blob/master/LICENSE",
         "identifier": "MPL-2.0"
     },
-    "installer": {
-        "script": [
-            "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
-            "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
-            "}",
-            "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
-            "   Set-Content \"$dir\\config.ini\" '[ports.qt]'",
-            "   'cheats', 'patch', 'savegame', 'savestate', 'screenshot' | ForEach-Object {",
-            "       Add-Content -Path \"$dir\\config.ini\" -Value $_`Path`=$persist_dir\\$_ }",
-            "}"
-        ]
-    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
+        "   New-Item \"$dir\\qt.ini\" -Type File | Out-Null",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+        "   New-Item \"$dir\\config.ini\" -Type File | Out-Null",
+        "}"
+    ],
     "bin": [
         [
             "mGBA.exe",
@@ -38,7 +34,8 @@
         "screenshot",
         "shaders",
         "qt.ini",
-        "config.ini"
+        "config.ini",
+        "portable.ini"
     ],
     "checkver": {
         "github": "https://github.com/mgba-emu/mgba"
