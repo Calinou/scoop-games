@@ -16,9 +16,9 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/RedStoneMatt/NewerTanooki/"
+        "github": "https://github.com/soopercool101/BrawlCrate/"
     },
     "autoupdate": {
-        "url": "https://github.com/RedStoneMatt/NewerTanooki/releases/download/v$version/NewerTanooki.rar"
+        "url": "https://github.com/soopercool101/BrawlCrate/releases/download/v$version/BrawlCrate.v$version.x86.exe"
     }
 }
