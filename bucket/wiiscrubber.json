@@ -17,8 +17,8 @@
         [
             "MakeKeyBin.exe",
             "Wii Scrubber: Make Common Key"
-        ],
-    ]
+        ]
+    ],
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\Wiiscrubber140.rar\" \"$dir\"",
