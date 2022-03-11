@@ -1,6 +1,7 @@
 {
     "version": "1.4",
-    "description": "An app that allows you to 'scrub' away the garbage data of Wii ISO.",
+    "description": "Tool to 'scrub' away the garbage data of Wii ISOs",
+
     "homepage": "https://gamebanana.com/tools/6467",
     "license": "Freeware",
     "url": "https://gamebanana.com/dl/385923#/dl.rar",
