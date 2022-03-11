@@ -1,6 +1,6 @@
 {
     "version": "2021.12.04.0",
-    "description": "Advanced level editor for New Super Mario Bros. Wii, created by Treeki and Tempus using Python, PyQt and Wii.py. The Reggie-Updated fork is a modern evolution of the original Reggie! codebase, focusing on stability, future-proofing, and incorporating the latest level-file-format research.",
+    "description": "Advanced level editor for New Super Mario Bros. Wii (fork of Reggie)",
     "homepage": "https://github.com/RoadrunnerWMC/Reggie-Updated",
     "url": "https://github.com/RoadrunnerWMC/Reggie-Updated/releases/download/2021.12.04.0/reggie-updated-2021.12.04.0-windows-64-bit.zip",
     "hash": "25468631463ed544bc085df213515957c7f4cbbed31bc0d23378fe6b8a26133a",
