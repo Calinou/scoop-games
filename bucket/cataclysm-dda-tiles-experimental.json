@@ -1,5 +1,5 @@
 {
-    "version": "2022-03-12-0749",
+    "version": "2022-03-12-0953",
     "description": "Roguelike in a post-apocalyptic world (with sprite-based graphics, experimental build)",
     "homepage": "https://cataclysmdda.org",
     "license": "CC-BY-SA-3.0",
@@ -31,12 +31,12 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-03-12-0749/cdda-windows-tiles-x32-2022-03-12-0749.zip",
-            "hash": "16c50d57b24643a0488373677cc3bd0d32c9aa031cf6ec149d27df42dacd1f8a"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-03-12-0953/cdda-windows-tiles-x32-2022-03-12-0953.zip",
+            "hash": "cf3d2eebaa9b6690526212f1737cc580badea86cd63d64b7bf05fbeca9ebd468"
         },
         "64bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-03-12-0749/cdda-windows-tiles-x64-2022-03-12-0749.zip",
-            "hash": "5450c7ca0b430f6ef003f802896eec24e23cdc73aecd4c27574c9991b53a415f"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/cdda-experimental-2022-03-12-0953/cdda-windows-tiles-x64-2022-03-12-0953.zip",
+            "hash": "2b77ff258936ae544c03a93e6ee3358f7cb6e27c3c151a0bd48d392f2fefce16"
         }
     }
 }
