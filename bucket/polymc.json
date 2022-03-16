@@ -32,8 +32,7 @@
         "polymc.cfg"
     ],
     "checkver": {
-        "url": "https://github.com/PolyMC/PolyMC/tags",
-        "regex": "releases/tag/(\\d{1,2}\\.\\d{1,2}\\.\\d{1,2})"
+        "github": "https://github.com/PolyMC/PolyMC"
     },
     "autoupdate": {
         "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-$version.zip"
