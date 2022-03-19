@@ -4,6 +4,12 @@
     "homepage": "http://openmw.org/",
     "license": "GPL-3.0-or-later",
     "notes": "Please run the OpenMW Launcher in the start menu to configure the game data path. Otherwise, OpenMW won't start correctly.",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/2224473286/artifacts/download#/dl.7z",
+            "hash": "1b95ea6402b0922cf5f90eda5b9b4bf0c5b99e9b1c97ec4cbbdf5a5a87731fc6"
+        }
+    },
     "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Engine_Release_*.zip\" \"$dir\"",
     "post_install": "Remove-Item \"$dir\\MSVC2019_64_Ninja\", \"$dir\\chocolatey.log\", \"$dir\\OpenMW_MSVC2019_64_Engine_Release_*.zip\" -Force -Recurse",
     "bin": [
@@ -38,12 +44,6 @@
             "64bit": {
                 "url": "https://gitlab.com/OpenMW/openmw/-/jobs/$matchJob/artifacts/download#/dl.7z"
             }
-        }
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/2224473286/artifacts/download#/dl.7z",
-            "hash": "1b95ea6402b0922cf5f90eda5b9b4bf0c5b99e9b1c97ec4cbbdf5a5a87731fc6"
         }
     }
 }
