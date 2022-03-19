@@ -1,5 +1,5 @@
 {
-    "version": "17.0-330-g890c498ec",
+    "version": "17.0-332-g05bcf9cc6",
     "description": "Cycle-accurate MSX emulator (Development builds)",
     "homepage": "https://openmsx.fixato.net/",
     "license": "GPL-2.0",
@@ -34,8 +34,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://openmsx.fixato.net/builds/windows/x64/openmsx-17.0-330-g890c498ec-windows-vc-x64-bin.zip",
-            "hash": "38913c4895aee2176661d88e02800e86f03e2f3db046bbb15b6a3592bcb4af95"
+            "url": "https://openmsx.fixato.net/builds/windows/x64/openmsx-17.0-332-g05bcf9cc6-windows-vc-x64-bin.zip",
+            "hash": "9bb7166f6d13e681639ad58a5aeb3e88d3f73f45aa362b0b59e5a0cd21c0dd04"
         }
     }
 }
