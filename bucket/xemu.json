@@ -1,5 +1,5 @@
 {
-    "version": "0.6.2-89-g2d5471c5be",
+    "version": "0.6.2-90-g6f507c80af",
     "description": "Original Xbox Emulator",
     "homepage": "https://xemu.app",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mborgerson/xemu/releases/download/gh-release%2F0.6.2-89-g2d5471c5be/xemu-win-release.zip",
-            "hash": "14fc1f1592b4e9a0bfb1fc429e2d79a4d2947870d947f3b7d00a8c47b802292c"
+            "url": "https://github.com/mborgerson/xemu/releases/download/gh-release%2F0.6.2-90-g6f507c80af/xemu-win-release.zip",
+            "hash": "b4c41748eea36ce05728992989aa3082834c73ce8292bfde9ede291ad3c29c0b"
         }
     },
     "pre_install": [
