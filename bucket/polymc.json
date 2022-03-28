@@ -4,7 +4,7 @@
     "homepage": "https://polymc.org/",
     "license": "GPL-3.0-only",
     "url": "https://github.com/PolyMC/PolyMC/releases/download/1.1.1/PolyMC-Windows-i686-1.1.1.zip",
-    "hash": "b78862e4c585e5a94bc835d0dc7f0f5240fa43cd405b536d225fd92d9719ce1a", 
+    "hash": "b78862e4c585e5a94bc835d0dc7f0f5240fa43cd405b536d225fd92d9719ce1a",
     "bin": "PolyMC.exe",
     "shortcuts": [
         [
