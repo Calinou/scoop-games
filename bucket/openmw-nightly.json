@@ -1,13 +1,13 @@
 {
-    "version": "20220329-9ff34da5",
+    "version": "20220329-fbc84465",
     "description": "An open-source open-world RPG game engine that supports playing Morrowind. (nightly version)",
     "homepage": "http://openmw.org/",
     "license": "GPL-3.0-or-later",
     "notes": "Please run the OpenMW Launcher in the start menu to configure the game data path. Otherwise, OpenMW won't start correctly.",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/2262832621/artifacts/download#/dl.7z",
-            "hash": "ee365f68cc5691005aae1bc457e461cab57491a09c675fb77955b0c51c8908aa"
+            "url": "https://gitlab.com/OpenMW/openmw/-/jobs/2266642572/artifacts/download#/dl.7z",
+            "hash": "6d81edf053b544ea0ee63f67ae40f5e97969ccf06bc802a88b5011909a85ddd4"
         }
     },
     "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Engine_Release_*.zip\" \"$dir\"",
