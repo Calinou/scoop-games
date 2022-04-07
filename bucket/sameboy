@@ -8,6 +8,10 @@
     },
     "url": "https://github.com/LIJI32/SameBoy/releases/download/v0.14.7/sameboy_winsdl_v0.14.7.zip",
     "hash": "d49159fd1ea612bc7e8008028e599b5b01821a080628b548b21b0d276577f349",
+    "bin": [
+        "sameboy.exe",
+        "sameboy_debugger.exe"
+    ],
     "shortcuts": [
         [
             "sameboy.exe",
