@@ -1,0 +1,31 @@
+{
+    "version": "0.14.7",
+    "description": "A Game Boy and Game Boy Color emulator written in C",
+    "homepage": "https://sameboy.github.io/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/LIJI32/SameBoy/blob/master/LICENSE"
+    },
+    "url": "https://github.com/LIJI32/SameBoy/releases/download/v0.14.7/sameboy_winsdl_v0.14.7.zip",
+    "hash": "d49159fd1ea612bc7e8008028e599b5b01821a080628b548b21b0d276577f349",
+    "bin": [
+        "sameboy.exe",
+        "sameboy_debugger.exe"
+    ],
+    "shortcuts": [
+        [
+            "sameboy.exe",
+            "SameBoy"
+        ],
+        [
+            "sameboy_debugger.exe",
+            "SameBoy Debugger"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/LIJI32/SameBoy"
+    },
+    "autoupdate": {
+        "url": "https://github.com/LIJI32/SameBoy/releases/download/v$version/sameboy_winsdl_v$version.zip"
+    }
+}
