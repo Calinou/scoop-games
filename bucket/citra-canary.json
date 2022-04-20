@@ -1,13 +1,13 @@
 {
-    "version": "2117-20220419",
+    "version": "2118-20220420",
     "description": "Emulator for Nintendo 3DS, capable of playing many of your favorite games",
     "homepage": "https://citra-emu.org/",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/citra-emu/citra-canary/blob/master/license.txt"
     },
-    "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-2117/citra-windows-mingw-20220419-a8b5bd3.7z",
-    "hash": "621f9913aeefa84d77f2b527bb3eb7d68b82b903398474f2a68e9f6d692f5755",
+    "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-2118/citra-windows-mingw-20220420-17630ed.7z",
+    "hash": "4b048df112b3e48ebfe21d1637e225747bb10fe8d011132eeb7500235e3efa48",
     "extract_dir": "canary-mingw",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user\")) {",
