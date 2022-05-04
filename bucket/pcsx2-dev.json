@@ -1,5 +1,5 @@
 {
-    "version": "1.7.2701",
+    "version": "1.7.2702",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -16,8 +16,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2701/pcsx2-v1.7.2701-windows-64bit-AVX2.7z",
-            "hash": "31a017b2b3521a0d4fcaee223caf89e9f72f2e77702cc2af38fe67036909d50e",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2702/pcsx2-v1.7.2702-windows-64bit-AVX2.7z",
+            "hash": "809dba6aa9b25a861bc266d2cbf9cf0769bee78b7f52f9ad88526b6711246fff",
             "bin": [
                 [
                     "pcsx2x64-avx2.exe",
