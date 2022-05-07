@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2626",
+    "version": "1.0.2628",
     "description": "Xbox 360 Research Emulator",
     "homepage": "https://xenia.jp",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2626-master/xenia_master.zip",
-            "hash": "6b9c65b5d92a191412542476f7341425649592735865129371e26566656350aa"
+            "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2628-master/xenia_master.zip",
+            "hash": "e75165281697f69501f078e8c97e72d728b03ef59b34a2496e81c54767ddefdd"
         }
     },
     "pre_install": [
