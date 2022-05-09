@@ -1,5 +1,5 @@
 {
-    "version": "EA-2722",
+    "version": "EA-2723",
     "description": "A Yuzu Early Access fork with Linux-specific patches",
     "homepage": "https://github.com/pineappleEA/pineapple-src",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2722/Windows-Yuzu-EA-2722.7z",
-            "hash": "d12e0ffdb8e072d3fe1e222021ef8b50294233355733271cf3756eb20205b8f3"
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2723/Windows-Yuzu-EA-2723.7z",
+            "hash": "c02acd8f8e2f03ea5549b635e013b96c096053a0128115b12167816f63f9dcc1"
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
