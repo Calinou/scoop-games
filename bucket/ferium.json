@@ -1,12 +1,12 @@
 {
-    "version": "3.28.4",
+    "version": "3.28.6",
     "description": "Ferium is a CLI Minecraft mod manager for mods from Modrinth, CurseForge, and Github Releases.",
     "homepage": "https://github.com/theRookieCoder/ferium",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/theRookieCoder/ferium/releases/download/v3.28.4/ferium-windows-msvc.zip",
-            "hash": "67f11346d7e002ee41f08e1d3f160e9b3a4fdd1d72ae76e2e79e6b9cefac03bd"
+            "url": "https://github.com/theRookieCoder/ferium/releases/download/v3.28.6/ferium-windows-msvc.zip",
+            "hash": "99657ab1086b8b791804bf2495cab63d3a4919c2cd4ead5bf826d3eb4c00c8ee"
         }
     },
     "bin": "ferium.exe",
