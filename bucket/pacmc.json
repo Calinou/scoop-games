@@ -1,5 +1,5 @@
 {
-    "version": "0.5.1",
+    "version": "0.5.2",
     "description": "An easy to use package manager for Fabric Minecraft mods",
     "homepage": "https://github.com/jakobkmar/pacmc",
     "license": "GPL-3.0-or-later",
@@ -9,9 +9,9 @@
             "java/openjdk"
         ]
     },
-    "url": "https://github.com/jakobkmar/pacmc/releases/download/0.5.1/pacmc-0.5.1.zip",
-    "hash": "5bf89b26bdfe002b916096548853bb8f1eb9522a3115539d39ad973cc58f4f71",
-    "extract_dir": "pacmc-0.5.1",
+    "url": "https://github.com/jakobkmar/pacmc/releases/download/0.5.2/pacmc-0.5.2.zip",
+    "hash": "d071b0c5d22af66156e9440c731b215be99f921f33cf242d4ebe14cca19cb246",
+    "extract_dir": "pacmc-0.5.2",
     "bin": "bin/pacmc.bat",
     "checkver": {
         "github": "https://github.com/jakobkmar/pacmc"
