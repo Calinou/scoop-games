@@ -65,7 +65,7 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://file-examples-com.github.io/uploads/2017/02/file_example_JSON_1kb.json"
+                "url": "https://raw.githubusercontent.com/Calinou/scoop-games/27ba46f443a3446a70bf1f93eeb09797be0fb286/bucket/mame.json"
             },
             "64bit": {
                 "url": "https://github.com/mamedev/mame/releases/download/mame$cleanVersion/mame$cleanVersionb_64bit.exe#/dl.7z"
