@@ -21,13 +21,15 @@
             "hash": "19abdd669c5486d51df34c9910d3a87bf845ba3c3e12fd96d2a654aa116b8bf0"
         }
     },
-    "installer": {
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'config.yml', 'games.yml' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
+    ],
+    "uninstaller": {
         "script": [
-            "if (!(Test-Path \"$persist_dir\\config.yml\")) {",
-            "    New-Item \"$dir\\config.yml\" -Type File | Out-Null",
-            "}",
-            "if (!(Test-Path \"$persist_dir\\games.yml\")) {",
-            "    New-Item \"$dir\\games.yml\" -Type File | Out-Null",
+            "ensure \"$persist_dir\" | Out-Null",
+            "'config.yml', 'games.yml' | ForEach-Object {",
+            "    Copy-Item \"$dir\\$_\" \"$persist_dir\" -ErrorAction 'SilentlyContinue' -Force",
             "}"
         ]
     },
@@ -47,10 +49,8 @@
         "dev_usb000",
         "cache",
         "captures",
-        "config.yml",
         "config",
         "firmware",
-        "games.yml",
         "GuiConfigs",
         "Icons",
         "patches"
