@@ -40,6 +40,10 @@
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\\*\" -Destination \"$persist_dir\" -Recurse",
         "       Remove-Item -Path \"$env:USERPROFILE\\Documents\\PCSX2\" -Recurse",
         "   }",
+        "   if (!(Test-Path \"$persist_dir\\inis\\PCSX2.ini\")) {",
+        "       New-item \"$persist_dir\\inis\" -ItemType Directory | Out-Null",
+        "       '[AutoUpdater]', 'CheckAtStartup = false' | Set-Content \"$persist_dir\\inis\\PCSX2.ini\"",
+        "   }",
         "}"
     ],
     "persist": [
