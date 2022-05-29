@@ -26,8 +26,7 @@
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
         "   New-Item \"$persist_dir\\config.yml\" -ItemType File | Out-Null",
         "   New-Item \"$persist_dir\\games.yml\" -ItemType File | Out-Null",
-        "   New-Item \"$persist_dir\\GuiConfigs\" -ItemType Directory | Out-Null",
-        "   '[Meta]', 'checkUpdateStart=false' | Set-Content \"$persist_dir\\GuiConfigs\\CurrentSettings.ini\"",
+        "   '[Meta]', 'checkUpdateStart=false' | Set-Content \"$dir\\GuiConfigs\\CurrentSettings.ini\"",
         "}"
     ],
     "bin": "rpcs3.exe",
