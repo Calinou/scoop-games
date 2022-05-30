@@ -1,5 +1,5 @@
 {
-    "version": "7488-20220529",
+    "version": "7496-20220530",
     "description": "A fast, accurate, and portable GBA emulator (development version)",
     "homepage": "https://mgba.io/",
     "license": {
@@ -8,14 +8,14 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-05-29-win32-7488-81289cdb6267a397abf072735b8b14678a151a1c.7z",
-            "hash": "9af991e224d7a33a02a3016fc75511a8534a41a2483fa1babef044c83c4f152b",
-            "extract_dir": "mGBA-build-2022-05-29-win32-7488-81289cdb6267a397abf072735b8b14678a151a1c"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-05-30-win32-7496-82ac857c2c07c8fab2f6f992e2292e03e6e0d54e.7z",
+            "hash": "8aff6cb88e5ec7bdcc89b73efe55b81cc24b74fe3e0f49fdbcbdf553df114f12",
+            "extract_dir": "mGBA-build-2022-05-30-win32-7496-82ac857c2c07c8fab2f6f992e2292e03e6e0d54e"
         },
         "64bit": {
-            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-05-29-win64-7488-81289cdb6267a397abf072735b8b14678a151a1c.7z",
-            "hash": "b0f680965a6133e03003f178e28c68c6187e06aa62c6be6b4a49ef5a2ed9bb7c",
-            "extract_dir": "mGBA-build-2022-05-29-win64-7488-81289cdb6267a397abf072735b8b14678a151a1c"
+            "url": "https://s3.amazonaws.com/mgba/build/mGBA-build-2022-05-30-win64-7496-82ac857c2c07c8fab2f6f992e2292e03e6e0d54e.7z",
+            "hash": "bf9dfe0868096a75646e77c7262ef9ee74b15dc83f72299ae9cd3574bfbd63a6",
+            "extract_dir": "mGBA-build-2022-05-30-win64-7496-82ac857c2c07c8fab2f6f992e2292e03e6e0d54e"
         }
     },
     "pre_install": [
