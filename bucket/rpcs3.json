@@ -22,17 +22,13 @@
         }
     },
     "pre_install": [
-        "ensure \"$persist_dir\" | Out-Null",
-        "Get-ChildItem \"$persist_dir\\*\" -Include 'config.yml', 'games.yml' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-Item \"$persist_dir\\config.yml\" -ItemType File | Out-Null",
+        "   New-Item \"$persist_dir\\games.yml\" -ItemType File | Out-Null",
+        "   '[Meta]', 'checkUpdateStart=false' | Set-Content \"$dir\\GuiConfigs\\CurrentSettings.ini\"",
+        "}"
     ],
-    "uninstaller": {
-        "script": [
-            "ensure \"$persist_dir\" | Out-Null",
-            "'config.yml', 'games.yml' | ForEach-Object {",
-            "    Copy-Item \"$dir\\$_\" \"$persist_dir\" -ErrorAction 'SilentlyContinue' -Force",
-            "}"
-        ]
-    },
     "bin": "rpcs3.exe",
     "shortcuts": [
         [
@@ -53,7 +49,9 @@
         "firmware",
         "GuiConfigs",
         "Icons",
-        "patches"
+        "patches",
+        "config.yml",
+        "games.yml"
     ],
     "checkver": {
         "url": "https://rpcs3.net/compatibility?b",
