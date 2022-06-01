@@ -1,0 +1,45 @@
+{
+    "version": "8daf6c6",
+    "description": "PlayStation Vita emulator (Development)",
+    "homepage": "https://vita3k.org",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/Vita3K/Vita3K/blob/master/COPYING.txt"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip",
+            "hash": "4cf1f4b1844a00197cdf73236e1e1ffe648b12b06c2f2808b5a938e2a8148f32"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-Item \"$persist_dir\\config.yml\" -Type File | Out-Null",
+        "}"
+    ],
+    "bin": "Vita3K.exe",
+    "shortcuts": [
+        [
+            "Vita3K.exe",
+            "Vita3K"
+        ]
+    ],
+    "persist": [
+        "data",
+        "lang",
+        "shaders-builtin",
+        "config.yml"
+    ],
+    "checkver": {
+        "github": "https://github.com/Vita3K/Vita3K",
+        "regex": "commit[/:]\\s?([a-f0-9]{7})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip"
+            }
+        }
+    }
+}

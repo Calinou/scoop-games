@@ -1,18 +1,31 @@
 {
-    "homepage": "https://www.eduke32.com/",
+    "version": "20220517-10066-6ae3c8317",
     "description": "Modern source port for Duke Nukem 3D",
-    "version": "20210404-9321-7225643e3",
+    "homepage": "https://www.eduke32.com/",
     "license": "http://www.eduke32.com/buildlic.txt",
+    "notes": [
+        "Place GRP and RTS files (game data) in:",
+        "",
+        "    $persist_dir\\data",
+        "",
+        "Place mods, music packs, and other files to auto-load in:",
+        "",
+        "    $persist_dir\\autoload"
+    ],
     "architecture": {
-        "64bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20210404-9321-7225643e3/eduke32_win64_20210404-9321-7225643e3.7z",
-            "hash": "3ef6056d8faab839fe88725233d2457299aba4d6f3b64c22102dbf7f5531d7e9"
-        },
         "32bit": {
-            "url": "https://dukeworld.com/eduke32/synthesis/20210404-9321-7225643e3/eduke32_win32_20210404-9321-7225643e3.7z",
-            "hash": "02e08af82159bba997707ca77df887b7d4430fa6cb4d7cbe9250d56b6e1f20b7"
+            "url": "https://dukeworld.com/eduke32/synthesis/20220517-10066-6ae3c8317/eduke32_win32_20220517-10066-6ae3c8317.7z",
+            "hash": "e0087618cdfd9bb93ec94ec548eb4cd5bd2cd51345259f484c6e61ea52fc0a7a"
+        },
+        "64bit": {
+            "url": "https://dukeworld.com/eduke32/synthesis/20220517-10066-6ae3c8317/eduke32_win64_20220517-10066-6ae3c8317.7z",
+            "hash": "3a853ea1c52ead1957300d09ee6afb73c6ce7188b5d0d1687a838d6a8a3f7911"
         }
     },
+    "pre_install": [
+        "New-Item -Path $dir -Name eduke32.cfg -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path $dir -Name settings.cfg -ItemType File -ErrorAction Ignore | Out-Null"
+    ],
     "bin": [
         [
             "eduke32.exe",
@@ -27,24 +40,11 @@
             "-j data"
         ]
     ],
-    "pre_install": [
-        "New-Item -Path $dir -Name eduke32.cfg -ItemType File -ErrorAction Ignore | Out-Null",
-        "New-Item -Path $dir -Name settings.cfg -ItemType File -ErrorAction Ignore | Out-Null"
-    ],
     "persist": [
         "autoload",
         "data",
         "eduke32.cfg",
         "settings.cfg"
-    ],
-    "notes": [
-        "Place GRP and RTS files (game data) in:",
-        "",
-        "    $persist_dir\\data",
-        "",
-        "Place mods, music packs, and other files to auto-load in:",
-        "",
-        "    $persist_dir\\autoload"
     ],
     "checkver": {
         "url": "https://dukeworld.com/eduke32/synthesis/",
@@ -52,11 +52,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "64bit": {
-                "url": "https://dukeworld.com/eduke32/synthesis/$version/eduke32_win64_$version.7z"
-            },
             "32bit": {
                 "url": "https://dukeworld.com/eduke32/synthesis/$version/eduke32_win32_$version.7z"
+            },
+            "64bit": {
+                "url": "https://dukeworld.com/eduke32/synthesis/$version/eduke32_win64_$version.7z"
             }
         }
     }

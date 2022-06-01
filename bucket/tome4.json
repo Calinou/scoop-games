@@ -1,11 +1,10 @@
 {
     "version": "1.7.0",
-    "license": "GPL-3.0-only",
-    "extract_dir": "t-engine4-windows-1.7.0",
-    "url": "http://te4.org/dl/t-engine/t-engine4-windows-1.7.0.zip",
     "homepage": "https://te4.org",
+    "license": "GPL-3.0-only",
+    "url": "http://te4.org/dl/t-engine/t-engine4-windows-1.7.0.zip",
     "hash": "76ac63f8682642015b4ac14af2b9caab1ffc6c8260a51ad34c26eccffaca3197",
-    "persist": "game\\addons",
+    "extract_dir": "t-engine4-windows-1.7.0",
     "bin": [
         [
             "t-engine.exe",
@@ -26,6 +25,7 @@
             "Tales of Maj'Eyal Launcher"
         ]
     ],
+    "persist": "game\\addons",
     "checkver": {
         "url": "https://te4.org/download",
         "re": "Tales of Maj'Eyal Installer (.*) for Windows"

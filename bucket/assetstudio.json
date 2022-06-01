@@ -1,16 +1,21 @@
 {
-    "homepage": "https://github.com/Perfare/AssetStudio",
+    "version": "0.16.40",
     "description": "Tool for exploring, extracting and exporting Unity assets and assetbundles.",
-    "version": "0.15.47",
+    "homepage": "https://github.com/Perfare/AssetStudio",
     "license": "MIT",
-    "url": "https://github.com/Perfare/AssetStudio/releases/download/v0.15.47/AssetStudio.v0.15.47.zip",
-    "hash": "542BF3E416656CC28DB45F648FF2735B57E97C8207C8025C7A0CF792D85CBD91",
+    "url": "https://github.com/Perfare/AssetStudio/releases/download/v0.16.40/AssetStudio.net6.v0.16.40.zip",
+    "hash": "6b7031c48240341d810cbd3d38229739554121b17f6039c8f0b729e58044467a",
     "bin": "AssetStudioGUI.exe",
-    "shortcuts": [["AssetStudioGUI.exe", "AssetStudio"]],
+    "shortcuts": [
+        [
+            "AssetStudioGUI.exe",
+            "AssetStudio"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/Perfare/AssetStudio"
     },
     "autoupdate": {
-        "url": "https://github.com/Perfare/AssetStudio/releases/download/v$version/AssetStudio.v$version.zip"
+        "url": "https://github.com/Perfare/AssetStudio/releases/download/v$version/AssetStudio.net6.v$version.zip"
     }
 }

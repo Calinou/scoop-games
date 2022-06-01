@@ -1,11 +1,11 @@
 {
-    "homepage": "https://github.com/derrod/legendary",
+    "version": "0.20.26",
     "description": "Alternative command-line game downloader and launcher for Epic Games Store",
+    "homepage": "https://github.com/derrod/legendary",
     "license": "GPL-3.0-or-later",
-    "version": "0.20.6",
     "notes": "See https://github.com/derrod/legendary/blob/master/README.md for instructions about how to run the program.",
-    "url": "https://github.com/derrod/legendary/releases/download/0.20.6/legendary.exe",
-    "hash": "1d8d148a39f8a1af30ca270251aa7a999ba30c474bbfc79274399cf5b293403f",
+    "url": "https://github.com/derrod/legendary/releases/download/0.20.26/legendary.exe",
+    "hash": "d3dc6237ebcb7627716cfe771d0336ba8769938107f81aa57b0ab5369e84a922",
     "bin": "legendary.exe",
     "checkver": "github",
     "autoupdate": {

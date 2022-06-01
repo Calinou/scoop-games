@@ -1,7 +1,7 @@
 {
-    "homepage": "https://vdrift.net/",
-    "description": "3D simulation racing game",
     "version": "2014-10-20",
+    "description": "3D simulation racing game",
+    "homepage": "https://vdrift.net/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
@@ -14,5 +14,11 @@
             "vdrift.exe",
             "VDrift"
         ]
-    ]
+    ],
+    "checkver": {
+        "regex": "vdrift-win64-([\\d\\-]{10})\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/vdrift/vdrift/vdrift-$version/vdrift-win64-$version.exe#/dl.7z"
+    }
 }

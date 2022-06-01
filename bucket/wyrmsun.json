@@ -1,7 +1,7 @@
 {
-    "homepage": "https://andrettin.github.io/",
-    "description": "Real-time strategy game with retro graphics",
     "version": "3.5.4",
+    "description": "Real-time strategy game with retro graphics",
+    "homepage": "https://andrettin.github.io/",
     "license": "GPL-2.0-only",
     "url": [
         "https://github.com/Andrettin/Wyrmsun/releases/download/v3.5.4/wyrmsun.exe",

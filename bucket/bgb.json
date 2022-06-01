@@ -1,7 +1,7 @@
 {
-    "homepage": "http://bgb.bircd.org/",
-    "description": "GameBoy emulator/debugger",
     "version": "1.5.9",
+    "description": "GameBoy emulator/debugger",
+    "homepage": "http://bgb.bircd.org/",
     "license": "Freeware",
     "architecture": {
         "32bit": {

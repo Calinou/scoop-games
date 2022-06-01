@@ -1,12 +1,15 @@
 {
-    "homepage": "https://xenia.jp",
+    "version": "1.0.2668",
     "description": "Xbox 360 Research Emulator",
-    "version": "1.0.2422",
-    "license": "BSD-3-Clause",
+    "homepage": "https://xenia.jp",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://github.com/xenia-project/xenia/blob/master/LICENSE"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/nxogby9b1lstc1s6/artifacts/xenia_master.zip",
-            "hash": "b0a485af03b9a860d199de989d8c89953da606e70ef6b9b56efd8ff2d322eca7"
+            "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v1.0.2668-master/xenia_master.zip",
+            "hash": "ad6dc3f0a5badca9cfce644300a1e586899638a09af4263ff2077b82dd250774"
         }
     },
     "pre_install": [
@@ -29,21 +32,19 @@
         ]
     ],
     "persist": [
-        [
-            "portable.txt",
-            "xenia.config.toml",
-            "content",
-            "cache"
-        ]
+        "portable.txt",
+        "xenia.config.toml",
+        "content",
+        "cache"
     ],
     "checkver": {
-        "url": "https://ci.appveyor.com/api/projects/benvanik/xenia/branch/master",
-        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>[\\d\\.]+)-master\""
+        "github": "https://github.com/xenia-project/release-builds-windows",
+        "regex": "v([\\d.]+)-master/xenia_master\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/xenia_master.zip"
+                "url": "https://github.com/xenia-project/release-builds-windows/releases/download/v$version-master/xenia_master.zip"
             }
         }
     }

@@ -1,23 +1,23 @@
 {
-    "version": "3.8.4",
+    "version": "4.2.4",
     "description": "Modern model editor for boxy models and pixel art textures.",
     "homepage": "https://blockbench.net/",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/JannisX11/blockbench/releases/download/v3.8.4/Blockbench_3.8.4.exe#/dl.7z",
-    "hash": "sha512:c832e3a7e133327792514611c6983a91b432270d4f88510f3fca3a3bd345b63ff9484736f620325df5bf96a4a6774f5773c638c55c16618560332bcbb2292e46",
+    "url": "https://github.com/JannisX11/blockbench/releases/download/v4.2.4/Blockbench_4.2.4.exe#/dl.7z",
+    "hash": "sha512:ff437c63adbce32a6d47894ceefeed2e5eaa452f2d600a6dd76e3f3399f040dd60519af18a2d3b68218bd9830608aa4e2498c3f694c609c7c92f85745b91d9de",
     "architecture": {
-        "64bit": {
-            "installer": {
-                "script": [
-                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
-                ]
-            }
-        },
         "32bit": {
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
+        },
+        "64bit": {
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                     "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
                 ]
             }

@@ -1,23 +1,26 @@
 {
-    "homepage": "http://www.snes9x.com/",
+    "version": "1.61-1073",
     "description": "SNES (Super Nintendo Entertainment System) emulator",
-    "version": "1.60-978",
-    "license": "Freeware",
+    "homepage": "http://www.snes9x.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/snes9xgit/snes9x/blob/master/LICENSE"
+    },
     "architecture": {
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/cjfdcprdtyk3us30/artifacts/snes9x-1.60-978-9398d21-win32.zip",
-            "hash": "8059489bbe86d552a54ec4db965d3c4f35a97c9209a87360d90dbc3338996179",
+            "url": "https://ci.appveyor.com/api/buildjobs/kgw0pafi9fvnxqqb/artifacts/snes9x-1.61-1073-8c0a4a4-win32.zip",
+            "hash": "2d16aa4f91a98b9819f918692ea7c7d99f92b156f0136920ecc1a8a4f45628ae",
             "bin": "snes9x.exe",
             "shortcuts": [
                 [
                     "snes9x.exe",
-                    "Snes9X"
+                    "Snes9X (dev)"
                 ]
             ]
         },
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/nl69m41632gsdpt5/artifacts/snes9x-1.60-978-9398d21-win32-x64.zip",
-            "hash": "1dad56bd1b09281f121dfb6e4e12b321c1e3ea535070068cdb99b7d59fcd3a52",
+            "url": "https://ci.appveyor.com/api/buildjobs/gmtc7slv01iux7jx/artifacts/snes9x-1.61-1073-8c0a4a4-win32-x64.zip",
+            "hash": "201b1d24cce12e8a6a320deb3c4ae0e2c171438183b491b94817b3ffa86584e7",
             "bin": [
                 [
                     "snes9x-x64.exe",
@@ -27,12 +30,16 @@
             "shortcuts": [
                 [
                     "snes9x-x64.exe",
-                    "Snes9X"
+                    "Snes9X (dev)"
                 ]
             ]
         }
     },
-    "pre_install": "If(!(Test-Path(\"$persist_dir\\snes9x.conf\"))){New-Item -ItemType File \"$dir\\snes9x.conf\" | Out-Null }",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\snes9x.conf\")) {",
+        "    New-Item \"$dir\\snes9x.conf\" -Type File | Out-Null",
+        "}"
+    ],
     "persist": [
         "Saves",
         "snes9x.conf"

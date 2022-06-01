@@ -1,15 +1,14 @@
 {
+    "version": "6788bf1",
+    "description": "Microsoft Xbox emulator",
     "homepage": "https://cxbx-reloaded.co.uk/",
-    "description": "An emulator for running Xbox games on Microsoft Windows.",
-    "version": "0.2021.0528.1454",
-    "license": "GPL-2.0-or-later",
-    "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-8087b15/CxbxReloaded-Release-VS2019.zip",
-    "hash": "8043c72610977e862411f178ac078de3dfd9ef85bbccb7cdf3b2fa0aa762f83f",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/blob/master/COPYING"
+    },
+    "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-6788bf1/CxbxReloaded-Release-VS2019.zip",
+    "hash": "93eed2c333ea62d718e7cfd5304f54ef1c768b809099967193108edd20c5bd39",
     "pre_install": "if (!(Test-Path \"$persist_dir\\settings.ini\")) { $null = New-Item \"$dir\\settings.ini\" }",
-    "persist": [
-        "EmuDisk",
-        "settings.ini"
-    ],
     "bin": "cxbx.exe",
     "shortcuts": [
         [
@@ -17,12 +16,15 @@
             "Cxbx-Reloaded"
         ]
     ],
+    "persist": [
+        "EmuDisk",
+        "settings.ini"
+    ],
     "checkver": {
         "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases.atom",
-        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T(\\d+):(\\d+)[\\S\\s]+?tag/CI-(?<sha>[a-f\\d]+)",
-        "replace": "0.${1}.${2}${3}.${4}${5}"
+        "regex": "CI-([a-f\\d]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-$matchSha/CxbxReloaded-Release-VS2019.zip"
+        "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-$version/CxbxReloaded-Release-VS2019.zip"
     }
 }

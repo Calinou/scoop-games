@@ -1,16 +1,21 @@
 {
-    "homepage": "https://dolphin-emu.org/",
+    "version": "5.0-16545",
     "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
-    "license": "GPL-2.0-or-later",
-    "version": "5.0-14095",
-    "url": "https://dl.dolphin-emu.org/builds/f6/3d/dolphin-master-5.0-14095-x64.7z",
-    "hash": "58a298c391ec189b11ae4dff201016fe9d322229a4ccdd2615422c0cb42d53dd",
+    "homepage": "https://dolphin-emu.org/",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING"
+    },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+    },
+    "url": "https://dl.dolphin-emu.org/builds/7e/e1/dolphin-master-5.0-16545-x64.7z",
+    "hash": "40b1f6a8844322e9e33d96d65a491dcf7a7e38a192a5a7e8e475690708316b31",
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
         "   New-item \"$persist_dir\\User\" -ItemType Directory | Out-Null",
-        "   New-item \"$persist_dir\\portable.txt\" -ItemType File | Out-Null",
         "   if (Test-Path \"$env:USERPROFILE\\Documents\\Dolphin Emulator\") {",
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Dolphin Emulator\\*\" -Destination \"$persist_dir\\User\" -Recurse",
@@ -18,16 +23,22 @@
         "   }",
         "}"
     ],
-    "bin": "Dolphin.exe",
+    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+    "bin": [
+        [
+            "Dolphin.exe",
+            "dolphin-dev"
+        ]
+    ],
     "shortcuts": [
         [
             "Dolphin.exe",
-            "Dolphin"
+            "Dolphin (Development)"
         ]
     ],
     "persist": "User",
     "checkver": {
-        "url": "https://dolphin-emu.org/download/",
+        "url": "https://dolphin-emu.org/download/list/master/1/",
         "regex": "\\/(?<rand1>.{2})\\/(?<rand2>.{2})\\/dolphin-master-(?<major>[\\d\\.]+)-(?<build>[\\d]+)",
         "replace": "${major}-${build}"
     },

@@ -1,0 +1,27 @@
+{
+    "version": "1.5",
+    "description": "NanoBoyAdvance is a Game Boy Advance emulator focused on accuracy.",
+    "homepage": "https://github.com/nba-emu/NanoBoyAdvance",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nba-emu/NanoBoyAdvance/releases/download/v1.5/NanoBoyAdvance-1.5-win64.zip",
+            "hash": "538d6bdea88c764a11625c776ea8ae66f9e2297f6661f7c6ef69b67b0f289606"
+        }
+    },
+    "shortcuts": [
+        [
+            "NanoBoyAdvance.exe",
+            "NanoBoyAdvance"
+        ]
+    ],
+    "persist": "config.toml",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/nba-emu/NanoBoyAdvance/releases/download/v$version/NanoBoyAdvance-$version-win64.zip"
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
 {
-    "homepage": "https://sourceforge.net/projects/extremetuxracer/",
-    "description": "High-speed arctic racing game based on Tux Racer",
     "version": "0.8.0",
+    "description": "High-speed arctic racing game based on Tux Racer",
+    "homepage": "https://sourceforge.net/projects/extremetuxracer/",
     "license": "GPL-2.0-or-later",
+    "depends": "extras/vcredist2015",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/0.8.0/ExtremeTuxRacer_0.8.0_x64.msi",
@@ -16,5 +17,14 @@
             "Extreme Tux Racer"
         ]
     ],
-    "depends": "extras/vcredist2015"
+    "checkver": {
+        "regex": "ExtremeTuxRacer_([\\d.-]+)_x[\\d]{2}\\.msi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/extremetuxracer/releases/$version/ExtremeTuxRacer_$version_x64.msi"
+            }
+        }
+    }
 }

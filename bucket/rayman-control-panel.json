@@ -1,0 +1,18 @@
+{
+    "version": "13.1.0.1",
+    "description": "Unified configuration and modding control panel for all PC Rayman games",
+    "homepage": "https://github.com/RayCarrot/RayCarrot.RCP.Metro",
+    "license": "MIT",
+    "url": "https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases/download/13.1.0.1/Rayman.Control.Panel.exe",
+    "hash": "9d6b81a2b6fed9299fe6c831d573e08fd9e6abaf945363806bf956f52141b69c",
+    "shortcuts": [
+        [
+            "Rayman.Control.Panel.exe",
+            "Rayman Control Panel"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/RayCarrot/RayCarrot.RCP.Metro/releases/download/$version/Rayman.Control.Panel.exe"
+    }
+}

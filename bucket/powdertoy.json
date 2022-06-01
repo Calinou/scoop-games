@@ -1,21 +1,41 @@
 {
-    "homepage": "https://powdertoy.co.uk/",
+    "version": "96.2",
     "description": "A free physics sandbox game, capable of simulating many interactions",
+    "homepage": "https://powdertoy.co.uk/",
     "license": "GPL-3.0-only",
-    "version": "95.0",
-    "url": "https://powdertoy.co.uk/Download/powder-win32.zip",
-    "hash": "c93d71051a2e3a7433cedaa19e4b48a1ab609399c2188f9cea022aaec771449d",
+    "architecture": {
+        "32bit": {
+            "url": "https://powdertoy.co.uk/Download/powder-win32.zip",
+            "hash": "30440c95cba58136c3dbd1c685742d38a53765d44c891f5068b6fe54e9db954c",
+            "bin": [
+                [
+                    "Powder32.exe",
+                    "Powder"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "Powder32.exe",
+                    "The Powder Toy"
+                ]
+            ]
+        },
+        "64bit": {
+            "url": "https://powdertoy.co.uk/Download/powder.zip",
+            "hash": "6d41983be71c9674a572fd9b64afa1a493b18ce368b904a4dd87d9d7929e10f8",
+            "bin": "Powder.exe",
+            "shortcuts": [
+                [
+                    "Powder.exe",
+                    "The Powder Toy"
+                ]
+            ]
+        }
+    },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$dir\\powder.pref\" -ItemType File | Out-Null",
         "}"
-    ],
-    "bin": "Powder.exe",
-    "shortcuts": [
-        [
-            "Powder.exe",
-            "The Powder Toy"
-        ]
     ],
     "persist": [
         "Saves",
@@ -27,6 +47,13 @@
         "replace": "${1}"
     },
     "autoupdate": {
-        "url": "https://powdertoy.co.uk/Download/powder-win32.zip"
+        "architecture": {
+            "32bit": {
+                "url": "https://powdertoy.co.uk/Download/powder-win32.zip"
+            },
+            "64bit": {
+                "url": "https://powdertoy.co.uk/Download/powder.zip"
+            }
+        }
     }
 }

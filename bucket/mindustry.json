@@ -1,10 +1,14 @@
 {
-    "homepage": "https://mindustrygame.github.io/",
+    "version": "135",
     "description": "A sandbox tower-defense game",
-    "version": "126",
+    "homepage": "https://mindustrygame.github.io/",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Anuken/Mindustry/releases/download/v126/Mindustry.jar",
-    "hash": "6e24d7acff693862e0f163eda65f0c77cd5b43fe4490a7feccf6f8668c1c097c",
+    "suggest": {
+        "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
+    },
+    "url": "https://github.com/Anuken/Mindustry/releases/download/v135/Mindustry.jar",
+    "hash": "62b3c1f99b4a86e81482e4c8148af44eaabe3b031b3315649414b208ad296ff0",
+    "pre_install": "Set-Content -Path \"$dir\\mindustry.bat\" -Value \"pushd $dir && javaw -jar Mindustry.jar && popd\"",
     "bin": "mindustry.bat",
     "shortcuts": [
         [
@@ -12,10 +16,6 @@
             "Mindustry"
         ]
     ],
-    "pre_install": "Set-Content -Path \"$dir\\mindustry.bat\" -Value \"pushd $dir && javaw -jar Mindustry.jar && popd\"",
-    "suggest": {
-        "Java Runtime Environment": "java/adoptopenjdk-hotspot-jre"
-    },
     "checkver": {
         "url": "https://github.com/Anuken/Mindustry/releases",
         "regex": "Anuken\\/Mindustry\\/tree\\/v(\\d+)"

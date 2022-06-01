@@ -1,19 +1,26 @@
 {
-    "homepage": "https://odamex.net/",
+    "version": "10.1.0",
     "description": "Multiplayer-oriented source port for Doom",
-    "version": "0.7.0",
+    "homepage": "https://odamex.net/",
     "license": "GPL-2.0-or-later",
+    "notes": [
+        "Place WAD files (game data) in:",
+        "",
+        "    $persist_dir\\..\\_doom"
+    ],
     "architecture": {
-        "64bit": {
-            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/0.7.0/odamex-win64-0.7.0.zip",
-            "hash": "1540ff988edd81dbf662015a839f87208769f98976cbf75dcdfa09c9584172e2",
-            "extract_dir": "odamex-win64-0.7.0"
-        },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/0.7.0/odamex-win32-0.7.0.zip",
-            "hash": "dfc169e0db2eb26a97e66c78ed78d3583ab911d2177966dae93013172b1692f9",
-            "extract_dir": "odamex-win32-0.7.0"
+            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/10.1.0/odamex-win32-10.1.0.zip",
+            "hash": "sha1:7125ce63a8498500b6292daeec507dfee862f5f9"
+        },
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/10.1.0/odamex-win64-10.1.0.zip",
+            "hash": "sha1:99d3ec274087de32fee4a4b2fbde30904c2c57fa"
         }
+    },
+    "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
+    "env_set": {
+        "DOOMWADDIR": "$persist_dir\\..\\_doom"
     },
     "shortcuts": [
         [
@@ -25,13 +32,17 @@
             "Odalaunch"
         ]
     ],
-    "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
-    "env_set": {
-        "DOOMWADDIR": "$persist_dir\\..\\_doom"
+    "checkver": {
+        "regex": ">Version ([a-zA-Z\\d.\\-_]+):"
     },
-    "notes": [
-        "Place WAD files (game data) in:",
-        "",
-        "    $persist_dir\\..\\_doom"
-    ]
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/odamex/Odamex/$version/odamex-win32-$version.zip"
+            },
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/odamex/Odamex/$version/odamex-win64-$version.zip"
+            }
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
-    "homepage": "http://www.mameui.info/",
-    "description": "GUI frontend for MAME, the multi-purpose emulation framework",
     "version": "nightly",
+    "description": "GUI frontend for MAME, the multi-purpose emulation framework",
+    "homepage": "http://www.mameui.info/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {

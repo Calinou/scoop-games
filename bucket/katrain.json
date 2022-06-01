@@ -1,20 +1,24 @@
 {
-    "homepage": "https://github.com/sanderland/katrain",
+    "version": "1.10.1",
     "description": "A tool for analyzing and playing go with AI feedback from KataGo",
-    "version": "1.7.6",
+    "homepage": "https://github.com/sanderland/katrain",
     "license": "MIT",
-    "url": "https://github.com/sanderland/katrain/releases/download/v1.7.6/KaTrain.zip",
-    "hash": "e7bf4912759a05078148e12f9197baf159ac8b3fafe29d711737e5483f1cdc66",
+    "notes": [
+        "KaTrain config is stored in C:\\Users\\[USERNAME]\\.katrain",
+        "Kivy config is stored C:\\Users\\[USERNAME]\\.kivy"
+    ],
+    "url": "https://github.com/sanderland/katrain/releases/download/1.10.1/KaTrain.zip",
+    "hash": "70e878d87f28b8149506311570788bdc2456d5cc1865a263940388510f6cd129",
     "extract_dir": "KaTrain",
-    "bin": "KaTrain.exe",
     "shortcuts": [
         [
             "KaTrain.exe",
             "KaTrain"
         ]
     ],
+    "persist": "sgfout",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/sanderland/katrain/releases/download/v$version/KaTrain.zip"
+        "url": "https://github.com/sanderland/katrain/releases/download/$version/KaTrain.zip"
     }
 }

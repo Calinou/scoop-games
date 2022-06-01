@@ -1,10 +1,10 @@
 {
-    "homepage": "https://github.com/ModOrganizer2/modorganizer",
+    "version": "2.4.4",
     "description": "Mod manager for various PC games",
-    "version": "2.4.2",
+    "homepage": "https://github.com/ModOrganizer2/modorganizer",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/ModOrganizer2/modorganizer/releases/download/v2.4.2/Mod.Organizer-2.4.2.7z",
-    "hash": "9c810f2a39de1f1970876b4f89e1beb690b4ffec477cb09528ac26bd274bb549",
+    "url": "https://github.com/ModOrganizer2/modorganizer/releases/download/v2.4.4/Mod.Organizer-2.4.4.7z",
+    "hash": "03ebaee8eda760a46b7dd828e3e6494355fc842bac24c221d109a22c0b273df2",
     "bin": "ModOrganizer.exe",
     "shortcuts": [
         [
