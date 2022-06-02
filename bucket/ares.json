@@ -48,7 +48,9 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows.zip",
+                "url": "https://github.com/ares-emulator/ares/releases/download/v$cleanVersion/ares-windows.zip"
+                 }
+        },
                 "extract_dir": "ares-v$cleanVersion"
             }
         }
