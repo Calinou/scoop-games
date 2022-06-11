@@ -10,7 +10,7 @@
             "hash": "b2037b8658d11e607ae1cefdcedb3619c5bc938b678727d33ddbad21c7e2416c"
         }
     },
-    "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Engine_RelWithDebInfo_*.zip\" \"$dir\"",
+    "pre_install": "Expand-ZipArchive \"$dir\\OpenMW_MSVC2019_64_Engine_RelWithDebInfo_master.zip\" \"$dir\"",
     "post_install": "Remove-Item \"$dir\\MSVC2019_64\", \"$dir\\chocolatey.log\", \"$dir\\OpenMW_MSVC2019_64_Engine_RelWithDebInfo_*.zip\" -Force -Recurse",
     "bin": [
         "openmw.exe",
