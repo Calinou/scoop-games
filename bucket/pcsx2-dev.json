@@ -1,5 +1,5 @@
 {
-    "version": "1.7.2938",
+    "version": "1.7.2939",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -16,8 +16,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2938/pcsx2-v1.7.2938-windows-64bit-AVX2-Qt.7z",
-            "hash": "2296e2ee8298d60dd7c8c7f6751d1bc4a4268dc26ea3b84f6447126572a06b16",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.2939/pcsx2-v1.7.2939-windows-64bit-AVX2-Qt.7z",
+            "hash": "c21878c2c755165124eca3434ef74c3517f7eb28db87149dc12fb9c179b099f0",
             "bin": [
                 [
                     "pcsx2-qtx64-avx2.exe",
