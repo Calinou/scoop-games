@@ -16,7 +16,8 @@
                 "928fcf34efd0719a3560cbab6821d71ce686b6315e8825360fba87a7a94d7846",
                 "e0a218b7dd9438e701503b0f84c25a97c1c11b7c2f025323fb19d6db16ef3759",
                 "5a4277a2e62d87f2952ea5020dc20fb2f6ffafdccf9913fbf35ad45ee30ec762"
-            ]
+            ],
+            "extract_dir": "openttd-12.2-windows-win32",
         },
         "64bit": {
             "url": [
