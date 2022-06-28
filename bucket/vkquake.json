@@ -4,6 +4,7 @@
     "homepage": "https://github.com/Novum/vkQuake",
     "license": "GPL-2.0-or-later",
     "notes": [
+        "",
         "Place game data files (such as pak0.pak and pak1.pak) in:",
         "",
         "- Quake:",
@@ -16,7 +17,11 @@
         "    $persist_dir\\rogue\\",
         "",
         "- Quake Mission Pack 3 - Abyss of Pandemonium:",
-        "    $persist_dir\\abyss\\"
+        "    $persist_dir\\abyss\\",
+        "",
+        "- Quake - Arcane Dimensions (https://www.moddb.com/mods/arcane-dimensions):",
+        "    $persist_dir\\ad\\",
+        ""
     ],
     "suggest": {
         "vcredist": "extras/vcredist2019"
@@ -59,13 +64,19 @@
             "vkQuake.exe",
             "vkQuake (Abyss of Pandemonium)",
             "-game abyss"
+        ],
+        [
+            "vkQuake.exe",
+            "vkQuake (Arcane Dimensions)",
+            "-game ad"
         ]
     ],
     "persist": [
         "id1",
         "hipnotic",
         "rogue",
-        "abyss"
+        "abyss",
+        "ad"
     ],
     "checkver": "github",
     "autoupdate": {
