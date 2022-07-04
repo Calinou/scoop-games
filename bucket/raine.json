@@ -28,7 +28,7 @@
             ]
         },
         "64bit": {
-            "url": [ 
+            "url": [
                 "https://raine.1emulation.com/archive/raine64-0.93.5d.7z",
                 "https://raine.1emulation.com/archive/dlls64-0.92x.7z"
             ],
