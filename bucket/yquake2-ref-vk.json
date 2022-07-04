@@ -1,6 +1,6 @@
 {
     "version": "1.0.2",
-    "description": "This is the vkQuake2 vulkan renderer library ported to Yamagi Quake II",
+    "description": "vkQuake2's Vulkan renderer library ported for use with Yamagi Quake II",
     "homepage": "https://github.com/yquake2/ref_vk",
     "license": "https://github.com/yquake2/ref_vk/blob/master/LICENSE",
     "depends": "yquake2",
