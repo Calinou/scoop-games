@@ -21,8 +21,8 @@
         "settings.ini"
     ],
     "checkver": {
-        "github": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded",
-        "regex": "CI-([a-f\\d]+)"
+        "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases.atom",
+        "regex": "CI-([a-f\\d]+)."
     },
     "autoupdate": {
         "url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases/download/CI-$version/CxbxReloaded-Release-VS2022.zip"

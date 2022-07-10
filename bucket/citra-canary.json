@@ -46,6 +46,6 @@
         "replace": "${build}-${date}"
     },
     "autoupdate": {
-                "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-$version/citra-windows-$matchEnv-$matchDate-$matchCommit.$matchZip"
+        "url": "https://github.com/citra-emu/citra-canary/releases/download/canary-$matchBuild/citra-windows-$matchEnv-$matchDate-$matchCommit.$matchZip"
     }
 }
