@@ -15,12 +15,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-0c6df39a45a13edf2a8e2551766483e1aa3b94ef/rpcs3-v0.0.23-13875-0c6df39a_win64.7z",
-            "hash": "b89e76b1f63275407286ff589c5203f63c62878d3c906838024179bb2d5303ac"
-        }
-    },
+    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-73a687df7d92b25d04adc6ef788e2992a5a23196/rpcs3-v0.0.23-13859-73a687df_win64.7z",
+    "hash": "3009149943c708328b414e1580194724d93c7a85b3ba3b23295d928a13386424",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -45,13 +41,13 @@
         "dev_usb000",
         "cache",
         "captures",
+        "config.yml",
         "config",
         "firmware",
+        "games.yml",
         "GuiConfigs",
         "Icons",
-        "patches",
-        "config.yml",
-        "games.yml"
+        "patches"
     ],
     "checkver": {
         "url": "https://rpcs3.net/compatibility?b",
