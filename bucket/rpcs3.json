@@ -13,14 +13,10 @@
     ],
     "depends": "ps3-system-software",
     "suggest": {
-        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-befd7ceb8935f6106981c1774783740239e796c4/rpcs3-v0.0.23-13883-befd7ceb_win64.7z",
-            "hash": "ab7abad7339358c58700d5248d657ca5b44f772c02a178baa3558abb53ea1327"
-        }
-    },
+    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-befd7ceb8935f6106981c1774783740239e796c4/rpcs3-v0.0.23-13883-befd7ceb_win64.7z",
+    "hash": "ab7abad7339358c58700d5248d657ca5b44f772c02a178baa3558abb53ea1327",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -45,13 +41,13 @@
         "dev_usb000",
         "cache",
         "captures",
+        "config.yml",
         "config",
         "firmware",
+        "games.yml",
         "GuiConfigs",
         "Icons",
-        "patches",
-        "config.yml",
-        "games.yml"
+        "patches"
     ],
     "checkver": {
         "url": "https://rpcs3.net/compatibility?b",
