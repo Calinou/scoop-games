@@ -1,15 +1,15 @@
 {
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "Tool to mod the balance of retro Castlevania games, including randomization options",
     "homepage": "https://github.com/Lakifume/SotnKindAndFair",
-    "license": "Unknown",
+    "license": "MIT",
     "notes": [
         "",
         "You can apply other patches as well in the process by placing them in the '$persist_dir\\Data\\<name of the game>\\Patches' dir.",
         ""
     ],
-    "url": "https://github.com/Lakifume/SotnKindAndFair/releases/download/1.5.2/KindAndFair.zip",
-    "hash": "3f0b57285ad5b6ef0ca75321b88a88d55fa98aa4df2c83e890f59d33c217729a",
+    "url": "https://github.com/Lakifume/SotnKindAndFair/releases/download/1.5.3/KindAndFair.zip",
+    "hash": "372b1a22cbadca03d6ecd89b8f3b342e95b2d74c59b1b07b5781550929ea20b7",
     "shortcuts": [
         [
             "kindandfair.exe",
