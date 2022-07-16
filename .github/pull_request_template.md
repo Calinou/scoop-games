@@ -11,11 +11,11 @@
 > - [ ] dev/nightly/canary
 
 ## I followed the bucket's manifest standards?
-> - [ ] I have read the [Contributing Guide](../CONTRIBUTING.md).
+> - [ ] I have read the [Contributing Guide](https://github.com/Calinou/scoop-games/blob/master/CONTRIBUTING.md).
 > - [ ] properly named and capitalized shortcuts?
-> - [ ] autoupdate and checkver entry [](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate)
+> - [ ] [autoupdate and checkver entry](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate)
 > - [ ] [persist](https://github.com/ScoopInstaller/Scoop/wiki/Persistent-data) defined with config/data/user/portable/textures/saves folder(s) specific for the app?
-> - [ ] a [pre_install](https://github.com/ScoopInstaller/Scoop/wiki/Pre--and-Post-install-scripts) script to auto-enable portable mode (if needed)?
+> - [ ] a [pre_install](https://github.com/ScoopInstaller/Scoop/wiki/Pre-and-Post-install-and-uninstall-scripts) script to auto-enable portable mode (if needed)?
 >   - [ ] a pre_install script creates runtime created files specified in persist (ensures symlinks properly get created)
 > - [ ] license identifier and url
 > - [ ] a short terse description matching existing style.
