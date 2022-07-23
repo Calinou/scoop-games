@@ -18,4 +18,4 @@
     "autoupdate": {
         "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-$version.zip"
     }
-} 
+}
