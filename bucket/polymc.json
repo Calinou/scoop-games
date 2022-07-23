@@ -4,7 +4,7 @@
     "homepage": "https://polymc.org/",
     "license": "GPL-3.0-only",
     "url": "https://github.com/PolyMC/PolyMC/releases/download/1.4.0/PolyMC-Windows-1.4.0.zip",
-    "hash": "TODO",
+    "hash": "89da603458deb29c3e9ad71801fb679d7b06ba1937d305b7a27360bde1df6670",
     "bin": "PolyMC.exe",
     "shortcuts": [
         [
@@ -17,4 +17,5 @@
     },
     "autoupdate": {
         "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-$version.zip"
-}
+    }
+} 

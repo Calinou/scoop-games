@@ -4,7 +4,7 @@
     "homepage": "https://polymc.org/",
     "license": "GPL-3.0-only",
     "url": "https://github.com/PolyMC/PolyMC/releases/download/1.4.0/PolyMC-Windows-Legacy-1.4.0.zip",
-    "hash": "TODO",
+    "hash": "4f52c6b002a2d33027ac5e51b5b91f42e6460473834a7b701d7740680871c57c",
     "bin": "PolyMC.exe",
     "shortcuts": [
         [
@@ -17,4 +17,5 @@
     },
     "autoupdate": {
         "url": "https://github.com/PolyMC/PolyMC/releases/download/$version/PolyMC-Windows-Legacy-$version.zip"
+    }
 }
