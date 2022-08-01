@@ -9,7 +9,7 @@
         "",
         "The .NET 6 runtime, also known as Microsoft Windows Desktop Runtime, is available in the Extras bucket.",
         "",
-        "Since the runtimes get installed globally, Sudo is needed, which is part of the Main bucket.",
+        "Since the runtime gets installed globally, Sudo is needed, which is part of the Main bucket.",
         "",
         "For example, with Sudo installed, you could execute the following to get the dependencies: scoop install extras/windowsdesktop-runtime-lts",
         ""
