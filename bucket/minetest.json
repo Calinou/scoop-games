@@ -1,18 +1,18 @@
 {
-    "version": "5.5.1",
+    "version": "5.6.0",
     "description": "Minecraft-like infinite-world multiplayer sandbox game",
     "homepage": "https://www.minetest.net/",
     "license": "LGPL-2.1-or-later",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/minetest/minetest/releases/download/5.5.1/minetest-5.5.1-win32.zip",
-            "hash": "8a670670ce814788d9d52467c4991cf9f879c586f69fe902d51fd85fd16d90c7",
-            "extract_dir": "minetest-5.5.1-win32"
+            "url": "https://github.com/minetest/minetest/releases/download/5.6.0/minetest-5.6.0-win32.zip",
+            "hash": "8ace4eab81dd703ac541f476889a4e4a6ca8b41991e7a4f0b1f5c80e54247d10",
+            "extract_dir": "minetest-5.6.0-win32"
         },
         "64bit": {
-            "url": "https://github.com/minetest/minetest/releases/download/5.5.1/minetest-5.5.1-win64.zip",
-            "hash": "9be48fb4126312b0d8fd048d1ab06d59b3109f6fe037fcd5ab65b99507e68a5f",
-            "extract_dir": "minetest-5.5.1-win64"
+            "url": "https://github.com/minetest/minetest/releases/download/5.6.0/minetest-5.6.0-win64.zip",
+            "hash": "adf1b35dd1f5a5a91c6d86017bfa627b9a8e38d21b7e6219c3eb011d38bfb965",
+            "extract_dir": "minetest-5.6.0-win64"
         }
     },
     "post_install": [
