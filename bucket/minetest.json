@@ -6,12 +6,12 @@
     "architecture": {
         "32bit": {
             "url": "https://github.com/minetest/minetest/releases/download/5.6.0/minetest-5.6.0-win32.zip",
-            "hash": "8ace4eab81dd703ac541f476889a4e4a6ca8b41991e7a4f0b1f5c80e54247d10",
+            "hash": "565004add5f1938dbf3d263ba98dba7b8de020adbe7da8ec1f8ec4c89fd4d500",
             "extract_dir": "minetest-5.6.0-win32"
         },
         "64bit": {
             "url": "https://github.com/minetest/minetest/releases/download/5.6.0/minetest-5.6.0-win64.zip",
-            "hash": "adf1b35dd1f5a5a91c6d86017bfa627b9a8e38d21b7e6219c3eb011d38bfb965",
+            "hash": "81213fd6cb871a8bd1015bdf4005824ecf22140452bed162aa9f6c1b3be83971",
             "extract_dir": "minetest-5.6.0-win64"
         }
     },
