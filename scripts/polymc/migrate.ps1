@@ -8,7 +8,6 @@ $files = @(
     "translations",
     "accounts.json",
     "polymc.cfg",
-    "notifications.json"
 )
 
 $options =
