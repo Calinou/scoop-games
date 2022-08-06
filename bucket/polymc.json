@@ -3,12 +3,16 @@
     "description": "An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
     "homepage": "https://polymc.org/",
     "license": "GPL-3.0-only",
+    "notes": "Run '$dir\\migrate.ps1' to migrate your PolyMC configuration to Scoop.",
     "url": "https://github.com/PolyMC/PolyMC/releases/download/1.4.1/PolyMC-Windows-Portable-1.4.1.zip",
     "hash": "9f363ee10a880364c0010a9c996094ca304eb390c9b966a388990772fbca59ef",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" | Out-Null }",
         "if (!(Test-Path \"$persist_dir\\polymc.cfg\")) { New-Item \"$dir\\polymc.cfg\" -Value \"Analytics=false`r`nAutoUpdate=false`r`nIconTheme=pe_colored\" | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\notifications.json\")) { New-Item \"$dir\\notifications.json\" | Out-Null }"
+        "if (!(Test-Path \"$persist_dir\\notifications.json\")) { New-Item \"$dir\\notifications.json\" | Out-Null }",
+        "",
+        "# Migration script",
+        "Copy-Item \"$bucketsdir\\games\\scripts\\polymc\\migrate.ps1\" \"$dir\" | Out-Null"
     ],
     "bin": "PolyMC.exe",
     "shortcuts": [
