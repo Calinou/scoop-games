@@ -7,7 +7,7 @@ $files = @(
     "themes",
     "translations",
     "accounts.json",
-    "polymc.cfg",
+    "polymc.cfg"
 )
 
 $options =
