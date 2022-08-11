@@ -1,6 +1,6 @@
 {
     "version": "25.5.1",
-    "description": "Desktop app for itch.io, an indie game online store.",
+    "description": "Desktop app for itch.io, an indie game online store",
     "homepage": "https://itch.io/app",
     "license": "MIT",
     "architecture": {
