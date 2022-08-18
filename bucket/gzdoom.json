@@ -6,7 +6,7 @@
     "notes": [
         "Place WAD files (game data) in:",
         "",
-        "    $persist_dir\\..\\_doom"
+        "    $persist_dir\\WAD"
     ],
     "architecture": {
         "64bit": {
@@ -15,11 +15,13 @@
         }
     },
     "pre_install": [
-        "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",
-        "New-Item -Path $dir -Name gzdoom_portable.ini -ItemType File -ErrorAction Ignore | Out-Null"
+        "New-Item -Path \"$dir\" -Name gzdoom_portable.ini -ItemType File -ErrorAction Ignore | Out-Null",
+        "New-Item -Path \"$persist_dir\" -Name WAD -ItemType Directory -Force -ErrorAction Ignore | Out-Null",
+        "Copy-Item -Path \"$persist_dir\\..\\_doom\\*\" -Destination \"$persist_dir\\WAD\" -Recurse -ErrorAction Ignore | Out-Null",
+        "Remove-Item -Path \"$persist_dir\\..\\_doom\" -Force -Recurse -ErrorAction Ignore | Out-Null"
     ],
     "env_set": {
-        "DOOMWADDIR": "$persist_dir\\..\\_doom"
+        "DOOMWADDIR": "$persist_dir\\WAD"
     },
     "bin": "gzdoom.exe",
     "shortcuts": [
@@ -28,7 +30,11 @@
             "GZDoom"
         ]
     ],
-    "persist": "gzdoom_portable.ini",
+    "persist": [
+        "gzdoom_portable.ini",
+        "Save",
+        "Screenshots"
+    ],
     "checkver": {
         "github": "https://github.com/coelckers/gzdoom",
         "regex": "/releases/tag/(?:g)?([\\w.]+)"
