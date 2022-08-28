@@ -1,6 +1,6 @@
 {
     "version": "0.9.13",
-    "description": "DeSmuME is a Nintendo DS emulator",
+    "description": "Nintendo DS emulator",
     "homepage": "https://github.com/TASEmulators/desmume",
     "license": "GPL-2.0-or-later",
     "architecture": {
