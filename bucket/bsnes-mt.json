@@ -3,6 +3,7 @@
     "description": "bsnes-mt is a fork of bsnes that adds video features like pixel-perfect, integer-ratio scaling, as well as the aspect ratio that corresponds to that of the SNES console",
     "homepage": "https://tanalin.com/en/projects/bsnes-mt/",
     "license": {
+        "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/Marat-Tanalin/bsnes-mt/blob/master/LICENSE.txt"
     },
     "url": "https://github.com/Marat-Tanalin/bsnes-mt/releases/download/1.3.4/bsnes-mt-1.3.4.7z",
