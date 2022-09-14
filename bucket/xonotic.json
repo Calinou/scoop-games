@@ -1,10 +1,10 @@
 {
-    "version": "0.8.2",
+    "version": "0.8.5",
     "description": "Free fast-paced first-person shooter",
     "homepage": "https://xonotic.org/",
     "license": "GPL-3.0-or-later",
-    "url": "https://dl.xonotic.org/xonotic-0.8.2.zip",
-    "hash": "a22f7230f486c5825b55cfdadd73399c9b0fae98c9e081dd8ac76eca08359ad5",
+    "url": "https://dl.xonotic.org/xonotic-0.8.5.zip",
+    "hash": "6EED6191BDFE700B66465AFDE4922C8C77C19804867C30D7ED36729D9BD3A62A",
     "architecture": {
         "32bit": {
             "pre_install": "Set-Content -Path \"$dir\\xonotic.bat\" -Value \"pushd $dir && xonotic-x86.exe && popd\""
