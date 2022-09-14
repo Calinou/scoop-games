@@ -4,7 +4,7 @@
     "homepage": "https://xonotic.org/",
     "license": "GPL-3.0-or-later",
     "url": "https://dl.xonotic.org/xonotic-0.8.5.zip",
-    "hash": "6EED6191BDFE700B66465AFDE4922C8C77C19804867C30D7ED36729D9BD3A62A",
+    "hash": "0f92aa238362aeb059b9d9026a9bd38d6217423a35c19f126fb39e38736e37e5",
     "architecture": {
         "32bit": {
             "pre_install": "Set-Content -Path \"$dir\\xonotic.bat\" -Value \"pushd $dir && xonotic-x86.exe && popd\""
