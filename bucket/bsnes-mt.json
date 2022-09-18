@@ -32,7 +32,7 @@
         "bsnes-mt-settings.bml"
     ],
     "checkver": {
-        "github": "https://github.com/Marat-Tanalin/bsnes-mt",
+        "github": "https://github.com/Marat-Tanalin/bsnes-mt"
     },
     "autoupdate": {
         "url": "https://github.com/Marat-Tanalin/bsnes-mt/releases/download/$version/bsnes-mt-$version.7z"
