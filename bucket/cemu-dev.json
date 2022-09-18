@@ -61,7 +61,7 @@
         "github": "https://github.com/cemu-project/Cemu"
     },
     "autoupdate": {
-        "url": "https://github.com/cemu-project/Cemu/releases/download/v$Version/cemu-$Version-windows-x64.zip",
-        "extract_dir": "Cemu_$Version"
+        "url": "https://github.com/cemu-project/Cemu/releases/download/v$version/cemu-$version-windows-x64.zip",
+        "extract_dir": "Cemu_$version"
     }
 }
