@@ -58,7 +58,7 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/cemu-project/Cemu/tags",
+        "url": "https://github.com/cemu-project/Cemu/releases",
         "regex": "v(?<version>([\\d.]+)(-[\\d.]+)?)"
     },
     "autoupdate": {
