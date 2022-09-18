@@ -58,8 +58,8 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/cemu-project/Cemu/releases",
-        "regex": "Cemu (?<version>([\\d.]+)(-[\\d.]+)?)"
+        "github": "https://github.com/cemu-project/Cemu",
+        "regex": "v(?<version>([\\d.]+)(-[\\d.]+)?)"
     },
     "autoupdate": {
         "url": "https://github.com/cemu-project/Cemu/releases/download/v$matchVersion/cemu-$matchVersion-windows-x64.zip",
