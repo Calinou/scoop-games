@@ -29,10 +29,15 @@
         "   }",
         "}"
     ],
-    "bin": "Cemu.exe",
+    "bin": [
+        [
+            "Cemu.exe",
+            "cemu"
+        ]
+    ],
     "shortcuts": [
         [
-            "cemu.exe",
+            "Cemu.exe",
             "Cemu"
         ]
     ],

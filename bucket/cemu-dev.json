@@ -29,11 +29,16 @@
         "   }",
         "}"
     ],
-    "bin": "Cemu.exe",
+    "bin": [
+        [
+            "Cemu.exe",
+            "cemu-dev"
+        ]
+    ],
     "shortcuts": [
         [
-            "cemu.exe",
-            "Cemu"
+            "Cemu.exe",
+            "Cemu (Development)"
         ]
     ],
     "persist": [
