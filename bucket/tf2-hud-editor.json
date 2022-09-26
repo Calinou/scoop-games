@@ -11,7 +11,7 @@
         "64bit": {
             "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/2.5/tf2-hud-editor-x64.zip",
             "hash": "1d9fc10c4f76883100a52668e51eea7c2f8f2fcb43b668d03d2eb263594ec193",
-			"extract_dir": "tf2-hud-editor-x64",
+			"extract_dir": "tf2-hud-editor-x64"
         },
         "32bit": {
             "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/2.5/tf2-hud-editor-x86.zip",
