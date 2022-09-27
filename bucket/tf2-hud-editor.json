@@ -1,6 +1,7 @@
 {
     "version": "2.5",
-    "description": "Install and customize your favorite custom Team Fortress 2 HUDs.",
+    "description": "Install and customize your favorite custom Team Fortress 2 HUDs",
+
     "homepage": "https://www.editor.criticalflaw.ca",
     "license": {
         "identifier": "MIT",
