@@ -3,10 +3,7 @@
     "description": "Install and customize your favorite custom Team Fortress 2 HUDs",
 
     "homepage": "https://www.editor.criticalflaw.ca",
-    "license": {
-        "identifier": "MIT",
-        "url": "https://spdx.org/licenses/MIT.html"
-    },
+    "license": "MIT",
     "notes": ".NET 6.0 Runtime is required.",
     "architecture": {
         "64bit": {
