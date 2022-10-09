@@ -1,0 +1,31 @@
+{
+    "version": "2.0.2",
+    "description": "A Native GUI Epic Games Launcher for Linux, Windows and Mac.",
+    "homepage": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+    "license": "GPL-3.0",
+    "architecture":{
+        "64bit": {
+            "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.0.2/Heroic-2.0.2.exe#dl.7z",
+            "hash": "sha256:1A48E435EC5A1D173991DE87F345DD6EEEFCF6709D6285D9CEDAF62469922801"
+        }
+    },
+    "extract_dir": "$PLUGINSDIR",
+    "pre_install": "7z e \"$dir\\app-64.7z\" -o\"$dir\" -y",
+    "bin": "Heroic.exe",
+    "shortcuts": [
+        [
+            "Heroic.exe",
+            "Heroic"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+    },
+    "autoupdate": {
+        "architecture":{
+            "64bit":{
+                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/$ver/Heroic-$ver.exe"
+            }
+        }
+    }
+}
