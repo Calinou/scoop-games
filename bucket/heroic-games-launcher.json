@@ -1,6 +1,7 @@
 {
     "version": "2.4.3",
-    "description": "A native GOG and Epic Games Launcher GUI",
+    "description": "Native GUI reimplementation for GOG and Epic Games Launcher",
+
 
     "homepage": "https://heroicgameslauncher.com/",
     "license": "GPL-3.0",
