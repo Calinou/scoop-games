@@ -27,7 +27,7 @@
                 "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-$version-Setup.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
-                    "regex": "sha512:\\s+$base64"
+                    "regex": "sha512:\\s$sha512"
                 }
             }
         }
