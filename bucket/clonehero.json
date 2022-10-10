@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://pubdl.clonehero.net/clonehero-v.23.2.2/clonehero-win64.7z",
-            "hash": "59f4619982303a8aaebb6c877fef1d47a402ca99"
+            "hash": "sha1:59f4619982303a8aaebb6c877fef1d47a402ca99"
         }
     },
     "shortcuts": [
