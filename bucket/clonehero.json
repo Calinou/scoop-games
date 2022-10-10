@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://pubdl.clonehero.net/clonehero-v.23.2.2/clonehero-win64.7z"
+                "url": "https://pubdl.clonehero.net/clonehero-v$version/clonehero-win64.7z"
             }
         }
     }
