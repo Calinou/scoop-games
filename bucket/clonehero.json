@@ -11,8 +11,8 @@
     },
     "shortcuts": [
         [
-            "clonehero.exe",
-            "clonehero"
+            "clonehero-win64\\Clone Hero.exe",
+            "Clone Hero"
         ]
     ],
     "autoupdate": {
