@@ -27,7 +27,7 @@
                 "url": "https://github.com/libretro/ludo/releases/download/v$version/Ludo-Windows-x86_64-$version.zip",
                 "hash": {
                     "url": "$url.sha256",
-                    "regex": "([\\d]+),$sha256,"
+                    "regex": "([\\d]+),$sha256"
                 },
                 "extract_dir": "Ludo-Windows-x86_64-$version"
             }
