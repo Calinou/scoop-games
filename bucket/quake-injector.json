@@ -18,7 +18,8 @@
         "database.xml"
     ],
     "checkver": {
-        "github": "https://github.com/hrehfeld/QuakeInjector"
+        "url": "https://github.com/hrehfeld/QuakeInjector/tags",
+        "regex": "([\\w]+)</a></h2>"
     },
     "autoupdate": {
         "url": "https://github.com/hrehfeld/QuakeInjector/releases/download/$version/QuakeInjector.exe-$version.zip"
