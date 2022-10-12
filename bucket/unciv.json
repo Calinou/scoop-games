@@ -16,7 +16,11 @@
             "hash": "AA9A69BF3612D5245E80E025CA690A3E5CDEA2C99338580B0DB396CBB77C1389"
         }
     },
-    "pre_install": "if (!(Test-Path \"$persist_dir\\GameSettings.json\")) {New-Item \"$dir\\GameSettings.json\" -ItemType 'File' | Out-Null}",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\GameSettings.json\")) {",
+        "New-Item \"$dir\\GameSettings.json\" -Value '{resolution:1200x800,windowState:{width:1920,height:1080},isFreshlyCreated:true,multiplayer:{userId:},version:1}' | Out-Null",
+        "}"
+    ],
     "bin": "Unciv.exe",
     "shortcuts": [
         [
