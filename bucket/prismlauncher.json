@@ -20,6 +20,10 @@
         "github": "https://github.com/PrismLauncher/PrismLauncher"
     },
     "autoupdate": {
-        "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-$version.zip"
+            }
+        }
     }
 }
