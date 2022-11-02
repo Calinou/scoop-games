@@ -16,7 +16,7 @@
     "pre_uninstall": [
         "if (!(is_admin)) {error \"$app requires admin rights to $cmd\"; break}",
         "Stop-Service -Name 'EpicOnlineServices' -Force -ErrorAction 'SilentlyContinue'; Stop-Process -Name 'EpicGamesLauncher' -Force -ErrorAction 'SilentlyContinue'",
-        "Start-Process 'msiexec' -Wait -Verb 'RunAs' -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn')",
+        "Start-Process 'msiexec' -Wait -Verb 'RunAs' -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn'); Start-Sleep -Seconds 3",
         "Remove-Item \"$env:LOCALAPPDATA\\Epic Online Services\" -Force -Recurse -ErrorAction 'SilentlyContinue'"
     ],
     "checkver": {
