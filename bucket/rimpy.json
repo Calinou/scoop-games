@@ -1,0 +1,26 @@
+{
+    "homepage": "https://github.com/rimpy-custom/RimPy",
+    "description": "Mod manager for Rimworld",
+    "version": "1.2.6.27",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rimpy-custom/RimPy/releases/download/1.2.6.27/RimPy_Windows.zip",
+            "hash": "b971e57891c94301027c316fdc998cf7d7db2b7d66d0300e66fb3c6598d12077"
+        }
+    },
+    "shortcuts": [
+        [
+            "RimPy.exe",
+            "RimPy"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rimpy-custom/RimPy/releases/download/$version/RimPy_Windows.zip"
+            }
+        }
+    }
+}
