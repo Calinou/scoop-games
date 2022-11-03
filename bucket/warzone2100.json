@@ -1,10 +1,10 @@
 {
-    "version": "4.3.0",
+    "version": "4.3.1",
     "description": "Real-time strategy game set in a futuristic universe",
     "homepage": "https://wz2100.net/",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.3.0/warzone2100_win_x86_portable.exe#/dl.7z",
-    "hash": "cedbb5f55c81c1c9f00fafb402e2bf32261c41da8956e8212ea1b882d66622fb",
+    "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.3.1/warzone2100_win_x86_portable.exe#/dl.7z",
+    "hash": "40a821f3d7c77a211d0b74d68be6f3109d82d2bea47ebe51df53978069231591",
     "bin": "bin\\warzone2100.exe",
     "shortcuts": [
         [
