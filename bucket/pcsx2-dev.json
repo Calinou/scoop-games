@@ -1,5 +1,5 @@
 {
-    "version": "1.7.3517",
+    "version": "1.7.3519",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -14,8 +14,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3517/pcsx2-v1.7.3517-windows-64bit-AVX2-Qt.7z",
-    "hash": "c3fa9c7f19f86b10511ccc6f1bde812ac3e91a8a8a276e48b8061348810cc515",
+    "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3519/pcsx2-v1.7.3519-windows-64bit-AVX2-Qt.7z",
+    "hash": "b9e0eab443b96bacf2bc9d704054fa97c0b881ae980865572474001f53963dd5",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
