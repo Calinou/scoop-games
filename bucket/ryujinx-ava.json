@@ -1,6 +1,6 @@
 {
     "version": "1.1.343",
-    "description": "A simple, experimental Nintendo Switch emulator",
+    "description": "A simple, experimental Nintendo Switch emulator (Avalonia UI test build)",
     "homepage": "https://ryujinx.org/",
     "license": {
         "identifier": "MIT",
