@@ -1,5 +1,5 @@
 {
-    "version": "0-1236",
+    "version": "0-1237",
     "description": "Experimental emulator for the Nintendo Switch",
     "homepage": "https://yuzu-emu.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-1236/yuzu-windows-msvc-20221116-940edada1.7z",
-            "hash": "e90fee7bd1e7895bec4fb498836dd79e9d6fc656d085913acfab117e5d8b2834"
+            "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-1237/yuzu-windows-msvc-20221117-7e56442e3.7z",
+            "hash": "48ca7093a4f5023d84bcba7fb83a78958bb0085a067d939b6ba57f2f5bed339c"
         }
     },
     "extract_dir": "yuzu-windows-msvc",
