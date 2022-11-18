@@ -8,6 +8,6 @@ be sure to know about these few guidelines:
   - By "game-related tools", we mean tools that are specific to a game
     or a game series (such as a map editor or modding tool).
   - Generic utilities related to gaming (such as Steam or GOG-related utilities)
-    should be added to [scoop-extras](https://github.com/lukesampson/scoop-extras)
+    should be added to [Extras](https://github.com/ScoopInstaller/Extras)
     instead, as they tend to appeal to a wider audience compared to this bucket.
 - See the official [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
