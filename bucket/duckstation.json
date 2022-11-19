@@ -11,8 +11,8 @@
         "Place the BIOS file in $persist_dir\\bios",
         "Learn more at: https://www.duckstation.org/wiki/BIOS"
     ],
-    "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
-    "hash": "e52140057eea1c4a4218a22a3ba52af1051cedc468a4eda9d218ccdc7bebddf4",
+    "url": "https://github.com/stenzek/duckstation/releases/download/legacy/duckstation-windows-x64-release.zip",
+    "hash": "486bab13e3bb6ac19bd9145558afda0486613898d41e559feb8c8963a76229b4",
     "installer": {
         "script": [
             "if (!(Test-Path \"$persist_dir\")) {",
