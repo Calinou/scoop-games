@@ -29,13 +29,11 @@
     "architecture": {
         "32bit": {
             "url": "https://github.com/Novum/vkQuake/releases/download/1.22.0/vkquake-1.22.0_win32.zip",
-            "hash": "e737318d243a223b34c3fd41a56d71dcc1612edaeae508cc6ef6487ab90fa502",
-            "extract_dir": "vkquake-1.22.0_win32"
+            "hash": "e737318d243a223b34c3fd41a56d71dcc1612edaeae508cc6ef6487ab90fa502"
         },
         "64bit": {
             "url": "https://github.com/Novum/vkQuake/releases/download/1.22.0/vkquake-1.22.0_win64.zip",
-            "hash": "2506c2ad8037767638b727cd16a3cad01b34b85129f4bd00027260482fff99b5",
-            "extract_dir": "vkquake-1.22.0_win64"
+            "hash": "2506c2ad8037767638b727cd16a3cad01b34b85129f4bd00027260482fff99b5"
         }
     },
     "bin": [
@@ -82,12 +80,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://github.com/Novum/vkQuake/releases/download/$version/vkquake-$version_win32.zip",
-                "extract_dir": "vkquake-$version_win32"
+                "url": "https://github.com/Novum/vkQuake/releases/download/$version/vkquake-$version_win32.zip"
             },
             "64bit": {
-                "url": "https://github.com/Novum/vkQuake/releases/download/$version/vkquake-$version_win64.zip",
-                "extract_dir": "vkquake-$version_win64"
+                "url": "https://github.com/Novum/vkQuake/releases/download/$version/vkquake-$version_win64.zip"
             }
         }
     }
