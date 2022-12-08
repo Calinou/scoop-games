@@ -1,6 +1,6 @@
 {
     "version": "20221208-g1905ce3",
-    "description": "A fast PlayStation 1 emulator for PC and Android",
+    "description": "A fast PlayStation 1 emulator for PC and Android (preview build)",
     "homepage": "https://github.com/stenzek/duckstation/",
     "license": {
         "identifier": "GPL-3.0-only",
