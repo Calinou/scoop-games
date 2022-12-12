@@ -4,8 +4,12 @@
     "homepage": "https://prismlauncher.org/",
     "license": "GPL-3.0-only",
     "notes": "To add Prism Launcher file association options for .ZIPs and .MRPACKS, run this: \"$dir\\install-associations.reg\"",
-    "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/6.0/PrismLauncher-Windows-MSVC-6.0.zip",
-    "hash": "6fa4dc49866c5cd4bbc69ccd84d009b5fb67a83bda8945cab540c849b6ddb680",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/6.0/PrismLauncher-Windows-MSVC-6.0.zip",
+            "hash": "6fa4dc49866c5cd4bbc69ccd84d009b5fb67a83bda8945cab540c849b6ddb680"
+        }
+    },
     "post_install": [
         "'install-associations', 'uninstall-associations' | ForEach-Object {",
         "    if (Test-Path \"$bucketsdir\\scoop-games\\scripts\\prismlauncher\\$_.reg\") {",
@@ -27,6 +31,10 @@
         "github": "https://github.com/PrismLauncher/PrismLauncher"
     },
     "autoupdate": {
-        "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/$version/PrismLauncher-Windows-MSVC-$version.zip"
+            }
+        }
     }
 }
