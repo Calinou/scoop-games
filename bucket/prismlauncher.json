@@ -1,6 +1,6 @@
 {
     "version": "6.0",
-    "description": "An open sourced Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
+    "description": "An open source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.",
     "homepage": "https://prismlauncher.org/",
     "license": "GPL-3.0-only",
     "notes": "To add Prism Launcher file association options for .ZIPs and .MRPACKS, run this: \"$dir\\install-associations.reg\"",
@@ -9,6 +9,9 @@
             "url": "https://github.com/PrismLauncher/PrismLauncher/releases/download/6.0/PrismLauncher-Windows-MSVC-6.0.zip",
             "hash": "6fa4dc49866c5cd4bbc69ccd84d009b5fb67a83bda8945cab540c849b6ddb680"
         }
+    },
+    "suggest": {
+        "Microsoft Visual C++ Redistributables": "extras/vcredist2022"
     },
     "post_install": [
         "'install-associations', 'uninstall-associations' | ForEach-Object {",
