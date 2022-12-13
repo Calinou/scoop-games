@@ -8,7 +8,7 @@
     "hash": "68b8ea5211c3cb6041b5f4dffb4a95bae80a649ab04d7b58b0bb8648b6e7204f",
     "post_install": [
         "'install-associations', 'uninstall-associations' | ForEach-Object {",
-        "    if (Test-Path \"$bucketsdir\\scoop-games\\scripts\\prismlauncher-qt5\\$_.reg\") {",
+        "    if (Test-Path \"$bucketsdir\\games\\scripts\\prismlauncher-qt5\\$_.reg\") {",
         "        $exePath = \"$dir\\prismlauncher.exe\".Replace('\\', '\\\\')",
         "        $content = (Get-Content \"$bucketsdir\\extras\\scripts\\prismlauncher-qt5\\$_.reg\").Replace('$EXEPATH', $exePath)",
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",

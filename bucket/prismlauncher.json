@@ -12,7 +12,7 @@
     },
     "post_install": [
         "'install-associations', 'uninstall-associations' | ForEach-Object {",
-        "    if (Test-Path \"$bucketsdir\\scoop-games\\scripts\\prismlauncher\\$_.reg\") {",
+        "    if (Test-Path \"$bucketsdir\\games\\scripts\\prismlauncher\\$_.reg\") {",
         "        $exePath = \"$dir\\prismlauncher.exe\".Replace('\\', '\\\\')",
         "        $content = (Get-Content \"$bucketsdir\\extras\\scripts\\prismlauncher\\$_.reg\").Replace('$EXEPATH', $exePath)",
         "        if ($global) { $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE') }",
