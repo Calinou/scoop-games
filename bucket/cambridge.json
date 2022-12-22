@@ -1,7 +1,7 @@
 {
     "version": "0.3",
     "homepage": "https://t-sp.in/cambridge",
-    "description": "The open source arcade stacker.",
+    "description": "Open source arcade stacker",
     "license": "MIT",
     "architecture": {
         "32bit": {
