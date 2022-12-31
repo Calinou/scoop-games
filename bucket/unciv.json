@@ -1,7 +1,7 @@
 {
     "version": "4.2.12",
     "homepage": "https://github.com/yairm210/UnCiv",
-    "description": "An open-source, mod-friendly Android+Desktop remake of Civ V, made with LibGDX.",
+    "description": "Open source, mod-friendly Android + Desktop remake of Civ V, made with LibGDX",
     "license": "MPL-2.0",
     "suggest": {
         "JRE": "java/temurin-jre"
