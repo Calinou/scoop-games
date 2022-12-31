@@ -4,7 +4,7 @@
     "description": "Open source, mod-friendly Android + Desktop remake of Civ V, made with LibGDX",
     "license": "MPL-2.0",
     "suggest": {
-        "JRE": "java/temurin-jre"
+        "Java Runtime Environment": "java/temurin-jre"
     },
     "architecture": {
         "64bit": {
