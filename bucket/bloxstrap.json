@@ -1,7 +1,7 @@
 {
     "version": "1.6.1",
     "homepage": "https://github.com/pizzaboxer/bloxstrap",
-    "description": "An open-source, feature-packed alternative bootstrapper for Roblox.",
+    "description": "Open-source, feature-packed alternative bootstrapper for Roblox",
     "license": "MIT",
     "architecture": {
         "32bit": {
