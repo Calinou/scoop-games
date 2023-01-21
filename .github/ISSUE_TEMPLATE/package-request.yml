@@ -1,7 +1,7 @@
 name: 📦 Package Request
 description: Open an issue about a missing package.
 title: "[Request]: "
-labels: ["package-request"]
+labels: ["new package"]
 body:
 - type: checkboxes
   attributes:
