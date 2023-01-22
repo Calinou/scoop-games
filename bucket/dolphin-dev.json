@@ -10,7 +10,7 @@
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
     "url": "https://dl.dolphin-emu.org/builds/d1/1a/dolphin-master-5.0-18281-x64.7z",
-    "hash": "8c5895c6535969e5778a5a7ad4fd7327f36c314b4759d31d092fc19a991e013d",
+    "hash": "e3e4165cb457978f520cd110afc5cb63466528be2c1fc36c2203a64b8db20d58",
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
