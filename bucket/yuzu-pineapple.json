@@ -1,5 +1,5 @@
 {
-    "version": "EA-3330",
+    "version": "EA-3333",
     "description": "A Yuzu Early Access fork with Linux-specific patches",
     "homepage": "https://github.com/pineappleEA/pineapple-src",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-3330/Windows-Yuzu-EA-3330.zip",
-            "hash": "f0b3c8e54dd620de21c5389e7ef4f2355c29c367368689df7043fae742683af5"
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-3333/Windows-Yuzu-EA-3333.zip",
+            "hash": "b830713c6f8cf68c6f28d0b3f4f7d20dfb6397fde607f87f0691205a25d2022a"
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
