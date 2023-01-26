@@ -1,10 +1,10 @@
 {
-    "version": "4.1.4",
+    "version": "4.1.5",
     "description": "Updates WeakAuras installed from Wago.",
     "homepage": "https://weakauras.wtf/",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/WeakAuras/WeakAuras-Companion/releases/download/v4.1.4/WeakAuras-Companion-Setup-4.1.4.exe#/dl.7z",
-    "hash": "sha512:7fbe195747103e5959eba11e749e0f71d99ae2044d77b64bef465a0c566c3d5fb87e148417329f45626db9e88b66139e3b31aa7e693d812e2a36539697277c81",
+    "url": "https://github.com/WeakAuras/WeakAuras-Companion/releases/download/v4.1.5/WeakAuras-Companion-Setup-4.1.5.exe#/dl.7z",
+    "hash": "sha512:0dea2bfc51566076adae955e831b308687f939b3d23d48163982ccd3725d787e568d291646c86d8b284391fb0f5ddc471a8765916c90f3a381c93ce22cc3b917",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
