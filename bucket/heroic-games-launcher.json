@@ -28,7 +28,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-$version-Setup.exe#/dl.7z",
+                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-$version-Setup-x64.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-$version-Setup-arm64.exe#/dl.7z"
             }
         }
     }
