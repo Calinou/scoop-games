@@ -6,7 +6,12 @@
         "identifier": "GPL-3.0-only",
         "url": "https://gitlab.com/veloren/veloren/-/blob/master/LICENSE"
     },
-    "notes": "Veloren has a number of game servers available to join, a list of which can be found here: https://gitlab.com/veloren/serverbrowser/-/blob/master/server/servers.ron (replace the address shown on Veloren's login page with an address from the link).",
+    "notes": [
+        "Veloren has a number of game servers available to join, a list of which can be found here:",
+        "https://gitlab.com/veloren/serverbrowser/-/blob/master/server/servers.ron",
+        "(replace the address shown on Veloren's login page with an address from the link above).",
+        "For help regarding the game, see Veloren's Owner's Manual: https://book.veloren.net/."
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/veloren/veloren/releases/download/weekly/weekly-windows-x86_64-2023-02-01T10_41.zip",
