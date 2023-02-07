@@ -3,7 +3,7 @@
     "description": "A multiplayer voxel RPG inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft",
     "homepage": "https://veloren.net/",
     "license": {
-        "identifier": "GPL-3.0-only",
+        "identifier": "GPL-3.0-or-later",
         "url": "https://gitlab.com/veloren/veloren/-/blob/master/LICENSE"
     },
     "notes": [
