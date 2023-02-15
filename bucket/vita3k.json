@@ -1,5 +1,5 @@
 {
-    "version": "3016-644404f",
+    "version": "3017-762ee3b",
     "description": "Experimental PlayStation Vita emulator",
     "homepage": "https://vita3k.org",
     "license": "GPL-2.0-only",
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip",
-            "hash": "238db9b2a715cc9d3649e90d0aa572230d0c61035b17d9e3e94f2e81d208ca18"
+            "hash": "43e23f527c792e3c0f1cbedb0fd26731dae447827914fdd2c885db246ead7d93"
         }
     },
     "pre_install": [
