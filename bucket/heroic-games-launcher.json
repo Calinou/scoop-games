@@ -36,7 +36,7 @@
         },
         "hash": {
             "url": "$baseurl/latest.yml",
-            "regex": "url:\\s([\\w.-]+)\\n\\s+sha512:\\s$sha512"
+            "regex": "url:\\s(?<fname>[\\w.-]+)\\n\\s+sha512:\\s$sha512"
         }
     }
 }
