@@ -8,7 +8,7 @@
         "Mindustry": "games/mindustry"
     },
     "url": "https://github.com/Anuken/Mindustry/releases/download/v142/server-release.jar#/Mindustry-Server.jar",
-    "hash": "2ce2e780dfc8f86c2133adc83cecdbd44cb68efe1eb01297d0138f3eaa4f0114",
+    "hash": "e6f394c08d559ad81511967dd54281ac08ea988f6a537f0a92ab904f834844a8",
     "pre_install": "Set-Content -Path \"$dir\\mindustry-server.bat\" -Value \"pushd $dir && java -jar Mindustry-Server.jar && popd\"",
     "bin": "mindustry-server.bat",
     "shortcuts": [
