@@ -7,12 +7,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/3.0/tf2-hud-editor-x64.zip",
-            "hash": "6852379573ac15bf322e7ebf5e79f6e0b9caa2c991d4da1a6d31b55a83173c70",
+            "hash": "e23d8af67f952249e8ba28d1dc29332fadf587df3060cd6bcdfef5caeac54899",
             "extract_dir": "tf2-hud-editor-x64"
         },
         "32bit": {
             "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/3.0/tf2-hud-editor-x86.zip",
-            "hash": "d65a13d23249b29967298f0d1d97f956394786468fb0b5ae50f13bfdf025d1ae",
+            "hash": "ed6cf2724d11b82bcd010b10f6b4d9b058846168622f3ef09dec6cc090f2cdaf",
             "extract_dir": "tf2-hud-editor-x86"
         }
     },
