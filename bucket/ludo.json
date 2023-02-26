@@ -2,7 +2,7 @@
     "version": "0.16.20",
     "homepage": "https://ludo.libretro.com/",
     "description": "Minimalist styled front-end for retro video game emulators",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "notes": "Settings are stored in the \"$env:LOCALAPPDATA\\ludo\" directory.",
     "architecture": {
         "64bit": {
