@@ -46,5 +46,18 @@
             "openttd.exe",
             "OpenTTD"
         ]
-    ]
+    ],
+    "checkver": "Download stable \\(([\\d\\.]+)\\)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.openttd.org/openttd-releases/$version/openttd-$version-windows-win32.zip",
+                "extract_dir": "openttd-$version-windows-win32"
+            },
+            "32bit": {
+                "url": "https://cdn.openttd.org/openttd-releases/$version/openttd-$version-windows-win64.zip",
+                "extract_dir": "openttd-$version-windows-win64"
+            }
+        }
+    }
 }
