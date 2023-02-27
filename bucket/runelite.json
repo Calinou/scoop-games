@@ -1,16 +1,16 @@
 {
-    "version": "2.6.1",
+    "version": "2.6.2",
     "description": "An open source Old School RuneScape client",
     "homepage": "https://runelite.net",
     "license": "BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.6.1/RuneLiteSetup.exe#/dl.7z",
-            "hash": "71273283cceb6b2a22d087264c8dd2dc11d044544190513bd2e4601f21a8264b"
+            "url": "https://github.com/runelite/launcher/releases/download/2.6.2/RuneLiteSetup.exe#/dl.7z",
+            "hash": "a3981acd59824e7bed17f0ea6ab2977b0c6b359f963cee308fb29a4214a3528e"
         },
         "32bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.6.1/RuneLiteSetup32.exe#/dl.7z",
-            "hash": "e1e80469ffba23013bf44dcedc81bea78b32626f64adb91ae5943146354933ba"
+            "url": "https://github.com/runelite/launcher/releases/download/2.6.2/RuneLiteSetup32.exe#/dl.7z",
+            "hash": "156472f6da6f485546dfe5f62e1d1117eacb0eff84fcaaa6da432d7726232c75"
         }
     },
     "shortcuts": [
