@@ -69,11 +69,11 @@
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://raine.1emulation.com/archive/raine32-$version.7z"
-            },
             "64bit": {
                 "url": "https://raine.1emulation.com/archive/raine64-$version.7z"
+            },
+            "32bit": {
+                "url": "https://raine.1emulation.com/archive/raine32-$version.7z"
             }
         }
     }
