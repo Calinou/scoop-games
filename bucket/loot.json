@@ -1,7 +1,7 @@
 {
     "version": "0.19.1",
     "description": "Plugin load order optimisation tool for The Elder Scrolls and Fallout series",
-    "homepage": "https://github.com/loot/loot",
+    "homepage": "https://loot.github.io",
     "license": "GPL-3.0-or-later",
     "suggest": {
         "Visual C++ Redistributable 2019": "extras/vcredist2019"
