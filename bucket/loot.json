@@ -16,7 +16,10 @@
             "hash": "41a0f4edace68acae4ce63a69944f39aceeac905ba4b6233bcfb6b51fff71d70"
         }
     },
-    "pre_install": "Copy-Item -Recurse \"$dir\\loot_*\\*\" \"$dir\"",
+    "pre_install": [
+        "Copy-Item \"$dir\\loot_*\\*\" \"$dir\" -Recurse",
+        "Remove-Item \"$dir\\loot_*\" -Recurse -Force"
+    ],
     "bin": "LOOT.exe",
     "shortcuts": [
         [
