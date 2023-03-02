@@ -5,9 +5,7 @@
     "homepage": "https://racelab.app",
     "url": "https://update.racelab.app/RacelabApps-3.7.2%20Setup.exe",
     "hash": "be8da8f2349f591963f5baacc9d5270fc00b2f3660c4bee1f0ad1e5792f2cf0b",
-    "installer": {
-        
-    },
+    "installer": {},
     "uninstaller": {
         "script": "Invoke-Expression -Command \"$env:LOCALAPPDATA\\RacelabApps\\Update.exe --uninstall\""
     },
