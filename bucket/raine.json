@@ -65,7 +65,7 @@
 	],
 	"checkver": {
 		"url": "https://raine.1emulation.com/download/latest.html",
-		"regex": "Available files for version ([\\d.]+[a-zA-Z]?)"
+		"regex": "/archive/raine32-([\\d.]+[a-zA-Z]?)\\.7z"
 	},
 	"autoupdate": {
 		"architecture": {
