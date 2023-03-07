@@ -1,0 +1,18 @@
+﻿{
+    "version": "1.13.1",
+    "homepage": "https://github.com/AlexxEG/BSA_Browser",
+    "license": "GPL-3.0-only",
+    "extract_dir": "build",
+    "url": "https://github.com/AlexxEG/BSA_Browser/releases/download/v1.13.1/BSA.Browser.Portable.7z",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/AlexxEG/BSA_Browser/releases/download/v$version/BSA.Browser.Portable.7z"
+    },
+    "shortcuts": [
+        [
+            "BSA Browser.exe",
+            "BSA Browser"
+        ]
+    ],
+    "bin": "bsab.exe"
+}
