@@ -1,0 +1,23 @@
+{
+    "version": "b4cb89afb0f9664bdef348e68c93f4ea4cd53a73",
+    "homepage": "https://github.com/glampert/reverse-engineering-dungeon-siege",
+    "license": "MIT",
+    "extract_dir": "Release",
+    "url": "https://raw.githubusercontent.com/glampert/reverse-engineering-dungeon-siege/b4cb89afb0f9664bdef348e68c93f4ea4cd53a73/build/Release_Win10_x64.zip",
+    "hash": "ccc94fe3ef3bdd6ef21914adb14951cf7b5a931ce6ca8da866fae0ab98948e3e",
+    "checkver": {
+        "url": "https://github.com/glampert/reverse-engineering-dungeon-siege/commits/master/build/Release_Win10_x64.zip",
+        "regex": "/glampert/reverse-engineering-dungeon-siege/commit/(?<version>[a-f0-9]+)"
+    },
+    "autoupdate": {
+        "url": "https://raw.githubusercontent.com/glampert/reverse-engineering-dungeon-siege/$version/build/Release_Win10_x64.zip"
+    },
+    "bin": [
+        "asp2obj.exe",
+        "raw2png.exe",
+        "raw2tga.exe",
+        "sno2obj.exe",
+        "tankdump.exe",
+        "tga2raw.exe"
+    ]
+}
