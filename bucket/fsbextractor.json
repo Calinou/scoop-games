@@ -1,0 +1,20 @@
+﻿{
+    "version": "16.10.21",
+    "description": "Display and extract the sound samples contained within an FSB file",
+    "homepage": "http://aezay.dk/aezay/fsbextractor/",
+    "license": "Freeware",
+    "url": "http://aezay.dk/aezay/fsbextractor/FsbExtractor_16.10.21.rar",
+    "hash": "945d6efa32da01935551a8e2a8a7a26952278d3df3eb8ad9ce8ea4daf93f76d1",
+    "checkver": {
+        "regex": "FsbExtractor_(?<version>[0-9\\.]+)\\.rar"
+    },
+    "autoupdate": {
+        "url": "http://aezay.dk/aezay/fsbextractor/FsbExtractor_$version.rar"
+    },
+    "shortcuts": [
+        [
+            "FsbExtractor.exe",
+            "FSB Extractor"
+        ]
+    ]
+}
