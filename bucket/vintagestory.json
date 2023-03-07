@@ -1,0 +1,51 @@
+﻿{
+    "version": "1.16.5",
+    "description": "An uncompromising wilderness survival sandbox game",
+    "homepage": "https://www.vintagestory.at/",
+    "license": "Proprietary",
+    "extract_dir": "vintagestory",
+    "pre_install": [
+        "Set-Content \"$dir\\VintageStory.bat\" \"@start Vintagestory.exe --dataPath=$dir\\userdata\" -Encoding Ascii",
+        "Set-Content \"$dir\\VintageStoryServer.bat\" \"@start VintagestoryServer.exe --dataPath=$dir\\serverdata\" -Encoding Ascii"
+    ],
+    "url": [
+        "https://cdn.vintagestory.at/gamefiles/stable/vs_archive_1.16.5.tar.gz",
+        "https://content.invisioncic.com/r268468/monthly_2019_07/appicon.ico#/icon.ico"
+    ],
+    "checkver": {
+        "url": "https://tyronx.itch.io/vintage-story",
+        "regex": "Vintage Story v(?<version>[0-9\\.]+) for Windows"
+    },
+    "autoupdate": {
+        "url": [
+            "https://cdn.vintagestory.at/gamefiles/stable/vs_archive_$version.tar.gz",
+            "https://content.invisioncic.com/r268468/monthly_2019_07/appicon.ico#/icon.ico"
+        ]
+    },
+    "hash": [
+        "aaaad0f9cb3fba3cde5c06b4c57e5879ede5e5ba3d0da1fe912d69902b7f5285",
+        "23dd1379d87743a191294ffeebee82d0aa932bc5e5ebb23019a9473b463db307"
+    ],
+    "shortcuts": [
+        [
+            "VintageStory.bat",
+            "Vintage Story",
+            "",
+            "icon.ico"
+        ],
+        [
+            "VintageStoryServer.bat",
+            "Vintage Story Server",
+            "",
+            "icon.ico"
+        ],
+        [
+            "ModMaker.exe",
+            "Vintage Mod Maker"
+        ]
+    ],
+    "persist": [
+        "userdata",
+        "serverdata"
+    ]
+}
