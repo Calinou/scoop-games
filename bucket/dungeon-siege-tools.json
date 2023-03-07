@@ -1,5 +1,6 @@
 {
     "version": "b4cb89afb0f9664bdef348e68c93f4ea4cd53a73",
+    "description": "Tools to extract and convert game assets of Dungeon Siege and Dungeon Siege: Legends of Aranna",
     "homepage": "https://github.com/glampert/reverse-engineering-dungeon-siege",
     "license": "MIT",
     "extract_dir": "Release",
