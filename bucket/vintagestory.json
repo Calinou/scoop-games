@@ -1,5 +1,5 @@
-﻿{
-    "version": "1.16.5",
+{
+    "version": "1.17.6",
     "description": "An uncompromising wilderness survival sandbox game",
     "homepage": "https://www.vintagestory.at/",
     "license": "Proprietary",
@@ -9,7 +9,7 @@
         "Set-Content \"$dir\\VintageStoryServer.bat\" \"@start VintagestoryServer.exe --dataPath=$dir\\serverdata\" -Encoding Ascii"
     ],
     "url": [
-        "https://cdn.vintagestory.at/gamefiles/stable/vs_archive_1.16.5.tar.gz",
+        "https://cdn.vintagestory.at/gamefiles/stable/vs_archive_1.17.6.tar.gz",
         "https://content.invisioncic.com/r268468/monthly_2019_07/appicon.ico#/icon.ico"
     ],
     "checkver": {
@@ -23,7 +23,7 @@
         ]
     },
     "hash": [
-        "aaaad0f9cb3fba3cde5c06b4c57e5879ede5e5ba3d0da1fe912d69902b7f5285",
+        "d68d813519011e076c478b2827ce1f693886eae9749a13286c1e474075bf6954",
         "23dd1379d87743a191294ffeebee82d0aa932bc5e5ebb23019a9473b463db307"
     ],
     "shortcuts": [
