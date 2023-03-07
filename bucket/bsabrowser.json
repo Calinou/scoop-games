@@ -1,12 +1,15 @@
 {
-    "version": "1.13.1",
+    "version": "1.13.1-17-gcfbdd47",
     "description": "Bethesda Archive (.BSA/.BA2/.DAT) browser & extractor",
     "homepage": "https://github.com/AlexxEG/BSA_Browser",
     "license": "GPL-3.0-only",
     "extract_dir": "build",
-    "url": "https://github.com/AlexxEG/BSA_Browser/releases/download/v1.13.1/BSA.Browser.Portable.7z",
-    "hash": "fd02a6e48fc645a09ee0f46d4c423a729c1c9476eac3a1dad4004fbdf5c796f9",
-    "checkver": "github",
+    "url": "https://github.com/AlexxEG/BSA_Browser/releases/download/v1.13.1-17-gcfbdd47/BSA.Browser.Portable.7z",
+    "hash": "2f4b9caa6a3388f474eda843dfd693b9608071261d59a2e3812685ea54edfc8c",
+    "checkver": {
+        "url": "https://api.github.com/repos/AlexxEG/BSA_Browser/releases",
+        "regex": "AlexxEG\\/BSA_Browser\\/releases\\/download\\/v(?<version>[0-9a-z\\.\\-]+)/BSA\\.Browser\\.Portable\\.7z"
+    },
     "autoupdate": {
         "url": "https://github.com/AlexxEG/BSA_Browser/releases/download/v$version/BSA.Browser.Portable.7z"
     },
