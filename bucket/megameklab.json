@@ -1,0 +1,25 @@
+{
+    "version": "0.48.0",
+    "description": "Want to design your own units? Want to see if a design will work? Need to print out a new record sheet for that last unit that blew up? This is the package for you. Contains all that is needed to build and design the unit you want.",
+    "homepage": "https://megamek.org",
+    "license": "GPLv2",
+    "url": "https://github.com/MegaMek/megameklab/releases/download/v0.48.0/megameklab-windows-0.48.0.zip",
+    "shortcuts": [
+		[
+			"MegaMekLab.exe", 
+			"MegaMekLab"
+		]
+	],
+    "tags": [
+        "strategy",
+        "turn-based",
+        "mech"
+    ],
+    "checkver": {
+        "url": "https://megamek.org/downloads.html",
+        "re": "Stable: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/MegaMek/megameklab/releases/download/v$version/megameklab-windows-$version.zip"
+    }
+}
