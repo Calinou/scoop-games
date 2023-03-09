@@ -6,7 +6,7 @@
     "url": "https://github.com/MegaMek/megameklab/releases/download/v0.48.0/megameklab-windows-0.48.0.zip",
     "shortcuts": [
         [
-            "MegaMekLab.exe", 
+            "MegaMekLab.exe",
             "MegaMekLab"
         ]
     ],

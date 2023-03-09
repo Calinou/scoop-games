@@ -5,11 +5,11 @@
     "license": "GPLv2",
     "url": "https://github.com/MegaMek/megamek/releases/download/v0.48.0/megamek-windows-0.48.0.zip",
     "shortcuts": [
-		[
-			"MegaMek.exe",
-			"MegaMek"
-		]
-	],
+        [
+            "MegaMek.exe",
+            "MegaMek"
+        ]
+    ],
     "checkver": {
         "url": "https://megamek.org/downloads.html",
         "re": "Stable: ([\\d.]+)"
