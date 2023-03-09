@@ -18,11 +18,6 @@
 			"MegaMekLab"
 		]
 	],
-    "tags": [
-        "strategy",
-        "turn-based",
-        "mech"
-    ],
     "checkver": {
         "github": "https://github.com/MegaMek/mekhq"
     },

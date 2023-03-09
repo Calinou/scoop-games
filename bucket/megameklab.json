@@ -10,11 +10,6 @@
 			"MegaMekLab"
 		]
 	],
-    "tags": [
-        "strategy",
-        "turn-based",
-        "mech"
-    ],
     "checkver": {
         "url": "https://megamek.org/downloads.html",
         "re": "Stable: ([\\d.]+)"
