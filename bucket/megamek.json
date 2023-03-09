@@ -1,8 +1,8 @@
 {
     "version": "0.48.0",
-    "description": "A free turn-based strategy game based on the classic BattleTech/MechWarrior universe.",
+    "description": "Free turn-based strategy game based on the classic BattleTech/MechWarrior universe",
     "homepage": "https://megamek.org",
-    "license": "GPLv2",
+    "license": "GPL-2.0-or-later",
     "url": "https://github.com/MegaMek/megamek/releases/download/v0.48.0/megamek-windows-0.48.0.zip",
     "shortcuts": [
         [

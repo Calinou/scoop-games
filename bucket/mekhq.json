@@ -1,8 +1,8 @@
 {
     "version": "0.48.0",
-    "description": "This download contains all 3 programs, MegaMek, MegaMekLab, and MekHQ. If you're wanting to run a campaign, build units, and slaughter your friends in glorious Mek to Mek combat, this is what you want.",
+    "description": "Helper program for MegaMek - includes MegaMek and MegaMekLab",
     "homepage": "https://megamek.org",
-    "license": "GPLv2",
+    "license": "GPL-2.0-or-later",
     "url": "https://github.com/MegaMek/mekhq/releases/download/v0.48.0/mekhq-windows-0.48.0.zip",
     "shortcuts": [
         [
