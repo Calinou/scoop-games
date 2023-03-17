@@ -16,7 +16,7 @@
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
     "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-5fa9dfac6aba5ddfa413ab83929b2cad09cce599/rpcs3-v0.0.27-14814-5fa9dfac_win64.7z",
-    "hash": "5149dabf007d1fdb19f3cd8c091e1c58df636debc838639ff46bdf05187fdadc",
+    "hash": "834b0d452ca5c282279aa7835a2bef6851c38222948402416e303b6af9d78884",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
