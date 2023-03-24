@@ -1,5 +1,5 @@
 {
-    "version": "1.61-1224",
+    "version": "1.62-1229",
     "description": "SNES (Super Nintendo Entertainment System) emulator",
     "homepage": "http://www.snes9x.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/fbh8554k97yaaos6/artifacts/snes9x-1.61-1224-b939581-win32.zip",
-            "hash": "571f28df4d994aed251ea0661c9fec03080605e875af2877a222950db0633aa3",
+            "url": "https://ci.appveyor.com/api/buildjobs/mcat8y9h3vth3jf0/artifacts/snes9x-1.62-1229-d948ef8-win32.zip",
+            "hash": "e1cbd11f407dbd7191af3bb613bb89ccf2578426ef084661b8fbe733f21d96a3",
             "bin": "snes9x.exe",
             "shortcuts": [
                 [
@@ -19,8 +19,8 @@
             ]
         },
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/admogw5lrw2xft28/artifacts/snes9x-1.61-1224-b939581-win32-x64.zip",
-            "hash": "d6ef55751adb418b95748687b7d6a3a893aab69f2232eb638c8c09461f763dbf",
+            "url": "https://ci.appveyor.com/api/buildjobs/jtr9fnqod92w4f4t/artifacts/snes9x-1.62-1229-d948ef8-win32-x64.zip",
+            "hash": "8b1a897d7f2e2c074286991c1def78319eecceb3f4013bc3dd8975f0f4368559",
             "bin": [
                 [
                     "snes9x-x64.exe",
