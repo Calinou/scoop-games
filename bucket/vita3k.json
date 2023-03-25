@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Vita3K/Vita3K/releases/download/continuous/windows-latest.zip",
-            "hash": "1d2ae3dce36ea454b52cec77f60452e095906a016ce5960ca6e2965de4dcefde"
+            "hash": "029752207dd133d271d41ce6e80691597f9662589c8c603960d13bbd039db2fd"
         }
     },
     "pre_install": [
