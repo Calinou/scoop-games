@@ -20,7 +20,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/itchio/itch"
+        "url": "https://github.com/itchio/itch/releases",
+        "regex": "tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
