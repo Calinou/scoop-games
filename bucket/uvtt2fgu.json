@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/Imagix/uvtt2fgu/releases/download/v1.5.1/uvtt2fgu.exe",
-            "hash": "252F46D53D1F455C17E07177DDCA617A15BDAFB55DB0C7DAF42BB9C1D3DECBF4",
+            "hash": "252f46d53d1f455c17e07177ddca617a15bdafb55db0c7daf42bb9c1d3decbf4",
             "bin": [
                 [
                     "uvtt2fgu.exe",
