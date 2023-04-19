@@ -1,7 +1,7 @@
 {
     "version": "0.2.9.1.0",
     "description": "3D multiplayer game with Tron-style lightcycles",
-    "homepage": "http://www.armagetronad.org/",
+    "homepage": "https://www.armagetronad.org/",
     "license": "GPL-2.0-or-later",
     "url": "https://downloads.sourceforge.net/project/armagetronad/stable/0.2.9.1.0/armagetronad-client-0.2.9.1.0.win32.zip",
     "hash": "sha1:0990918db8b2e5c9ee1c492d5b32417ac239aa82",
