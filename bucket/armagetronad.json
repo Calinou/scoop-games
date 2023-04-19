@@ -1,15 +1,22 @@
 {
-    "version": "0.2.8.3.5",
+    "version": "0.2.9.1.0",
     "description": "3D multiplayer game with Tron-style lightcycles",
     "homepage": "http://www.armagetronad.org/",
     "license": "GPL-2.0-or-later",
-    "url": "https://launchpad.net/armagetronad/0.2.8/0.2.8.3.5/+download/armagetronad-0.2.8.3.5.win32.exe#/dl.7z",
-    "hash": "305a2c6d3da2fadf29a34ee329a5b4ffa2d793f6ce488a4f61878de3965b5f56",
+    "url": "https://downloads.sourceforge.net/project/armagetronad/stable/0.2.9.1.0/armagetronad-client-0.2.9.1.0.win32.zip",
+    "hash": "sha1:0990918db8b2e5c9ee1c492d5b32417ac239aa82",
     "bin": "armagetronad.exe",
     "shortcuts": [
         [
             "armagetronad.exe",
             "Armagetron Advanced"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/armagetronad/rss?path=/stable",
+        "regex": "armagetronad-client-([\\d.]+).win32.zip"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/armagetronad/stable/$version/armagetronad-client-$version.win32.zip"
+    }
 }
