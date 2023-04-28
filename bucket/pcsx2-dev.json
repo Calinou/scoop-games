@@ -61,9 +61,9 @@
         "textures"
     ],
     "checkver": {
-        "url": "https://github.com/PCSX2/pcsx2/releases.atom",
-        "regex": "v(?<basever>\\d+\\.\\d+)\\.(?<build>\\d+)",
-        "replace": "${basever}.${build}"
+        "url": "https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1",
+        "jsonpath": "$[?(@.prerelease == true)].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
