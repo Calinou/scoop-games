@@ -62,6 +62,6 @@
         "replace": "${basever}.${build}"
     },
     "autoupdate": {
-        "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-64bit-AVX2-Qt.7z"
+        "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-64bit-Qt.7z"
     }
 }
