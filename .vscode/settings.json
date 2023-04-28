@@ -106,7 +106,8 @@
         "autoupdate"
     ],
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "files.insertFinalNewline": true
     },
     "editor.defaultFormatter": "richie5um2.vscode-sort-json",
     "editor.formatOnSave": true,
