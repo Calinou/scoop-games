@@ -21,6 +21,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Rosalie241/RMG/releases/download/v$version/RMG-Portable-Windows64-v$version.7z"
+        "url": "https://github.com/Rosalie241/RMG/releases/download/v$version/RMG-Portable-Windows64-v$version.zip"
     }
 }
