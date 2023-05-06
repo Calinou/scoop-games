@@ -1,5 +1,5 @@
 {
-    "version": "1.1.761",
+    "version": "1.1.762",
     "description": "A simple, experimental Nintendo Switch emulator (Avalonia UI test build)",
     "homepage": "https://ryujinx.org/",
     "license": {
@@ -12,8 +12,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.761/test-ava-ryujinx-1.1.761-win_x64.zip",
-            "hash": "22d30fd4e3b5deb4ccc817100476c3a04afd55e9bc5369e6895be1e32511b121"
+            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.762/test-ava-ryujinx-1.1.762-win_x64.zip",
+            "hash": "045ce1ab0f33f032beb66a6513b577798d4b7ece5421c2e06a4c1b26bddebe1d"
         }
     },
     "extract_dir": "publish",
