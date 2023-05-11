@@ -10,7 +10,7 @@
     "hash": "ef033f897242237848eaffee97256a8998da8848e0c6cc05b68e6810a9110179",
     "checkver": {
         "url": "https://www.playstation.com/en-us/support/hardware/ps3/system-software/",
-        "regex": "(?sm)PlayStation®3 System Software Update ((?:\\d+)?(?:\\.?\\d*)).*?ps3/image/us/(?<time>[\\w_]+)/PS3UPDAT.PUP"
+        "regex": "(?sm)PS3 System Software Update ((?:\\d+)?(?:\\.?\\d*)).*?ps3/image/us/(?<time>[\\w_]+)/PS3UPDAT.PUP"
     },
     "autoupdate": {
         "url": "http://dus01.ps3.update.playstation.net/update/ps3/image/us/$matchTime/PS3UPDAT.PUP"
