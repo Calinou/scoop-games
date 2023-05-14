@@ -21,7 +21,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/EasyRPG/Player"
+        "url": "https://github.com/EasyRPG/Player/tags",
+        "regex": "([\\w]+)</a></h2>"
     },
     "autoupdate": {
         "architecture": {
