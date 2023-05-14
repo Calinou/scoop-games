@@ -16,9 +16,7 @@
         "github": "https://github.com/EasyRPG/Player"
     },
     "autoupdate": {
-        "url": "https://easyrpg.org/downloads/player/$version/easyrpg-player-$version-windows-x64.zip",
-        "hash": {
-            "mode": "$url.sha256"
+        "url": "https://easyrpg.org/downloads/player/$version/easyrpg-player-$version-windows-x64.zip"
         }
     }
 }
