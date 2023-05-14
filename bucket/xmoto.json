@@ -1,16 +1,23 @@
 {
-    "version": "0.5.11",
-    "description": "Difficult 2D motocross racing/stunts game",
     "homepage": "https://xmoto.tuxfamily.org/",
+    "description": "Difficult 2D motocross racing/stunts game",
+    "version": "0.6.2",
     "license": "GPL-2.0-or-later",
-    "url": "http://download.tuxfamily.org/xmoto/xmoto/0.5.11/xmoto-0.5.11-win32.zip",
-    "hash": "0f9db7e042ab3a05ff131a66a20baf78539a869e8676cdec9054854cb9c6a32e",
-    "extract_dir": "xmoto-0.5.11-win32",
+    "url": "https://github.com/xmoto/xmoto/releases/download/v0.6.2/xmoto-0.6.2-win32.zip",
+    "hash": "0ca616860272d9139e26da65f88bd76e04c7e1a8e846c8f1217c3b5ed37aa9c7",
+    "extract_dir": "xmoto-0.6.2",
     "bin": "xmoto.exe",
     "shortcuts": [
         [
             "xmoto.exe",
             "X-Moto"
         ]
-    ]
+    ],
+    "checkver": {
+        "github": "https://github.com/xmoto/xmoto/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/xmoto/xmoto/releases/download/v$version/xmoto-$version-win32.zip",
+        "extract_dir": "xmoto-$version"
+    }
 }
