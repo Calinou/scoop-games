@@ -16,6 +16,6 @@
         "github": "https://github.com/goatcorp/FFXIVQuickLauncher"
     },
     "autoupdate": {
-        "url": "https://github.com/goatcorp/FFXIVQuickLauncher/releases/download/${version}/XIVLauncher-${version}-full.nupkg"
+        "url": "https://github.com/goatcorp/FFXIVQuickLauncher/releases/download/$version/XIVLauncher-$version-full.nupkg"
     }
 }
