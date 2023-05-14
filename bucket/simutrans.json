@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://www.simutrans.com/en/",
-        "regex": "^\\d+\\.\\d+\\.\\d+$"
+        "regex": "([0-9]+(\\.[0-9]+)+)"
     },
     "autoupdate":{
         "url": "https://sourceforge.net/projects/simutrans/files/simutrans/$dashVersion/simuwin-sdl-$dashVersion.zip/download"
