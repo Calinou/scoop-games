@@ -21,7 +21,10 @@
         ]
     ],
     "persist": "data",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/endless-sky/endless-sky/tags",
+        "regex": "tags/([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "32bit": {
