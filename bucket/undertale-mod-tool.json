@@ -15,7 +15,10 @@
         ]
     ],
     "persist": "UndertaleModTool.exe.config",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/krzys-h/UndertaleModTool/tags",
+        "regex": "tags/([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/krzys-h/UndertaleModTool/releases/download/$version/UndertaleModTool_v$version.zip",
         "extract_dir": "UndertaleModTool_v$version"
