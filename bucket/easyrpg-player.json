@@ -31,7 +31,6 @@
             "32bit": {
                 "url": "https://easyrpg.org/downloads/player/$version/EasyRPG_Player-$version-Windows.zip"
             }
-        },
-        "hash": "$url.sha256"
+        }
     }
 }
