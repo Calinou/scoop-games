@@ -4,7 +4,7 @@
     "homepage": "https://easyrpg.org/player/",
     "license": "GPL-3.0-or-later",
     "url": "https://easyrpg.org/downloads/player/0.8/easyrpg-player-0.8-windows-x64.zip",
-    "hash": "dbee50c4f813e22af57999e2fc1bb05969ba00c624ac1415a11805fabf319f13",
+    "hash": "3f328bdc60d213fca32252f152321e8a3fb6b28862486c0f18dcab7b4832a7f8",
     "bin": "Player.exe",
     "shortcuts": [
         [
