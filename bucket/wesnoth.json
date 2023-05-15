@@ -12,7 +12,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/wesnoth/wesnoth"
+        "url": "https://www.wesnoth.org/",
+        "regex": "<div id=\"stable\" class=\"download-branch\" data-version=\"\\d+\\.\\d+\\.\\d+\""
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/wesnoth/files/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win64.exe/download#/dl.7z",
