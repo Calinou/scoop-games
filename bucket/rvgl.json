@@ -24,7 +24,7 @@
         "profiles"
     ],
     "checkver": {
-        "url": "https://gitlab.com/api/v4/projects/18555124/repository/tags",
+        "url": "https://gitlab.com/re-volt/rvgl-assets/-/tags?format=atom",
         "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*"
     },
     "autoupdate": {
