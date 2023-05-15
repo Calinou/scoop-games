@@ -23,6 +23,8 @@
     },
     "autoupdate": {
         "url": "https://www.nethack.org/download/$version/nethack-$cleanVersion-win-x86.zip",
-        "hash": "$baseurl.sha256sum"
+        "hash": {
+            "url": "$baseurl.sha256sum"
+        }
     }
 }
