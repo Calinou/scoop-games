@@ -24,8 +24,8 @@
         "profiles"
     ],
     "checkver": {
-        "url": "https://rvgl.org/",
-        "regex": "Current version: \\d{2}\\.\\d{4}[a-z]-?\\d*"
+        "url": "https://gitlab.com/api/v4/projects/18555124/repository/tags",
+        "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*"
     },
     "autoupdate": {
         "architecture": {
