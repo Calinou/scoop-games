@@ -1,7 +1,7 @@
 {
     "version": "23.0501a2",
     "description": "Modern reimplementation of the classic RC racing game Re-Volt (full package with extras)",
-    "homepage": "https://rvgl.re-volt.io/",
+    "homepage": "https://rvgl.org/",
     "license": "CC-BY-NC-4.0",
     "architecture": {
         "32bit": {
@@ -24,7 +24,7 @@
         "profiles"
     ],
     "checkver": {
-        "regex": "Current version:.*?>([a-zA-Z\\d.\\-]+)<"
+        "regex": "Current version: \\d{2}\\.\\d{4}[a-z]-?\\d*$"
     },
     "autoupdate": {
         "architecture": {
