@@ -1,10 +1,10 @@
 {
-    "version": "0.6.14",
+    "version": "0.6.16",
     "description": "Launcher for Minecraft that allows for multiple, cleanly separated instances of Minecraft.",
     "homepage": "https://multimc.org/",
     "license": "Apache-2.0",
     "url": "https://files.multimc.org/downloads/mmc-stable-win32.zip",
-    "hash": "4ac4bbd737d73503236b389dbaf3073cc117c3919114e0d555c6312e969e32f6",
+    "hash": "cb25f823b9114465d5859a80a6e82759a77a1f64317935ab5949d53fc7bf5de2",
     "extract_dir": "MultiMC",
     "pre_install": [
         "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",
