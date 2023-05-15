@@ -22,9 +22,7 @@
         "regex": "Version ([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://www.nethack.org/download/$version/nethack-$cleanVersion-win-x86.zip"
-    },
-        "hash": {
-            "url": "$baseurl.sha256sum"
+        "url": "https://www.nethack.org/download/$version/nethack-$cleanVersion-win-x86.zip",
+        "hash": "$baseurl.sha256sum"
     }
 }
