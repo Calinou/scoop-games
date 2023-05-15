@@ -24,7 +24,7 @@
         "profiles"
     ],
     "checkver": {
-        "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*$"
+        "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*"
     },
     "autoupdate": {
         "architecture": {
