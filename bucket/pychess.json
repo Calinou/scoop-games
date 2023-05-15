@@ -18,8 +18,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/pychess/pychess/releases",
-        "regex": "PyChess-([\\d.]+)-(?<build>[\\da-zA-Z]+)\\.msi"
+        "github": "https://github.com/pychess/pychess/releases"
     },
     "autoupdate": {
         "url": "https://github.com/pychess/pychess/releases/download/$version/pychess-$version-mingw_x86_64.msi"
