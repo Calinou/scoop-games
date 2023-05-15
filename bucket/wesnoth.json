@@ -13,7 +13,7 @@
     ],
     "checkver": {
         "url": "https://www.wesnoth.org/",
-        "regex": "([\\d.]+)"
+        "regex": "^([0-9]+)\\.([0-9]+)\\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?(?:\\+[0-9A-Za-z-]+)?"
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/wesnoth/files/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win64.exe/download#/dl.7z",
