@@ -16,6 +16,6 @@
         "regex": ">freedroidRPG-(.*?)(<)"
     },
     "autoupdate": {
-        "url": "https://ftp.osuosl.org/pub/freedroid/freedroidRPG-$matchHead/freedroidRPG-$version-win32.exe#dl.zip"
+        "url": "https://ftp.osuosl.org/pub/freedroid/freedroidRPG-$matchHead/freedroidRPG-$version-win32-x86-64.exe#dl.zip"
     }
 }
