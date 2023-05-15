@@ -47,8 +47,8 @@
         "memstick"
     ],
     "checkver": {
-        "url": "https://www.ppsspp.org/downloads.html",
-        "regex": "Download ([\\d.]+) zip"
+        "url": "https://www.ppsspp.org/download/",
+        "regex": "Download PPSSPP ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
