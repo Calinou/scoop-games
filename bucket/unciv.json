@@ -25,8 +25,7 @@
         "SaveFiles"
     ],
     "checkver": {
-        "github": "https://github.com/yairm210/UnCiv",
-        "regex": "(?:v|V)?([\\d.]+)(?:-(patch|PATCH)(\\d+)?)?"
+        "github": "https://github.com/yairm210/UnCiv"
     },
     "autoupdate": {
         "url": "https://github.com/yairm210/Unciv/releases/download/$version/Unciv-Windows64.zip"
