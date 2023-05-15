@@ -18,7 +18,8 @@
     "autoupdate": {
         "url": "https://sourceforge.net/projects/wesnoth/files/wesnoth-$majorVersion.$minorVersion/wesnoth-$version/wesnoth-$version-win64.exe/download#/dl.7z",
         "hash": {
-            "url": "https://files.wesnoth.org/releases/wesnoth-$version-win64.exe.sha256"
+            "url": "https://files.wesnoth.org/releases/wesnoth-$version-win64.exe.sha256",
+            "regex": "$sha256"
         }
     }
 }
