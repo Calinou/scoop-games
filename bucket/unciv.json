@@ -24,7 +24,10 @@
         "GameSettings.json",
         "SaveFiles"
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/yairm210/Unciv/releases",
+        "regex": "\/releases\/tag\/(?:v|V)?([\\d.]+)(?:-(patch|PATCH)(\\d+)?)?"
+    },
     "autoupdate": {
         "url": "https://github.com/yairm210/Unciv/releases/download/$version/Unciv-Windows64.zip"
     }
