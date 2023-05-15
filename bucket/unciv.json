@@ -6,12 +6,8 @@
     "suggest": {
         "Java Runtime Environment": "java/temurin-jre"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/yairm210/Unciv/releases/download/4.6.12-patch1/Unciv-Windows64.zip",
-            "hash": "fcb901617e0c58c72e85aa8c9c47063ac471a4f9b5944983392c2dce374dbc9a"
-        }
-    },
+    "url": "https://github.com/yairm210/Unciv/releases/download/4.6.12-patch1/Unciv-Windows64.zip",
+    "hash": "fcb901617e0c58c72e85aa8c9c47063ac471a4f9b5944983392c2dce374dbc9a",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\GameSettings.json\")) {",
         "New-Item \"$dir\\GameSettings.json\" -Value '{resolution:1200x800,windowState:{width:1920,height:1080},isFreshlyCreated:true,multiplayer:{userId:},version:1}' | Out-Null",
@@ -30,10 +26,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/yairm210/Unciv/releases/download/$version/Unciv-Windows64.zip"
-            }
-        }
+        "url": "https://github.com/yairm210/Unciv/releases/download/$version/Unciv-Windows64.zip"
     }
 }
