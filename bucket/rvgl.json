@@ -25,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://gitlab.com/re-volt/rvgl-assets/-/tags?format=atom",
-        "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*"
+        "regex": "\/tags\/\\d{2}\\.\\d{4}[a-z]-?\\d*<\/id>"
     },
     "autoupdate": {
         "architecture": {
