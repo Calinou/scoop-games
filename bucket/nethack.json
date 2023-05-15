@@ -19,12 +19,13 @@
     ],
     "checkver": {
         "url": "https://www.nethack.org/download/",
-        "regex": "Version ([\\d\\.]+)"
+        "regex": "([\\d\\.]+)"
     },
     "autoupdate": {
         "url": "https://www.nethack.org/download/$version/nethack-$cleanVersion-win-x86.zip",
         "hash": {
-            "url": "$baseurl.sha256sum"
+            "url": "$url.sha256sum",
+            "regex": "^[a-fA-F0-9]{64}$"
         }
     }
 }
