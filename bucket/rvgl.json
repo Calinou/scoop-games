@@ -24,8 +24,8 @@
         "profiles"
     ],
     "checkver": {
-        "url": "https://rvgl.org/",
-        "regex": "<p class=\"vernum\">Current version: \\d{2}\\.\\d{4}[a-z]-?\\d*"
+        "url": "https://gitlab.com/re-volt/rvgl-assets/-/tags?format=atom",
+        "regex": "\\d{2}\\.\\d{4}[a-z]-?\\d*"
     },
     "autoupdate": {
         "architecture": {
