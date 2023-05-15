@@ -18,8 +18,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.nethack.org/download/",
-        "regex": "([\\d.]+)"
+        "github": "https://github.com/NetHack/NetHack",
+        "regex": "Release build of NetHack ([\\d\\.]+)"
     },
     "autoupdate": {
         "url": "https://www.nethack.org/download/$version/nethack-$cleanVersion-win-x86.zip",
