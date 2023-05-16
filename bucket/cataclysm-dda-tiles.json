@@ -1,19 +1,19 @@
 {
     "homepage": "https://cataclysmdda.org",
     "description": "Roguelike in a post-apocalyptic world (with sprite-based graphics)",
-    "version": "0.F-2",
+    "version": "0.G",
     "license": {
         "identifier": "CC-BY-SA-3.0,GPL-2.0+,OFL-1.0,BSL-1.0,Zlib,MIT,BSD(libbacktrace)",
         "url": "https://github.com/CleverRaven/Cataclysm-DDA/blob/master/LICENSE.txt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.F-2/cataclysmdda-0.F-Windows_x64-Tiles-0.F-2.zip",
-            "hash": "b705edb07ecc460b8065602c6ba06a4f380474304619bd761f02d2d4804c118e"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.G/cdda-windows-tiles-x64-2023-03-01-0054.zip",
+            "hash": "d55283e881d9d70af4823b2486d776e4bf30f2a4e53e0ebb25f8fd53f4b0d363"
         },
         "32bit": {
-            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.F-2/cataclysmdda-0.F-Windows-Tiles-0.F-2.zip",
-            "hash": "ba991e64e62547cd1ec4dbc307ff323f2d72b145711036e1ddd88e60db710734"
+            "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.G/cdda-windows-tiles-x32-2023-03-01-0054.zip",
+            "hash": "e7ca644fbf65463694e7869a01a6b3888bff74579322adb37755a0aaec0fec74"
         }
     },
     "shortcuts": [
@@ -35,10 +35,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cataclysmdda-$majorVersion.$minorVersion-Windows_x64-Tiles-$version.zip"
+                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cdda-windows-tiles-x64-2023-03-01-0054.zip"
             },
             "32bit": {
-                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cataclysmdda-$majorVersion.$minorVersion-Windows-Tiles-$version.zip"
+                "url": "https://github.com/CleverRaven/Cataclysm-DDA/releases/download/$version/cdda-windows-tiles-x32-2023-03-01-0054.zip"
             }
         }
     }
