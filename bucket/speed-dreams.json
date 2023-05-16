@@ -50,7 +50,7 @@
     "persist": "settings",
     "checkver": {
         "url": "https://sourceforge.net/projects/speed-dreams/files/",
-        "regex": "speed-dreams-base-([\\d\\-.a-z]+)-win"
+        "regex": "speed-dreams-([\\d\\-.a-z]+)-win32-setup.exe"
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/speed-dreams/files/$matchHead/speed-dreams-base-$version-win32-setup.exe#/dl.7z"
