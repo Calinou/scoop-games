@@ -25,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://rvgl.org/",
-        "regex": "<p\\sclass=\"vernum\">Current\\sversion:\\s\\d{2}\\.\\d{4}[a-z]-?\\d*"
+        "regex": "<p class=\"vernum\">Current version: ([\\da.]+)"
     },
     "autoupdate": {
         "architecture": {
