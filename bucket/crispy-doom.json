@@ -1,5 +1,5 @@
 {
-    "version": "6.0",
+    "version": "6.0.0",
     "description": "Faithful enhanced-resolution source port for Doom",
     "homepage": "https://www.chocolate-doom.org/wiki/index.php/Crispy_Doom",
     "license": "GPL-2.0-or-later",
@@ -60,6 +60,6 @@
         "regex": "/releases/tag/crispy-doom-([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-$version/crispy-doom-$version-win32.zip"
+        "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-$matchHead/crispy-doom-$version-win32.zip"
     }
 }
