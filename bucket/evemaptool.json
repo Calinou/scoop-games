@@ -9,7 +9,7 @@
     "shortcuts": [["SMT.exe", "SMT"]],
     "checkver": {
         "url": "https://github.com/Slazanger/SMT/releases.atom",
-        "regex": "SMT ([\d.]+)"
+        "regex": "SMT ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/Slazanger/SMT/releases/download/SMT_$cleanVersion/SMT_$version.zip",
