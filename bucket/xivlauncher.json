@@ -1,6 +1,6 @@
 {
     "version": "6.3.4",
-    "description": "XIVLauncher is a custom launcher for Final Fantasy XIV.",
+    "description": "Custom launcher for Final Fantasy XIV (FF14)",
     "homepage": "https://goatcorp.github.io/",
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/goatcorp/FFXIVQuickLauncher/releases/download/6.3.4/XIVLauncher-6.3.4-full.nupkg",
