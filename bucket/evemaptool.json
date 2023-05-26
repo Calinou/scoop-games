@@ -8,8 +8,8 @@
     "bin": "SMT.exe",
     "shortcuts": [["SMT.exe", "SMT"]],
     "checkver": {
-        "github": "https://github.com/Slazanger/SMT",
-        "regex": "tag/([\\w.-]+)"
+        "url": "https://github.com/Slazanger/SMT/releases.atom",
+        "regex": "SMT ([\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/Slazanger/SMT/releases/download/SMT_$cleanVersion/SMT_$version.zip",
