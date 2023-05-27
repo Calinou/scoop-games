@@ -1,10 +1,10 @@
 {
-    "version": "4.7.2",
+    "version": "4.7.3",
     "description": "Modern model editor for boxy models and pixel art textures.",
     "homepage": "https://blockbench.net/",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/JannisX11/blockbench/releases/download/v4.7.2/Blockbench_4.7.2.exe#/dl.7z",
-    "hash": "sha512:bd066ddb6443cf3e0820749493abfbd55476904b08670301b119f7a19bb475dd45d168ce22bbcea5c4c7cfdfbc3f0bf55ead12718adbca272efccae61495dd3c",
+    "url": "https://github.com/JannisX11/blockbench/releases/download/v4.7.3/Blockbench_4.7.3.exe#/dl.7z",
+    "hash": "sha512:b8eb0d53a106cb64dfed55377894bf8d284acb68fa4ba0eb3ebb941ce7ea37e027904006005e5924ccd4b59a8f8584e84886a8dad20b5d235850a01621a74265",
     "architecture": {
         "32bit": {
             "installer": {
