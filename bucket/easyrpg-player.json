@@ -1,6 +1,6 @@
 {
     "version": "0.8",
-    "description": "A program that allows to play games created with RPG Maker 2000 and 2003.",
+    "description": "Program that allows to play games created with RPG Maker 2000 and 2003",
     "homepage": "https://easyrpg.org/player/",
     "license": "GPL-3.0-or-later",
     "architecture": {
