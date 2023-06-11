@@ -1,38 +1,38 @@
 {
-    "version": "13.2",
+    "version": "13.2.1",
     "description": "Simulation game based upon Transport Tycoon Deluxe",
     "homepage": "https://www.openttd.org/",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "32bit": {
             "url": [
-                "https://cdn.openttd.org/openttd-releases/13.2/openttd-13.2-windows-win64.zip",
+                "https://cdn.openttd.org/openttd-releases/13.2.1/openttd-13.2.1-windows-win64.zip",
                 "https://cdn.openttd.org/opengfx-releases/7.1/opengfx-7.1-all.zip",
                 "https://cdn.openttd.org/opensfx-releases/1.0.3/opensfx-1.0.3-all.zip",
                 "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
-                "00b8b1c80d89b482b05c04e26466394e7934cce0eac0d887638b9ae1e02686df",
+                "87317f68680d1aa1a30056e3d234214a077a02ca4d011c032c1985e84516e4ea",
                 "928fcf34efd0719a3560cbab6821d71ce686b6315e8825360fba87a7a94d7846",
                 "e0a218b7dd9438e701503b0f84c25a97c1c11b7c2f025323fb19d6db16ef3759",
                 "5a4277a2e62d87f2952ea5020dc20fb2f6ffafdccf9913fbf35ad45ee30ec762"
             ],
-            "extract_dir": "openttd-13.2-windows-win64"
+            "extract_dir": "openttd-13.2.1-windows-win64"
         },
         "64bit": {
             "url": [
-                "https://cdn.openttd.org/openttd-releases/13.2/openttd-13.2-windows-win32.zip",
+                "https://cdn.openttd.org/openttd-releases/13.2.1/openttd-13.2.1-windows-win32.zip",
                 "https://cdn.openttd.org/opengfx-releases/7.1/opengfx-7.1-all.zip",
                 "https://cdn.openttd.org/opensfx-releases/1.0.3/opensfx-1.0.3-all.zip",
                 "https://cdn.openttd.org/openmsx-releases/0.4.2/openmsx-0.4.2-all.zip"
             ],
             "hash": [
-                "a21b938706317193a5e619199cc002747b175b8f8e5b8ef137e942fd2f55010d",
+                "360dcb29798fcc68d673c33a6c51f963154929c61771353d328d1cd884d7da7b",
                 "928fcf34efd0719a3560cbab6821d71ce686b6315e8825360fba87a7a94d7846",
                 "e0a218b7dd9438e701503b0f84c25a97c1c11b7c2f025323fb19d6db16ef3759",
                 "5a4277a2e62d87f2952ea5020dc20fb2f6ffafdccf9913fbf35ad45ee30ec762"
             ],
-            "extract_dir": "openttd-13.2-windows-win32"
+            "extract_dir": "openttd-13.2.1-windows-win32"
         }
     },
     "pre_install": [
