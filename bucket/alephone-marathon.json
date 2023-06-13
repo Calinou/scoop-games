@@ -1,0 +1,27 @@
+{
+    "version": "20230529",
+    "description": "A free, enhanced port of the classic FPS 'Marathon' by Bungie Software",
+    "homepage": "https://alephone.lhowon.org/",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/Aleph-One-Marathon/alephone/blob/master/COPYING"
+    },
+    "url": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20230529/Marathon-20230529-Win.zip",
+    "hash": "ce6e72351f60f73de9f57ecba31c12763cd3551a27d57229b9a57867567e5bb9",
+    "extract_dir": "Marathon-20230529",
+    "shortcuts": [
+        [
+            "Marathon.exe",
+            "Aleph One (Marathon 1)"
+        ]
+    ],
+    "checkver": {
+        "url": "https://alephone.lhowon.org/",
+        "regex": "(\\d\\d\\d\\d)-(\\d\\d)-(\\d\\d)",
+        "replace": "$1$2$3"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-$version/Marathon-$version-Win.zip",
+        "extract_dir": "Marathon-$version"
+    }
+}
