@@ -1,6 +1,6 @@
 {
     "version": "0.10.5",
-    "description": "2D action/rpg space game that combines elements from the action, rpg and simulation",
+    "description": "2D action/RPG space game that combines elements from the action, RPG and simulation",
     "homepage": "https://naev.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
