@@ -39,5 +39,8 @@
             "Write-Output $version"
         ],
         "regex": "(?<version>[\\d\\.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/kwsch/PKHeX/raw/master/Directory.Build.props"
     }
 }
