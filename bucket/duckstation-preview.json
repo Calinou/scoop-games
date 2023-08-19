@@ -12,7 +12,7 @@
         "Learn more at: https://www.duckstation.org/wiki/BIOS"
     ],
     "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
-    "hash": "efa7915204e8e570dc5e8d07753804f3413185d26dba4017404bae323c7c916a",
+    "hash": "dbb5c2dba0e5d23639625eaeacc2f6e08bc33c74dea049af50cdbedf53b779c6",
     "installer": {
         "script": [
             "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
