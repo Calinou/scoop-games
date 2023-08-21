@@ -8,7 +8,7 @@
     },
     "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1975/citra-windows-msvc-20230820-cf54210.7z",
     "hash": "2fca5bcdc523ad318e27f5fef4e73cbd492c385dbc706e9c35b69f1517c28ffb",
-    "extract_dir": "nightly-mingw",
+    "extract_dir": "nightly",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user\")) {",
         "   New-Item -Path \"$persist_dir\" -Name \"user\" -ItemType \"directory\" | Out-Null",
