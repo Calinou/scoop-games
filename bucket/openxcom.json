@@ -1,5 +1,5 @@
 {
-    "version": "2023_08_30_0917",
+    "version": "2023_09_01_1401",
     "description": "Open source reimplementation of the 'UFO: Enemy Unknown' and 'X-COM: Terror From the Deep' video games",
     "homepage": "https://openxcom.org/",
     "license": "GPL-3.0-or-later",
@@ -11,8 +11,8 @@
         "　　UFO: 'Steam\\SteamApps\\common\\XCom UFO Defense\\XCOM'",
         "　　TFTD: 'Steam\\SteamApps\\common\\X-COM Terror from the Deep\\TFD'"
     ],
-    "url": "https://openxcom.org/git_builds/openxcom_git_master_2023_08_30_0917.zip",
-    "hash": "8e86fc759642a1b479b08c0a94920ce98f8b8c0d56f4ebd950c614de477eb2f5",
+    "url": "https://openxcom.org/git_builds/openxcom_git_master_2023_09_01_1401.zip",
+    "hash": "8017cf0e3be44d17d9a0818566e2bc708fb9dba7aaa00b7ef30b9694696f5898",
     "extract_dir": "openxcom",
     "bin": [
         [
