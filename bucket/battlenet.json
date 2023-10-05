@@ -16,7 +16,7 @@
             "if ($null -ne $SetupProcess) {Wait-Process -id $SetupProcess.Id}",
             "$BattlenetProcess = Get-Process -Name \"Battle.net\" -ErrorAction 'SilentlyContinue'",
             "if ($null -ne $BattlenetProcess) {Stop-Process $BattlenetProcess -Force -ErrorAction 'SilentlyContinue'} else {error \"Unable to $cmd $app\" successfully; break}"
-            ]
+        ]
     },
     "pre_uninstall": [
         "if (!(is_admin)) {error \"$app requires admin rights to $cmd\"; break}",
