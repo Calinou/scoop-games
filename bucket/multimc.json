@@ -4,7 +4,7 @@
     "homepage": "https://multimc.org/",
     "license": "Apache-2.0",
     "url": "https://files.multimc.org/downloads/mmc-stable-win32.zip",
-    "hash": "fded9a873b45bd6f852c154926a1ec204ace7e1a7e806c4524bc96e948961c69",
+    "hash": "f34ca9779126e1d9a0dfb7f0302f9f7af9c734616d1b00b556b6dec5ef7a8657",
     "extract_dir": "MultiMC",
     "pre_install": [
         "if (-not (Test-Path \"$dir\\accounts.json\")) { New-Item \"$dir\\accounts.json\" -ItemType File | Out-Null }",
