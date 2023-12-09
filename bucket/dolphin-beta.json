@@ -1,6 +1,6 @@
 {
     "version": "5.0-20347",
-    "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
+    "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (Monthly development version)",
     "homepage": "https://dolphin-emu.org/",
     "license": {
         "identifier": "GPL-2.0-or-later",
