@@ -23,11 +23,11 @@
     "architecture": {
         "32bit": {
             "url": "https://github.com/bradharding/doomretro/releases/download/v5.1/doomretro-5.1-win32.zip",
-            "hash": "aa9d1ee7dfb4c922f67e86f97709094d95ad24a0aa5e09c453701029641e3b4c"
+            "hash": "d1a35dd8f2baef61bc23b2046a48779bc986779256e3b6372fd665ff3eda2c57"
         },
         "64bit": {
             "url": "https://github.com/bradharding/doomretro/releases/download/v5.1/doomretro-5.1-win64.zip",
-            "hash": "7c549117dfb71489e60196c129654d6f41459992cef24dc41e8291ea3c26981d"
+            "hash": "9b3f1d0da88c9be7ea6f73143d2970dd48ad351362f52eba81409043b62cf795"
         }
     },
     "pre_install": [
