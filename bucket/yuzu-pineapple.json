@@ -1,5 +1,5 @@
 {
-    "version": "EA-4050",
+    "version": "EA-4051",
     "description": "A Yuzu Early Access fork with Linux-specific patches",
     "homepage": "https://github.com/pineappleEA/pineapple-src",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-4050/Windows-Yuzu-EA-4050.zip",
-            "hash": "6925c21f0b6f4a2a3d1eafa9e4c4c884866d13580d3a8eef346a9143b65352e0"
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-4051/Windows-Yuzu-EA-4051.zip",
+            "hash": "84aa53d556623ca57a5b69ae55728c7ef0a53a0d79e1020826d31e0dd8ed9f1a"
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
