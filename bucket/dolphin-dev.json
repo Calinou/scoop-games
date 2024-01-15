@@ -1,17 +1,26 @@
 {
     "version": "5.0-20943",
-    "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
+    "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (Nightly development version)",
     "homepage": "https://dolphin-emu.org/",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING"
     },
     "suggest": {
-        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
+        "vcredist": "extras/vcredist2022"
     },
-    "url": "https://dl.dolphin-emu.org/builds/37/0f/dolphin-master-5.0-20943-x64.7z",
-    "hash": "54c5bc416a3743c1d18bf2838b911e82948d0d1229f9fa2ead1a97985a6f27dd",
-    "extract_dir": "Dolphin-x64",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.dolphin-emu.org/builds/37/0f/dolphin-master-5.0-20943-x64.7z",
+            "hash": "54c5bc416a3743c1d18bf2838b911e82948d0d1229f9fa2ead1a97985a6f27dd",
+            "extract_dir": "Dolphin-x64"
+        },
+        "arm64": {
+            "url": "https://dl.dolphin-emu.org/builds/68/10/dolphin-master-5.0-20943-ARM64.7z",
+            "hash": "54b76868e9f74bfed7bb435ac82ac2d9c9e39915b91614631533439ce52e280e",
+            "extract_dir": "Dolphin-ARM64"
+        }
+    },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -39,10 +48,17 @@
     "persist": "User",
     "checkver": {
         "url": "https://dolphin-emu.org/download/list/master/1/",
-        "regex": "\\/(?<rand1>.{2})\\/(?<rand2>.{2})\\/dolphin-master-(?<major>[\\d\\.]+)-(?<build>[\\d]+)",
+        "regex": "(?s)\\/(?<rand1>.{2})\\/(?<rand2>.{2})\\/dolphin-master-(?<major>[\\d\\.]+)-(?<build>[\\d]+)-x64.*?\\/(?<rand3>.{2})\\/(?<rand4>.{2})\\/dolphin-master-[\\d\\.-]+-ARM64",
         "replace": "${major}-${build}"
     },
     "autoupdate": {
-        "url": "https://dl.dolphin-emu.org/builds/$matchRand1/$matchRand2/dolphin-master-$matchMajor-$matchBuild-x64.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.dolphin-emu.org/builds/$matchRand1/$matchRand2/dolphin-master-$matchMajor-$matchBuild-x64.7z"
+            },
+            "arm64": {
+                "url": "https://dl.dolphin-emu.org/builds/$matchRand3/$matchRand4/dolphin-master-$matchMajor-$matchBuild-ARM64.7z"
+            }
+        }
     }
 }
