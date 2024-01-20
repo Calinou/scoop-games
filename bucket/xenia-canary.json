@@ -1,13 +1,13 @@
 {
-    "version": "20240120092634-18b5a67",
+    "version": "20240120123041-3675d6a",
     "description": "Xbox 360 Research Emulator (development version)",
     "homepage": "https://xenia.jp",
     "license": {
         "identifier": "BSD-3-Clause",
         "url": "https://github.com/xenia-canary/xenia-canary/blob/canary_pr/LICENSE"
     },
-    "url": "https://github.com/xenia-canary/xenia-canary/releases/download/18b5a67/xenia_canary.zip",
-    "hash": "37e7730d307204cf438c9f3037988f2c0f01e14258d05130a21db1a33488fffc",
+    "url": "https://github.com/xenia-canary/xenia-canary/releases/download/3675d6a/xenia_canary.zip",
+    "hash": "80d056bfa395ce942b07bbe59a0ac742ad715f078a4ca5f74157d0e6ce72617c",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
