@@ -1,6 +1,6 @@
 {
     "version": "0.1.4",
-    "description": "A sokoban with a solver.",
+    "description": "Sokoban with a solver",
     "homepage": "https://github.com/ShenMian/sokoban-rs",
     "checkver": "github",
     "license": "MIT|Apache-2.0",
