@@ -1,14 +1,14 @@
 {
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Sokoban with a solver",
     "homepage": "https://github.com/ShenMian/sokoban-rs",
     "checkver": "github",
     "license": "MIT|Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ShenMian/sokoban-rs/releases/download/v0.1.4/sokoban-windows.zip",
+            "url": "https://github.com/ShenMian/sokoban-rs/releases/download/v0.1.5/sokoban-windows.zip",
             "bin": "sokoban-windows/sokoban-rs.exe",
-            "hash": "dd09d809d84775d66ba0a72f59e7930c7db3ccb3bace6432a10152bbbcfdf9b2"
+            "hash": "ea468c6137f47295a4ffdce07accdb6f361e7dc7993f74a8f0b05088f8bc4c8c"
         }
     },
     "shortcuts": [
