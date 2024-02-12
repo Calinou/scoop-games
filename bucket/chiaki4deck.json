@@ -9,8 +9,8 @@
             "hash": "2766545ba6cc5197082bbf3f1c4fe405dee4019e4968eb29b1fa367bf6ce6613",
             "pre_install": [
                 "$archive = \"Chiaki4deck-Win.zip\"",
-                "Expand-7zipArchive \"$dir\\$archive\" \"$dir\"",
-                "Remove-Item \"$dir\\$fname\""
+                "Expand-7zipArchive \"$dir\\$archive\" \"$dir\" -ExtractDir \"Chiaki4deck-Win\"",
+                "Remove-Item \"$dir\\$archive\""
             ]
         }
     },
