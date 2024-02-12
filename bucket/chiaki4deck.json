@@ -7,6 +7,11 @@
         "64bit": {
             "url": "https://github.com/streetpea/chiaki4deck/releases/download/v1.6.3/Chiaki4deck-win_x64-MSYS2-Release.zip",
             "hash": "2766545ba6cc5197082bbf3f1c4fe405dee4019e4968eb29b1fa367bf6ce6613",
+            "pre_install": [
+                "$archive = \"Chiaki4deck-Win.zip\"",
+                "Expand-7zipArchive \"$dir\\$archive\" \"$dir\"",
+                "Remove-Item \"$dir\\$fname\""
+            ]
         }
     },
     "bin": [
