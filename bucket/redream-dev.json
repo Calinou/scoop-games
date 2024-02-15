@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0-1087-gd48448b",
+    "version": "1.5.0-1088-gae86c15",
     "description": "Sega Dreamcast emulator that can render games in HD and 4K (development)",
     "homepage": "https://redream.io",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://redream.io/download/redream.x86_64-windows-v1.5.0-1087-gd48448b.zip",
-            "hash": "14a11feee26c144db8e614743f0d0af70a48cb016603882ec2286947f2596e3d"
+            "url": "https://redream.io/download/redream.x86_64-windows-v1.5.0-1088-gae86c15.zip",
+            "hash": "589c3cd25af5ec791e3dd8669ca519923d5187d299e8e3d047cff3cfded99ca2"
         }
     },
     "pre_install": [
