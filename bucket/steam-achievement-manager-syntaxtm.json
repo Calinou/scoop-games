@@ -9,16 +9,16 @@
         [
             "SAM.exe",
             "steam-achievement-manager-syntaxtm"
-        ],
+        ]
     ],
     "shortcuts": [
         [
             "SAM.exe",
             "syntax-tm's Steam Achievement Manager"
-        ],
+        ]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/syntax-tm/SteamAchievementManager/releases/download/v$version/SAM.zip"
+        "url":"https://github.com/syntax-tm/SteamAchievementManager/releases/download/v$version/SAM.zip"
     }
 }
