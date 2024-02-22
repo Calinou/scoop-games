@@ -1,6 +1,6 @@
 {
     "version": "2.0.9",
-    "description": "Counter-Strike 2 companion that automates in game tasks, such as accepting match, buying items and many more!",
+    "description": "Counter-Strike 2 companion that automates in-game tasks, such as accepting match, buying items and more",
     "homepage": "https://csauto.vercel.app",
     "license": "BSD-3-Clause",
     "shortcuts": [
