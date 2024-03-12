@@ -1,5 +1,5 @@
 {
-    "version": "2.0-68",
+    "version": "2.0-70",
     "description": "A Nintendo WiiU emulator capable of online play (development version)",
     "homepage": "https://cemu.info/",
     "license": "MPL-2.0",
@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cemu-project/Cemu/releases/download/v2.0-68/cemu-2.0-68-windows-x64.zip",
-            "hash": "fc43a3869ec8a60704ec5bfe730113e9a38467ba9844b225ebf8a2b1432689df"
+            "url": "https://github.com/cemu-project/Cemu/releases/download/v2.0-70/cemu-2.0-70-windows-x64.zip",
+            "hash": "510f818eae33876ecc336a14febd43a2deffc08b28522086127d381b7cfdaca2"
         }
     },
-    "extract_dir": "Cemu_2.0-68",
+    "extract_dir": "Cemu_2.0-70",
     "installer": {
         "script": [
             "if (!(Test-Path \"$persist_dir\\keys.txt\")) {",
