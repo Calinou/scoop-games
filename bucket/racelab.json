@@ -1,10 +1,10 @@
 {
-    "version": "5.0.1",
+    "version": "5.2.0",
     "license": "Proprietary",
     "description": "Third-party overlay for iRacing, Assetto Corsa Competizione, and Formula 1 that improves your race experience",
     "homepage": "https://racelab.app",
-    "url": "https://update.racelab.app/RacelabApps-5.0.1%20Setup.exe",
-    "hash": "df3c6960e0672422b4fc3efb7b8a1f432dbd78119bc931e82b136dd24fececc4",
+    "url": "https://update.racelab.app/RacelabApps-5.2.0%20Setup.exe",
+    "hash": "9112ca9ebbaf395b88410c775b54bffdfd009cb213abb9c05db3e72e5f9576fe",
     "uninstaller": {
         "script": "Invoke-Expression -Command \"$env:LOCALAPPDATA\\RacelabApps\\Update.exe --uninstall\""
     },
