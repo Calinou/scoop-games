@@ -1,0 +1,50 @@
+{
+    "version": "0.0.2-master",
+    "description": "Continuation of the Nintendo Switch emulator, yuzu.",
+    "homepage": "https://gitlab.com/suyu-emu/suyu",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://gitlab.com/suyu-emu/suyu-releases/-/raw/master/v0.0.2-master/Suyu-Windows_x64.7z",
+            "hash": "2f02d173be872f2fadc09b7376faf10b8cc4ce8c6f3c22ccd55879015debc838"
+        }
+    },
+    "extract_dir": "Release",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   New-item \"$persist_dir\\user\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:APPDATA\\suyu\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\suyu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
+        "       Remove-Item -Path \"$env:APPDATA\\suyu\" -Recurse",
+        "   }",
+        "}"
+    ],
+    "bin": [
+        "suyu.exe",
+        "suyu-cmd.exe",
+        "suyu-room.exe"
+    ],
+    "shortcuts": [
+        [
+            "suyu.exe",
+            "Suyu"
+        ]
+    ],
+    "persist": [
+        "user",
+        "plugins"
+    ],
+    "checkver": {
+        "url": "https://gitlab.com/suyu-emu/suyu/-/tags?format=atom",
+        "regex": "/tags/v([\\w.-]+)<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gitlab.com/suyu-emu/suyu-releases/-/raw/master/v$version/Suyu-Windows_x64.7z"
+            }
+        }
+    }
+}
