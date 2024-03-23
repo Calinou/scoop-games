@@ -1,11 +1,14 @@
 {
-    "version": "0.0.2-master",
+    "version": "0.0.1",
     "description": "Continuation of the Nintendo Switch emulator, yuzu.",
-    "homepage": "https://gitlab.com/suyu-emu/suyu",
-    "license": "GPL-3.0-or-later",
+    "homepage": "https://suyu.dev",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://git.suyu.dev/suyu/suyu/src/branch/dev/LICENSE.txt"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/suyu-emu/suyu-releases/-/raw/master/v0.0.2-master/Suyu-Windows_x64.7z",
+            "url": "https://git.suyu.dev/suyu/suyu/releases/download/v0.0.1/Suyu-Windows_x64.7z",
             "hash": "2f02d173be872f2fadc09b7376faf10b8cc4ce8c6f3c22ccd55879015debc838"
         }
     },
@@ -37,13 +40,14 @@
         "plugins"
     ],
     "checkver": {
-        "url": "https://gitlab.com/suyu-emu/suyu/-/tags?format=atom",
-        "regex": "/tags/v([\\w.-]+)<"
+        "url": "https://git.suyu.dev/api/v1/repos/suyu/suyu/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "v(.+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gitlab.com/suyu-emu/suyu-releases/-/raw/master/v$version/Suyu-Windows_x64.7z"
+                "url": "https://git.suyu.dev/suyu/suyu/releases/download/v$version/Suyu-Windows_x64.7z"
             }
         }
     }
