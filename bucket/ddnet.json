@@ -31,8 +31,7 @@
             }
         },
         "hash": {
-            "url": "https://ddnet.org/downloads/DDNet-$version.sha256",
-            "regex": ""
+            "url": "$url.sha256",
         }
     },
     "shortcuts": [
