@@ -20,16 +20,7 @@
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:APPDATA\\sudachi\\*\" -Destination \"$persist_dir\\user\" -Recurse",
         "       Remove-Item -Path \"$env:APPDATA\\sudachi\" -Recurse",
-        "   }",
-        "   if (Test-Path \"$env:APPDATA\\yuzu\") {",
-        "       Write-host \"Migrating AppData from yuzu...\" -ForegroundColor yellow",
-        "       Copy-Item -Path \"$env:APPDATA\\yuzu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
-        "   }",
-        "   if (Test-Path \"$env:APPDATA\\suyu\") {",
-        "       Write-host \"Migrating AppData from suyu...\" -ForegroundColor yellow",
-        "       Copy-Item -Path \"$env:APPDATA\\suyu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
-        "   }",
-        "}"
+        "   }"
     ],
     "bin": [
         "sudachi.exe",
