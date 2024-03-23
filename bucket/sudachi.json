@@ -2,10 +2,7 @@
     "version": "v7715077",
     "description": "Continuation of the experimental emulator for the Nintendo Switch - yuzu",
     "homepage": "https://github.com/sudachi-emu/sudachi",
-    "license": {
-        "identifier": "GPL-3.0",
-        "url": "https://github.com/sudachi-emu/sudachi/blob/main/LICENSE"
-    },
+    "license": "GPL-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/sudachi-emu/sudachi/releases/download/v7715077/v7715077-windows.7z",
