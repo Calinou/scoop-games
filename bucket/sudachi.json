@@ -45,10 +45,7 @@
         "user",
         "plugins"
     ],
-    "checkver": {
-        "url": "https://api.github.com/repos/sudachi-emu/sudachi/releases?per_page=1",
-        "jsonpath": "$[?(@.prerelease == false)].tag_name"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
