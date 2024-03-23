@@ -12,7 +12,6 @@
             "hash": "70D7E4B6B65F4AC9399239E76C5D8BEB3CDD5F28FD33147C441EE1208E909C35"
         }
     },
-    "extract_dir": "sudachi",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -21,6 +20,14 @@
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:APPDATA\\sudachi\\*\" -Destination \"$persist_dir\\user\" -Recurse",
         "       Remove-Item -Path \"$env:APPDATA\\sudachi\" -Recurse",
+        "   }",
+        "   if (Test-Path \"$env:APPDATA\\yuzu\") {",
+        "       Write-host \"Migrating AppData from yuzu...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\yuzu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
+        "   }",
+        "   if (Test-Path \"$env:APPDATA\\suyu\") {",
+        "       Write-host \"Migrating AppData from suyu...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:APPDATA\\suyu\\*\" -Destination \"$persist_dir\\user\" -Recurse",
         "   }",
         "}"
     ],
@@ -40,8 +47,7 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/sudachi-emu/sudachi/releases?per_page=1",
-        "jsonpath": "$[?(@.prerelease == false)].tag_name",
-        "regex": "v([\\d.]+)"
+        "jsonpath": "$[?(@.prerelease == false)].tag_name"
     },
     "autoupdate": {
         "architecture": {
