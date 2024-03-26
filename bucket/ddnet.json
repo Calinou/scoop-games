@@ -2,7 +2,7 @@
     "version": "18.1",
     "description": "DDraceNetwork, a free cooperative platformer game",
     "homepage": "https://ddnet.org/",
-    "license": "SIL Open Font License",
+    "license": "Zlib",
     "architecture": {
         "64bit": {
             "url": "https://ddnet.org/downloads/DDNet-18.1-win64.zip",
