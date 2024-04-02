@@ -16,18 +16,6 @@
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\config.json\")) {",
         "   New-Item -Path \"$dir\" -Name \"config.json\" -ItemType File | Out-Null",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\install\")) {",
-        "   New-Item -Path \"$dir\" -Name \"install\" -ItemType Directory | Out-Null",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\gamefiles\")) {",
-        "   New-Item -Path \"$dir\" -Name \"gamefiles\" -ItemType Directory | Out-Null",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\sounddata\")) {",
-        "   New-Item -Path \"$dir\" -Name \"sounddata\" -ItemType Directory | Out-Null",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\screenshots\")) {",
-        "   New-Item -Path \"$dir\" -Name \"screenshots\" -ItemType Directory | Out-Null",
         "}"
     ],
     "shortcuts": [
