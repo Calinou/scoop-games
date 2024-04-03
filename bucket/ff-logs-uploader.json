@@ -14,7 +14,7 @@
     },
     "hash": "sha512:a5f2493b9513401fee707ac5b06bab7efc534d384bd4728c1466904c348173ad5869678ed0b1b879c0082454bb2b55ddb4a4b31d9b16c789e3e7eea372326744",
     "post_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse",
-	"bin": "FF Logs Uploader.exe",
+    "bin": "FF Logs Uploader.exe",
     "shortcuts": [
         [
             "FF Logs Uploader.exe",
