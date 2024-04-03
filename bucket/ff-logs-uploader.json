@@ -1,6 +1,6 @@
 {
     "version": "8.3.20",
-    "description": "FF Logs Uploader is a tool used to upload FFXIV game logs sourced from Advanced Combat Tracker",
+    "description": "Uploads FFXIV game logs sourced from Advanced Combat Tracker",
     "homepage": "https://www.fflogs.com",
     "license": "Unknown",
     "url": "https://github.com/RPGLogs/Uploaders-fflogs/releases/download/v8.3.20/fflogs-v8.3.20.exe#/dl.7z",
