@@ -17,6 +17,6 @@
         "re": "DWARF FORTRESS CLASSIC ([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "http://www.bay12games.com/dwarves/df_$minorVersion_$patchVersion_win.zip"
+        "url": "http://www.bay12games.com/dwarves/df_$underscoreVersion_win.zip"
     }
 }
