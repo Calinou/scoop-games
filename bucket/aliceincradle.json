@@ -1,0 +1,22 @@
+{
+  "version": "0.24g",
+  "description": "A soft Ryona 2D action game in which MP is thoroughly absorbed when the heroine is defeated.",
+  "license": "Freeware",
+  "architecture": {
+    "64bit": {
+      "url": "https://get.aliceincradle.dev/api/b47b6906-3698-d513-8d98-1f4f993e7706/fb62cf34-c523-3406-5752-129cc2340ff4#/dl.zip",
+      "hash": "d9f6c23a4a33e2cdede9beeaec7a85488bab8e78e4270d8d1b13fcfe531c8410",
+      "extract_dir": "Win ver024\\AliceInCradle_ver024"
+    }
+  },
+  "homepage": "https://aliceincradle.dev/",
+  "checkver": {
+    "url": "https://api.cicini.moe/js/nanamehacha/aliceincradle/version_display.js",
+    "regex": "document\\.getElementById\\(\"aic_zip_verdis_global\"\\)\\.innerHTML\\s*=\\s*\"(\\w*\\.\\w*)\""
+  },
+  "notes": [
+    "Please turn on \"SFW Mode\" if you are under 18 years old or plan to upload/stream videos of this game to online services.",
+    "Some explicit actions performed in this game are punishable by law if executed in real life."
+  ],
+  "shortcuts": [["AliceInCradle.exe", "Alice in Cradle"]]
+}
