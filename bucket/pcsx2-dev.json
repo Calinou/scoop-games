@@ -1,5 +1,5 @@
 {
-    "version": "1.7.5719",
+    "version": "1.7.5720",
     "description": "A feature rich FOSS PlayStation 2 emulator (development version)",
     "homepage": "https://pcsx2.net/",
     "license": {
@@ -16,8 +16,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.5719/pcsx2-v1.7.5719-windows-x64-Qt.7z",
-            "hash": "1893a13d491d4a345f63291529b08f7307cf3cc8e2b2daf19bb52f40fca41432"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.5720/pcsx2-v1.7.5720-windows-x64-Qt.7z",
+            "hash": "2d5da0ddcef6df170ebdad54aa8e2b36fae1c42283603c86b2c5ae57f6542ac3"
         }
     },
     "pre_install": [
