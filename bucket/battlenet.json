@@ -17,7 +17,8 @@
         "if ($null -ne $SetupProcess) { Wait-Process $SetupProcess.Id }",
         "$BattlenetProcess = Get-Process Battle.net -ErrorAction Ignore",
         "if ($null -ne $BattlenetProcess) { Stop-Process $BattlenetProcess -Force -ErrorAction Ignore } else { error \"Unable to $cmd $app\" successfully; break }",
-        "Remove-Item $setup, \"$dir/.battlenet\" -Recurse"
+        "Remove-Item $setup",
+        "Remove-Item \"$dir/.battlenet\" -Recurse -ErrorAction SilentlyContinue"
     ],
     "pre_uninstall": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
