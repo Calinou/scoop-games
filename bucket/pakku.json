@@ -1,0 +1,22 @@
+{
+  "version": "0.8.2",
+  "description": "A multiplatform modpack manager for Minecraft: Java Edition.",
+  "homepage": "https://juraj-hrivnak.github.io/Pakku/",
+  "license": "EUPL-1.2-or-later",
+  "suggest": {
+    "JDK": [
+      "java/openjdk"
+    ]
+  },
+  "url": "https://github.com/juraj-hrivnak/Pakku/releases/download/v0.8.2/Pakku-0.8.2.zip",
+  "hash": "63d50229d35dbe9c530aba3205ee5ecd13489473338bfa6895620fa67b71318d",
+  "extract_dir": "Pakku-0.8.2",
+  "bin": "bin/Pakku.bat",
+  "checkver": {
+    "github": "https://github.com/juraj-hrivnak/Pakku"
+  },
+  "autoupdate": {
+    "url": "https://github.com/juraj-hrivnak/Pakku/releases/download/v$version/Pakku-$version.zip",
+    "extract_dir": "Pakku-$version"
+  }
+}
