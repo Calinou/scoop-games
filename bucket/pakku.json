@@ -9,7 +9,7 @@
     ]
   },
   "url": "https://github.com/juraj-hrivnak/Pakku/releases/download/v0.8.2/Pakku-0.8.2.zip",
-  "hash": "63d50229d35dbe9c530aba3205ee5ecd13489473338bfa6895620fa67b71318d",
+  "hash": "38DA36121323F1A7E1B759952269ECB6BDE3C48C411CF7DF4741873088F9F63D",
   "extract_dir": "Pakku-0.8.2",
   "bin": "bin/Pakku.bat",
   "checkver": {
