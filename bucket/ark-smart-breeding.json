@@ -1,10 +1,10 @@
 {
-    "version": "0.61.0.0",
+    "version": "0.61.1.0",
     "description": "For the game ARK Survival Evolved. Extracts possible levelups of creatures to get the values for breeding. Save your creatures in a library, sort and compare their stats, view their pedigree, use the breeding-plan to get the best possible creatures and keep track of the growing babies with timers.",
     "homepage": "https://github.com/cadon/ARKStatsExtractor",
     "license": "MIT",
-    "url": "https://github.com/cadon/ARKStatsExtractor/releases/download/v0.61.0/ARK.Smart.Breeding_0.61.0.0.zip",
-    "hash": "3af1f820fc607952278af8b9b14ce62b36f2427a2b584e1208848b0648c5d4cd",
+    "url": "https://github.com/cadon/ARKStatsExtractor/releases/download/v0.61.1/ARK.Smart.Breeding_0.61.1.0.zip",
+    "hash": "83ab7608a35eb6c7b7269c0e46f572f174894f925375295fd1923001b0372c84",
     "bin": "ARK Smart Breeding.exe",
     "shortcuts": [
         [
