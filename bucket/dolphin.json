@@ -28,10 +28,6 @@
         [
             "Dolphin.exe",
             "Dolphin"
-        ],
-        [
-            "DolphinTool.exe",
-            "dolphintool"
         ]
     ],
     "persist": "User",
