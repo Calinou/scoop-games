@@ -1,5 +1,5 @@
 {
-    "version": "9.0.1",
+    "version": "9.0.2",
     "description": "Thousands of free mods and trainers for your favorite single-player PC games — all in one place",
     "license": {
         "identifier": "Freeware",
@@ -8,8 +8,8 @@
     "homepage": "https://www.wemod.com",
     "architecture": {
         "64bit": {
-            "url": "https://storage-cdn.wemod.com/app/releases/stable/WeMod-9.0.1-full.nupkg",
-            "hash": "089a5fe9aa8f5edf1eae78a62697da1c16cc2b4260995d30d04a8de448c9dece",
+            "url": "https://storage-cdn.wemod.com/app/releases/stable/WeMod-9.0.2-full.nupkg",
+            "hash": "b6383b60dd76e3803b7b1334bca1614d33a44771fc20705b725c308cf6e0158f",
             "shortcuts": [
                 [
                     "WeMod.exe",
