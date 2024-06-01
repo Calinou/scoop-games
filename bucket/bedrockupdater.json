@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "description": "Download, update & install Minecraft: Bedrock Edition without the Microsoft Store.",
+    "description": "Download, update & install Minecraft: Bedrock Edition without the Microsoft Store",
     "homepage": "https://github.com/Aetopia/BedrockUpdater",
     "license": "GPL-3.0-only",
     "architecture": {
