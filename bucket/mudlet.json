@@ -20,13 +20,10 @@
     ],
     "checkver": {
         "url": "https://www.mudlet.org/download/",
-        "regex": "Mudlet-([\\d.]+)-windows-installer.exe"
+        "regex": "Mudlet (?<version>[\\d.]+) (Windows)",
+		"replace": "$version"
     },
     "autoupdate": {
-        "url": "https://www.mudlet.org/wp-content/files/Mudlet-$version-windows-installer.exe#/dl.7z",
-        "hash": {
-            "url": "https://www.mudlet.org/download/",
-            "regex": "Windows\\s.*?MiB[\\w\\W]+?\">$sha256"
-        }
+        "url": "https://www.mudlet.org/wp-content/files/Mudlet-$version-windows-installer.exe#/dl.7z"
     }
 }
