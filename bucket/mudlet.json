@@ -21,7 +21,7 @@
     "checkver": {
         "url": "https://www.mudlet.org/download/",
         "regex": "Mudlet (?<version>[\\d.]+) \\(Windows\\)",
-        "replace": "$version"
+        "replace": "$matchVersion"
     },
     "autoupdate": {
         "url": "https://www.mudlet.org/wp-content/files/Mudlet-$matchVersion-windows-installer.exe#/dl.7z"
