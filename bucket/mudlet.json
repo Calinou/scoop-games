@@ -20,7 +20,7 @@
     ],
     "checkver": {
         "url": "https://www.mudlet.org/download/",
-        "regex": "Mudlet (?<version>[\\d.]+) (Windows)",
+        "regex": "Mudlet (?<version>[\\d.]+)",
         "replace": "$version"
     },
     "autoupdate": {
