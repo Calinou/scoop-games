@@ -14,8 +14,8 @@
     "checkver": {
         "url": "https://api.github.com/repos/CollapseLauncher/Collapse/releases",
         "jsonpath": "$[?(@.prerelease == false)].tag_name",
-		"regex": "CL-v(?<version>[\\d.]+)"
-	},
+        "regex": "CL-v(?<version>[\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/CollapseLauncher/Collapse/releases/download/CL-v$matchVersion/CL-$matchVersion_Portable.7z"
     }
