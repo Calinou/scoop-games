@@ -26,10 +26,11 @@
     ],
     "notes": [
         "To uninstall the following:",
-        "	 - Minecraft: Bedrock Edition",
-        "	 - Xbox Identity Provider",
-        "
-Run the following command in PowerShell:",
+        "  - Minecraft: Bedrock Edition",
+        "  - Xbox Identity Provider",
+        "",
+        "Run the following command in PowerShell:",
+        "",
         "Get-AppxPackage | ForEach-Object { if ($_.Name -in @(\"Microsoft.MinecraftUWP\", \"Microsoft.MinecraftWindowsBeta\", \"Microsoft.XboxIdentityProvider\")) { Remove-AppxPackage $_ } }"
     ],
     "checkver": {
