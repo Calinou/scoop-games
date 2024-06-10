@@ -1,7 +1,7 @@
 {
     "version": "3.11",
     "homepage": "https://gamebanana.com/tools/6321",
-    "description": "A tool to help download, install and manage mods available through Gamebanana for a variety of different games.",
+    "description": "Tool to help download, install and manage mods available through Gamebanana for a variety of different games",
     "license": "CC-BY-NC-ND-4.0",
     "url": "https://files.gamebanana.com/tools/modboy_install_68c70.exe",
     "hash": "md5:5718560ab093f903b3e6ef51e68575ac",
