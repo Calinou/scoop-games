@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "description": "Download, install & update Minecraft Dungeons. ",
+    "description": "Download, install & update Minecraft Dungeons.",
     "homepage": "https://github.com/Aetopia/DungeonsUpdater",
     "license": "GPL-3.0-only",
     "architecture": {
