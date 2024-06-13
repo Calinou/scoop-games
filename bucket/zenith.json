@@ -1,0 +1,16 @@
+{
+    "homepage": "http://johnvalentine.co.uk/zenith.php",
+    "description": "An immersive puzzle experience, inspired by Geoff Crammond's 1980s game: The Sentinel",
+    "license": "Freeware",
+    "version": "0.9.10.r1",
+    "url": "https://sites.google.com/site/csjohnv2/Zenith.zip",
+    "hash": "2a29ba469ac49f2b1af5212865c6fc076542027fa2c0553a895ebcae25bcbc2b",
+    "extract_dir": "Zenith",
+    "shortcuts": [
+        [
+            "Zenith.exe",
+            "Zenith"
+        ]
+    ],
+    "notes": "If you get an error on startup, try installing the OpenAL Runtime: http://www.openal.org/downloads/"
+}
