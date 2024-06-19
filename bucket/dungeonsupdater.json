@@ -1,12 +1,12 @@
 {
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Download, install and update Minecraft Dungeons",
     "homepage": "https://github.com/Aetopia/DungeonsUpdater",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Aetopia/DungeonsUpdater/releases/download/v1.1.2/DungeonsUpdater.exe",
-            "hash": "863c0add16672eeac805a1006f279536d1df3c2fbb89ca9107148e89399bdd40"
+            "url": "https://github.com/Aetopia/DungeonsUpdater/releases/download/v1.1.3/DungeonsUpdater.exe",
+            "hash": "8eae278931365121575cad6bd6e531a57591d5422e11eb0a89efed8647ac4ca3"
         }
     },
     "shortcuts": [
