@@ -1,6 +1,6 @@
 {
     "version": "1026.01.2ac1a41",
-    "description": "SimulationCraft is a tool to explore combat mechanics in the popular MMO RPG World of Warcraft.",
+    "description": "Utility to explore combat mechanics in the popular MMORPG World of Warcraft",
     "homepage": "https://www.simulationcraft.org/",
     "license": "GPL-3.0",
     "architecture": {
