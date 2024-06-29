@@ -8,7 +8,7 @@
     },
     "url": "https://github.com/Lime3DS/Lime3DS/releases/download/2115/lime3ds-2115-windows-msvc.zip",
     "hash": "c6c6784724b69245e3890ba0aa618deeeeabee5f70515a45ab4183da1ffcf3e4",
-    "extract_dir": "lime3ds-2114.1-windows-msvc",
+    "extract_dir": "lime3ds-2115-windows-msvc",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user\")) {",
         "   New-Item -Path \"$persist_dir\" -Name \"user\" -ItemType \"directory\" | Out-Null",
@@ -34,6 +34,7 @@
         "github": "https://github.com/Lime3DS/Lime3DS"
     },
     "autoupdate": {
-        "url": "https://github.com/Lime3DS/Lime3DS/releases/download/$version/lime3ds-$version-windows-msvc.zip"
+        "url": "https://github.com/Lime3DS/Lime3DS/releases/download/$version/lime3ds-$version-windows-msvc.zip",
+        "extract_dir": "lime3ds-$version-windows-msvc"
     }
 }
