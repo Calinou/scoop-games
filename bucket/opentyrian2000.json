@@ -3,17 +3,6 @@
 	"description": "Fork of OpenTyrian with support for Tyrian 2000",
 	"homepage": "https://github.com/KScl/opentyrian2000",
 	"license": "GPL-2.0",
-	"checkver": "github",
-	"extract_dir": "opentyrian2000",
-	"shortcuts": [
-		[
-			"opentyrian2000.exe",
-			"OpenTyrian2000"
-		]
-	],
-	"persist": [
-		"data"
-	],
 	"notes": [
 		"Place Tyrian 2000 game data files in:",
 		"",
@@ -29,6 +18,17 @@
 			"hash": "dc806e7678a40eb74ee2e2267aa5ecdf7b9af4455533d9d2e223698f6cbfa72d"
 		}
 	},
+	"extract_dir": "opentyrian2000",
+	"shortcuts": [
+		[
+			"opentyrian2000.exe",
+			"OpenTyrian2000"
+		]
+	],
+	"persist": [
+		"data"
+	],
+	"checkver": "github",
 	"autoupdate": {
         "architecture": {
             "32bit": {
