@@ -3,11 +3,6 @@
     "description": "Fork of OpenTyrian with support for Tyrian 2000",
     "homepage": "https://github.com/KScl/opentyrian2000",
     "license": "GPL-2.0-or-later",
-    "notes": [
-        "Place Tyrian 2000 game data files in:",
-        "",
-        "    $persist_dir\\data"
-    ],
     "architecture": {
         "32bit": {
             "url": [
