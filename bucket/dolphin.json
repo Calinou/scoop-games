@@ -23,10 +23,10 @@
         "}"
     ],
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
-    "bin": "Dolphin.exe",
+    "bin": "Dolphin-x64\\Dolphin.exe",
     "shortcuts": [
         [
-            "Dolphin.exe",
+            "Dolphin-x64\\Dolphin.exe",
             "Dolphin"
         ]
     ],
