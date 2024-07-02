@@ -33,9 +33,9 @@
     "persist": "User",
     "checkver": {
         "url": "https://dolphin-emu.org/download/",
-        "regex": "https://dl-mirror.dolphin-emu.org/([\\d.]+)/dolphin-x64"
+        "regex": "https://dl.dolphin-emu.org/releases/$version/dolphin"
     },
     "autoupdate": {
-        "url": "https://dl-mirror.dolphin-emu.org/$version/dolphin-x64-$version.exe#/dl.7z"
+        "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-x64.7z"
     }
 }
