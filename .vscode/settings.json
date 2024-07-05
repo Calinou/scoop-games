@@ -70,7 +70,9 @@
         "bin",
         "shortcuts",
         "persist",
+        "pre_uninstall",
         "uninstaller",
+        "post_uninstall",
         "checkver",
         "autoupdate"
     ],
@@ -101,7 +103,9 @@
         "bin",
         "shortcuts",
         "persist",
+        "pre_uninstall",
         "uninstaller",
+        "post_uninstall",
         "checkver",
         "autoupdate"
     ],
