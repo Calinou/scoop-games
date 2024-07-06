@@ -112,5 +112,6 @@
     "editor.defaultFormatter": "richie5um2.vscode-sort-json",
     "editor.formatOnSave": true,
     "prettier.enable": false,
-    "html.format.enable": false
+    "html.format.enable": false,
+    "this.setting.does.not.exist": true
 }
