@@ -3,8 +3,20 @@
     "description": "Real-time strategy game set in a futuristic universe",
     "homepage": "https://wz2100.net/",
     "license": "GPL-2.0-or-later",
-    "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_x86_portable.exe#/dl.7z",
-    "hash": "85a43676fc47e306bbc73d989c4c2eaa1d10e316fe523b0951455f974270f4b0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_x64_portable.exe#/dl.7z",
+            "hash": "47955e2ceade25959cab2f7c2beb80f87c58b1ffe3c6e994ba50f6e8ee077e31"
+        },
+        "32bit": {
+            "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_x86_portable.exe#/dl.7z",
+            "hash": "85a43676fc47e306bbc73d989c4c2eaa1d10e316fe523b0951455f974270f4b0"
+        },
+        "arm64": {
+            "url": "https://github.com/Warzone2100/warzone2100/releases/download/4.5.0/warzone2100_win_arm64_portable.exe#/dl.7z",
+            "hash": "ff87ebc944cd41f490875325229a2535b3cabe718270ee02dbbbd5d4a36266f4"
+        }
+    },
     "bin": "bin\\warzone2100.exe",
     "shortcuts": [
         [
@@ -16,6 +28,16 @@
         "github": "https://github.com/Warzone2100/warzone2100"
     },
     "autoupdate": {
-        "url": "https://github.com/Warzone2100/warzone2100/releases/download/$version/warzone2100_win_x86_portable.exe#/dl.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Warzone2100/warzone2100/releases/download/$version/warzone2100_win_x64_portable.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/Warzone2100/warzone2100/releases/download/$version/warzone2100_win_x86_portable.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Warzone2100/warzone2100/releases/download/$version/warzone2100_win_arm64_portable.exe#/dl.7z"
+            }
+        }
     }
 }
