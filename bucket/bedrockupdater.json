@@ -1,16 +1,16 @@
 {
-    "version": "1.1.7.2",
+    "version": "1.1.7.3",
     "description": "Download, update & install Minecraft: Bedrock Edition without the Microsoft Store",
     "homepage": "https://github.com/Aetopia/BedrockUpdater",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Aetopia/BedrockUpdater/releases/download/v1.1.7.2/BedrockUpdater.exe",
-            "hash": "96bc9257aabe76ab812343b2f9cab78022148f6e539baeff38de08a74617f514"
+            "url": "https://github.com/Aetopia/BedrockUpdater/releases/download/v1.1.7.3/BedrockUpdater.exe",
+            "hash": "59378b892e09ba7d9e140ee7edbe7f00cfe5fa07eaf3c0edb596d8d4228efcf9"
         },
         "32bit": {
-            "url": "https://github.com/Aetopia/BedrockUpdater/releases/download/v1.1.7.2/BedrockUpdater.exe",
-            "hash": "96bc9257aabe76ab812343b2f9cab78022148f6e539baeff38de08a74617f514"
+            "url": "https://github.com/Aetopia/BedrockUpdater/releases/download/v1.1.7.3/BedrockUpdater.exe",
+            "hash": "59378b892e09ba7d9e140ee7edbe7f00cfe5fa07eaf3c0edb596d8d4228efcf9"
         }
     },
     "shortcuts": [
