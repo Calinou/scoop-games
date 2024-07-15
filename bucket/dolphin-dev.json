@@ -1,5 +1,5 @@
 {
-    "version": "2407-55",
+    "version": "2407-57",
     "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
     "homepage": "https://dolphin-emu.org/",
     "license": {
@@ -9,8 +9,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://dl.dolphin-emu.org/builds/82/f1/dolphin-master-2407-55-x64.7z",
-    "hash": "8e9494d6d8a539a926115728c8588bc68a857d1b52a4b2d632fd88827ff6dbfa",
+    "url": "https://dl.dolphin-emu.org/builds/c7/7e/dolphin-master-2407-57-x64.7z",
+    "hash": "401083fe480b90f1e80711e81efa351cf550e38e5f82cdc65bbc3ef388203676",
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
