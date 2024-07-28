@@ -1,0 +1,15 @@
+{
+    "version": "1.2",
+    "description": "Save editor for New Super Mario Bros. Wii",
+    "homepage": "https://game-hackers.com/threads/2316-Tanooki-NSMBWii-Save-Editor-v1-2",
+    "url": "https://game-hackers.com/attachment.php?attachmentid=1890&d=1263671713#/dl.7z",
+    "hash": "0b296d0af1ddffc226b1a150765def97fa9cb4fb5a582e967f674def307a1ced",
+    "license": "Freeware",
+    "bin": "Tanooki.exe",
+    "shortcuts": [
+        [
+            "Tanooki.exe",
+            "Tanooki"
+        ]
+    ]
+}
