@@ -1,12 +1,12 @@
 {
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Fixes various bugs related to Minecraft: Bedrock Edition",
     "homepage": "https://github.com/Aetopia/Stonecutter",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Aetopia/Stonecutter/releases/download/v1.0.5/Stonecutter.zip",
-            "hash": "f323d9a2192baec56c38ffdd5e899277dbe2bc187eaa8c4eebad4e7087a3a11a"
+            "url": "https://github.com/Aetopia/Stonecutter/releases/download/v1.0.6/Stonecutter.zip",
+            "hash": "8a28889b2f8cac30d0178e8c353c2dbce95b3c3851bc6a29d42aa2d6c58504f5"
         }
     },
     "shortcuts": [
