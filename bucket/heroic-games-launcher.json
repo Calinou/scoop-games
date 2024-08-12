@@ -1,12 +1,12 @@
 {
-    "version": "2.15.0",
+    "version": "2.15.1",
     "description": "Unofficial native GUI reimplementation for GOG and Epic Games Launcher",
     "homepage": "https://heroicgameslauncher.com/",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.15.0/Heroic-2.15.0-Setup-x64.exe#/dl.7z",
-            "hash": "sha512:ccd35ccba02eb9079510f83e9468786a8926f6e30170c0b050445d6a8d7ee186961bb0fe7690d104ce28f6ed4e7639b8cbf2cac0e4dc5ce37411e5d124932684",
+            "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.15.1/Heroic-2.15.1-Setup-x64.exe#/dl.7z",
+            "hash": "sha512:0c3cb7000dca586ab5f72639cd32e0e628014c2fae3e0c56d7e3d0c085c2b22eccb1fb7c620f1822ec36c4e1c293dea663233d44fea295f253ec55b842a1dd99",
             "pre_install": "Remove-Item \"$dir\\*.dll\"; Expand-7ZipArchive \"$dir\\app-64.7z\" \"$dir\" -Removal"
         }
     },
