@@ -1,0 +1,37 @@
+{
+    "version": "2024.8.18.21",
+    "description": "An unofficial Minecraft Bedrock for Windows Launcher",
+    "homepage": "https://bedrocklauncher.github.io/",
+    "license": "GPL-3.0-only",
+    "notes": "See \"Important Notes\" section at https://github.com/BedrockLauncher/BedrockLauncher/releases/latest",
+    "suggest": {
+        "VCRedist": "extras/vcredist2022",
+        ".NET 6.0 Desktop Runtime": "versions/windowsdesktop-runtime-6.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/2024.8.18.21/BedrockLauncher2024.8.18.21.zip",
+            "hash": "7c0ca2ca776a67ffc9a90a784b856bd4be841511f1409adaf0a8df692db36cba"
+        }
+    },
+    "extract_dir": "BedrockLauncher",
+    "shortcuts": [
+        [
+            "StartBedrockLauncher.exe",
+            "Bedrock Launcher",
+            "",
+            "app\\BedrockLauncher.exe"
+        ]
+    ],
+    "persist": "app\\data",
+    "checkver": {
+        "github": "https://github.com/BedrockLauncher/BedrockLauncher"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/$version/BedrockLauncher$version.zip"
+            }
+        }
+    }
+}
