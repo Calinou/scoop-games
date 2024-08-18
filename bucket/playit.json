@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/playit-cloud/playit-agent/releases/download/v{version}/playit-windows-x86.exe"
+                "url": "https://github.com/playit-cloud/playit-agent/releases/download/v$version/playit-windows-x86.exe"
             }
         }
     }
