@@ -9,8 +9,16 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
     },
-    "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-x64.7z",
-    "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-x64.7z",
+            "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b"
+        },
+        "arm64": {
+            "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-ARM64.7z",
+            "hash": "94edf7e5a48694e2805edd94e9e4d390b2ec2b837a0d43cd042878c48dbb4b1e"
+        }
+    },
     "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
@@ -37,6 +45,13 @@
         "regex": "https://dl.dolphin-emu.org/releases/(?<version>[\\d]+)/"
     },
     "autoupdate": {
-        "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-x64.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-x64.7z"
+            },
+            "arm64": {
+                "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-ARM64.7z"
+            }
+        }
     }
 }
