@@ -12,14 +12,15 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-x64.7z",
-            "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b"
+            "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b",
+            "extract_dir": "Dolphin-x64"
         },
         "arm64": {
             "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-ARM64.7z",
-            "hash": "94edf7e5a48694e2805edd94e9e4d390b2ec2b837a0d43cd042878c48dbb4b1e"
+            "hash": "94edf7e5a48694e2805edd94e9e4d390b2ec2b837a0d43cd042878c48dbb4b1e",
+            "extract_dir": "Dolphin-ARM64"
         }
     },
-    "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
