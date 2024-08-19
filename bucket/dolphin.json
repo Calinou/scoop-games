@@ -11,6 +11,7 @@
     },
     "url": "https://dl.dolphin-emu.org/releases/2407/dolphin-2407-x64.7z",
     "hash": "9283423bc40048ee4fd3531c3fc4ca0799e99d9a2d9295f703683c62a3bc280b",
+    "extract_dir": "Dolphin-x64",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -23,10 +24,10 @@
         "}"
     ],
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
-    "bin": "Dolphin-x64\\Dolphin.exe",
+    "bin": "Dolphin.exe",
     "shortcuts": [
         [
-            "Dolphin-x64\\Dolphin.exe",
+            "Dolphin.exe",
             "Dolphin"
         ]
     ],
