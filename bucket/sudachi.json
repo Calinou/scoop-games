@@ -1,5 +1,5 @@
 {
-    "version": "v1.0.4",
+    "version": "1.0.4",
     "description": "Continuation of the experimental emulator for the Nintendo Switch - yuzu",
     "homepage": "https://sudachi.emuplace.app/",
     "license": "GPL-3.0",
@@ -41,12 +41,12 @@
             "$relPath = ((Invoke-WebRequest https://sudachi.emuplace.app$jsPath).Content | Select-String -Pattern '/releases/sudachi-windows-v[\\d.]+.7z').Matches.Value",
             "return $relPath"
         ],
-        "regex": "/releases/sudachi-windows-(?<version>v[\\d.]+).7z"
+        "regex": "/releases/sudachi-windows-v(?<version>[\\d.]+).7z"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://sudachi.emuplace.app/releases/sudachi-windows-$version.7z"
+                "url": "https://sudachi.emuplace.app/releases/sudachi-windows-v$version.7z"
             }
         }
     }
