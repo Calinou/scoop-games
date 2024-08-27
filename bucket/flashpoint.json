@@ -19,6 +19,6 @@
         "regex": "Flashpoint\\s(\\d+(\\.\\d+)?)"
     },
     "autoupdate": {
-        "url": "https://download.unstable.life/upload/fp$versionstatic.7z"
+        "url": "https://download.unstable.life/upload/fp$cleanVersionstatic.7z"
     }
 }
