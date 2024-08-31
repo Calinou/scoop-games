@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/thesupersonic16/HedgeModManager/releases/latest",
-		"jsonpath": "$.tag_name"
+        "jsonpath": "$.tag_name"
     },
     "autoupdate": {
         "url": "https://github.com/thesupersonic16/HedgeModManager/releases/download/$version/HedgeModManager.exe"
