@@ -1,0 +1,27 @@
+{
+    "version": "v0.1.0",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/MegaAntiCheat/client-backend",
+    "description": "Fans made TF2 anticheat, which makes list of cheaters.",
+    "url": "https://github.com/MegaAntiCheat/client-backend/releases/download/v0.1.0/client_backend.exe#/megaanticheat.exe",
+    "hash": "25e961d3e0766a00a9517432e227960b8e194ab955c187979b7352707c2248f6",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/MegaAntiCheat/client-backend/releases/download/$version/client_backend.exe#/megaanticheat.exe"
+    },
+    "bin": "megaanticheat.exe",
+    "shortcuts": [
+        [
+            "megaanticheat.exe",
+            "MegaAntiCheat"
+        ]
+    ],
+    "post_install":[
+        "echo ''",
+        "echo ''",
+        "echo '-------------------------------------------------------------------------------------------'",
+        "echo 'Setup guide: https://github.com/MegaAntiCheat/client-backend?tab=readme-ov-file#usage-steps'",
+        "echo '-------------------------------------------------------------------------------------------'",
+        "echo ''"
+    ]
+}
