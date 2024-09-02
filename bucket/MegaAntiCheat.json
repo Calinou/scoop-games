@@ -20,7 +20,7 @@
         "echo ''",
         "echo ''",
         "echo '-------------------------------------------------------------------------------------------'",
-        "echo 'Setup guide: https://github.com/MegaAntiCheat/client-backend?tab=readme-ov-file#usage-steps'",
+        "echo 'Setup guide: https://github.com/MegaAntiCheat/client-backend#usage-steps'",
         "echo '-------------------------------------------------------------------------------------------'",
         "echo ''"
     ]
