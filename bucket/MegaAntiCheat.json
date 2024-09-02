@@ -16,12 +16,9 @@
             "MegaAntiCheat"
         ]
     ],
-    "post_install": [
-        "echo ''",
-        "echo ''",
-        "echo '-------------------------------------------------------------------------------------------'",
-        "echo 'Setup guide: https://github.com/MegaAntiCheat/client-backend#usage-steps'",
-        "echo '-------------------------------------------------------------------------------------------'",
-        "echo ''"
+    "notes": [
+        "Setup guide:",
+        "", 
+        "    https://github.com/MegaAntiCheat/client-backend#usage-steps",
     ]
 }
