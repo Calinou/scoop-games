@@ -2,7 +2,7 @@
     "version": "0.7.2",
     "description": "Rcon client for Minecraft",
     "homepage": "https://github.com/Tiiffi/mcrcon/",
-    "license": "Zlib license",
+    "license": "Zlib",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-windows-x86-64.zip",
