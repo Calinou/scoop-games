@@ -27,6 +27,7 @@
         "   }",
         "}"
     ],
+    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.ini\"",
     "bin": "pcsx2.exe",
     "shortcuts": [
         [
@@ -41,7 +42,6 @@
         "inis",
         "logs",
         "memcards",
-        "portable.ini",
         "shaders\\GSdx_FX_Settings.ini",
         "snaps",
         "sstates"
