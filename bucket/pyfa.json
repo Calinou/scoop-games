@@ -1,10 +1,10 @@
 {
-    "version": "2.59.2",
+    "version": "2.59.3",
     "homepage": "https://github.com/pyfa-org/Pyfa",
     "license": "GPL-3.0-only",
     "description": "Python fitting assistant, cross-platform fitting tool for EVE Online",
-    "url": "https://github.com/pyfa-org/Pyfa/releases/download/v2.59.2/pyfa-v2.59.2-win.zip",
-    "hash": "64cb5ea40d0b98f5180dd880dc1957e9c105688bf391c7c7e87786ec38aa5d34",
+    "url": "https://github.com/pyfa-org/Pyfa/releases/download/v2.59.3/pyfa-v2.59.3-win.zip",
+    "hash": "605b0ddc0ab0718c06139337e784da93b2188410a5f1b04c33d2d53ecb738421",
     "bin": "pyfa.exe",
     "shortcuts": [
         [
