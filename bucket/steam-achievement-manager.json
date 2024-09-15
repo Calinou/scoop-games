@@ -1,10 +1,10 @@
 {
-    "version": "7.0.25",
+    "version": "7.0.35",
     "homepage": "https://github.com/gibbed/SteamAchievementManager",
     "description": "Achievement manager for Steam",
     "license": "Zlib",
-    "url": "https://github.com/gibbed/SteamAchievementManager/releases/download/7.0.25/SteamAchievementManager-7.0.25.zip",
-    "hash": "c09e8128d00a6c0ca5e5595ba443393362a8b4596ffa5f008229b104532dd9a8",
+    "url": "https://github.com/gibbed/SteamAchievementManager/releases/download/7.0.35/SteamAchievementManager-7.0.35.zip",
+    "hash": "1a6aa7bf862b2d95481317b19c12e5081921556871c7aae329038a8b689eb14c",
     "bin": [
         "SAM.Game.exe",
         [
