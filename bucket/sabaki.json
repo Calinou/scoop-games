@@ -1,0 +1,50 @@
+{
+    "version": "0.52.0",
+    "description": "An elegant Go board and SGF editor for a more civilized age.",
+    "homepage": "https://sabaki.yichuanshen.de",
+    "license": "MIT",
+    "depends": "7zip",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SabakiHQ/Sabaki/releases/download/v0.52.0/sabaki-v0.52.0-win-x64-setup.exe#/setup.7z",
+            "installer": {
+                "script": [
+                    "try {7z x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\"}",
+                    "catch {Write-Error \"7Zip needs to be in the path\"; exit 1}"
+                ]
+            }
+        },
+        "32bit": {
+            "url": "https://github.com/SabakiHQ/Sabaki/releases/download/v0.52.0/sabaki-v0.52.0-win-ia32-setup.exe#/setup.7z",
+            "installer": {
+                "script": [
+                    "try {7z x \"$dir\\`$PLUGINSDIR\\app-32.7z\" -o\"$dir\"}",
+                    "catch {Write-Error \"7Zip needs to be in the path\"; exit 1}"
+                ]
+            }
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Recurse",
+    "bin": [
+        "Sabaki.exe"
+    ],
+    "shortcuts": [
+        [
+            "Sabaki.exe",
+            "Sabaki"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/SabakiHQ/Sabaki"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SabakiHQ/Sabaki/releases/download/v$version/sabaki-v$version-win-x64-setup.exe#/setup.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/SabakiHQ/Sabaki/releases/download/v$version/sabaki-v$version-win-ia32-setup.exe#/setup.7z"
+            }
+        }
+    }
+}
