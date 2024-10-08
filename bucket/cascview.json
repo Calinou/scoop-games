@@ -1,0 +1,28 @@
+{
+    "version": "2.4.0.250",
+    "description": "A tool for browsing and extracting files from CASC storages",
+    "homepage": "http://zezula.net/en/casc/main.html",
+    "license": "Freeware",
+    "url": "http://zezula.net/download/cascview_en.zip",
+    "hash": "3421d54194f8d9d2b370da81f0f3a8c1a15ae5fc9cb5eab7e5f6d6e31d8cc6eb",
+    "checkver": {
+        "regex": "(?<version>[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)"
+    },
+    "autoupdate": {
+        "url": "http://zezula.net/download/cascview_en.zip"
+    },
+    "architecture": {
+        "32bit": {
+            "extract_dir": "Win32"
+        },
+        "64bit": {
+            "extract_dir": "x64"
+        }
+    },
+    "shortcuts": [
+        [
+            "CascView.exe",
+            "CascView"
+        ]
+    ]
+}
