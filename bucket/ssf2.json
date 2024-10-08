@@ -1,0 +1,41 @@
+{
+    "version": "1.2.5.1",
+    "license": "Freeware",
+    "homepage": "https://www.supersmashflash.com/",
+    "description": "The most popular Smash fangame on the internet",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.supersmashflash.com/ssf2/downloads/2bfec13c/SSF2BetaWindows.v.1.2.5.1.portable.zip",
+            "hash": "1d875d37e15723ee3227f397563c101ef85b401d0d8f3b90439d54146cdd75a8",
+            "extract_dir": "SSF2BetaWindows.v.1.2.5.1.portable"
+        },
+        "32bit": {
+            "url": "https://cdn.supersmashflash.com/ssf2/downloads/2bfec13c/SSF2BetaWindows.32bit.v.1.2.5.1.portable.zip",
+            "hash": "1810d8c54b1432b13631f9b4268fabbb64105eb3242ba900978db647fc613f8b",
+            "extract_dir": "SSF2BetaWindows.32bit.v.1.2.5.1.portable"
+        }
+    },
+    "bin": "SSF2.exe",
+    "shortcuts": [
+        [
+            "SSF2.exe",
+            "Super Smash Flash 2"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.supersmashflash.com/play/ssf2/downloads/",
+        "regex": "(?<sublink>[a-z\\d]*)\\/SSF2BetaWindows(\\.32bit)?\\.v\\.(?<version>[\\d.]+)\\."
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.supersmashflash.com/ssf2/downloads/$matchSublink/SSF2BetaWindows.v.$version.portable.zip",
+                "extract_dir": "SSF2BetaWindows.v.$version.portable"
+            },
+            "32bit": {
+                "url": "https://cdn.supersmashflash.com/ssf2/downloads/$matchSublink/SSF2BetaWindows.32bit.v.$version.portable.zip",
+                "extract_dir": "SSF2BetaWindows.32bit.v.$version.portable"
+            }
+        }
+    }
+}
