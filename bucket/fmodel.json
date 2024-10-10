@@ -1,6 +1,6 @@
 {
     "version": "4.4.3.6",
-    "description": "FModel is an archive explorer for Unreal Engine games that uses CUE4Parse as its core parsing library, providing robust support for the latest UE4 and UE5 archive formats.",
+    "description": "Archive explorer for Unreal Engine games that uses CUE4Parse as its core parsing library, providing robust support for the latest UE4 and UE5 archive formats",
     "homepage": "https://github.com/4sval/FModel",
     "license": "GPL-3.0",
     "url": "https://github.com/4sval/FModel/releases/download/4.4.3.6/FModel.zip",
