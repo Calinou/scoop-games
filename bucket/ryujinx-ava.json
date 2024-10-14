@@ -1,19 +1,19 @@
 {
-    "version": "1.1.1403",
+    "version": "r0b111b3",
     "description": "A simple, experimental Nintendo Switch emulator (Avalonia UI test build)",
     "homepage": "https://ryujinx.org/",
     "license": {
         "identifier": "MIT",
-        "url": "https://github.com/Ryujinx/Ryujinx/blob/master/LICENSE.txt"
+        "url": "https://github.com/ryujinx-mirror/ryujinx/blob/mirror/master/LICENSE.txt"
     },
     "notes": [
         "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
-        "Learn more at https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide"
+        "Learn more at https://web.archive.org/web/20241001085156if_/https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&-Configuration-Guide"
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Ryujinx/release-channel-master/releases/download/1.1.1403/test-ava-ryujinx-1.1.1403-win_x64.zip",
-            "hash": "00b1f832c88e6a2c11101c0c91c3839ca14d61a826df6dbb8e29ab91562fba6a"
+            "url": "https://github.com/ryujinx-mirror/ryujinx/releases/download/r0b111b3/test-ava-ryujinx-r0b111b3-win_x64.zip",
+            "hash": "41e8d843173cd02568dc30918ed4b2625ffb46dfef291223d400410e84c35f5e"
         }
     },
     "extract_dir": "publish",
@@ -36,12 +36,13 @@
     ],
     "persist": "portable",
     "checkver": {
-        "github": "https://github.com/Ryujinx/release-channel-master"
+        "github": "https://github.com/ryujinx-mirror/ryujinx",
+        "regex": "/releases/tag/(r\\w{7})"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Ryujinx/release-channel-master/releases/download/$version/test-ava-ryujinx-$version-win_x64.zip"
+                "url": "https://github.com/ryujinx-mirror/ryujinx/releases/download/$version/test-ava-ryujinx-$version-win_x64.zip"
             }
         }
     }
