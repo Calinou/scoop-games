@@ -13,7 +13,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/vassalengine/vassal/releases/download/3.7.14/VASSAL-3.7.14-windows-x86_64.exe",
-            "hash": "dc357c603001a154a7cbf01ad36781c8eb3209062ee69631b7c95a6b88e4fd64"
+            "hash": "fb0cd20c1b227cd8966be920080f0e92b4e347e1375b571f9dfb8ce10b7a19ce"
         }
     },
     "bin": "VASSAL.exe",
