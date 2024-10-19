@@ -16,6 +16,9 @@
             "hash": "fb0cd20c1b227cd8966be920080f0e92b4e347e1375b571f9dfb8ce10b7a19ce"
         }
     },
+    "installer":{
+        "script":"Start-Process -FilePath \"$dir\\VASSAL-$version-windows-x86_64.exe\" -ArgumentList \"/S\", \"/D=$dir\" -Wait"
+    },
     "bin": "VASSAL.exe",
     "shortcuts": [
         [
@@ -23,6 +26,9 @@
             "Vassal"
         ]
     ],
+    "uninstaller":{
+        "script":"Start-Process -FilePath \"$dir\\uninst.exe\" -ArgumentList '/S' -Wait"
+    },
     "checkver": {
         "github": "https://github.com/vassalengine/vassal"
     },
