@@ -1,0 +1,36 @@
+{
+    "version": "3.7.14",
+    "description": "VASSAL is a game engine for building and playing online adaptations of board games and card games. Play live on the Internet or by email. VASSAL runs on all platforms, and is free, open-source software.",
+    "homepage": "https://vassalengine.org",
+    "license": {
+        "identifier": "LGPL-2.1-only",
+        "url": "https://github.com/vassalengine/vassal/raw/master/LICENSE"
+    },
+    "notes": "VASSAL 3.7 requires Java 11 or later.",
+    "suggest": {
+        "Java Runtime Environment": "java/temurin-jre"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vassalengine/vassal/releases/download/3.7.14/VASSAL-3.7.14-windows-x86_64.exe",
+            "hash": "dc357c603001a154a7cbf01ad36781c8eb3209062ee69631b7c95a6b88e4fd64"
+        }
+    },
+    "bin": "VASSAL.exe",
+    "shortcuts": [
+        [
+            "VASSAL.exe",
+            "Vassal"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/vassalengine/vassal"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vassalengine/vassal/releases/download/$version/VASSAL-$version-windows-x86_64.exe"
+            }
+        }
+    }
+}
