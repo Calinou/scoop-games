@@ -15,7 +15,7 @@
         "regex": "(\\S+)"
     },
     "autoupdate": {
-        "url": "https://github.com/MegaAntiCheat/client-backend/releases/download/v$version/client_backend.exe#/megaanticheat.exe"
+        "url": "https://beans.adastral.net/beans.exe"
     },
     "bin": "beans.exe",
     "post_install": [
