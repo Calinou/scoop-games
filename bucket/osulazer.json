@@ -1,10 +1,10 @@
 {
-    "version": "2024.1115.1",
+    "version": "2024.1115.2",
     "description": "A free-to-win rhythm game. Rhythm is just a click away!",
     "homepage": "https://osu.ppy.sh/",
     "license": "MIT",
-    "url": "https://github.com/ppy/osu/releases/download/2024.1115.1/osulazer-2024.1115.1-full.nupkg#/dl.7z",
-    "hash": "2ae4d8d4f74352dd07473e85c4dd5684f97b108c4958cf59baf49498bab77888",
+    "url": "https://github.com/ppy/osu/releases/download/2024.1115.2/osulazer-2024.1115.2-full.nupkg#/dl.7z",
+    "hash": "091b73905bc69fea60c6f8a45b9750b9c35c32edb1424c83a8fb1d9b7353dbe6",
     "extract_dir": "lib\\app",
     "pre_install": "Rename-Item -Path $dir/osu!.exe -NewName $dir/osulazer.exe",
     "bin": "osulazer.exe",
