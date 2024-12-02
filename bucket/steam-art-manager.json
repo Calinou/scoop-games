@@ -29,6 +29,6 @@
         "github": "https://github.com/Tormak9970/Steam-Art-Manager"
     },
     "autoupdate": {
-        "url": "https://github.com/Tormak9970/Steam-Art-Manager/releases/download/$version/steam-art-manager_$version.msi.zip"
+        "url": "https://github.com/Tormak9970/Steam-Art-Manager/releases/download/v$version/steam-art-manager_$version.msi.zip"
     }
 }
