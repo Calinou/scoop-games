@@ -1,6 +1,6 @@
 {
-    "version": "v0.3.0",
-    "description": "PS4 emulator for Windows,Linux,MacOS",
+    "version": "0.3.0",
+    "description": "PlayStation 4 emulator for Windows, Linux and macOS"
     "homepage": "https://shadps4.net/",
     "license": {
         "identifier": "GPL-2.0-only",
