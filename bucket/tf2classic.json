@@ -20,5 +20,8 @@
     ],
     "pre_uninstall": [
         "if ($cmd -eq \"uninstall\") { rm -r 'C:\\Program Files (x86)\\Steam\\steamapps\\sourcemods\\tf2classic' }"
+    ],
+    "notes": [
+        "Setup instructions: https://tf2classic.com/download"
     ]
 }
