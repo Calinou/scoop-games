@@ -24,17 +24,17 @@
     "uninstaller": {
         "script": "Copy-Item \"$dir\\settings.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     },
-	"post_install": [
+    "post_install": [
         "echo \"update bin/shortcuts\"",
         "$shell = New-Object -COM WScript.Shell",
         "$shortcut = $shell.CreateShortCut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\")",
         "$shortcut.TargetPath = \"$original_dir\\duckstation-qt-x64-ReleaseLTCG.exe\"",
         "$shortcut.Save()"
-	],
-	"post_uninstall": [
+    ],
+    "post_uninstall": [
         "echo \"update bin/shortcuts\"",
-		"Remove-Item \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\""
-	],
+        "Remove-Item \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\DuckStation (preview).lnk\""
+    ],
     "persist": [
         "bios",
         "cache",
