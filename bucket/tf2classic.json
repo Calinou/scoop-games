@@ -22,6 +22,6 @@
         "if ($cmd -eq \"uninstall\") { rm -r 'C:\\Program Files (x86)\\Steam\\steamapps\\sourcemods\\tf2classic' }"
     ],
     "notes": [
-        "Setup instructions: https://tf2classic.com/download"
+        "To run TF2 Classic, you must have Source SDK Base 2013 Multiplayer installed. If you do not have it, follow this link: steam://install/243750"
     ]
 }
