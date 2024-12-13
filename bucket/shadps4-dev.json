@@ -1,6 +1,6 @@
 {
     "version": "2024-12-12-5be807f",
-    "description": "PlayStation 4 emulator for Windows, Linux and macOS",
+    "description": "PlayStation 4 emulator for Windows, Linux and macOS (development version)",
     "homepage": "https://shadps4.net/",
     "license": {
         "identifier": "GPL-2.0-only",
