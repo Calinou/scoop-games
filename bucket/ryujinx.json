@@ -41,7 +41,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/GreemDev/Ryujinx/releases/download/$version/ryujinx-1.2.76-win_x64.zip"
+                "url": "https://github.com/GreemDev/Ryujinx/releases/download/$version/ryujinx-$version-win_x64.zip"
             }
         }
     }
