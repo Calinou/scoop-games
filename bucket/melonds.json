@@ -25,7 +25,8 @@
     ],
     "persist": "melonDS.ini",
     "checkver": {
-        "github": "https://github.com/melonDS-emu/melonDS"
+        "github": "https://github.com/melonDS-emu/melonDS",
+        "regex": "/releases/(0-9a-zA-Z.-)"
     },
     "autoupdate": {
         "url": "https://github.com/melonDS-emu/melonDS/releases/download/$version/melonDS-windows-x86_64.zip"
