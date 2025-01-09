@@ -32,8 +32,7 @@
         "       Copy-Item -Path \"$env:APPDATA\\xemu\\xemu\\*\" -Destination \"$persist_dir\" -Recurse",
         "       Remove-Item -Path \"$env:APPDATA\\xemu\" -Recurse",
         "   } else {",
-        "       $UserName = [System.Environment]::UserName",
-        "       '[sys.files]', \"eeprom_path = 'C:\\Users\\$UserName\\scoop\\apps\\xemu\\current\\eeprom\\eeprom.bin'\" | Set-Content \"$persist_dir\\xemu.toml\"",
+        "       New-item \"$persist_dir\\xemu.toml\" -ItemType File | Out-Null",
         "       New-item \"$persist_dir\\shader_cache_list\" -ItemType File | Out-Null",
         "   }",
         "}"
@@ -41,8 +40,9 @@
     "post_install": [
         "if (Test-Path \"$persist_dir\\eeprom.bin\") {",
         "   Move-Item -Path \"$persist_dir\\eeprom.bin\" -Destination \"$persist_dir\\eeprom\\eeprom.bin\"",
-        "   $UserName = [System.Environment]::UserName",
-        "   (Get-Content -Path \"$persist_dir\\xemu.toml\").Replace(\"eeprom_path = 'C:\\Users\\$UserName\\AppData\\Roaming\\xemu\\xemu\\eeprom.bin'\", \"eeprom_path = 'C:\\Users\\$UserName\\scoop\\apps\\xemu\\current\\eeprom\\eeprom.bin'\") | Set-Content -Path \"$persist_dir\\xemu.toml\"",
+        "   (Get-Content -Path \"$persist_dir\\xemu.toml\").Replace(\"eeprom_path = '$env:APPDATA\\xemu\\xemu\\eeprom.bin'\", \"eeprom_path = '$dir\\eeprom\\eeprom.bin'\") | Set-Content -Path \"$persist_dir\\xemu.toml\"",
+        "} else {",
+        "    '[sys.files]', \"eeprom_path = '$dir\\eeprom\\eeprom.bin'\" | Set-Content \"$persist_dir\\xemu.toml\"",
         "}"
     ],
     "bin": "xemu.exe",
