@@ -27,7 +27,7 @@
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
-        "   if (Test-Path \"$env:APPDATA\\xemu\\xemu\") {", 
+        "   if (Test-Path \"$env:APPDATA\\xemu\\xemu\") {",
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:APPDATA\\xemu\\xemu\\*\" -Destination \"$persist_dir\" -Recurse",
         "       Remove-Item -Path \"$env:APPDATA\\xemu\" -Recurse",
