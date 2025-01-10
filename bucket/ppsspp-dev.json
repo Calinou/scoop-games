@@ -1,12 +1,12 @@
 {
-    "version": "1.17.1-1327-g1fdb6379df",
+    "version": "1.18.1-759-gaa752ade6c",
     "description": "Sony PlayStation Portable (PSP) emulator. Development build",
     "homepage": "https://www.ppsspp.org",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://builds.ppsspp.org/builds/v1.17.1-1327-g1fdb6379df/ppsspp_win.zip",
-            "hash": "d1249747d920c4d4d5589fa0dccbca202966f4285bdc317171900ad8793be6d5",
+            "url": "https://builds.ppsspp.org/builds/v1.18.1-759-gaa752ade6c/ppsspp_win_v1.18.1-759-gaa752ade6c.zip",
+            "hash": "88dda1abb73c94107503a1d4e4a0e790acf82d341cbde1c0e41e55e2247af491",
             "shortcuts": [
                 [
                     "PPSSPPWindows64.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "32bit": {
-            "url": "https://builds.ppsspp.org/builds/v1.17.1-1327-g1fdb6379df/ppsspp_win.zip",
-            "hash": "d1249747d920c4d4d5589fa0dccbca202966f4285bdc317171900ad8793be6d5",
+            "url": "https://builds.ppsspp.org/builds/v1.18.1-759-gaa752ade6c/ppsspp_win_v1.18.1-759-gaa752ade6c.zip",
+            "hash": "88dda1abb73c94107503a1d4e4a0e790acf82d341cbde1c0e41e55e2247af491",
             "shortcuts": [
                 [
                     "PPSSPPWindows.exe",
@@ -25,8 +25,8 @@
             ]
         },
         "arm64": {
-            "url": "https://builds.ppsspp.org/builds/v1.17.1-1327-g1fdb6379df/PPSSPPWindowsARM64.zip",
-            "hash": "22a581a22c01440fc1f835e0d581fdf83d4ed197a9682e914e2bf09174f8ce92",
+            "url": "https://builds.ppsspp.org/builds/v1.18.1-759-gaa752ade6c/PPSSPPWindowsARM64_v1.18.1-759-gaa752ade6c.zip",
+            "hash": "628347d24be3337e72d4cecb5f87e86fbe6f6ddc158a81cc8b959d6c5296c0c9",
             "shortcuts": [
                 [
                     "PPSSPPWindowsARM64.exe",
@@ -54,13 +54,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/ppsspp_win.zip"
+                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/ppsspp_win_v$matchVersion-$matchBuild-g$matchCommit.zip"
             },
             "32bit": {
-                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/ppsspp_win.zip"
+                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/ppsspp_win_v$matchVersion-$matchBuild-g$matchCommit.zip"
             },
             "arm64": {
-                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/PPSSPPWindowsARM64.zip"
+                "url": "https://builds.ppsspp.org/builds/v$matchVersion-$matchBuild-g$matchCommit/PPSSPPWindowsARM64_v$matchVersion-$matchBuild-g$matchCommit.zip"
             }
         }
     }
