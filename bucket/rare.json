@@ -1,6 +1,7 @@
 {
     "version": "1.11.3",
-    "homepage": "https://github.com/Dummerle/Rare",
+    "homepage": "https://github.com/RareDevs/Rare",
+
     "description": "A graphical frontend for Legendary, the FOSS Epic Games Launcher alternative",
     "license": "GPL-3.0",
     "architecture": {
