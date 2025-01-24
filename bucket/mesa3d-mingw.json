@@ -1,6 +1,6 @@
 {
     "version": "24.3.3",
-    "description": "Windows builds of Mesa3D, an open source implementation of OpenGL, OpenGL ES, Vulkan and other specifications",
+    "description": "Windows builds of Mesa3D, an open source implementation of OpenGL, OpenGL ES, Vulkan and other specifications (MinGW build)",
     "homepage": "https://github.com/pal1000/mesa-dist-win",
     "license": {
         "identifier": "MIT",
