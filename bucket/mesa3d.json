@@ -7,6 +7,7 @@
         "url": "https://docs.mesa3d.org/license.html"
     },
     "url": "https://github.com/pal1000/mesa-dist-win/releases/download/24.3.3/mesa3d-24.3.3-release-msvc.7z",
+    "hash": "a4372a320e3875a7ddf8c07de8dcb135bd3dc32bf55b1807d98d42527555e08f",
     "notes": [
         "",
         "This project provides multiple drivers and deployment options:",
