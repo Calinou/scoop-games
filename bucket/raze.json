@@ -11,7 +11,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/ZDoom/Raze/releases/download/1.11.0/raze-1.11.0a-windows.zip",
-            "hash": "91414f368ad20e7b36726bae8319de2d9c8b582770216209945db5a162eea066"
+            "hash": "5ac388e86cc9f635d2b20654bc44790adc47c193111ab082fcf1593dcab33858"
         }
     },
     "bin": "raze.exe",
