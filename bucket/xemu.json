@@ -1,5 +1,5 @@
 {
-    "version": "0.8.29",
+    "version": "0.8.31",
     "description": "Original Xbox Emulator",
     "homepage": "https://xemu.app",
     "license": {
@@ -16,12 +16,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.29/xemu-win-x86_64-release.zip",
-            "hash": "83891aabda7077c759b65f1168c36974eabdec81c8831da1140b197f59c68274"
+            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.31/xemu-win-x86_64-release.zip",
+            "hash": "3bf0ed0e0dbf022d942221919a341564dc3a3cbc887c4a17e6aaeff47574c7c7"
         },
         "arm64": {
-            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.29/xemu-win-aarch64-release.zip",
-            "hash": "55ee4cd5362de02445d800aeecf1b7cff76cf116bd1ca3cc2ab5275d3c90b066"
+            "url": "https://github.com/xemu-project/xemu/releases/download/v0.8.31/xemu-win-aarch64-release.zip",
+            "hash": "08a91cdffca0e395b36defdb28bd0060cf1c605b5bcceab3b6b49273921d2f9b"
         }
     },
     "pre_install": [
