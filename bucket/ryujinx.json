@@ -12,6 +12,7 @@
     ],
     "architecture": {
         "64bit": {
+            "url": "https://github.com/Ryubing/Stable-Releases/releases/download/1.2.86/ryujinx-1.2.86-win_x64.zip",
             "hash": "e06183dbcf4c24a83960fa2277a83a1ff9401d08a5f1e75911e5a954d1f27f9d"
         }
     },
