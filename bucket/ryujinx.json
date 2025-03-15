@@ -36,7 +36,7 @@
     ],
     "persist": "portable",
     "checkver": {
-        "github": "https://git.ryujinx.app/ryubing/ryujinx"
+        "github": "https://github.com/Ryubing/Stable-Releases"
     },
     "autoupdate": {
         "architecture": {
