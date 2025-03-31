@@ -24,7 +24,7 @@
     "persist": "data",
     "checkver": {
         "url": "https://api.github.com/repos/ZDoom/Raze/releases/latest",
-        "regex": "releases/download/([\\d.]+)/Raze-([\\d.]+[a-z]?)-windows\\.zip",
+        "regex": "releases/download/([\\d.]+)/Raze-(\\1[a-z]?)-windows\\.zip",
         "replace": "$2"
     },
     "autoupdate": {
