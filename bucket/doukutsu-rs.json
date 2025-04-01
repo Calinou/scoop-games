@@ -1,6 +1,6 @@
 {
     "version": "0.102.0-beta7",
-    "description": "A faithful and open-source remake of Cave Story's engine written in Rust",
+    "description": "Faithful reimplementation Cave Story's engine written in Rust",
     "homepage": "https://github.com/doukutsu-rs/doukutsu-rs",
     "license": "Custom",
     "notes": [
