@@ -6,8 +6,12 @@
         "identifier": "BSD-3-Clause",
         "url": "https://github.com/xenia-canary/xenia-canary/blob/canary_experimental/LICENSE"
     },
-    "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/0771938/xenia_canary_windows.zip",
-    "hash": "aaf0a88f4c0dd5d5283b7a79c9e2d247edde2a03f2e17ae836971f9fb8627e14",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/0771938/xenia_canary_windows.zip",
+            "hash": "aaf0a88f4c0dd5d5283b7a79c9e2d247edde2a03f2e17ae836971f9fb8627e14"
+        }
+    },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
