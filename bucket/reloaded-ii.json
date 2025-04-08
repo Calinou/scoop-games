@@ -1,6 +1,6 @@
 {
     "version": "1.28.8",
-    "description": "Universal .NET Core Powered Modding Framework for any Native Game X86, X64",
+    "description": "Universal .NET-powered modding framework for any native x86/x64 game",
     "homepage": "https://reloaded-project.github.io/Reloaded-II/",
     "license": {
         "identifier": "GPL-3.0-only",
