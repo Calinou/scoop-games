@@ -24,7 +24,7 @@
                     "Reloaded-II32.exe",
                     "Reloaded-II"
                 ]
-            ],
+            ]
         },
         "64bit": {
             "bin": [
@@ -46,7 +46,7 @@
         "Mods",
         "Plugins",
         "User"
-    ]
+    ],
     "checkver": {
         "github": "https://github.com/Reloaded-Project/Reloaded-II"
     },
