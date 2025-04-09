@@ -1,13 +1,13 @@
 {
-    "version": "4.0.0-6413-0e0f0f7",
+    "version": "4.0.0-6560-7d24088",
     "description": "Nintendo 64 emulator",
     "homepage": "https://www.pj64-emu.com/",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/project64/project64/blob/develop/license.md"
     },
-    "url": "https://www.pj64-emu.com/file/setup-project64-Dev-4-0-0-6413-0e0f0f7/",
-    "hash": "b2fb27d14917ebb6c52760920e5505cb2e353a792b0fb148bfd4bf7a3596313d",
+    "url": "https://www.pj64-emu.com/file/setup-project64-Dev-4-0-0-6560-7d24088/",
+    "hash": "74ce7585c7edcd1962a40a32a7468007d5f6e10d93bd34463b2937d48043710a",
     "bin": [
         [
             "Project64.exe",

@@ -1,5 +1,5 @@
 {
-    "version": "12.6",
+    "version": "14.3",
     "description": "Hook into (mostly) emulators to allow playing rail shooter games with up to 4 lightguns or HID devices",
     "homepage": "https://github.com/argonlefou/DemulShooter",
     "license": "Unknown",
@@ -8,8 +8,8 @@
         "The usage instructions for the app can be found here: https://github.com/argonlefou/DemulShooter/wiki/Usage",
         ""
     ],
-    "url": "https://github.com/argonlefou/DemulShooter/releases/download/v12.6/DemulShooter_v12.6.zip",
-    "hash": "6b0938d266a96470da24755175d8a425e46e8b9a0c03dd4264f9b5838bd47d09",
+    "url": "https://github.com/argonlefou/DemulShooter/releases/download/v14.3/DemulShooter_v14.3.zip",
+    "hash": "51bf4a0acd50a9cb31a8dbf1a62830cefa2e071f94351ae545ab73c44cb4df12",
     "pre_install": "if (!(Test-Path \"$persist_dir\\config.ini\")) { New-Item -ItemType File \"$dir\\config.ini\" | Out-Null }",
     "shortcuts": [
         [

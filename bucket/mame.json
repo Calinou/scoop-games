@@ -1,5 +1,5 @@
 {
-    "version": "0.266",
+    "version": "0.276",
     "description": "Arcade machine emulator",
     "homepage": "http://mamedev.org",
     "license": {
@@ -28,8 +28,8 @@
             ]
         },
         "64bit": {
-            "url": "https://github.com/mamedev/mame/releases/download/mame0266/mame0266b_64bit.exe#/dl.7z",
-            "hash": "d82402f59f2898696461bee8981cc01635b58259018d352c1402e1e042c310fc",
+            "url": "https://github.com/mamedev/mame/releases/download/mame0276/mame0276b_64bit.exe#/dl.7z",
+            "hash": "12499709a4cfea351b997762c2e6399f7edc70855ec68efbc419024b51f9ffcc",
             "pre_install": [
                 "if(!(Test-Path \"$persist_dir\\mame.ini\")) {",
                 "   Start-Process \"$dir\\mame.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"-createconfig\"",
@@ -37,10 +37,18 @@
                 "}"
             ],
             "bin": [
-                [
-                    "mame.exe",
-                    "mame"
-                ]
+                "castool.exe",
+                "chdman.exe",
+                "floptool.exe",
+                "imgtool.exe",
+                "jedutil.exe",
+                "ldresample.exe",
+                "ldverify.exe",
+                "mame.exe",
+                "nltool.exe",
+                "nlwav.exe",
+                "romcmp.exe",
+                "unidasm.exe"
             ],
             "shortcuts": [
                 [

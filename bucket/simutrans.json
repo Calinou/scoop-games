@@ -1,10 +1,10 @@
 {
-    "version": "124.1",
+    "version": "124.3.1",
     "description": "Transport management simulation game",
     "homepage": "https://www.simutrans.com/",
     "license": "Artistic-1.0",
-    "url": "https://downloads.sourceforge.net/project/simutrans/simutrans/124-1/simuwin-sdl-124-1.zip",
-    "hash": "sha1:f3ed815994387066cb9c5e9637c6f5bbbeeeae76",
+    "url": "https://downloads.sourceforge.net/project/simutrans/simutrans/124-3-1/simuwin-sdl-124-3-1.zip",
+    "hash": "sha1:3fbe26f83c732d3d189adf4017ddfbcb4ffa600a",
     "extract_dir": "simutrans",
     "bin": "simutrans.exe",
     "shortcuts": [

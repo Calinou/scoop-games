@@ -1,10 +1,10 @@
 {
-    "version": "0.6.4",
+    "version": "0.7.8",
     "description": "Rosalie's Mupen GUI is a free and open source mupen64plus GUI",
     "homepage": "https://github.com/Rosalie241/RMG",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/Rosalie241/RMG/releases/download/v0.6.4/RMG-Portable-Windows64-v0.6.4.zip",
-    "hash": "0928cff1ad7d9f35d07b6c1c608aeb1eced94845ac3f03b6c182b525e1f60686",
+    "url": "https://github.com/Rosalie241/RMG/releases/download/v0.7.8/RMG-Portable-Windows64-v0.7.8.zip",
+    "hash": "34aa586d8e101c2f879dcf681d8b2b4c92c963174fe46225ac9768d9878670b3",
     "bin": "RMG.exe",
     "shortcuts": [
         [

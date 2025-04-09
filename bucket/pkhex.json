@@ -1,10 +1,10 @@
 {
-    "version": "24.06.03",
+    "version": "25.02.23",
     "description": "Pokémon core series save editor",
     "license": "GPL-3.0-only",
     "homepage": "https://projectpokemon.org/pkhex/",
     "url": "https://github.com/kwsch/PKHeX/raw/master/Directory.Build.props",
-    "hash": "6109c6f716145e8a4c2b51071ecba840095527cc93f03274c177482d80ea5d00",
+    "hash": "e23d57e2c1a0c63f206cdcf29cfda0eaa58cf188faa9d37338a99d1c65d7c34d",
     "shortcuts": [
         [
             "PKHeX.exe",

@@ -1,5 +1,5 @@
 {
-    "version": "20240513",
+    "version": "20250302",
     "description": "Free, enhanced port of the classic FPS Marathon trilogy by Bungie Software",
     "homepage": "https://alephone.lhowon.org/",
     "license": {
@@ -7,19 +7,19 @@
         "url": "https://github.com/Aleph-One-Marathon/alephone/blob/master/COPYING"
     },
     "url": [
-        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20240513/Marathon-20240513-Win.zip",
-        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20240513/Marathon2-20240513-Win.zip",
-        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20240513/MarathonInfinity-20240513-Win.zip"
+        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250302/Marathon-20250302-Win.zip",
+        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250302/Marathon2-20250302-Win.zip",
+        "https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20250302/MarathonInfinity-20250302-Win.zip"
     ],
     "hash": [
-        "ec443faec0aeddde140edc7f0c09fe4ebfbf5da944f534759065a34568cfebb5",
-        "92e3fdb36ca7d770d36b00ea03405697179e44ea2213791f2879342217f354c7",
-        "161af73c95cc1e91d1a9f98a988149e032f871fa02fc1d6210c909586d052c1f"
+        "68c0661dea54cceb6e32139f9edca865b468dcf906d481c2dd85003a55be3380",
+        "87acab0eed111355656c890254dc56c598dd2b9554224e029766ef0592300890",
+        "760e58f7a70e7c79f68ecda3dcf29311a4b1b25f4267074bd9e855ac969eeb26"
     ],
     "extract_dir": [
-        "Marathon-20240513",
-        "Marathon2-20240513",
-        "MarathonInfinity-20240513"
+        "Marathon-20250302",
+        "Marathon2-20250302",
+        "MarathonInfinity-20250302"
     ],
     "extract_to": [
         "Marathon 1",
@@ -28,15 +28,15 @@
     ],
     "shortcuts": [
         [
-            "Marathon 1/Marathon.exe",
+            "Marathon 1/Classic Marathon.exe",
             "Aleph One (Marathon 1)"
         ],
         [
-            "Marathon 2/Marathon 2.exe",
+            "Marathon 2/Classic Marathon 2.exe",
             "Aleph One (Marathon 2)"
         ],
         [
-            "Marathon Infinity/Marathon Infinity.exe",
+            "Marathon Infinity/Classic Marathon Infinity.exe",
             "Aleph One (Marathon Infinity)"
         ]
     ],

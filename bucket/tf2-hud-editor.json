@@ -1,19 +1,13 @@
 {
-    "version": "3.2",
+    "version": "3.5",
     "description": "Install and customize your favorite custom Team Fortress 2 HUDs",
     "homepage": "https://criticalflaw.ca/TF2HUD.Editor",
     "license": "MIT",
-    "notes": ".NET 7.0 Runtime is required.",
+    "notes": ".NET 8.0 Runtime is required.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/3.2/tf2hud-editor-x64.zip",
-            "hash": "415fc665986fcb7eb2f3f226105408b5201cc841117a58cdd1a159e84af8e918",
-            "extract_dir": "tf2hud-editor"
-        },
-        "32bit": {
-            "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/3.2/tf2hud-editor-x86.zip",
-            "hash": "f07d92933e90524570c1bc9eda5ed13860b5ab4990e1676c399771fefb512c9c",
-            "extract_dir": "tf2hud-editor"
+            "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/3.5/tf2hud-editor-3.5.zip",
+            "hash": "29a0b9019ab17bb1808ba496fa98da43544201d86d1879002c9d800ddfae304e"
         }
     },
     "shortcuts": [
@@ -28,10 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/$version/tf2hud-editor-x64.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/$version/tf2hud-editor-x86.zip"
+                "url": "https://github.com/CriticalFlaw/TF2HUD.Editor/releases/download/$version/tf2hud-editor-$version.zip"
             }
         }
     }

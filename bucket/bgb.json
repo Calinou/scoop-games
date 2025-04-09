@@ -1,12 +1,12 @@
 {
-    "version": "1.6.3",
+    "version": "1.6.5",
     "description": "GameBoy emulator/debugger",
     "homepage": "http://bgb.bircd.org/",
     "license": "Freeware",
     "architecture": {
         "32bit": {
             "url": "http://bgb.bircd.org/bgb.zip",
-            "hash": "e7bcf76ad07e990390ffdc6f22bec19a7ee1332cf00a16d70dab12208411618c",
+            "hash": "eaa462ad648e0384a20bc2c213f79de28af95b1e7fadee501946690da45e856b",
             "bin": "bgb.exe",
             "shortcuts": [
                 [
@@ -17,7 +17,7 @@
         },
         "64bit": {
             "url": "http://bgb.bircd.org/bgbw64.zip",
-            "hash": "fbcde05d140fcdfd6a9ba5e61b7787aa97d9914d14398a88fb142dd27b869876",
+            "hash": "21de87df53d1b8023c0f29e2fe42f3fa835ff0be6138d34cbc1d3861afb98d53",
             "bin": "bgb64.exe",
             "shortcuts": [
                 [

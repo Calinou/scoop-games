@@ -1,12 +1,12 @@
 {
-    "version": "v1.0.2",
+    "version": "1.0.15",
     "description": "Continuation of the experimental emulator for the Nintendo Switch - yuzu",
-    "homepage": "https://github.com/sudachi-emu/sudachi",
+    "homepage": "https://sudachi.emuplace.app/",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sudachi-emu/sudachi/releases/download/v1.0.2/v1.0.2-windows.7z",
-            "hash": "434fd55bb04d1cc2ee527c0b6c892e72fe6c3a6528eb16e204a237ff9cb99d2a"
+            "url": "https://github.com/emuplace/sudachi.emuplace.app/releases/download/v1.0.15/sudachi-windows-v1.0.15.7z",
+            "hash": "9117709e0b585c96c1770859f5baa46a754759ee475b359d86e7306df4b29c5f"
         }
     },
     "pre_install": [
@@ -17,7 +17,8 @@
         "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:APPDATA\\sudachi\\*\" -Destination \"$persist_dir\\user\" -Recurse",
         "       Remove-Item -Path \"$env:APPDATA\\sudachi\" -Recurse",
-        "   }"
+        "   }",
+        "}"
     ],
     "bin": [
         "sudachi.exe",
@@ -34,13 +35,14 @@
         "plugins"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/sudachi-emu/sudachi/releases?per_page=1",
-        "jsonpath": "$[?(@.prerelease == false)].tag_name"
+        "url": "https://api.github.com/repos/emuplace/sudachi.emuplace.app/releases",
+        "jsonpath": "$[?(@.assets[?(@.name =~ /.*windows.*/i)])].tag_name",
+        "regex": "v(?<version>[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/sudachi-emu/sudachi/releases/download/$version/$version-windows.7z"
+                "url": "https://github.com/emuplace/sudachi.emuplace.app/releases/download/v$version/sudachi-windows-v$version.7z"
             }
         }
     }

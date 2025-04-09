@@ -1,0 +1,32 @@
+{
+    "version": "1.6.3",
+    "description": "Modding Platform for GI, HSR, WW and ZZZ",
+    "homepage": "https://github.com/SpectrumQT/XXMI-Launcher",
+    "url": "https://github.com/SpectrumQT/XXMI-Launcher/releases/download/v1.6.3/XXMI-Launcher-Portable-v1.6.3.zip",
+    "hash": "27a4807e388b2c21554f5d4738c84d91fe2cb49569e25293655292adc071b5ac",
+    "license": "GPL-3.0-only",
+    "shortcuts": [
+        [
+            "Resources\\Bin\\XXMI Launcher.exe",
+            "XXMI Launcher"
+        ]
+    ],
+    "bin": [
+        [
+            "Resources\\Bin\\XXMI Launcher.exe",
+            "xxmi"
+        ]
+    ],
+    "persist": [
+        "ZZMI",
+        "SRMI",
+        "GIMI",
+        "WWMI"
+    ],
+    "checkver": {
+        "github": "https://github.com/SpectrumQT/XXMI-Launcher"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SpectrumQT/XXMI-Launcher/releases/download/v$version/XXMI-Launcher-Portable-v$version.zip"
+    }
+}

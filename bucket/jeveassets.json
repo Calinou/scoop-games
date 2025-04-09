@@ -1,10 +1,10 @@
 {
-    "version": "jeveassets-7.9.0",
+    "version": "jeveassets-7.9.4",
     "homepage": "https://github.com/GoldenGnu/jeveassets",
     "license": "GPL-2.0-only",
     "description": "jEveAssets is an out-of-game asset manager for EVE Online, written in Java",
-    "url": "https://github.com/GoldenGnu/jeveassets/releases/download/jeveassets-7.9.0/jeveassets-7.9.0.zip",
-    "hash": "016dfe998a6dd05bb5e2db66692ae03fe78b0b8195b666c3f8c32d900407fdc4",
+    "url": "https://github.com/GoldenGnu/jeveassets/releases/download/jeveassets-7.9.4/jeveassets-7.9.4.zip",
+    "hash": "f0cf32aa22e27663f67c4164d18232086b8ca1d139bc7e98978a3cc83ca20a4f",
     "suggest": {
         "JRE": "java/temurin-jre"
     },

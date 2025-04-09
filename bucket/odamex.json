@@ -1,5 +1,5 @@
 {
-    "version": "10.5.0",
+    "version": "11.0.0",
     "description": "Multiplayer-oriented source port for Doom",
     "homepage": "https://odamex.net/",
     "license": "GPL-2.0-or-later",
@@ -10,12 +10,12 @@
     ],
     "architecture": {
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/10.5.0/odamex-win32-10.5.0.zip",
-            "hash": "sha1:c91da15a61e0734b3b62172ced1cffd50d3daebf"
+            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/11.0.0/odamex-win32-11.0.0.zip",
+            "hash": "sha1:21089cb7c88a457cb0c28be54611bb5c01e87453"
         },
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/10.5.0/odamex-win64-10.5.0.zip",
-            "hash": "sha1:b7fb8495d320b54dc8cbd5b53b88abe48cd448c6"
+            "url": "https://downloads.sourceforge.net/project/odamex/Odamex/11.0.0/odamex-win64-11.0.0.zip",
+            "hash": "sha1:e9d24407c4da61c742cf7f1bbf159cfcdfea78a2"
         }
     },
     "pre_install": "New-Item -ItemType Directory -Force -Path $persist_dir\\..\\_doom | Out-Null",

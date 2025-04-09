@@ -1,5 +1,5 @@
 {
-    "version": "2.7.0",
+    "version": "3.2.0",
     "description": "Open source reimplementation of the game Jazz Jackrabbit 2",
     "homepage": "http://deat.tk/jazz2/",
     "license": "GPL-3.0-only",
@@ -22,8 +22,8 @@
         "Now you've a complete edition to copy to the Source dir of Jazz² Resurrection!",
         ""
     ],
-    "url": "https://github.com/deathkiller/jazz2/releases/download/2.7.0/Jazz2_2.7.0_Windows.zip",
-    "hash": "77220060437b32cdf7600aaeca225e05d559e946a3a32a88c0fc7278abb27e77",
+    "url": "https://github.com/deathkiller/jazz2/releases/download/3.2.0/Jazz2_3.2.0_Windows.zip",
+    "hash": "cb3d131521b414d7d07e8caddd62d833a40f010bd9c2a1342fd680cf0ec4e88e",
     "architecture": {
         "64bit": {
             "extract_dir": "x64"

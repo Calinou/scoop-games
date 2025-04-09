@@ -1,5 +1,5 @@
 {
-    "version": "4.11.3",
+    "version": "4.14.1",
     "description": "Modern source port for Doom, Heretic, Hexen and more",
     "homepage": "https://zdoom.org/",
     "license": "GPL-3.0-or-later",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ZDoom/gzdoom/releases/download/g4.11.3/gzdoom-4-11-3.a.-Windows-64bit.zip",
-            "hash": "9ba87f54b7da13d65ef295404480441f727479b44efb65a51dae54691e2786b7"
+            "url": "https://github.com/ZDoom/gzdoom/releases/download/g4.14.1/gzdoom-4-14-1-Windows.zip",
+            "hash": "cdfad7007cb4ae73206f203b7f9c9dc02ef3cba1ed741517586b716562d681d1"
         }
     },
     "pre_install": [
@@ -40,7 +40,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ZDoom/gzdoom/releases/download/g$version/gzdoom-$dashVersion-Windows-64bit.zip"
+                "url": "https://github.com/ZDoom/gzdoom/releases/download/g$version/gzdoom-$dashVersion-Windows.zip"
             }
         }
     }
