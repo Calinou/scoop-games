@@ -39,8 +39,6 @@
     "persist": [
         "cache",
         "cache_host",
-        "cache0",
-        "cache1",
         "content",
         "patches",
         "recent.toml",
