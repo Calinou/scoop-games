@@ -1,5 +1,5 @@
 {
-    "version": "20250406155356-0771938",
+    "version": "20250420211300-179591c",
     "description": "Xbox 360 Emulator Research Project (development version)",
     "homepage": "https://github.com/xenia-canary/xenia-canary",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/0771938/xenia_canary_windows.zip",
-            "hash": "aaf0a88f4c0dd5d5283b7a79c9e2d247edde2a03f2e17ae836971f9fb8627e14"
+            "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/179591c/xenia_canary_windows.zip",
+            "hash": "705a84bc9911dd8af5994af3ce708846c17e6a48f381ddfac7d8cf7286159ac6"
         }
     },
     "pre_install": [
@@ -46,14 +46,14 @@
     ],
     "checkver": {
         "url": "https://github.com/xenia-canary/xenia-canary-releases/releases.atom",
+        "regex": "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}):(?<second>\\d{2})Z (?<commit>[a-f0-9]+)_canary_experimental",
+        "replace": "${year}${month}${day}${hour}${minute}${second}-${commit}",
         "script": [
             "$xml = [xml]$page",
             "$updated = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].updated",
             "$title = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].title",
             "Write-Output \"$updated $title\""
-        ],
-        "regex": "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}):(?<second>\\d{2})Z (?<commit>[a-f0-9]+)_canary_experimental",
-        "replace": "${year}${month}${day}${hour}${minute}${second}-${commit}"
+        ]
     },
     "autoupdate": {
         "architecture": {
