@@ -1,6 +1,6 @@
 {
     "version": "5.15.2",
-    "description": "A one-click tool for the daily tasks of Arknights, supporting all clients.",
+    "description": "A one-click tool for the daily tasks of Arknights, supporting all clients",
     "homepage": "https://github.com/MaaAssistantArknights/MaaAssistantArknights",
     "license": "AGPL-3.0",
     "architecture": {
