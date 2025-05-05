@@ -1,0 +1,30 @@
+{
+    "homepage": "http://www.exodusemulator.com/",
+    "description": "Cycle-accurate Genesis/MegaDrive emulator",
+    "version": "2.1",
+    "license": "MS-RL",
+    "url": "http://www.exodusemulator.com/index.php/downloads/release-archive/item/download/18_30d4a397ceee5a06d048e8956ed608ab#/dl.zip",
+    "hash": "e390f44ac9efd0dcc62740b8def45011f84f5f9e62aae4d1b48feb37b2377340",
+    "extract_dir": "Exodus_2.1",
+    "bin": "Exodus.exe",
+    "shortcuts": [
+        [
+            "Exodus.exe",
+            "Exodus"
+        ]
+    ],
+    "persist": [
+        "settings.xml",
+        "Captures",
+        "PersistentState",
+        "Savestates"
+    ],
+    "checkver": {
+        "url": "http://www.exodusemulator.com/downloads/current-release",
+        "regex": "<td>Exodus ([\\d\\._]+)(?:.*\\n).*release-archive\\/item\\/download\\/(?<num>[\\d_a-z]+)"
+    },
+    "autoupdate": {
+        "url": "http://www.exodusemulator.com/index.php/downloads/release-archive/item/download/$matchNum#/dl.zip",
+        "extract_dir": "Exodus_$version"
+    }
+}
