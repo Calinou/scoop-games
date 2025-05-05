@@ -1,0 +1,72 @@
+{
+    "homepage": "https://github.com/punesemu/puNES",
+    "description": "Cycle-accurate NES/FDS emulator (WIP Build D3D9 version)",
+    "version": "wip.b8d8698.224",
+    "license": "GPL-2.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://ci.appveyor.com/api/buildjobs/fl47wc6mu6rxt67k/artifacts/punes32.wip.d3d9.zip",
+            "hash": "c54a726f04ecb388b76420811a1110f550aa3d959df6543921a69f8ae0bedc64"
+        },
+        "64bit": {
+            "url": "https://ci.appveyor.com/api/buildjobs/fl47wc6mu6rxt67k/artifacts/punes64.wip.d3d9.zip",
+            "hash": "031f1f93731e1faa36d8d3879827a411656952fd86e3deefe91283569335c6f0"
+        }
+    },
+    "installer": {
+        "script": "Move-Item \"$dir\\punes.exe\" \"$dir\\punes_p.exe\""
+    },
+    "bin": [
+        [
+            "punes_p.exe",
+            "punes-wip-d3d9"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "punes_p.exe",
+            "puNES\\puNES WIP (D3D9)"
+        ]
+    ],
+    "persist": [
+        "bios",
+        "cheat",
+        "diff",
+        "pgs",
+        "prb",
+        "save",
+        "screenshot",
+        "shp"
+    ],
+    "checkver": {
+        "url": "https://ci.appveyor.com/api/projects/punesemu/punes/",
+        "regex": "\"jobId\":\"(?<jobid>.*?)\".*\"version\":\"(?<version>.*?)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/punes32.wip.d3d9.zip"
+            },
+            "64bit": {
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/punes64.wip.d3d9.zip"
+            }
+        }
+    },
+    "post_install": [
+        "'puNES.cfg', 'input.cfg', 'recent.cfg' | ForEach-Object {",
+        "    if (!(Test-Path \"$persist_dir\\$_.bak\")) {",
+        "        New-Item -ItemType File \"$dir\\$_\" | Out-Null",
+        "    } else {",
+        "        Copy-Item \"$persist_dir\\$_.bak\" \"$dir\\$_\" -Force",
+        "    }",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "'puNES.cfg', 'input.cfg', 'recent.cfg' | ForEach-Object {",
+            "    Copy-Item \"$dir\\$_\" \"$persist_dir\\$_.bak\" -Force",
+            "}"
+        ]
+    },
+    "notes": "Configuration files cannot be persisted, but will be retained during the update"
+}
