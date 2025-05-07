@@ -17,6 +17,6 @@
         "regex": "tags/([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/$version/UndertaleModTool_v$version-Windows.zip",
+        "url": "https://github.com/UnderminersTeam/UndertaleModTool/releases/download/$version/UndertaleModTool_v$version-Windows.zip"
     }
 }
