@@ -1,7 +1,6 @@
 {
     "version": "1.7.0",
     "description": "Play and manage your cartridges using Epilogue cartridge readers",
-
     "homepage": "https://www.epilogue.co/",
     "license": "Freeware",
     "architecture": {
