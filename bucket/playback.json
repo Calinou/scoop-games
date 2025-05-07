@@ -2,7 +2,7 @@
     "version": "1.7.0",
     "description": "Playback is an application which allows you to play and manage your cartridges using Epilogue cartridge readers",
     "homepage": "https://www.epilogue.co/",
-    "license": "Unknown",
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://epilogue.nyc3.cdn.digitaloceanspaces.com/releases/software/Playback/version/1.7.0/release/windows/playback-setup.exe",
