@@ -10,10 +10,17 @@
         "ATTENTION: Ryujinx requires Nintendo Switch firmware and a prod.keys file to function.",
         "Learn more at https://git.ryujinx.app/ryubing/ryujinx/-/wikis/FAQ-&-Troubleshooting"
     ],
+    "suggest": {
+        "Switch Army Knife (SAK)": "games/sak"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/Ryubing/Canary-Releases/releases/download/1.3.38/ryujinx-canary-1.3.38-win_x64.zip",
             "hash": "bfbf06ef16131726d3eb8272e16074dbed27fbd7b584323bfd3eeffc67a15f8f"
+        },
+        "arm64": {
+            "url": "https://github.com/Ryubing/Canary-Releases/releases/download/1.3.38/ryujinx-canary-1.3.38-win_arm64.zip",
+            "hash": "317666caf1fa509a8b37c87ae0b55d20b48065d543d753c15b3e86e649ba45fc"
         }
     },
     "extract_dir": "publish",
@@ -42,6 +49,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/Ryubing/Canary-Releases/releases/download/$version/ryujinx-canary-$version-win_x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/Ryubing/Canary-Releases/releases/download/$version/ryujinx-canary-$version-win_arm64.zip"
             }
         }
     }
