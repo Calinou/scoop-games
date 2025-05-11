@@ -9,17 +9,17 @@
             "hash": "28c84612cb7a0d4d45f49bc9b6430e7a878f7d85620193cd9179aac8d52e56a8"
         }
     },
-    "bin": "MAA.exe",
+    "bin": [["MAA.exe", "MAAAssistantArknights.exe"]],
     "shortcuts": [
-        [
-            "MAA.exe",
-            "Maa Assistant Arknights"
-        ]
+            [
+                    "MAA.exe",
+                    "Maa Assistant Arknights"
+            ]
     ],
     "persist": [
-        "cache",
-        "config",
-        "debug"
+            "cache",
+            "config",
+            "debug"
     ],
     "checkver": "github",
     "autoupdate": {
