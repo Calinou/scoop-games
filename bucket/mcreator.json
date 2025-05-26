@@ -1,9 +1,30 @@
 {
-  "version": "2025.1",
+  "version": "2025.1.13416",
   "description": "MCreator - Minecraft mod maker",
   "homepage": "https://mcreator.net/",
   "license": "GPL-3.0-or-later",
-  "url": "https://github.com/MCreator/MCreator/releases/download/2025.1.13416/MCreator.2025.1.Windows.64bit.zip",
-  "hash": "sha256:71924E1A76019266A1A7D1C6CA33AC38BE4EC3533F2A925ACE22154A545FC522",
-  "bin": "MCreator20251\\mcreator.exe"
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/MCreator/MCreator/releases/download/2025.1.13416/MCreator.2025.1.Windows.64bit.zip",
+      "hash": "sha256:71924E1A76019266A1A7D1C6CA33AC38BE4EC3533F2A925ACE22154A545FC522"
+    }
+  },
+  "bin": "MCreator20251\\mcreator.exe",
+  "shortcuts": [
+    [
+      "MCreator20251\\mcreator.exe",
+      "MCreator"
+    ]
+  ],
+  "checkver": {
+    "url": "https://github.com/MCreator/MCreator/releases",
+    "regex": "tag/([\\d.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/MCreator/MCreator/releases/download/$version/MCreator.$version.Windows.64bit.zip"
+      }
+    }
+  }
 }
