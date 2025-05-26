@@ -9,16 +9,16 @@
       "hash": "sha256:71924E1A76019266A1A7D1C6CA33AC38BE4EC3533F2A925ACE22154A545FC522"
     }
   },
-  "bin": "MCreator20251\\mcreator.exe",
+  "bin": "MCreator20251/mcreator.exe",
   "shortcuts": [
     [
-      "MCreator20251\\mcreator.exe",
+      "MCreator20251/mcreator.exe",
       "MCreator"
     ]
   ],
   "checkver": {
     "url": "https://github.com/MCreator/MCreator/releases",
-    "regex": "tag/([\\d.]+)"
+    "regex": "tag/v?([\\d.]+)"
   },
   "autoupdate": {
     "architecture": {
