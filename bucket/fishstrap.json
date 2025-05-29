@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "2.9.1.2",
+    "description": "Fishstrap is a Bloxstrap fork aiming to enhance some of the features.",
+    "homepage": "https://www.fishstrap.app/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fishstrap/fishstrap/releases/download/v2.9.1.2/Fishstrap-v2.9.1.2.exe#/Fishstrap.exe",
+            "hash": "sha256:49EAB3E743C5FFF94C41BCEDBDA02B00C42009A8A0F38281103D91ABFD418A62"
+        }
+    },
+    "installer": {
+        "script": "if ($cmd -eq 'update') {Start-Process \"$dir\\$fnamescoop \" -Wait -Args @('-quiet', '-upgrade'); } else { Start-Process \"$dir\\$fname\" -Wait -Args @('-quiet'); }"
+    },
+    "uninstaller": {
+        "script": "Start-Process \"$dir\\Fishstrap.exe\" -Wait -Args @('-uninstall', '-quiet');  Remove-Item 'HKCU:\\SOFTWARE\\Classes\\roblox\\', 'HKCU:\\SOFTWARE\\Classes\\roblox-player\\' -Recurse -Force"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fishstrap/fishstrap/releases/download/v$version/Fishstrap-$version.exe#/Fishstrap.exe"
+            }
+        }
+    }
+}
