@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/fishstrap/fishstrap/releases/download/v$version/Fishstrap-$version.exe#/Fishstrap.exe"
+                "url": "https://github.com/fishstrap/fishstrap/releases/download/v$version/Fishstrap-v$version.exe#/Fishstrap.exe"
             }
         }
     }
