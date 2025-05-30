@@ -4,7 +4,9 @@
     "description": "Bloxstrap fork aiming to enhance some features",
     "homepage": "https://www.fishstrap.app/",
     "license": "MIT",
-    "depends": "versions/windowsdesktop-runtime-6.0",
+    "suggest": {
+        ".NET 6.0 Desktop Runtime": "versions/windowsdesktop-runtime-6.0"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/fishstrap/fishstrap/releases/download/v2.9.1.2/Fishstrap-v2.9.1.2.exe#/Fishstrap.exe",
