@@ -4,6 +4,7 @@
     "description": "Bloxstrap fork aiming to enhance some features",
     "homepage": "https://www.fishstrap.app/",
     "license": "MIT",
+    "depends": "versions/windowsdesktop-runtime-6.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/fishstrap/fishstrap/releases/download/v2.9.1.2/Fishstrap-v2.9.1.2.exe#/Fishstrap.exe",
@@ -15,6 +16,9 @@
     },
     "uninstaller": {
         "script": "Start-Process \"$dir\\Fishstrap.exe\" -Wait -Args @('-uninstall', '-quiet');  Remove-Item 'HKCU:\\SOFTWARE\\Classes\\roblox\\', 'HKCU:\\SOFTWARE\\Classes\\roblox-player\\' -Recurse -Force"
+    },
+    "checkver": {
+        "github": "https://github.com/fishstrap/fishstrap"
     },
     "autoupdate": {
         "architecture": {
