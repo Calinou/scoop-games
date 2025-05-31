@@ -14,11 +14,12 @@
         }
     },
     "installer": {
-        "script": "if ($cmd -eq 'update') {Start-Process \"$dir\\$framescoop \" -Wait -Args @('-quiet', '-upgrade'); } else { Start-Process \"$dir\\$fname\" -Wait -Args @('-quiet'); }"
+        "script": "if ($cmd -eq 'update') {Start-Process \"$dir\\Fishstrap.exe\" -Wait -Args @('-quiet', '-upgrade'); } else { Start-Process \"$dir\\Fishstrap.exe\" -Wait -Args @('-quiet'); }"
     },
     "uninstaller": {
         "script": "Start-Process \"$dir\\Fishstrap.exe\" -Wait -Args @('-uninstall', '-quiet');  Remove-Item 'HKCU:\\SOFTWARE\\Classes\\roblox\\', 'HKCU:\\SOFTWARE\\Classes\\roblox-player\\' -Recurse -Force"
     },
+    "post_uninstall": ["Remove-Item \"$dir\\Fishstrap\\\" -Recurse -Force"],
     "checkver": {
         "github": "https://github.com/fishstrap/fishstrap"
     },
