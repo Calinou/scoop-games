@@ -20,7 +20,6 @@
             "SM64 Coop Deluxe"
         ]
     ],
-    "url": "https://github.com/coop-deluxe/sm64coopdx/releases/latest",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
