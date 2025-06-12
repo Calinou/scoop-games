@@ -1,0 +1,37 @@
+{
+    "version": "3.5",
+    "description": "An intelligent, versatile, and multi-versioned World of Warcraft launcher",
+    "homepage": "https://github.com/namreeb/wowreeb",
+    "license": "MIT",
+    "url": "https://github.com/namreeb/wowreeb/releases/download/3.5/wowreeb-3.5.zip",
+    "hash": "a6ceb3782ad8e67dd7ca4e2edc4d0029c0a1a8175fe99311ee940b5e85550deb",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.xml\")) {",
+        "   New-Item -path \"$persist_dir\" -type directory | Out-Null",
+        "   Copy-Item \"$dir\\example_config.xml\" -Destination \"$persist_dir\\config.xml\" | Out-Null",
+        "}"
+    ],
+    "architecture": {
+        "32bit": {
+            "shortcuts": [
+                [
+                    "wowreeb32.exe",
+                    "wowreeb"
+                ]
+            ]
+        },
+        "64bit": {
+            "shortcuts": [
+                [
+                    "wowreeb64.exe",
+                    "wowreeb"
+                ]
+            ]
+        }
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/namreeb/wowreeb/releases/download/$version/wowreeb-$version.zip"
+    },
+    "persist": "config.xml"
+}
