@@ -1,5 +1,5 @@
 {
-    "version": "0.0.37-18003",
+    "version": "0.0.37-18006",
     "description": "Open-source Sony PlayStation 3 emulator",
     "homepage": "https://rpcs3.net/",
     "license": {
@@ -15,8 +15,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-5514d7c3d8b622e6fb6e6de62d958704493610cd/rpcs3-v0.0.37-18003-5514d7c3_win64.7z",
-    "hash": "bc38b14145cca2889715b195816f231d0350e65e4f3f334d4be88a910c355f41",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ab55500f0141845303a4dc14519e378e8d4b5c78/rpcs3-v0.0.37-18006-ab55500f_win64.7z",
+    "hash": "ad3dfaa56ad5fcc973a9b912a0dbb627c57a9289c6f25ada91eae4a85398ac88",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -50,15 +50,14 @@
         "patches"
     ],
     "checkver": {
-        "url": "https://rpcs3.net/compatibility?b",
-        "regex": "/rpcs3-binaries-win/releases/download/build-(?<fullhash>[0-9a-f]+)/rpcs3-v(?<build>[0-9]+\\.[0-9]+\\.[0-9]+\\-[0-9]+)-(?<shorthash>[0-9a-f]{8})",
-        "replace": "${build}"
+        "url": "https://api.github.com/repos/RPCS3/rpcs3-binaries-win/releases/latest",
+        "jsonpath": "$.assets[?(@.name =~ /rpcs3-v[a-f\\d.-]+_win64\\.7z/)].browser_download_url",
+        "regex": "releases/download/(?<build>build-[a-f\\d]+)/rpcs3-v(?<version>[\\d.-]+)-(?<commit>[a-f\\d]+)_win64\\.7z"
     },
     "autoupdate": {
-        "url": "https://github.com/rpcs3/rpcs3-binaries-win/releases/download/build-$matchFullhash/rpcs3-v$matchBuild-$matchShorthash_win64.7z",
+        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/$matchBuild/rpcs3-v$version-$matchCommit_win64.7z",
         "hash": {
-            "url": "https://rpcs3.net/compatibility?b",
-            "regex": "Windows x64 SHA-256: ($sha256)"
+            "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/$matchBuild/rpcs3-v$version-$matchCommit_win64.7z.sha256"
         }
     }
 }
