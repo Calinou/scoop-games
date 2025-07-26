@@ -1,5 +1,5 @@
 {
-    "version": "2025.7.13.17",
+    "version": "2025.7.23.21",
     "description": "An unofficial Minecraft Bedrock for Windows Launcher",
     "homepage": "https://bedrocklauncher.github.io/",
     "license": "GPL-3.0-only",
@@ -14,8 +14,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/2025.7.13.17/BedrockLauncher2025.7.13.17.zip",
-            "hash": "6baf623948308f2e9a58257a65dcd0eec8937a7bf8466ef5b60aec389a1e46b4"
+            "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/2025.7.23.21/BedrockLauncher.2025.7.23.21.zip",
+            "hash": "47e2a66fd88b9e877b4f4351fa3e97bb0ffede328af93a5ca505c4fd415c5759"
         }
     },
     "extract_dir": "BedrockLauncher",
@@ -34,7 +34,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/$version/BedrockLauncher$version.zip"
+                "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/$version/BedrockLauncher.$version.zip"
             }
         }
     }
