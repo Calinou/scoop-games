@@ -1,0 +1,64 @@
+{
+    "homepage": "https://www.openttd.org/downloads/openttd-nightlies/latest",
+    "description": "Simulation game based upon Transport Tycoon Deluxe (nightly build)",
+    "version": "20211025-master-g4487ad1a5e",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "32bit": {
+            "url": "https://cdn.openttd.org/openttd-nightlies/2021/20211025-master-g4487ad1a5e/openttd-20211025-master-g4487ad1a5e-windows-win32.zip",
+            "hash": "79b9514d3688a92d018bed272387f99c41e8f700687b9c30fd9a4926bb8e66ff",
+            "extract_dir": "openttd-20211025-master-g4487ad1a5e-windows-win32"
+        },
+        "64bit": {
+            "url": "https://cdn.openttd.org/openttd-nightlies/2021/20211025-master-g4487ad1a5e/openttd-20211025-master-g4487ad1a5e-windows-win64.zip",
+            "hash": "5e1675766c21a314913c00517fe47955f7b7afb4c0aaeeee80ae4ea0a18aeab9",
+            "extract_dir": "openttd-20211025-master-g4487ad1a5e-windows-win64"
+        }
+    },
+    "post_install": [
+        "if (!(Test-Path \"$persist_dir\\openttd.cfg\")) {",
+        "   New-item -ItemType File \"$persist_dir\\openttd.cfg\" | Out-Null",
+        "}"
+    ],
+    "persist": [
+        "content_download",
+        "newgrf",
+        "save",
+        "scenario",
+        "screenshot"
+    ],
+    "bin": [
+        [
+            "openttd.exe",
+            "openttd-nightly"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "openttd.exe",
+            "OpenTTD (nightly)",
+            "-c \"$persist_dir\\openttd.cfg\""
+        ]
+    ],
+    "checkver": {
+        "regex": "openttd-(?<year>[\\d]{4})(?<others>[\\d\\-a-z]+)-windows-win64.zip",
+        "replace": "${year}${others}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://cdn.openttd.org/openttd-nightlies/$matchYear/$version/openttd-$version-windows-win32.zip",
+                "extract_dir": "openttd-$version-windows-win32"
+            },
+            "64bit": {
+                "url": "https://cdn.openttd.org/openttd-nightlies/$matchYear/$version/openttd-$version-windows-win64.zip",
+                "extract_dir": "openttd-$version-windows-win64"
+            }
+        },
+        "hash": {
+            "url": "https://www.openttd.org/downloads/openttd-nightlies/latest",
+            "find": "checksum-$basename[\\s\\S]*?([a-fA-F\\d]{64})"
+        }
+    },
+    "notes": "To save the data in persist folder, run OpenTTD from the Start menu or openttd-nightly.exe on CLI"
+}
