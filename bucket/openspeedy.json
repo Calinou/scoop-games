@@ -1,6 +1,6 @@
 {
     "version": "1.7.6",
-    "description": "OpenSpeedy is an open-source and free game speed tool that helps you break frame rate limitations and provides a smoother, silkier gaming acceleration experience.",
+    "description": "Game speed control tool that helps you break frame rate limitations and provides a smoother, silkier gaming acceleration experience",
     "homepage": "https://github.com/game1024/OpenSpeedy",
     "license": "GPL-3.0 license",
     "url": "https://github.com/game1024/OpenSpeedy/releases/download/v1.7.6/OpenSpeedy-v1.7.6.zip",
