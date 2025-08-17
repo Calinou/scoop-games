@@ -1,10 +1,10 @@
 {
-    "version": "51.13",
+    "version": "52.03",
     "description": "Indie construction and management game",
     "homepage": "http://www.bay12games.com/dwarves",
     "license": "Custom",
-    "url": "http://www.bay12games.com/dwarves/df_51_13_win.zip",
-    "hash": "7b79ebc1e50f094c8ab149a8d667a87ef7a72b0707e67f0b93fde346fbe876af",
+    "url": "http://www.bay12games.com/dwarves/df_52_03_win.zip",
+    "hash": "ee43eb73239c942abde5a37ea88753e313e255995f3be75f192b1831034848c4",
     "shortcuts": [
         [
             "Dwarf Fortress.exe",

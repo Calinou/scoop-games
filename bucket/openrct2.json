@@ -1,16 +1,16 @@
 {
-    "version": "0.4.23",
+    "version": "0.4.25",
     "description": "Open source re-implementation of RollerCoaster Tycoon 2",
     "homepage": "https://github.com/OpenRCT2/OpenRCT2",
     "license": "GPL-3.0-only",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.4.23/OpenRCT2-v0.4.23-windows-portable-win32.zip",
-            "hash": "24428b14058ea476b4f43b9d2831a850ebae1fe32468bdc42d9f5031116db6f5"
+            "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.4.25/OpenRCT2-v0.4.25-windows-portable-win32.zip",
+            "hash": "72c4fde86e82fac0fa0b1f61660d9a3998959ef2e95c15e3d39663dc170ae320"
         },
         "64bit": {
-            "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.4.23/OpenRCT2-v0.4.23-windows-portable-x64.zip",
-            "hash": "1ab250ac61c2bbdea3327b1f0a81ae970d7228a5fc186bf34d9ec2979a4f47a3"
+            "url": "https://github.com/OpenRCT2/OpenRCT2/releases/download/v0.4.25/OpenRCT2-v0.4.25-windows-portable-x64.zip",
+            "hash": "a0a23b25581c1bf27b74c8113b0e83cee3215ee7df676f1c5fde5af225689b2b"
         }
     },
     "bin": "OpenRCT2.exe",

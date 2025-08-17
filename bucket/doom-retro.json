@@ -1,5 +1,5 @@
 {
-    "version": "5.7",
+    "version": "5.7.2",
     "description": "A classic redefined DOOM source port",
     "homepage": "https://www.doomretro.com/",
     "license": "GPL-3.0-or-later",
@@ -22,12 +22,12 @@
     ],
     "architecture": {
         "32bit": {
-            "url": "https://github.com/bradharding/doomretro/releases/download/v5.7/doomretro-5.7-win32.zip",
-            "hash": "663be14f07217f3b4691de2b8f67bf3f33d1e7196e862008e5873060398aff84"
+            "url": "https://github.com/bradharding/doomretro/releases/download/v5.7.2/doomretro-5.7.2-win32.zip",
+            "hash": "8578b458ffc6d0373f9e8f6c63d056cd968ee90f78ba226e61b53bd9eedc0d8c"
         },
         "64bit": {
-            "url": "https://github.com/bradharding/doomretro/releases/download/v5.7/doomretro-5.7-win64.zip",
-            "hash": "9b520b34ce298087bbf24ebc101610cdc2cf4bf94e0370f33b9f212810aa04ae"
+            "url": "https://github.com/bradharding/doomretro/releases/download/v5.7.2/doomretro-5.7.2-win64.zip",
+            "hash": "6332df2d1e61ec3b53a644610f7e7d92921b875bde44e0d46cd65082d896e71c"
         }
     },
     "pre_install": [

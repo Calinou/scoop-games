@@ -1,19 +1,30 @@
 {
-    "version": "2.0.84.107",
+    "version": "2.0.86.13",
     "description": "GOG Galaxy 2.0. Gaming Client designed for a convenient purchasing, playing and updating of mostly DRM-free games",
     "homepage": "https://www.gog.com/galaxy",
     "license": {
         "identifier": "Proprietary",
         "url": "https://support.gog.com/hc/en-us/articles/212632089"
     },
-    "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.0.84.107.exe",
-    "hash": "md5:76bc738a31b8dba85c4b61d21a1a1fa9",
+    "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.0.86.13.exe",
+    "hash": "04b6de20a454f82b468104097b729119fd0e5d085ffb953cbe640539b6d66755",
     "installer": {
         "args": [
             "/VERYSILENT",
             "/DIR=$dir"
         ]
     },
+    "post_install": [
+        "$config_path = \"$env:ProgramData\\GOG.com\\Galaxy\\config.json\"",
+        "if (Test-Path $config_path) {",
+        "    $config = Get-Content $config_path -ErrorAction SilentlyContinue | ConvertFrom-Json -ErrorAction SilentlyContinue",
+        "    if (($null -ne $config) -and ($config.libraryPath -match \"$((appdir $app $global).replace('\\', '\\\\'))\\\\[\\d.]+\\\\Games\") ) {",
+        "        $config.libraryPath  = \"$persist_dir\\Games\"",
+        "        $config | ConvertTo-Json | Set-Content $config_path -ErrorAction SilentlyContinue",
+        "    }",
+        "}",
+        "Move-Item \"$persist_dir\\galaxy-2.0.db\" \"$env:ProgramData\\GOG.com\\Galaxy\\storage\" -Force -ErrorAction SilentlyContinue"
+    ],
     "shortcuts": [
         [
             "GalaxyClient.exe",
@@ -25,6 +36,7 @@
         "Dependencies-Temp",
         "Games"
     ],
+    "pre_uninstall": "Copy-Item \"$env:ProgramData\\GOG.com\\Galaxy\\storage\\galaxy-2.0.db\" \"$persist_dir\" -Force -ErrorAction SilentlyContinue",
     "uninstaller": {
         "script": "Start-Process \"$dir\\unins000.exe\" -Wait -ArgumentList \"/VERYSILENT\""
     },
@@ -33,10 +45,6 @@
         "jsonpath": "$.content.windows.version"
     },
     "autoupdate": {
-        "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_$version.exe",
-        "hash": {
-            "url": "https://remote-config.gog.com/components/webinstaller?component_version=2.0.0",
-            "jsonpath": "$.content.windows.installerMd5"
-        }
+        "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_$version.exe"
     }
 }

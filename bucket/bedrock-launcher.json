@@ -1,40 +1,37 @@
 {
-    "version": "2025.6.19.8",
+    "version": "2025.8.11.6",
     "description": "An unofficial Minecraft Bedrock for Windows Launcher",
     "homepage": "https://bedrocklauncher.github.io/",
     "license": "GPL-3.0-only",
     "notes": [
-        "Run the launcher on an Administrator account. Running it on a normal account and providing Admin rights at the prompt will result in an error and crash of the launcher.",
-        "Please also ensure you are using a Microsoft account on your PC, or your Microsoft Store is logged in with a Microsoft account which has access to the game (Either bought or Game Pass).",
+        "Please ensure you are using a Microsoft account on your PC, or your Microsoft Store is logged in with a Microsoft account which has access to the game (Either bought or Game Pass).",
         "See \"Important Notes\" section at https://github.com/BedrockLauncher/BedrockLauncher/releases/latest"
     ],
     "suggest": {
         "VCRedist": "extras/vcredist2022",
-        ".NET 6.0 Desktop Runtime": "versions/windowsdesktop-runtime-6.0"
+        ".NET 8.0 Desktop Runtime": "extras/windowsdesktop-runtime-lts"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/2025.6.19.8/BedrockLauncher2025.6.19.8.zip",
-            "hash": "2a490028e2300d7d7ae8317e7c9091d5595bb22e197de9a093623fe943e12429"
+            "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/2025.8.11.6/BedrockLauncher.2025.8.11.6.zip",
+            "hash": "1eb2deb1b0dfed1903b050710dcce77712378b7f7e6213b71df5a9ac9bb82ed4"
         }
     },
     "extract_dir": "BedrockLauncher",
     "shortcuts": [
         [
-            "StartBedrockLauncher.exe",
-            "Bedrock Launcher",
-            "",
-            "app\\BedrockLauncher.exe"
+            "BedrockLauncher.exe",
+            "Bedrock Launcher"
         ]
     ],
-    "persist": "app\\data",
+    "persist": "data",
     "checkver": {
         "github": "https://github.com/BedrockLauncher/BedrockLauncher"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/$version/BedrockLauncher$version.zip"
+                "url": "https://github.com/BedrockLauncher/BedrockLauncher/releases/download/$version/BedrockLauncher.$version.zip"
             }
         }
     }

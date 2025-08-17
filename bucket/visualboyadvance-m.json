@@ -1,5 +1,5 @@
 {
-    "version": "2.1.11",
+    "version": "2.2.2",
     "description": "Community-maintained, improved version of the VisualBoyAdvance Game Boy emulator",
     "homepage": "https://vba-m.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "32bit": {
-            "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.1.11/visualboyadvance-m-Win-x86_32.zip",
-            "hash": "bcb0a3faf93498082f797094485f85f89fe01b7ce17b31918ce3e2d2cba4d99e"
+            "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.2.2/visualboyadvance-m-Win-x86_32.zip",
+            "hash": "a436eeb59017356d0a4df692fff3601866f9216a139f23cf16f3a4f8ac450cba"
         },
         "64bit": {
-            "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.1.11/visualboyadvance-m-Win-x86_64.zip",
-            "hash": "cd0fe75c04aedc368ef79e70c89aa69d0c7af3fc1847dae0e80f6ff28713d0c6"
+            "url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases/download/v2.2.2/visualboyadvance-m-Win-x86_64.zip",
+            "hash": "a9a1fb05617d42bee75fe92c1820c05f98a28eb62acbfd2b10e6e3366f2733fb"
         }
     },
     "pre_install": [

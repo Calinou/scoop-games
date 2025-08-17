@@ -1,16 +1,16 @@
 {
-    "version": "20250628",
+    "version": "20250725",
     "description": "Open Hard Vacuum. 90s Pixelart Science-Fiction Real-time strategy game with multiplayer support, competent skirmish AI and an integrated map editor",
     "homepage": "https://openhv.itch.io/openhv",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/OpenHV/OpenHV/releases/download/20250628/OpenHV-20250628-x86-winportable.zip",
-            "hash": "64c7aa9acd3c10d4361c99f2232690b1d5c4477b6a1b143b22f4d138ec0a8201"
+            "url": "https://github.com/OpenHV/OpenHV/releases/download/20250725/OpenHV-20250725-x86-winportable.zip",
+            "hash": "7de43e9b5c9bfa159e34dc2000ebab129a2f899e6d9a00e966896a58a4b559b6"
         },
         "64bit": {
-            "url": "https://github.com/OpenHV/OpenHV/releases/download/20250628/OpenHV-20250628-x64-winportable.zip",
-            "hash": "2f76d47e78ef59d3a82f53f0785ac0a89feeab382c6da15f3ec5513079ba0b58"
+            "url": "https://github.com/OpenHV/OpenHV/releases/download/20250725/OpenHV-20250725-x64-winportable.zip",
+            "hash": "857275bb6343213a4638735920cba9b9b2fe708f756bc0667f07d6fc598259f1"
         }
     },
     "bin": "OpenHV.exe",
