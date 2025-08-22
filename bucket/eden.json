@@ -1,6 +1,6 @@
 {
     "version": "v0.0.3-rc3",
-    "description": "World's most popular open-source Nintendo Switch emulator (forked from Yuzu)",
+    "description": "Open-source Nintendo Switch emulator (forked from Yuzu)",
     "homepage": "https://eden-emu.dev/",
     "license": "GPL-3.0-or-later",
     "architecture": {
