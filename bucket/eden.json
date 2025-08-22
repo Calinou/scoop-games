@@ -20,11 +20,7 @@
         "   }",
         "}"
     ],
-    "bin": [
-        "eden.exe",
-        "eden-cli.exe",
-        "eden-room.exe"
-    ],
+    "bin": "eden.exe",
     "shortcuts": [
         [
             "eden.exe",
