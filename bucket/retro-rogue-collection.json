@@ -1,0 +1,35 @@
+{
+    "version": "3.0.4",
+    "description": "Six versions of the classic Rogue game with customizable retro graphics and Rogomatic support",
+    "homepage": "https://github.com/mikeyk730/Rogue-Collection",
+    "license": "GPL-3.0-only",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "url": "https://github.com/mikeyk730/Rogue-Collection/releases/download/v3.0.4/RogueCollection_3_0_4.zip",
+    "hash": "2462a5b42dc2e53a046b37229bdc08fa16b8f2397ca94e2c992d3990d3c06f6c",
+    "shortcuts": [
+        [
+            "RogueCollection.exe",
+            "Rogue Collection"
+        ],
+        [
+            "RetroRogueCollection.exe",
+            "Retro Rogue Collection"
+        ],
+        [
+            "RogueCollection.exe",
+            "Rogue Collection - Rog-O-Matic",
+            "--rogomatic"
+        ],
+        [
+            "RetroRogueCollection.exe",
+            "Retro Rogue Collection - Rog-O-Matic",
+            "--rogomatic"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/mikeyk730/Rogue-Collection/releases/download/v$version/RogueCollection_$underscoreVersion.zip"
+    }
+}
