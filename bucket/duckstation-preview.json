@@ -17,7 +17,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
-            "hash": "be9e3031d2be96786f46b3eccb3335ced346c16680c342b6379efb5aa914667b",
+            "hash": "dd66b436d1f1358e68ef9d931e91a6d2dd89f7c5e2375b204b7f9a10a9538403",
             "post_install": [
                 "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
                 "echo \"update bin/shortcuts\"",
@@ -35,7 +35,7 @@
         },
         "arm64": {
             "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-ARM64-release.zip",
-            "hash": "3e9161b0cfb74f47bac6604246538d66b9578c1084abef50cf53630a584e60f6",
+            "hash": "bbe268b6714d60fe5f974bf20526089b03d944d577a25bb396a41753e4cefaf1",
             "post_install": [
                 "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
                 "echo \"update bin/shortcuts\"",
