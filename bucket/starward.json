@@ -1,0 +1,54 @@
+{
+    "version": "0.14.6",
+    "description": "Game Launcher for miHoYo",
+    "homepage": "https://github.com/Scighost/Starward",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Scighost/Starward/releases/download/0.14.6/Starward_Portable_0.14.6_x64.7z",
+            "hash": "8d491b8f852f2e9aae744c1bd0d8943174e5719300b5a7482e85a85fbe09e561"
+        },
+        "arm64": {
+            "url": "https://github.com/Scighost/Starward/releases/download/0.14.6/Starward_Portable_0.14.6_arm64.7z",
+            "hash": "48e71e45ee86fc6e025bf27b2a49bdc8723703fd08bc9900834738b4e5ca436b"
+        }
+    },
+    "extract_dir": "Starward",
+    "depends": [
+        "main/sqlite"
+    ],
+    "pre_install": [
+        "if (-not (Test-Path \"$dir\\config.ini\"))",
+        "{",
+        "  New-Item \"$dir\\config.ini\" -ItemType File | Out-Null",
+        "  Add-Content \"$dir\\config.ini\" \"Language=\"",
+        "  Add-Content \"$dir\\config.ini\" \"UserDataFolder=$persist_dir\\data\"",
+        "}"
+    ],
+    "post_install": [
+        "sqlite3 \"$dir\\data\\StarwardDatabase.db\" \"CREATE TABLE IF NOT EXISTS Setting (Key TEXT PRIMARY KEY, Value TEXT);\"",
+        "sqlite3 \"$dir\\data\\StarwardDatabase.db\" \"INSERT OR REPLACE INTO Setting (Key, Value) VALUES ('DefaultGameInstallationPath', '$persist_dir\\games');\""
+    ],
+    "shortcuts": [
+        [
+            "Starward.exe",
+            "Starward"
+        ]
+    ],
+    "persist": [
+        "data",
+        "games",
+        "config.ini"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Scighost/Starward/releases/download/$version/Starward_Portable_$version_x64.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/Scighost/Starward/releases/download/$version/Starward_Portable_$version_arm64.7z"
+            }
+        }
+    }
+}
