@@ -14,9 +14,7 @@
         }
     },
     "extract_dir": "Starward",
-    "depends": [
-        "main/sqlite"
-    ],
+    "depends": "main/sqlite",
     "pre_install": [
         "if (-not (Test-Path \"$dir\\config.ini\"))",
         "{",
