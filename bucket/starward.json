@@ -38,7 +38,9 @@
         "games",
         "config.ini"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/Scighost/Starward"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
