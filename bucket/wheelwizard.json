@@ -9,8 +9,12 @@
     "suggest": {
         "Dolphin Emulator": "games/dolphin"
     },
-    "url": "https://github.com/TeamWheelWizard/WheelWizard/releases/download/2.3.2/WheelWizardWindows.exe",
-    "hash": "982ee35922a0b9ccebdefc28d544dc0c5f67ab80a8866dfb070a7f7c25dd6f47",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TeamWheelWizard/WheelWizard/releases/download/2.3.2/WheelWizardWindows.exe",
+            "hash": "982ee35922a0b9ccebdefc28d544dc0c5f67ab80a8866dfb070a7f7c25dd6f47"
+        }
+    },
     "pre_install": [
         "# Migrate AppData if it exists and not already migrated",
         "$appDataPath = \"$Env:AppData\\CT-MKWII\"",
@@ -70,6 +74,10 @@
     "persist": "CT-MKWII",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/TeamWheelWizard/WheelWizard/releases/download/$version/WheelWizardWindows.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TeamWheelWizard/WheelWizard/releases/download/$version/WheelWizardWindows.exe"
+            }
+        }
     }
 }
