@@ -21,7 +21,7 @@
         "    Move-Item -Path \"$appDataPath\" -Destination \"$persistDataPath\" -Force",
         "}",
         "",
-        "# If Dolphin is installed, set the lastUsedDolphinPath in config.json if not already set",
+        "# If Dolphin is installed, set the DolphinLocation & UserFolderPath in config.json if not already set",
         "$installedDolphin = $false",
         "$installedDolphinApp = $null",
         "$installedDolphinGlobal = $false",
