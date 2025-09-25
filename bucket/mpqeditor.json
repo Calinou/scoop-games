@@ -1,0 +1,29 @@
+{
+    "version": "4.0.0.881",
+    "description": "Display and extract MPQ files",
+    "homepage": "http://zezula.net/en/mpq/main.html",
+    "license": "Freeware",
+    "url": "http://zezula.net/download/mpqeditor_en.zip",
+    "hash": "9dda6f7ca43984d1d13eaa24eb8c105c5218f239652eecf37fd2eec98782faf6",
+    "checkver": {
+        "url": "http://zezula.net/en/mpq/download.html",
+        "regex": "(?<version>[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+)"
+    },
+    "autoupdate": {
+        "url": "http://zezula.net/download/mpqeditor_en.zip"
+    },
+    "architecture": {
+        "32bit": {
+            "extract_dir": "Win32"
+        },
+        "64bit": {
+            "extract_dir": "x64"
+        }
+    },
+    "shortcuts": [
+        [
+            "MPQEditor.exe",
+            "MPQ Editor"
+        ]
+    ]
+}
