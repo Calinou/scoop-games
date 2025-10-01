@@ -1,6 +1,6 @@
 {
     "version": "4",
-    "description": "SkyEmu is a fast, accurate, and lightweight emulator for GBA, GB, GBC, and NDS (experimental).",
+    "description": "Fast, accurate, and lightweight emulator for GBA, GB, GBC, and NDS (experimental)",
     "homepage": "https://github.com/skylersaleh/SkyEmu",
     "license": "MIT",
     "url": "https://github.com/skylersaleh/SkyEmu/releases/download/v4/SkyEmu-v4-Windows.exe",
