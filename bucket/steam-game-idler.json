@@ -24,6 +24,6 @@
         "github": "https://github.com/zevnda/steam-game-idler"
     },
     "autoupdate": {
-        "url": "https://github.com/zevnda/steam-game-idler/releases/download/$version/Steam.Game.Idler_$version_x64-portable.exe"
+        "url": "https://github.com/zevnda/steam-game-idler/releases/download/$version/Steam.Game.Idler_$version_x64-portable.zip"
     }
 }
