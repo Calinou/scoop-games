@@ -9,7 +9,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RealMeddsam/Froststrap/releases/download/v1.2.6.0/Froststrap-v1.2.6.0.exee#/Froststrap.exe",
+            "url": "https://github.com/RealMeddsam/Froststrap/releases/download/v1.2.6.0/Froststrap-v1.2.6.0.exe#/Froststrap.exe",
             "hash": "FFBDAAA24C4B763D22AA1F4EA9BFB7C2460861074FC29201E5EB732BE12499D4"
         }
     },
@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/RealMeddsam/Froststrap/releases/tag/v$version/Froststrap-v$version.exe#/Froststrap.exe"
+                "url": "https://github.com/RealMeddsam/Froststrap/releases/download/v$version/Froststrap-v$version.exe#/Froststrap.exe"
             }
         }
     }
