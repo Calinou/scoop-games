@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "version": "1.2.6.0",
-    "description": "Fork of Bloxstrap and Fishstrap, focused on performance and customization.",
+    "description": "Fork of Bloxstrap and Fishstrap, focused on performance and customization",
     "homepage": "https://realmeddsam.github.io/Froststrap-Website/",
     "license": "MIT",
     "suggest": {
