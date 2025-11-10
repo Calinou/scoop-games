@@ -1,0 +1,45 @@
+{
+    "version": "3.16.1",
+    "description": "Companion application for your Counter-Strike demos.",
+    "homepage": "https://cs-demo-manager.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/akiver/cs-demo-manager/releases/download/v3.16.1/CS-Demo-Manager-Setup-3.16.1.exe#/dl.7z",
+            "hash": "993c33b5763b901ae9475fd5ab1d6b19f4ace99ce0345066f6bbdb4452ac79d2"
+        }
+    },
+    "extract_dir": "$PLUGINSDIR",
+    "pre_install": "rm *.dll; Expand-7zipArchive -Path $dir\\app-64.7z -DestinationPath $dir -Removal",
+    "bin": "csdm.cmd",
+    "shortcuts": [
+        [
+            "cs-demo-manager.exe",
+            "CS Demo Manager"
+        ]
+    ],
+    "suggest": {
+        "The database": "main/postgresql"
+    },
+    "notes": [
+        "https://cs-demo-manager.com/docs/installation",
+        "Reading the step by step instructions here is highly recommended.",
+        "CS:DM requires an accessible PostgreSQL database to work properly."
+    ],
+    "post_uninstall": [
+        "echo ''",
+        "echo Notes",
+        "echo '-----'",
+        "echo 'After uninstallation, you can manually delete the configuration folder at $HOME\\.csdm'"
+    ],
+    "checkver": {
+        "github": "https://github.com/akiver/cs-demo-manager"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/akiver/cs-demo-manager/releases/download/v$version/CS-Demo-Manager-Setup-$version.exe#/dl.7z"
+            }
+        }
+    }
+}
