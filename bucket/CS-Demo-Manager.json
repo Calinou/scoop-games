@@ -1,12 +1,12 @@
 {
-    "version": "3.16.1",
+    "version": "3.16.3",
     "description": "Companion application for your Counter-Strike demos.",
     "homepage": "https://cs-demo-manager.com",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/akiver/cs-demo-manager/releases/download/v3.16.1/CS-Demo-Manager-Setup-3.16.1.exe#/dl.7z",
-            "hash": "993c33b5763b901ae9475fd5ab1d6b19f4ace99ce0345066f6bbdb4452ac79d2"
+            "url": "https://github.com/akiver/cs-demo-manager/releases/download/v3.16.3/CS-Demo-Manager-Setup-3.16.3.exe#/dl.7z",
+            "hash": "00bac3f7128be9dcd8b25c43cb617d0ef1eea7b2fc00d7a26d97f7f469b8af31"
         }
     },
     "extract_dir": "$PLUGINSDIR",
