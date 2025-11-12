@@ -1,23 +1,24 @@
 {
-  "version": "3.27.104",
-  "description": "Price-checking tool for Path of Exile items",
-  "homepage": "https://github.com/SnosMe/awakened-poe-trade",
-  "license": {
-    "identifier": "MIT"
-  },
-  "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.104/Awakened-PoE-Trade-3.27.104.exe#/Awakened-PoE-Trade.exe",
-  "hash": "ADD5CF003089D060536ED8F9F6F9C700F443A3FEAD078C6A409393B7D1B55558",
-  "bin": "Awakened-PoE-Trade.exe",
-  "shortcuts": [
-    [
-      "Awakened-PoE-Trade.exe",
-      "Awakened PoE Trade"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/SnosMe/awakened-poe-trade"
-  },
-  "autoupdate": {
-    "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$version/Awakened-PoE-Trade-$version.exe#/Awakened-PoE-Trade.exe"
-  }
+    "version": "3.27.104",
+    "description": "Price-checking tool for Path of Exile items",
+    "homepage": "https://github.com/SnosMe/awakened-poe-trade",
+    "license": "MIT",
+    "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v3.27.104/Awakened-PoE-Trade-3.27.104.exe#/Awakened-PoE-Trade.exe",
+    "hash": "add5cf003089d060536ed8f9f6f9c700f443a3fead078c6a409393b7d1b55558",
+    "bin": [
+        [
+            "Awakened-PoE-Trade.exe",
+            "Awakened PoE Trade"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Awakened-PoE-Trade.exe",
+            "Awakened PoE Trade"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$version/Awakened-PoE-Trade-$version.exe#/Awakened-PoE-Trade.exe"
+    }
 }
