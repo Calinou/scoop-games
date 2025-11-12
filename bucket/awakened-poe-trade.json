@@ -17,7 +17,9 @@
             "Awakened PoE Trade"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/SnosMe/awakened-poe-trade"
+    },
     "autoupdate": {
         "url": "https://github.com/SnosMe/awakened-poe-trade/releases/download/v$version/Awakened-PoE-Trade-$version.exe#/Awakened-PoE-Trade.exe"
     }
