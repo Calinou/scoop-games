@@ -2,7 +2,7 @@
     "version": "0.82.1",
     "description": "Open re-implementation of Medal of Honor: Allied Assault and expansions",
     "homepage": "https://github.com/openmoh/openmohaa",
-    "license": "GPL-3.0-only",
+    "license": "GPL-2.0-only",
     "notes": [
         "Copy the game contents to",
         "$persist_dir\\main, $persist_dir\\mainta, and $persist_dir\\maintt",
