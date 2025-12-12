@@ -30,6 +30,7 @@
         "regex": "\\AEpicInstaller-([\\d.]+)\\.msi\\Z"
     },
     "autoupdate": {
-        "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-$version.msi#/setup.msi_"
+        "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
     }
 }
+
