@@ -1,6 +1,6 @@
 {
     "version": "4.14.3",
-    "description": "Feature centric port for all Doom engine games, based on GZDoom, adding an advanced renderer and powerful scripting capabilities",
+    "description": "Feature-centric port for all Doom engine games, based on GZDoom, adding an advanced renderer and powerful scripting capabilities",
     "homepage": "https://zdoom.org/",
     "license": "GPL-3.0-or-later",
     "notes": [
