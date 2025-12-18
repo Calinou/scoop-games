@@ -1,10 +1,10 @@
 {
-    "version": "2.2.0",
+    "version": "2.3.2",
     "description": "Godot reverse engineering tools",
     "homepage": "https://github.com/GDRETools/gdsdecomp",
     "license": "MIT",
-    "url": "https://github.com/GDRETools/gdsdecomp/releases/download/v2.2.0/GDRE_tools-v2.2.0-windows.zip",
-    "hash": "72a73128326cb2c2dd3441846cbc81e5568529596e260d015f491d164f599f30",
+    "url": "https://github.com/GDRETools/gdsdecomp/releases/download/v2.3.2/GDRE_tools-v2.3.2-windows.zip",
+    "hash": "ed7e7eb3555668954f1533f575efb8b526f393289e71210f887b86d7c0644857",
     "bin": "gdre_tools.exe",
     "shortcuts": [
         [
