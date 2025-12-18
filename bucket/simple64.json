@@ -31,8 +31,9 @@
     ],
     "persist": "config",
     "checkver": {
-        "github": "https://github.com/simple64/simple64",
-        "regex": "v([\\d\\.]+)\\/simple64-win64-(?<commit>[\\da-f]{7})\\."
+        "url": "https://api.github.com/repos/simple64/simple64/releases/latest",
+        "jsonpath": "$.assets[?(@.name =~ /simple64-win64-[\\da-f]{7}\\.zip/)].browser_download_url",
+        "regex": "v(?<version>[\\d.]+)/simple64-win64-(?<commit>[\\da-f]{7})\\.zip"
     },
     "autoupdate": {
         "url": "https://github.com/simple64/simple64/releases/download/v$version/simple64-win64-$matchCommit.zip"
