@@ -1,0 +1,58 @@
+{
+    "version": "9bc8551",
+    "description": "Xbox 360 Emulator Research Project (edge version with experimental features)",
+    "homepage": "https://github.com/has207/xenia-edge",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://github.com/has207/xenia-edge/blob/main/LICENSE"
+    },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/has207/xenia-edge/releases/download/9bc8551/xenia_edge_windows.zip",
+            "hash": "5bb76ef596ee679b69111b6b3f44014373558c264597608208097cc6040fcca0"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   if (Test-Path \"$env:USERPROFILE\\Documents\\Xenia\") {",
+        "       Write-host \"Migrating AppData...\" -ForegroundColor yellow",
+        "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\\*\" -Destination \"$persist_dir\" -Recurse",
+        "       Rename-Item \"$persist_dir\\xenia.config.toml\" -NewName \"xenia-edge.config.toml\"",
+        "   } else {",
+        "       New-item \"$dir\\recent.toml\" -ItemType File | Out-Null",
+        "       New-item \"$dir\\xenia-edge.config.toml\" -ItemType File | Out-Null",
+        "   }",
+        "}"
+    ],
+    "bin": "xenia_edge.exe",
+    "shortcuts": [
+        [
+            "xenia_edge.exe",
+            "Xenia Edge"
+        ]
+    ],
+    "persist": [
+        "cache",
+        "cache_host",
+        "content",
+        "patches",
+        "screenshots",
+        "recent.toml",
+        "xenia-edge.config.toml"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/has207/xenia-edge/releases/latest",
+        "jsonpath": "$.tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/has207/xenia-edge/releases/download/$version/xenia_edge_windows.zip"
+            }
+        }
+    }
+}
