@@ -1,0 +1,64 @@
+name: Auto Update Manifests
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    # Allow manual trigger
+
+jobs:
+  auto-update:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Scoop
+        run: |
+          if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
+            Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+          }
+        shell: pwsh
+
+      - name: Run checkver and update manifests
+        id: checkver
+        run: |
+          $updates = @()
+          $output = & pwsh -NoProfile -File bin/checkver.ps1 -Update 2>&1
+
+          # Check if there are any changes
+          $status = git status --porcelain
+          if ($status) {
+            $updates = $status -split "`n" | Where-Object { $_ -match '\.json$' }
+            Write-Output "updated=true" >> $env:GITHUB_OUTPUT
+            Write-Output "count=$($updates.Count)" >> $env:GITHUB_OUTPUT
+          } else {
+            Write-Output "updated=false" >> $env:GITHUB_OUTPUT
+            Write-Output "No updates found"
+          }
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Commit and push changes
+        if: steps.checkver.outputs.updated == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add bucket/*.json
+          git commit -m "Auto update: ${{ steps.checkver.outputs.count }} manifest(s) updated
+
+          Updated by GitHub Actions checkver workflow"
+          git push
+        shell: pwsh
+
+      - name: Report status
+        run: |
+          if ("${{ steps.checkver.outputs.updated }}" -eq "true") {
+            Write-Host "✓ Updated ${{ steps.checkver.outputs.count }} manifest(s)" -ForegroundColor Green
+          } else {
+            Write-Host "✓ All manifests are up to date" -ForegroundColor Green
+          }
+        shell: pwsh
