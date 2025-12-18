@@ -41,8 +41,9 @@
         "xenia.config.toml"
     ],
     "checkver": {
-        "github": "https://github.com/xenia-project/release-builds-windows",
-        "regex": "v([\\d.]+)-master/xenia_master\\.zip"
+        "url": "https://api.github.com/repos/xenia-project/release-builds-windows/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v(?<version>[\\d.]+)-master"
     },
     "autoupdate": {
         "architecture": {
