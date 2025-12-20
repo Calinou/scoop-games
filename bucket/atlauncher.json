@@ -17,13 +17,13 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/ATLauncher/ATLauncher/",
+        "github": "ATLauncher/ATLauncher",
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.40.2/ATLauncher-$version.zip"
+                "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v$version/ATLauncher-$version.zip"
             }
         }
     }
