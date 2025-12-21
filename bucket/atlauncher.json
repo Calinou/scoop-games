@@ -30,7 +30,8 @@
         "users"
     ],
     "checkver": {
-        "github": "ATLauncher/ATLauncher",
+        "url": "https://api.github.com/repos/ATLauncher/ATLauncher/releases/latest",
+        "jsonpath": "$.tag_name",
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
