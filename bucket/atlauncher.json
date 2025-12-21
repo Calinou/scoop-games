@@ -3,28 +3,37 @@
     "description": "A launcher for Minecraft which integrates multiple different modpacks to allow you to download and install modpacks easily and quickly.",
     "homepage": "https://atlauncher.com/",
     "license": "GPL-3.0-only",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.40.2/ATLauncher-3.4.40.2.zip",
-            "hash": "76be98752c855e83280e26a7298ad4d956d71f1188b8cdb6cf2ea7932bf40629"
-        }
+    "notes": "This application requires JRE 1.8 or higher to run.",
+    "suggest": {
+        "JRE": "java/temurin17-jre"
     },
-    "bin": "atlauncher.exe",
+    "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.40.2/ATLauncher-3.4.40.2.exe#/ATLauncher.exe",
+    "hash": "fbc6a2793193035702a344fb1386d6c5051455f7725068518267dcf43f3104b4",
+    "bin": "ATLauncher.exe",
     "shortcuts": [
         [
-            "atlauncher.exe",
+            "ATLauncher.exe",
             "ATLauncher"
         ]
+    ],
+    "persist": [
+        "assets",
+        "backups",
+        "configs",
+        "downloads",
+        "instances",
+        "jre",
+        "libraries",
+        "loaders",
+        "runtimes",
+        "servers",
+        "users"
     ],
     "checkver": {
         "github": "ATLauncher/ATLauncher",
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v$version/ATLauncher-$version.zip"
-            }
-        }
+        "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v$version/ATLauncher-$version.exe#/ATLauncher.exe"
     }
 }
