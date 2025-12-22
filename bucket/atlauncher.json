@@ -1,6 +1,6 @@
 {
     "version": "3.4.40.2",
-    "description": "A launcher for Minecraft which integrates multiple different modpacks to allow you to download and install modpacks easily and quickly.",
+    "description": "Launcher for Minecraft with support for downloading modpacks",
     "homepage": "https://atlauncher.com/",
     "license": "GPL-3.0-only",
     "notes": "This application requires JRE 1.8 or higher to run.",
