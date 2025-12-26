@@ -26,6 +26,8 @@
         "app\\config\\db",
         "app\\config\\web",
         "app\\config\\config.json",
+        "backups",
+        "import",
         "logs",
         "servers"
     ],
