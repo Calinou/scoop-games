@@ -3,6 +3,10 @@
     "description": "A Minecraft launcher and manager that allows users to start and administer Minecraft servers from a user-friendly interface",
     "homepage": "https://craftycontrol.com/",
     "license": "GPL-3.0-or-later",
+    "notes": [
+        "The Crafty team doesn't support this method of installation.",
+        "Use one of the official methods listed in https://docs.craftycontrol.com/pages/getting-started/installation/windows/ if you want to get support."
+    ],
     "architecture": {
         "64bit": {
             "url": "https://gitlab.com/crafty-controller/crafty-4/-/jobs/artifacts/v4.6.2/download?job=win-prod-build#/dl.zip",
