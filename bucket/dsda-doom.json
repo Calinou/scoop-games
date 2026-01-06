@@ -5,7 +5,8 @@
     "license": "GPL-2.0-only",
     "notes": [
         "Place your WAD files inside",
-        "%USERPROFILE%\\scoop\\persist\\_doom\\"
+        "",
+        "$scoopdir\\persist\\_doom\\"
     ],
     "architecture": {
         "64bit": {
@@ -22,6 +23,12 @@
         "}"
     ],
     "bin": "dsda-doom.exe",
+    "shortcuts": [
+        [
+            "dsda-doom.exe",
+            "DSDA Doom"
+        ]
+    ],
     "persist": [
         "dsda-doom.cfg",
         "dsda_doom_data",
