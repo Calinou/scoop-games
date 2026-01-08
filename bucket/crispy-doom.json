@@ -1,5 +1,5 @@
 {
-    "version": "7.1.0",
+    "version": "7.1",
     "description": "Faithful enhanced-resolution source port for Doom",
     "homepage": "https://fabiangreffrath.github.io/crispy-homepage",
     "license": "GPL-2.0-or-later",
@@ -83,12 +83,12 @@
     "checkver": {
         "url": "https://api.github.com/repositories/17395051/releases/latest",
         "regex": "crispy-doom-([\\d.]+)\\/crispy-doom-([\\d.]+)-win64.zip",
-        "replace": "${2}"
+        "replace": "${1}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-$match1/crispy-doom-$version-win64.zip"
+                "url": "https://github.com/fabiangreffrath/crispy-doom/releases/download/crispy-doom-$version/crispy-doom-$match2-win64.zip"
             }
         }
     }
