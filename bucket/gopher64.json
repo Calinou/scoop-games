@@ -25,9 +25,16 @@
         "}"
     ],
     "post_install": "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
-    "shortcuts": [["gopher64-windows-x86_64.exe", "Gopher64"]],
+    "shortcuts": [
+        [
+            "gopher64-windows-x86_64.exe",
+            "Gopher64"
+        ]
+    ],
     "persist": "portable_data",
-    "checkver": { "github": "https://github.com/gopher64/gopher64" },
+    "checkver": {
+        "github": "https://github.com/gopher64/gopher64"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
