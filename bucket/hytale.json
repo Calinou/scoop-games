@@ -1,0 +1,17 @@
+{
+    "version": "nightly",
+    "description": "Set out on an adventure built for both creation and play.",
+    "homepage": "https://hytale.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://hytale.com/terms-of-service"
+    },
+    "url": "https://launcher.hytale.com/builds/release/windows/amd64/hytale-launcher-installer-latest.exe#/.7z",
+    "pre_install": "Remove-Item \"$Dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "hytale-launcher.exe",
+            "Hytale"
+        ]
+    ]
+}
