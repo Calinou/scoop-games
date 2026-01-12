@@ -13,5 +13,9 @@
             "hytale-launcher.exe",
             "Hytale"
         ]
+    ],
+    "notes": [
+        "Delete 'HKLM\\SOFTWARE\\Hypixel Studios' from the Windows Registry.",
+        "This will force Hytale to use '%APPDATA%\\Hytale' as the game directory."
     ]
 }
