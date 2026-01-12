@@ -14,12 +14,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/HiveGamesOSS/Chunker/releases/download/$version/Chunker-$version-windows-x86.zip",
-        "shortcuts": [
-            [
-                "Chunker.exe",
-                "Chunker"
-            ]
-        ]
+        "url": "https://github.com/HiveGamesOSS/Chunker/releases/download/$version/Chunker-$version-windows-x86.zip"
     }
 }
