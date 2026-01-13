@@ -1,6 +1,10 @@
 {
     "version": "nightly",
     "description": "Official launcher for the game Hytale",
+    "notes": [
+        "To force Hytale to use its default folders, run as an admin:",
+        "reg.exe import \"$dir\\default-folders.reg\""
+    ],
     "homepage": "https://hytale.com",
     "license": {
         "identifier": "Proprietary",
@@ -8,14 +12,11 @@
     },
     "url": "https://launcher.hytale.com/builds/release/windows/amd64/hytale-launcher-installer-latest.exe#/.7z",
     "pre_install": "Remove-Item \"$Dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "post_install": "Copy-Item \"$BucketsDir\\games\\scripts\\hytale\\default-folders.reg\" \"$Dir\\default-folders.reg\"",
     "shortcuts": [
         [
             "hytale-launcher.exe",
             "Hytale"
         ]
-    ],
-    "notes": [
-        "Delete 'HKLM\\SOFTWARE\\Hypixel Studios' from the Windows Registry.",
-        "This will force Hytale to use default directories for the game & launcher."
     ]
 }
