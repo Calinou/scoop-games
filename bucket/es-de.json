@@ -1,9 +1,9 @@
 {
     "version": "3.4.0",
-    "description": "ES-DE is a frontend for browsing and launching games from your multi-platform collection.",
+    "description": "EmulationStation Desktop Edition is a frontend for browsing and launching games from your multi-platform collection",
     "homepage": "https://gitlab.com/es-de/emulationstation-de",
     "license": "MIT",
-    "notes": "Check out this issue to solve HDR problems, https://gitlab.com/es-de/emulationstation-de/-/issues/1880",
+    "notes": "Check out this issue to solve HDR problems: https://gitlab.com/es-de/emulationstation-de/-/issues/1880",
     "architecture": {
         "64bit": {
             "url": "https://gitlab.com/es-de/emulationstation-de/-/package_files/243196975/download#/dl.7z",
