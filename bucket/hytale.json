@@ -16,6 +16,6 @@
     ],
     "notes": [
         "Delete 'HKLM\\SOFTWARE\\Hypixel Studios' from the Windows Registry.",
-        "This will force Hytale to use '%APPDATA%\\Hytale' as the game directory."
+        "This will force Hytale to use default directories for the game & launcher."
     ]
 }
