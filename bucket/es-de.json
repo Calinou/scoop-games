@@ -34,17 +34,17 @@
         ],
         [
             "ES-DE.exe",
-            "EmulationStation Desktop Edition (1080P)",
+            "EmulationStation Desktop Edition (1080p)",
             "--resolution 1921 1080"
         ],
         [
             "ES-DE.exe",
-            "EmulationStation Desktop Edition (1440P)",
+            "EmulationStation Desktop Edition (1440p)",
             "--resolution 2561 1440"
         ],
         [
             "ES-DE.exe",
-            "EmulationStation Desktop Edition (2160P)",
+            "EmulationStation Desktop Edition (2160p)",
             "--resolution 3841 2160"
         ]
     ],
