@@ -1,0 +1,42 @@
+{
+    "version": "1.0.8",
+    "description": "A fork of Dolphin emulator that brings enhancements for Metroid Prime games",
+    "homepage": "https://dolphin-emu.org/",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING"
+    },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
+    },
+    "url": "https://github.com/shiiion/dolphin/releases/download/1.0.8/PrimeHack.Release.v1.0.8a.zip",
+    "hash": "75efeb5fc0ba74c8e41e91f4fb396b1d1c1688158517c3ec0b58bd4358e1efc8",
+    "pre_install": [
+        "$appdataPath = \"$Env:AppData\\Dolphin Emulator\"",
+        "if ((Test-Path -Path $appdataPath\\*) -and (!(Test-Path -Path $persist_dir\\*))) {",
+        "   Write-Warning \"Migrating AppData...\"",
+        "   New-Item -Type Directory -Path $persist_dir\\User -Force | Out-Null",
+        "   Copy-Item -Recurse -Force $appdataPath\\* -Destination $persist_dir\\User\\",
+        "}"
+    ],
+    "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
+    "bin": [
+        [
+            "Dolphin.exe",
+            "primehack"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Dolphin.exe",
+            "PrimeHack"
+        ]
+    ],
+    "persist": "User",
+    "checkver": {
+        "github": "https://github.com/shiiion/dolphin"
+    },
+    "autoupdate": {
+        "url": "https://github.com/shiiion/dolphin/releases/download/v$version/PrimeHack.Release.v$version.zip"
+    }
+}
