@@ -1,0 +1,20 @@
+{
+    "version": "3.8.1",
+    "description": "Hydra is a game launcher with its own embedded bittorrent client",
+    "homepage": "https://hydralauncher.gg",
+    "license": "MIT",
+    "url": "https://github.com/hydralauncher/hydra/releases/download/v3.8.1/hydralauncher-3.8.1-portable.exe#/hydralauncher-portable.exe",
+    "hash": "05794313567c842861a53513261f22ce99375d69b835df52af6f7ce00fcc19e6",
+    "shortcuts": [
+        [
+            "hydralauncher-portable.exe",
+            "Hydra Launcher"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/hydralauncher/hydra"
+    },
+    "autoupdate": {
+        "url": "https://github.com/hydralauncher/hydra/releases/download/v$version/hydralauncher-$version-portable.exe#/hydralauncher-portable.exe"
+    }
+}
