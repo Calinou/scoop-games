@@ -11,14 +11,6 @@
     },
     "url": "https://github.com/shiiion/dolphin/releases/download/1.0.8/PrimeHack.Release.v1.0.8a.zip",
     "hash": "75efeb5fc0ba74c8e41e91f4fb396b1d1c1688158517c3ec0b58bd4358e1efc8",
-    "pre_install": [
-        "$appdataPath = \"$Env:AppData\\Dolphin Emulator\"",
-        "if ((Test-Path -Path $appdataPath\\*) -and (!(Test-Path -Path $persist_dir\\*))) {",
-        "   Write-Warning \"Migrating AppData...\"",
-        "   New-Item -Type Directory -Path $persist_dir\\User -Force | Out-Null",
-        "   Copy-Item -Recurse -Force $appdataPath\\* -Destination $persist_dir\\User\\",
-        "}"
-    ],
     "post_install": "Set-Content -Value $null -Path \"$dir\\portable.txt\"",
     "bin": [
         [
@@ -37,6 +29,6 @@
         "github": "https://github.com/shiiion/dolphin"
     },
     "autoupdate": {
-        "url": "https://github.com/shiiion/dolphin/releases/download/v$version/PrimeHack.Release.v$version.zip"
+        "url": "https://github.com/shiiion/dolphin/releases/download/v$version/PrimeHack.Release.v$versiona.zip"
     }
 }
