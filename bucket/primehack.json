@@ -1,10 +1,10 @@
 {
     "version": "1.0.8",
     "description": "A fork of Dolphin emulator that brings enhancements for Metroid Prime games",
-    "homepage": "https://dolphin-emu.org/",
+    "homepage": "https://github.com/shiiion/dolphin",
     "license": {
         "identifier": "GPL-2.0-or-later",
-        "url": "https://github.com/dolphin-emu/dolphin/blob/master/COPYING"
+        "url": "https://github.com/shiiion/dolphin/blob/primehack-master/COPYING"
     },
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
