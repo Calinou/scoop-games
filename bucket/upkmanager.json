@@ -1,0 +1,21 @@
+{
+    "version": "1.3.2",
+    "description": "Blade & Soul Unreal Engine 3 Package (UPK) Extractor and Rebuilder",
+    "homepage": "https://github.com/stricq/UPKManager",
+    "license": "Unlicense",
+    "url": "https://github.com/stricq/UPKManager/releases/download/v1.3.2/UpkManager.Installer_1.3.2.zip",
+    "hash": "c89e6b9e259a40f2e1988e3985aa4d4ec379bf96fd139d731707b9e18ae87f28",
+    "installer": {
+        "script": "Expand-MsiArchive \"$dir\\UpkManager.Installer.msi\" \"$dir\" -Removal"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/stricq/UPKManager/releases/download/v$version/UpkManager.Installer_$version.zip"
+    },
+    "shortcuts": [
+        [
+            "UpkManager.Wpf.exe",
+            "UPK Manager"
+        ]
+    ]
+}
