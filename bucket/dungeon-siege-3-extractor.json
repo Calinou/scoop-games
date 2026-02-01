@@ -1,0 +1,20 @@
+{
+    "version": "120",
+    "description": "Extract .oaf archives from Dungeon Siege 3",
+    "homepage": "http://raptor-cestiny.cz/download/dungeon-siege-3-oaf-files-extractor.html",
+    "license": "Freeware",
+    "url": "http://raptor-cestiny.cz/download/files/utils/DungeonSiege3Extractor120.rar",
+    "hash": "1644a60631eae7a9e9bbb9557517a4dc7617089bf641115fc2935908ab52a635",
+    "checkver": {
+        "regex": "files/utils/DungeonSiege3Extractor(?<version>[0-9]+)\\.rar"
+    },
+    "autoupdate": {
+        "url": "http://raptor-cestiny.cz/download/files/utils/DungeonSiege3Extractor$version.rar"
+    },
+    "shortcuts": [
+        [
+            "DungeonSiege3Extractor.exe",
+            "Dungeon Siege 3 Extractor"
+        ]
+    ]
+}
