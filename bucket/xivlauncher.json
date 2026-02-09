@@ -6,7 +6,7 @@
     "url": "https://github.com/goatcorp/FFXIVQuickLauncher/releases/download/7.0.20/XIVLauncher-7.0.20-full.nupkg",
     "hash": "8921d93888d7d2f9d136a494a7a65a0e3da81c686dcffa237f74dad545253f9c",
     "bin": "XIVLauncher.exe",
-    "extract_dir": "lib\\net45",
+    "extract_dir": "lib\\app",
     "shortcuts": [
         [
             "XIVLauncher.exe",
