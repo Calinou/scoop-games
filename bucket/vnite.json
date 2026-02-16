@@ -9,20 +9,20 @@
         "script": [
             "$nestedSevenZip = \"$dir\\`$PLUGINSDIR\\app-64.7z\"",
             "if (Test-Path $nestedSevenZip) {",
-            "   Expand-7ZipArchive $nestedSevenZip \"$dir\"",
-            "   Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
+            "    Expand-7ZipArchive $nestedSevenZip \"$dir\"",
+            "    Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
             "}",
             "",
             "ensure \"$persist_dir\" | Out-Null",
             "$targetPath = \"$env:APPDATA\\vnite\"",
             "if (Test-Path $targetPath) {",
-            "   $linkType = (Get-Item -Path $targetPath -ErrorAction 'SilentlyContinue').LinkType",
-            "   if ($linkType -eq 'Junction') {",
-            "       Remove-Item $targetPath -Force -ErrorAction 'SilentlyContinue'",
-            "   } else {",
+            "    $linkType = (Get-Item -Path $targetPath -ErrorAction 'SilentlyContinue').LinkType",
+            "    if ($linkType -eq 'Junction') {",
+            "        Remove-Item $targetPath -Force -ErrorAction 'SilentlyContinue'",
+            "    } else {",
             "        Get-ChildItem -Path $targetPath -Force | Move-Item -Destination $persist_dir -Force",
             "        Remove-Item -Path $targetPath -Force -Recurse",
-            "   }",
+            "    }",
             "}",
             "New-Item -Path $targetPath -ItemType Junction -Target \"$persist_dir\" | Out-Null"
         ]
@@ -40,4 +40,5 @@
     "autoupdate": {
         "url": "https://github.com/ximu3/vnite/releases/download/v$version/vnite-$version-setup.exe#/dl.7z"
     }
+
 }
