@@ -2,7 +2,7 @@
     "version": "4.7.0",
     "description": "A unified platform to organize your game collection, track gameplay, with real-time cloud sync across devices and detailed gameplay reports.",
     "homepage": "https://github.com/ximu3/vnite",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "url": "https://github.com/ximu3/vnite/releases/download/v4.7.0/vnite-4.7.0-setup.exe#/dl.7z",
     "hash": "40a8597c9f211331756323cf3641c1f13b868e4e9919d6ffef1140fedad22b26",
     "installer": {
@@ -40,5 +40,4 @@
     "autoupdate": {
         "url": "https://github.com/ximu3/vnite/releases/download/v$version/vnite-$version-setup.exe#/dl.7z"
     }
-
 }
