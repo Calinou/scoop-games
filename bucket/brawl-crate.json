@@ -1,0 +1,24 @@
+{
+    "version": "0.37",
+    "description": "Wii file editor (fork of BrawlBox/BrawlTools)",
+    "homepage": "https://github.com/soopercool101/BrawlCrate/",
+    "url": "https://github.com/soopercool101/BrawlCrate/releases/download/v0.37/BrawlCrate.v0.37.x86.exe#/dl.7z",
+    "hash": "bfd95247075b468fc159f0b12b43dfcdc62ed38500394e7f0f7982d1229aeaa9",
+    "license": "MIT",
+    "bin": "BrawlCrate.exe",
+    "post_install": [
+        "Remove-Item -Path $dir/Updater.exe"
+    ],
+    "shortcuts": [
+        [
+            "BrawlCrate.exe",
+            "Brawl Crate"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/soopercool101/BrawlCrate/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/soopercool101/BrawlCrate/releases/download/v$version/BrawlCrate.v$version.x86.exe"
+    }
+}
