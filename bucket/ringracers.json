@@ -16,6 +16,6 @@
         "github": "https://github.com/KartKrewDev/RingRacers"
     },
     "autoupdate": {
-        "url": "https://github.com/KartKrewDev/RingRacers/releases/download/v$version/Dr.Robotnik.s-Ring-Racers-v$cleanVersion-Installer.exe#/dl.7z"
+        "url": "https://github.com/KartKrewDev/RingRacers/releases/download/v$version/Dr.Robotnik.s-Ring-Racers-v$version-Installer.exe#/dl.7z"
     }
 }
