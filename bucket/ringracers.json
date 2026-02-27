@@ -12,6 +12,11 @@
             "Ring Racers"
         ]
     ],
+    "persist": [
+        "ringdata.dat",
+        "ringprofiles.prf",
+        "ringconfig.cfg"
+    ],
     "checkver": {
         "github": "https://github.com/KartKrewDev/RingRacers"
     },
