@@ -13,9 +13,14 @@
         ]
     ],
     "persist": [
+        "addons",
+        "logs",
+        "media",
         "ringdata.dat",
         "ringprofiles.prf",
-        "ringconfig.cfg"
+        "ringconfig.cfg",
+        "srvstats.dat",
+        "srvbans.json"
     ],
     "checkver": {
         "github": "https://github.com/KartKrewDev/RingRacers"
