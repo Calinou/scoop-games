@@ -1,6 +1,6 @@
 {
     "version": "2.0.4",
-    "description": "A program for downloading files from the Steam Workshop.",
+    "description": "Program for downloading files from the Steam Workshop",
     "homepage": "https://github.com/imwaitingnow/WorkshopDL",
     "license": "MIT",
     "url": "https://github.com/imwaitingnow/WorkshopDL/releases/download/2.0.4/WorkshopDLv2.0.4.7z",
