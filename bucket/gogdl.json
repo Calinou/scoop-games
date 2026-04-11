@@ -1,7 +1,7 @@
 {
     "version": "1.2.1",
     "description": "GOG download module for Heroic Games Launcher",
-    "homepage": "https://github.com/Heroic-Games-Launcher/heroic-gogdl/",
+    "homepage": "https://github.com/Heroic-Games-Launcher/heroic-gogdl",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
