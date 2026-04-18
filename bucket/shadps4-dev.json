@@ -1,27 +1,46 @@
 {
-    "version": "2025-10-30-715eb51",
-    "description": "PlayStation 4 emulator for Windows, Linux and macOS (development version)",
+    "version": "2026-04-18-e7d736a",
+    "description": "PlayStation 4 emulator (development version)",
     "homepage": "https://shadps4.net/",
     "license": {
         "identifier": "GPL-2.0-only",
-        "url": "https://github.com/shadps4-emu/shadPS4/blob/main/LICENSE"
+        "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/blob/main/LICENSE"
     },
-    "url": "https://github.com/shadps4-emu/shadPS4/releases/download/Pre-release-shadPS4-2025-10-30-715eb512c9b84bfcc5f208881a657dd02a58393e/shadps4-win64-qt-2025-10-30-715eb51.zip",
-    "hash": "2d0d67816f628582776ff5b390f7567c0aff342c8293e3d2d5e9309302936ace",
-    "bin": "shadPS4.exe",
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/releases/download/shadPS4QtLauncher-2026-04-18-e7d736af3487b08d9bf2e39a493e980d6657f61d/shadPS4QtLauncher-win64-qt-2026-04-18-e7d736a.zip",
+            "hash": "ebe74422e72fbdc659600d291bbfaf70a333b5b8205c30ea444fdbc25e95ac2d"
+        }
+    },
+    "bin": [
+        [
+            "shadPS4QtLauncher.exe",
+            "shadPS4-dev"
+        ]
+    ],
     "shortcuts": [
         [
-            "shadPS4.exe",
+            "shadPS4QtLauncher.exe",
             "shadPS4 (Development)"
         ]
     ],
-    "persist": "user",
+    "persist": [
+        "launcher",
+        "user"
+    ],
     "checkver": {
-        "url": "https://api.github.com/repos/shadps4-emu/shadPS4/releases?per_page=1",
+        "url": "https://api.github.com/repos/shadps4-emu/shadps4-qtlauncher/releases?per_page=1",
         "jsonpath": "$[?(@.prerelease == true)]",
-        "regex": "/(?<tag>[\\w-]+)/shadps4-win64-qt-(?<version>[\\w-]+)\\.zip"
+        "regex": "/(?<tag>[\\w-]+)/shadPS4QtLauncher-win64-qt-(?<version>[\\w-]+)\\.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/shadps4-emu/shadPS4/releases/download/$matchTag/shadps4-win64-qt-$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/releases/download/$matchTag/shadPS4QtLauncher-win64-qt-$version.zip"
+            }
+        }
     }
 }
