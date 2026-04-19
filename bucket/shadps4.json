@@ -35,7 +35,7 @@
         "github": "https://github.com/shadps4-emu/shadps4-qtlauncher"
     },
     "autoupdate": {
-        "architecure": {
+        "architecture": {
             "64bit": {
                 "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/releases/download/v$version/shadPS4QtLauncher-win64-qt-v$version.zip"
             }

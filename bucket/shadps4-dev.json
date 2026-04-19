@@ -1,5 +1,5 @@
 {
-    "version": "2026-04-18-e7d736a",
+    "version": "20260418220905-e7d736a",
     "description": "PlayStation 4 emulator (development version)",
     "homepage": "https://shadps4.net/",
     "license": {
@@ -33,13 +33,19 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/shadps4-emu/shadps4-qtlauncher/releases?per_page=1",
-        "jsonpath": "$[?(@.prerelease == true)]",
-        "regex": "/(?<tag>[\\w-]+)/shadPS4QtLauncher-win64-qt-(?<version>[\\w-]+)\\.zip"
+        "script": [
+            "$release = (Invoke-RestMethod $url | Where-Object { $_.prerelease })[0]",
+            "$time = (Get-Date $release.published_at).ToString('yyyyMMddHHmmss')",
+            "$suffix = $release.name -replace '^shadPS4QtLauncher-'",
+            "$commit = ($suffix -split '-')[-1]",
+            "return \"$time-$commit $($release.tag_name) $suffix\""
+        ],
+        "regex": "(?<version>[\\w-]+) (?<tag>[\\w-]+) (?<suffix>[\\w.-]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/releases/download/$matchTag/shadPS4QtLauncher-win64-qt-$version.zip"
+                "url": "https://github.com/shadps4-emu/shadps4-qtlauncher/releases/download/$matchTag/shadPS4QtLauncher-win64-qt-$matchSuffix.zip"
             }
         }
     }
