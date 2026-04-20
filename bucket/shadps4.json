@@ -15,6 +15,41 @@
             "hash": "021871249bae6867900f62efd728a6cbdbed9934b69c28488b41d413280e2e1d"
         }
     },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "    New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "    $map = @{ 'shadPS4' = 'user'; 'shadPS4QtLauncher' = 'launcher' }",
+        "    $found = $map.Keys.Where({ Test-Path \"$env:APPDATA\\$_\" })",
+        "    if ($found) {",
+        "        Write-Host 'Migrating AppData...' -ForegroundColor Yellow",
+        "        foreach ($folder in $found) {",
+        "            $dest = \"$persist_dir\\$($map[$folder])\"",
+        "            New-Item $dest -ItemType Directory | Out-Null",
+        "            Copy-Item -Path \"$env:APPDATA\\$folder\\*\" -Destination $dest -Recurse",
+        "            Remove-Item -Path \"$env:APPDATA\\$folder\" -Recurse",
+        "        }",
+        "    }",
+        "}"
+    ],
+    "post_install": [
+        "if (Test-Path \"$persist_dir\\user\\config.toml\") {",
+        "    $oldAddonDir = ($env:APPDATA + '\\shadPS4\\addcont').Replace('\\', '\\\\')",
+        "    $newAddonDir = ($dir + '\\user\\addcont').Replace('\\', '\\\\')",
+        "    (Get-Content \"$persist_dir\\user\\config.toml\").Replace($oldAddonDir, $newAddonDir) | Set-Content \"$persist_dir\\user\\config.toml\"",
+        "}",
+        "if (Test-Path \"$persist_dir\\launcher\\qt_ui.ini\") {",
+        "    $oldVersionPath = ($env:APPDATA + '\\shadPS4QtLauncher\\versions').Replace('\\', '\\\\')",
+        "    $newVersionPath = ($dir + '\\launcher\\versions').Replace('\\', '\\\\')",
+        "    $oldVersionSel = ($env:APPDATA + '\\shadPS4QtLauncher\\versions').Replace('\\', '/')",
+        "    $newVersionSel = ($dir + '\\launcher\\versions').Replace('\\', '/')",
+        "    (Get-Content \"$persist_dir\\launcher\\qt_ui.ini\").Replace($oldVersionPath, $newVersionPath).Replace($oldVersionSel, $newVersionSel) | Set-Content \"$persist_dir\\launcher\\qt_ui.ini\"",
+        "}",
+        "if (Test-Path \"$persist_dir\\launcher\\versions.json\") {",
+        "    $oldPath = ($env:APPDATA + '\\shadPS4QtLauncher\\versions').Replace('\\', '/')",
+        "    $newPath = ($dir + '\\launcher\\versions').Replace('\\', '/')",
+        "    (Get-Content \"$persist_dir\\launcher\\versions.json\").Replace($oldPath, $newPath) | Set-Content \"$persist_dir\\launcher\\versions.json\"",
+        "}"
+    ],
     "bin": [
         [
             "shadPS4QtLauncher.exe",
