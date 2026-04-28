@@ -1,6 +1,6 @@
 {
     "version": "1.4.0",
-    "description": "Configuration manager for 86box",
+    "description": "Configuration manager for 86Box",
     "homepage": "https://github.com/notBald/Avalonia86",
     "license": {
         "identifier": "MIT",
