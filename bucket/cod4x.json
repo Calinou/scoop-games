@@ -1,0 +1,22 @@
+{
+    "version": "21.2",
+    "description": "Extended Call of Duty 4 server",
+    "homepage": "https://github.com/callofduty4x/CoD4x_Server",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/callofduty4x/CoD4x_Server/releases/download/21.2/cod4x18_dedrun.exe",
+    "hash": "15d10d334744fe355e09835d279fee4abdf7cae86c160832297a74f516aca1ca",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/callofduty4x/CoD4x_Server/releases/download/$version/cod4x18_dedrun.exe"
+    },
+    "persist": [
+        "main/",
+        "zone/"
+    ],
+    "shortcuts": [
+        [
+            "cod4x18_dedrun.exe",
+            "CoD4x Dedicated Server"
+        ]
+    ]
+}
