@@ -1,0 +1,44 @@
+{
+    "version": "1.10.1",
+    "description": "A community-lead fork of the much-loved minimalist roguelike game, Brogue",
+    "homepage": "https://github.com/tmewett/BrogueCE",
+    "license": "AGPL-3.0-or-later",
+    "pre_install": "if (!(Test-Path \"$persist_dir\")) { New-Item -Path \"$persist_dir\" -ItemType Directory | Out-Null }",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tmewett/BrogueCE/releases/download/v1.10.1/BrogueCE-1.10.1-windows-x86_64.zip",
+            "hash": "bea19b303273d52f8da0fe167e6518f3ae6f51cc3f6e582a249fb909a47dea39"
+        }
+    },
+    "extract_dir": "BrogueCE-windows",
+    "uninstaller": {
+        "script": "Remove-Item -Path \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\BrogueCE.lnk\""
+    },
+    "##": [
+        "This post_install is a workaround until brogueCE gets proper userdata directory support.",
+        "Check For assets dir, if present remove and replace it. (Lines 24 & 25)",
+        "Check for brogueCE shortcut, execute the following if it does not exist. (26)",
+        "Create the brogueCE shortcut, with the working directory set to $persist_dir, so user data ends up in $persist_dir. (27-33)"
+    ],
+    "post_install": [
+        "if ((Test-Path \"$persist_dir\\assets\")) { Remove-Item -Path \"$persist_dir\\assets\" -Recurse }",
+        "Copy-Item -Path \"$dir\\assets\" -Destination \"$persist_dir\" -Recurse",
+        "if (!(Test-Path \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\BrogueCE.lnk\")) {",
+        "   $Shell = New-Object -ComObject (\"WScript.Shell\")",
+        "   $ShortCut = $Shell.CreateShortcut(\"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\BrogueCE.lnk\")",
+        "   $ShortCut.TargetPath=\"$dir\\brogue.exe\"",
+        "   $ShortCut.WorkingDirectory = \"$persist_dir\"",
+        "   $ShortCut.WindowStyle = 1",
+        "   $ShortCut.IconLocation = \"$dir\\brogue.exe, 0\"",
+        "   $ShortCut.Save()",
+        "}"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tmewett/BrogueCE/releases/download/v$version/BrogueCE-$version-windows-x86_64.zip"
+            }
+        }
+    }
+}
