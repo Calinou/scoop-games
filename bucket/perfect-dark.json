@@ -1,5 +1,5 @@
 {
-    "version": "20260523-45139a9",
+    "version": "20260522-132e59d",
     "description": "Decompiled and PC-modded build of Nintendo 64's Perfect Dark.",
     "homepage": "https://github.com/fgsfdsfgs/perfect_dark",
     "license": "MIT",
@@ -65,19 +65,13 @@
     "notes": "You must provide your own legally sourced Perfect Dark ROM file (.z64) to run this port. Refer to https://github.com/fgsfdsfgs/perfect_dark#running for instructions.",
     "checkver": {
         "script": [
-            "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
-            "$commit_regex = '([a-f0-9]{7})[^>]*</a>\\s+This commit was'",
-            "$date_regex = 'released this[^<]*<relative-time[^>]*datetime=\"([^T]+)T'",
-            "",
-            "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content",
-            "",
-            "if(!($cont -match $commit_regex)) { error \"Could not match commit regex on '$url'\"; break }",
-            "$commit_sha = $matches[1]",
-            "if(!($cont -match $date_regex)) { error \"Could not match date regex on '$url'\"; break }",
-            "$date = $matches[1] -replace '-', ''",
-            "",
-            "$script_ver = \"$date-$commit_sha\"",
-            "Write-Output $script_ver"
+            "$api = 'https://api.github.com/repos/fgsfdsfgs/perfect_dark/releases/tags/ci-dev-build'",
+            "$data = (Invoke-WebRequest $api -UseBasicParsing | ConvertFrom-Json)",
+            "$commit = $data.target_commitish",
+            "$short = $commit.Substring(0, 7)",
+            "$date = ([datetime]$data.updated_at).ToString('yyyyMMdd')",
+            "$version = \"$date-$short\"",
+            "Write-Output $version"
         ],
         "regex": "(\\d{8}-[a-f0-9]{7})"
     },
