@@ -81,29 +81,11 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-x86_64-windows.zip",
-                "extract_dir": "pd-x86_64-windows",
-                "hash": {
-                    "script": [
-                        "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
-                        "$pattern = 'pd-x86_64-windows\\.zip.*?sha256:([a-f0-9]{64})'",
-                        "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content -replace '\\s+', ' '",
-                        "if($cont -match $pattern) { Write-Output \"sha256:$($matches[1])\" }",
-                        "else { error 'Could not extract x86_64 hash' }"
-                    ]
-                }
+                "extract_dir": "pd-x86_64-windows"
             },
             "32bit": {
                 "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-i686-windows.zip",
-                "extract_dir": "pd-i686-windows",
-                "hash": {
-                    "script": [
-                        "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
-                        "$pattern = 'pd-i686-windows\\.zip.*?sha256:([a-f0-9]{64})'",
-                        "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content -replace '\\s+', ' '",
-                        "if($cont -match $pattern) { Write-Output \"sha256:$($matches[1])\" }",
-                        "else { error 'Could not extract i686 hash' }"
-                    ]
-                }
+                "extract_dir": "pd-i686-windows"
             }
         }
     }
