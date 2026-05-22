@@ -1,5 +1,5 @@
 {
-    "version": "latest",
+    "version": "20260523-45139a9",
     "description": "Decompiled and PC-modded build of Nintendo 64's Perfect Dark.",
     "homepage": "https://github.com/fgsfdsfgs/perfect_dark",
     "license": "MIT",
@@ -67,15 +67,19 @@
         "script": [
             "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
             "$commit_regex = '([a-f0-9]{7})[^>]*</a>\\s+This commit was'",
+            "$date_regex = 'released this[^<]*<relative-time[^>]*datetime=\"([^T]+)T'",
             "",
             "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content",
             "",
             "if(!($cont -match $commit_regex)) { error \"Could not match commit regex on '$url'\"; break }",
             "$commit_sha = $matches[1]",
+            "if(!($cont -match $date_regex)) { error \"Could not match date regex on '$url'\"; break }",
+            "$date = $matches[1] -replace '-', ''",
             "",
-            "Write-Output $commit_sha"
+            "$script_ver = \"$date-$commit_sha\"",
+            "Write-Output $script_ver"
         ],
-        "regex": "([a-f0-9]{7})"
+        "regex": "(\\d{8}-[a-f0-9]{7})"
     },
     "autoupdate": {
         "architecture": {
