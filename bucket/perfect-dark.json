@@ -1,0 +1,110 @@
+{
+    "version": "latest",
+    "description": "Decompiled and PC-modded build of Nintendo 64's Perfect Dark.",
+    "homepage": "https://github.com/fgsfdsfgs/perfect_dark",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-x86_64-windows.zip",
+            "hash": "sha256:0162398691c9e1e90bda303d16b8ca8aa82afb58139b0a78a334ff7ac3884e01",
+            "extract_dir": "pd-x86_64-windows"
+        },
+        "32bit": {
+            "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-i686-windows.zip",
+            "hash": "sha256:365df7e4a14fd1f6c7d6fd40d960d71ced9657019231867458f9d5f6f7d492f3",
+            "extract_dir": "pd-i686-windows"
+        }
+    },
+    "bin": [
+        "pd.x86_64.exe",
+        [
+            "pd.pal.x86_64.exe",
+            "pd-pal"
+        ],
+        [
+            "pd.jpn.x86_64.exe",
+            "pd-jpn"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "pd.x86_64.exe",
+            "Perfect Dark"
+        ],
+        [
+            "pd.pal.x86_64.exe",
+            "Perfect Dark (PAL)"
+        ],
+        [
+            "pd.jpn.x86_64.exe",
+            "Perfect Dark (Japanese)"
+        ]
+    ],
+    "persist": [
+        "pd.ini",
+        "eeprom.bin",
+        "mpsetups.bin",
+        "data/pd.ntsc-final.z64"
+    ],
+    "installer": {
+        "script": [
+            "$FILES = @('pd.ini', 'eeprom.bin', 'mpsetups.bin')",
+            "foreach ($FILE in $FILES) {",
+            "  if (!(Test-Path \"$persist_dir\\$FILE\")) {",
+            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
+            "  }",
+            "}",
+            "if (!(Test-Path \"$dir\\data\")) {",
+            "  New-Item \"$dir\\data\" -Type Directory | Out-Null",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\data\\pd.ntsc-final.z64\")) {",
+            "  New-Item \"$dir\\data\\pd.ntsc-final.z64\" -Type File | Out-Null",
+            "}"
+        ]
+    },
+    "notes": "You must provide your own legally sourced Perfect Dark ROM file (.z64) to run this port. Refer to https://github.com/fgsfdsfgs/perfect_dark#running for instructions.",
+    "checkver": {
+        "script": [
+            "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
+            "$commit_regex = '([a-f0-9]{7})[^>]*</a>\\s+This commit was'",
+            "",
+            "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content",
+            "",
+            "if(!($cont -match $commit_regex)) { error \"Could not match commit regex on '$url'\"; break }",
+            "$commit_sha = $matches[1]",
+            "",
+            "Write-Output $commit_sha"
+        ],
+        "regex": "([a-f0-9]{7})"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-x86_64-windows.zip",
+                "extract_dir": "pd-x86_64-windows",
+                "hash": {
+                    "script": [
+                        "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
+                        "$pattern = 'pd-x86_64-windows\\.zip.*?sha256:([a-f0-9]{64})'",
+                        "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content -replace '\\s+', ' '",
+                        "if($cont -match $pattern) { Write-Output \"sha256:$($matches[1])\" }",
+                        "else { error 'Could not extract x86_64 hash' }"
+                    ]
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/fgsfdsfgs/perfect_dark/releases/download/ci-dev-build/pd-i686-windows.zip",
+                "extract_dir": "pd-i686-windows",
+                "hash": {
+                    "script": [
+                        "$url = 'https://github.com/fgsfdsfgs/perfect_dark/releases/tag/ci-dev-build'",
+                        "$pattern = 'pd-i686-windows\\.zip.*?sha256:([a-f0-9]{64})'",
+                        "$cont = (Invoke-WebRequest $url -UseBasicParsing).Content -replace '\\s+', ' '",
+                        "if($cont -match $pattern) { Write-Output \"sha256:$($matches[1])\" }",
+                        "else { error 'Could not extract i686 hash' }"
+                    ]
+                }
+            }
+        }
+    }
+}
