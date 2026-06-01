@@ -16,14 +16,17 @@
         }
     },
     "bin": [
-        "pd.x86_64.exe",
+        [
+            "pd.x86_64.exe",
+            "perfect-dark"
+        ],
         [
             "pd.pal.x86_64.exe",
-            "pd-pal"
+            "perfect-dark-pal"
         ],
         [
             "pd.jpn.x86_64.exe",
-            "pd-jpn"
+            "perfect-dark-jpn"
         ]
     ],
     "shortcuts": [
