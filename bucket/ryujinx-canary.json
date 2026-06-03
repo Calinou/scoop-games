@@ -14,6 +14,10 @@
         "64bit": {
             "url": "https://git.ryujinx.app/ryubing/canary/releases/download/1.3.308/ryujinx-canary-1.3.308-win_x64.zip",
             "hash": "aedbc0cff468c69d9d27251c5dc8d146111700dcaa1196b96cc91c83cb70f83c"
+        },
+        "arm64": {
+            "url": "https://git.ryujinx.app/ryubing/canary/releases/download/1.3.308/ryujinx-canary-1.3.308-win_arm64.zip",
+            "hash": "90e456b59f12f40da6f3a8c3456699fea8778d2e1cc23f53df2530527ab801ac"
         }
     },
     "extract_dir": "publish",
@@ -46,6 +50,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://git.ryujinx.app/ryubing/canary/releases/download/$version/ryujinx-canary-$version-win_x64.zip"
+            },
+            "arm64": {
+                "url": "https://git.ryujinx.app/ryubing/canary/releases/download/$version/ryujinx-canary-$version-win_arm64.zip"
             }
         }
     }
