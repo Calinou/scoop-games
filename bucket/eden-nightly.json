@@ -1,5 +1,5 @@
 {
-    "version": "1780254271.bd2d344040",
+    "version": "1780772850.5ba3ae32dc",
     "description": "Open source Nintendo Switch emulator (forked from yuzu — nightly build)",
     "homepage": "https://eden-emu.dev/",
     "license": {
@@ -15,12 +15,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.eden-emu.dev/v1780254271.bd2d344040/Eden-Windows-bd2d344040-amd64-clang-pgo.zip",
-            "hash": "9b95e2ca704ea85914e65367b12292df2a9db9a8e39904dfaecd19f0b8b36ddf"
+            "url": "https://nightly.eden-emu.dev/v1780772850.5ba3ae32dc/Eden-Windows-5ba3ae32dc-amd64-clang-pgo.zip",
+            "hash": "ac8481f2e8a9ae8dd55fa72cc3eed4c8da41f0d05f9ce9db572fe0256c5f2beb"
         },
         "arm64": {
-            "url": "https://nightly.eden-emu.dev/v1780254271.bd2d344040/Eden-Windows-bd2d344040-arm64-clang-pgo.zip",
-            "hash": "ddedbf302b82c302d944e04310b941aac3c905e071666c1dd23ad993488e2971"
+            "url": "https://nightly.eden-emu.dev/v1780772850.5ba3ae32dc/Eden-Windows-5ba3ae32dc-arm64-clang-pgo.zip",
+            "hash": "b354034c7433d5501ab10a6b592d72d100b49da7d3b357f1a1ff209bcca27b63"
         }
     },
     "pre_install": [
