@@ -20,10 +20,6 @@
         "regex": "([\\d.]+-lazer)"
     },
     "autoupdate": {
-        "url": "https://github.com/ppy/osu/releases/download/$version/osulazer-$version-full.nupkg#/dl.7z",
-        "hash": {
-            "url": "https://github.com/ppy/osu/releases/expanded_assets/$version",
-            "regex": "$basename</a>.*?sha256:$sha256"
-        }
+        "url": "https://github.com/ppy/osu/releases/download/$version/osulazer-$version-full.nupkg#/dl.7z"
     }
 }
