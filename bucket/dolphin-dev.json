@@ -1,5 +1,5 @@
 {
-    "version": "2606-13",
+    "version": "2606-97",
     "description": "A Nintendo GameCube and Wii emulator, with enhancements and Netplay. (development version)",
     "homepage": "https://dolphin-emu.org/",
     "license": {
@@ -11,13 +11,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.dolphin-emu.org/builds/7f/b1/dolphin-master-2606-13-x64.7z",
-            "hash": "68a732aa6afbf29369730c6e29d48fd244be1afaa0f5aea21f0433ee43c5ff31",
+            "url": "https://dl.dolphin-emu.org/builds/56/dc/dolphin-master-2606-97-x64.7z",
+            "hash": "b8eca761cea04537081c0d576d83ca07d375fa96eabc6380518a203915c47460",
             "extract_dir": "Dolphin-x64"
         },
         "arm64": {
-            "url": "https://dl.dolphin-emu.org/builds/f3/42/dolphin-master-2606-13-ARM64.7z",
-            "hash": "eeb8d1f2b9c63c70f0979508bdb3d4b752881a4d3de6239796e8b9829c300942",
+            "url": "https://dl.dolphin-emu.org/builds/a7/6e/dolphin-master-2606-97-ARM64.7z",
+            "hash": "8d67056e0d8951055829573093545cf8803257e07a4394d163aa48acca070e5d",
             "extract_dir": "Dolphin-ARM64"
         }
     },
@@ -49,15 +49,15 @@
     "persist": "User",
     "checkver": {
         "url": "https://dolphin-emu.org/update/latest/dev",
-        "regex": "(?=.*\"shortrev\":\\s*\"(?<version>[\\w-]+)\")(?=.*\"(?<x64>https://[^\"]+-x64\\.7z)\")(?=.*\"(?<arm64>https://[^\"]+-ARM64\\.7z)\")"
+        "regex": "(?=.*\"shortrev\":\\s*\"(?<version>[\\w-]+)\")(?=.*\"https://(?<x64>[^\"]+-x64\\.7z)\")(?=.*\"https://(?<arm64>[^\"]+-ARM64\\.7z)\")"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "$matchX64"
+                "url": "https://$matchX64"
             },
             "arm64": {
-                "url": "$matchArm64"
+                "url": "https://$matchArm64"
             }
         }
     }
