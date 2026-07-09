@@ -1,6 +1,6 @@
 {
     "version": "1.12.1",
-    "description": "A simple standalone program which automates the installation, removal and maintenance of Millennium.",
+    "description": "Simple standalone program which automates the installation, removal and maintenance of Millennium",
     "homepage": "https://steambrew.app",
     "license": "MIT",
     "suggest": {
