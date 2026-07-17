@@ -1,6 +1,6 @@
 {
     "version": "18",
-    "description": "Free and open-source UCI chess engine.",
+    "description": "Free and open-source UCI chess engine",
     "homepage": "https://stockfishchess.org/",
     "license": "GPL-3.0-only",
     "architecture": {
