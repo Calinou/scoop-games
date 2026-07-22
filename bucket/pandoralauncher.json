@@ -40,14 +40,14 @@
         "    }",
         "}"
     ],
-   "checkver":{
-      "github":"https://github.com/Moulberry/PandoraLauncher"
-   },
-   "autoupdate":{
-      "architecture":{
-         "64bit":{
-            "url":"https://github.com/Moulberry/PandoraLauncher/releases/download/$version/PandoraLauncher-Windows-x86_64-Portable.exe"
-         }
-      }
-   }
+    "checkver": {
+        "github": "https://github.com/Moulberry/PandoraLauncher"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Moulberry/PandoraLauncher/releases/download/$version/PandoraLauncher-Windows-x86_64-Portable.exe"
+            }
+        }
+    }
 }
