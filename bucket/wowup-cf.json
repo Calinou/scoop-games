@@ -1,6 +1,6 @@
 {
     "version": "2.23.0",
-    "description": "World of Warcraft addon updater with CurseForge support.",
+    "description": "World of Warcraft addon updater with CurseForge support",
     "homepage": "https://wowup.io/",
     "license": {
         "identifier": "GPL-3.0-or-later",
