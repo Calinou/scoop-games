@@ -1,5 +1,5 @@
 {
-    "version": "2124",
+    "version": "2125.1.3",
     "description": "Open source 3DS emulator project based on Citra",
     "homepage": "https://azahar-emu.org/",
     "license": {
@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/azahar-emu/azahar/releases/download/2124/azahar-2124-windows-msys2.zip",
-            "hash": "9aa8aa661d7c85a73196e283f5db6d199842ece4b84a2c39bde0e8db8ffa4b68"
+            "url": "https://github.com/azahar-emu/azahar/releases/download/2125.1.3/azahar-windows-msys2-2125.1.3.zip",
+            "hash": "6aabc16d7023a6d6bbe9b950591d1f128c1c543c1c8fffc3a337997353c9d980"
         }
     },
-    "extract_dir": "azahar-2124-windows-msys2",
+    "extract_dir": "azahar-windows-msys2-2125.1.3",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user\")) {",
         "   New-Item -Path \"$persist_dir\" -Name \"user\" -ItemType \"directory\" | Out-Null",
@@ -35,7 +35,7 @@
         "github": "https://github.com/azahar-emu/azahar"
     },
     "autoupdate": {
-        "url": "https://github.com/azahar-emu/azahar/releases/download/$version/azahar-$version-windows-msys2.zip",
-        "extract_dir": "azahar-$version-windows-msys2"
+        "url": "https://github.com/azahar-emu/azahar/releases/download/$version/azahar-windows-msys2-$version.zip",
+        "extract_dir": "azahar-windows-msys2-$version"
     }
 }

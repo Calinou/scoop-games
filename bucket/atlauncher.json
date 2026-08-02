@@ -1,5 +1,5 @@
 {
-    "version": "3.4.40.2",
+    "version": "3.4.41.1",
     "description": "Launcher for Minecraft with support for downloading modpacks",
     "homepage": "https://atlauncher.com/",
     "license": "GPL-3.0-only",
@@ -7,8 +7,8 @@
     "suggest": {
         "JRE": "java/temurin17-jre"
     },
-    "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.40.2/ATLauncher-3.4.40.2.exe#/ATLauncher.exe",
-    "hash": "fbc6a2793193035702a344fb1386d6c5051455f7725068518267dcf43f3104b4",
+    "url": "https://github.com/ATLauncher/ATLauncher/releases/download/v3.4.41.1/ATLauncher-3.4.41.1.exe#/ATLauncher.exe",
+    "hash": "06611cb1b2c8fcc55f0a3ed9c18236764a5e387dece4d2dea5c2ab34e12c5580",
     "bin": "ATLauncher.exe",
     "shortcuts": [
         [

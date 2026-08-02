@@ -1,5 +1,5 @@
 {
-    "version": "1.4.3",
+    "version": "1.4.5",
     "description": "Game save data backup tool with optional cloud support",
     "homepage": "https://mikemaximus.github.io/gbm-web/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MikeMaximus/gbm/releases/download/v1.4.3/GBM.v1.4.3.64-bit.7z",
-            "hash": "32d3d69b1e59b76902c9b89a74ac8898315c475d4cd3ac5e455c3e95f6d53fd5"
+            "url": "https://github.com/MikeMaximus/gbm/releases/download/v1.4.5/GBM.v1.4.5.64-bit.7z",
+            "hash": "57decfa6603b176171b8c6e5d1b70f959360507edfc7a454ed63177ec2bcb3fd"
         },
         "32bit": {
-            "url": "https://github.com/MikeMaximus/gbm/releases/download/v1.4.3/GBM.v1.4.3.32-bit.7z",
-            "hash": "8a7c9ff653a566ea8eee7e507b9b7fe9a7ef7e59897ef06ebc54490b438c57f9"
+            "url": "https://github.com/MikeMaximus/gbm/releases/download/v1.4.5/GBM.v1.4.5.32-bit.7z",
+            "hash": "df165c58cfab6c94d2a6d137ad2ee82ffc89c2e3000f89f9653cc8f8c1867cd9"
         }
     },
     "shortcuts": [

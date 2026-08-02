@@ -1,13 +1,13 @@
 {
-    "version": "2.0.93.55",
+    "version": "2.1.7.22",
     "description": "GOG Galaxy 2.0. Gaming Client designed for a convenient purchasing, playing and updating of mostly DRM-free games",
     "homepage": "https://www.gog.com/galaxy",
     "license": {
         "identifier": "Proprietary",
         "url": "https://support.gog.com/hc/en-us/articles/212632089"
     },
-    "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.0.93.55.exe",
-    "hash": "90084b4872449f53a004b2fb177fb02f2f76852e006b35dd44b6d172aaccfa44",
+    "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_2.1.7.22.exe",
+    "hash": "d7598ec128db51d74e9e961b8348fd443e4b7060e45b5a2ad311e39dcadaea70",
     "installer": {
         "args": [
             "/VERYSILENT",

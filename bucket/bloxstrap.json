@@ -1,12 +1,12 @@
 {
-    "version": "2.10.0",
+    "version": "2.11.3",
     "description": "An alternative bootstrapper for Roblox with a bunch of extra features.",
     "homepage": "https://bloxstraplabs.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.10.0/Bloxstrap-v2.10.0.exe#/Bloxstrap.exe",
-            "hash": "cc96db7c48a2abfd117657d5dd822e91b43f31205047d56bcce1a82a60d1f9d0"
+            "url": "https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.11.3/Bloxstrap-v2.11.3.exe#/Bloxstrap.exe",
+            "hash": "4d423ad46d0bf43cd22c9c1b5d25167edc15e784a57e94f889f1eefb5ce238a0"
         }
     },
     "pre_install": [

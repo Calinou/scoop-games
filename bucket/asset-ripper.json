@@ -1,5 +1,5 @@
 {
-    "version": "1.3.9",
+    "version": "1.3.14",
     "description": "AssetRipper is a powerful tool for loading and converting Unity engine assets",
     "homepage": "https://github.com/AssetRipper/AssetRipper",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AssetRipper/AssetRipper/releases/download/1.3.9/AssetRipper_win_x64.zip",
-            "hash": "7ad944e0ca21729e2a6231c4997b966e53d1d1c077c92bd827b1a6cdabc4b8d7"
+            "url": "https://github.com/AssetRipper/AssetRipper/releases/download/1.3.14/AssetRipper_win_x64.zip",
+            "hash": "808cddf66dd0357ad6b36b97de3a2aef5e3552e63af3ee0610f9a03a0378101c"
         },
         "arm64": {
-            "url": "https://github.com/AssetRipper/AssetRipper/releases/download/1.3.9/AssetRipper_win_arm64.zip",
-            "hash": "1bebd21132e324c4b14cb677cb4b229e8eccae491fb0e90b54be8ef09ca8c007"
+            "url": "https://github.com/AssetRipper/AssetRipper/releases/download/1.3.14/AssetRipper_win_arm64.zip",
+            "hash": "7982fccddf499e71fcd2b1e549e5433457668396b168166b8ab2c41a51622ee7"
         }
     },
     "shortcuts": [
@@ -22,6 +22,7 @@
             "AssetRipper"
         ]
     ],
+    "bin": "AssetRipper.GUI.Free.exe",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\AssetRipper.Settings.json\")) {",
         "    $config = @{'Import' = @{}; 'Processing' = @{}; 'Export' = @{}}",

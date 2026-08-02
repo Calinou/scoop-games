@@ -1,13 +1,13 @@
 {
-    "version": "2.5.22",
+    "version": "6.1.5",
     "description": "Farm Steam trading cards, manage achievements, and idle games automatically — an all-in-one alternative to ArchiSteamFarm, Steam Achievement Manager, and Idle Master",
     "homepage": "https://github.com/zevnda/steam-game-idler",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/zevnda/steam-game-idler/blob/main/LICENSE"
     },
-    "url": "https://github.com/zevnda/steam-game-idler/releases/download/2.5.22/Steam.Game.Idler_2.5.22_x64-portable.zip",
-    "hash": "276403f3fa8aef343fb6cc9456d6ec1864f43e3cbe1b0c29364a6334789d97de",
+    "url": "https://github.com/zevnda/steam-game-idler/releases/download/6.1.5/Steam.Game.Idler_6.1.5_x64-portable.zip",
+    "hash": "7be755f27fdca10d61c07b746ff1db40536bad414243a82944b82a50358ba2a6",
     "bin": [
         [
             "libs\\SteamUtility.exe",

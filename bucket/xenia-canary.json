@@ -1,5 +1,5 @@
 {
-    "version": "20251023061559-4644657",
+    "version": "20260730182802-7010c86",
     "description": "Xbox 360 Emulator Research Project (development version)",
     "homepage": "https://github.com/xenia-canary/xenia-canary",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/4644657/xenia_canary_windows.zip",
-            "hash": "65e69d21d830d3c77d4a7db87a408d540ee407334ce2f6079fe532b658d2d8b6"
+            "url": "https://github.com/xenia-canary/xenia-canary/releases/download/7010c86/xenia_canary_windows.7z",
+            "hash": "19701e234eee40fd6001c3d60ee1a5f1d591e69b28046a1f27d4bd14e4a7fb2a"
         }
     },
     "pre_install": [
@@ -22,10 +22,12 @@
         "       Write-Host \"Migrating AppData...\" -ForegroundColor yellow",
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\\*\" -Destination \"$persist_dir\" -Recurse",
         "       New-Item \"$dir\\recent.toml\" -ItemType File | Out-Null",
+        "       New-Item \"$dir\\xconfig.settings\" -ItemType File | Out-Null",
         "       Rename-Item \"$persist_dir\\xenia.config.toml\" -NewName \"xenia-canary.config.toml\"",
         "       Remove-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\" -Recurse",
         "   } else {",
         "       New-Item \"$dir\\recent.toml\" -ItemType File | Out-Null",
+        "       New-Item \"$dir\\xconfig.settings\" -ItemType File | Out-Null",
         "       New-Item \"$dir\\xenia-canary.config.toml\" -ItemType File | Out-Null",
         "   }",
         "}"
@@ -44,10 +46,11 @@
         "patches",
         "screenshots",
         "recent.toml",
+        "xconfig.settings",
         "xenia-canary.config.toml"
     ],
     "checkver": {
-        "url": "https://github.com/xenia-canary/xenia-canary-releases/releases.atom",
+        "url": "https://github.com/xenia-canary/xenia-canary/releases.atom",
         "script": [
             "$xml = [xml]$page",
             "$updated = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].updated",
@@ -60,7 +63,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/xenia-canary/xenia-canary-releases/releases/download/$matchCommit/xenia_canary_windows.zip"
+                "url": "https://github.com/xenia-canary/xenia-canary/releases/download/$matchCommit/xenia_canary_windows.7z"
             }
         }
     }

@@ -1,12 +1,12 @@
 {
-    "version": "99.3",
+    "version": "100.0",
     "description": "A free physics sandbox game, capable of simulating many interactions",
     "homepage": "https://powdertoy.co.uk/",
     "license": "GPL-3.0-only",
     "architecture": {
         "32bit": {
             "url": "https://powdertoy.co.uk/Download/powder-win32.zip",
-            "hash": "e43013308b1175e2cee5fba0e00e88b6ef2d8004a22e6fce63fdde5e944e4413",
+            "hash": "303f02b32a3b4917338d206c4d4b8be0ff13c2493869cc80dbde76b526587d56",
             "bin": [
                 [
                     "Powder32.exe",
@@ -22,7 +22,7 @@
         },
         "64bit": {
             "url": "https://powdertoy.co.uk/Download/powder.zip",
-            "hash": "027deac73e8acf5dc2d350a4653c0281a01a5e7d9279bad38b85085d3808a252",
+            "hash": "6dfd5d11fb60166c331694b2e57290e91883e399a0a00d2b093f6eef8cd272f3",
             "bin": "Powder.exe",
             "shortcuts": [
                 [

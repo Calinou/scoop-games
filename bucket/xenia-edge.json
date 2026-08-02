@@ -1,5 +1,5 @@
 {
-    "version": "20260119032344-9a9fb9c",
+    "version": "20260801154812-e25bfd8",
     "description": "Xbox 360 Emulator Research Project (xenia-canary fork)",
     "homepage": "https://github.com/has207/xenia-edge/",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/has207/xenia-edge/releases/download/9a9fb9c/xenia_edge_windows.zip",
-            "hash": "4c61292fa042889ebdc088e1abe40cc7a55424364742bb544c565fa21ea9ec8d"
+            "url": "https://github.com/has207/xenia-edge/releases/download/e25bfd8/xenia_edge_windows.zip",
+            "hash": "388373e1c69352ee3d9ec66e4e27b3ad1d03d178e4bc20222a3b9aab083498ff"
         }
     },
     "pre_install": [
@@ -23,7 +23,6 @@
         "       Copy-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\\*\" -Destination \"$persist_dir\" -Recurse",
         "       Remove-Item -Path \"$env:USERPROFILE\\Documents\\Xenia\" -Recurse",
         "   } else {",
-        "       New-Item \"$dir\\recent.toml\" -ItemType File | Out-Null",
         "       New-Item \"$dir\\xenia-edge.config.toml\" -ItemType File | Out-Null",
         "   }",
         "}"
@@ -41,9 +40,9 @@
         "cache_host",
         "config",
         "content",
+        "library",
         "patches",
         "screenshots",
-        "recent.toml",
         "xenia-edge.config.toml"
     ],
     "checkver": {

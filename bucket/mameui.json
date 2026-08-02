@@ -1,12 +1,12 @@
 {
-    "version": "0.284.0",
+    "version": "0.289.0",
     "description": "GUI frontend for MAME, the multi-purpose emulation framework",
     "homepage": "https://messui.1emulation.com",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://messui.1emulation.com/mameui284.7z",
-            "hash": "467048cbbf57db54ab33df369559b75527918a8a704590a8590b390569ac431b"
+            "url": "https://messui.1emulation.com/mameui289.7z",
+            "hash": "2cf454609a18da2a0f100720889e7d73ff34f019ba22c0c97be28b8011ce10f4"
         }
     },
     "shortcuts": [

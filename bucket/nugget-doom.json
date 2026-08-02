@@ -1,5 +1,5 @@
 {
-    "version": "4.5.0",
+    "version": "5.1.0",
     "description": "Doom source port forked from Woof! with additional features",
     "homepage": "https://github.com/MrAlaux/Nugget-Doom",
     "license": "GPL-2.0",
@@ -16,14 +16,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MrAlaux/Nugget-Doom/releases/download/nugget-doom-4.5.0/Nugget-Doom-4.5.0-win64.zip",
-            "hash": "bdd41d4fb2ab9ebb1fa5b2cd687b25d380d964e5bd8f68e23251496db72dfc98",
-            "extract_dir": "Nugget-Doom-4.5.0-win64"
+            "url": "https://github.com/MrAlaux/Nugget-Doom/releases/download/nugget-doom-5.1.0/Nugget-Doom-5.1.0-win64.zip",
+            "hash": "19b432a4ab0fcdb19c587af6ac8b611d74c7f1d55f0dfd4db56dcee128fe620d",
+            "extract_dir": "Nugget-Doom-5.1.0-win64"
         },
         "32bit": {
-            "url": "https://github.com/MrAlaux/Nugget-Doom/releases/download/nugget-doom-4.5.0/Nugget-Doom-4.5.0-win32.zip",
-            "hash": "572c6389ab7873e2b44753fe2983673829ef3dc82646a663a7c4ce2ce8b456a2",
-            "extract_dir": "Nugget-Doom-4.5.0-win32"
+            "url": "https://github.com/MrAlaux/Nugget-Doom/releases/download/nugget-doom-5.1.0/Nugget-Doom-5.1.0-win32.zip",
+            "hash": "6caa5e9edb1701724695ac64bc1960d69fe72a1c9e97b5dd78849d161b95f0bb",
+            "extract_dir": "Nugget-Doom-5.1.0-win32"
         }
     },
     "pre_install": [
