@@ -1,0 +1,21 @@
+{
+    "homepage": "https://veloren.net/",
+    "description": "Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such as Cube World, Legend of Zelda: Breath of the Wild, Dwarf Fortress and Minecraft.",
+    "version": "0.6.0",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/veloren/Airshipper/releases/download/v0.6.0/airshipper-windows.msi#/dl.7z",
+    "hash": "06a2d682db97eb581d69c1a50b42964711b507e00942bcecfcbc3df590458804",
+    "bin": "airshipper.exe",
+    "shortcuts": [
+        [
+            "airshipper.exe",
+            "Airshipper"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/veloren/airshipper"
+    },
+    "autoupdate": {
+        "url": "https://github.com/veloren/Airshipper/releases/download/v$version/airshipper-windows.msi"
+    }
+}
