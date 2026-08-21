@@ -5,7 +5,7 @@
     "license": "AGPL-3.0",
     "pre_install": [
         "if (Test-Path \"$(appdir maaend)\") {",
-        "    error 'MaaEnd has been installed. You are trying to install/update MaaEnd-Beta.';",
+        "    error 'MaaEnd is already installed. You are trying to install/update MaaEnd-Beta.';",
         "    throw 'Abort'",
         "} else { if ($cmd -eq 'update') {",
         " Start-Process powershell -ArgumentList '-NoProfile -Command Stop-Process -Name \"MaaEnd\" -Force' -Verb RunAs -WindowStyle Hidden -Wait",
