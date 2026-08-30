@@ -1,0 +1,18 @@
+{
+    "version": "1.0.3.1",
+    "description": "A quick and easy tool for creating and extracting Xact Wave Banks",
+    "homepage": "https://github.com/trigger-segfault/QuickWaveBank",
+    "license": "MIT",
+    "url": "https://github.com/trigger-segfault/QuickWaveBank/releases/download/1.0.3.1/QuickWaveBank-1.0.3.1.exe#/QuickWaveBank.exe",
+    "hash": "3c7c8769bc601d0f30124f1f34396cee18bebb474ddf5ee847def738f3d4195a",
+    "shortcuts": [
+        [
+            "QuickWaveBank.exe",
+            "QuickWaveBank"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/trigger-segfault/QuickWaveBank/releases/download/$version/QuickWaveBank-$version.exe"
+    }
+}
