@@ -1,0 +1,21 @@
+{
+    "version": "0.1",
+    "description": "Save editor for New Super Mario Bros. U",
+    "homepage": "https://github.com/RedStoneMatt/Acorn-SaveEditor",
+    "url": "https://github.com/RedStoneMatt/Acorn-SaveEditor/releases/download/v0.1/Acorn-SaveEditor.rar",
+    "hash": "d60f75ddae6bf455aaa5eff9f0067bd3513c3ba901c246e9c9d3f0f2d951cdcf",
+    "license": "GPL-3.0-only",
+    "bin": "Acorn-SaveEditor.exe",
+    "shortcuts": [
+        [
+            "Acorn-SaveEditor.exe",
+            "Acorn Save Editor"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/RedStoneMatt/Acorn-SaveEditor/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/RedStoneMatt/Acorn-SaveEditor/releases/download/v$version/Acorn-SaveEditor.rar"
+    }
+}
