@@ -1,0 +1,6 @@
+{
+    "version":  "plutonium.exe",
+    "homepage": "https://plutonium.pw",
+    "url":  "https://cdn.plutonium.pw/updater/plutonium.exe",
+    "bin":  "plutonium.exe"
+}
