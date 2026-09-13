@@ -1,0 +1,21 @@
+{
+    "version": "0.15",
+    "description": "Advanced level editor for New Super Mario Bros. Wii originally created by Treeki, Tempus and RoadrunnerWMC using Python, PyQt and Wii.py. Next version created by RoadrunnerWMC, based on official release 3. Milestone 4 version is a collaboration of Horizon users and it aims to add more features requested by users.",
+    "homepage": "https://github.com/Arisotura/CoinKiller",
+    "url": "https://github.com/Arisotura/CoinKiller/releases/download/v0.15/CoinKiller-v0.15-Windows.7z",
+    "hash": "a00e0d3c8dda261f5161c2e776324d406705970c04643c725b4d12189354846e",
+    "license": "GPL-3.0-only",
+    "bin": "CoinKiller.exe",
+    "shortcuts": [
+        [
+            "CoinKiller.exe",
+            "CoinKiller"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Arisotura/CoinKiller/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Arisotura/CoinKiller/releases/download/v$version/CoinKiller-v$version-Windows.7z"
+    }
+}
