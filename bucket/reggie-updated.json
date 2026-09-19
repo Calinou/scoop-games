@@ -1,0 +1,24 @@
+{
+    "version": "2021.12.04.0",
+    "description": "Advanced level editor for New Super Mario Bros. Wii (fork of Reggie)",
+    "homepage": "https://github.com/RoadrunnerWMC/Reggie-Updated",
+    "url": "https://github.com/RoadrunnerWMC/Reggie-Updated/releases/download/2021.12.04.0/reggie-updated-2021.12.04.0-windows-64-bit.zip",
+    "hash": "25468631463ed544bc085df213515957c7f4cbbed31bc0d23378fe6b8a26133a",
+    "license": "GPL-3.0-only",
+    "bin": "reggie-updated.exe",
+    "pre_install": [
+        "Rename-Item -Path $dir/reggie.exe -NewName $dir/reggie-updated.exe"
+    ],
+    "shortcuts": [
+        [
+            "reggie-updated.exe",
+            "Reggie Updated"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/CLF78/Reggie-Next/"
+    },
+    "autoupdate": {
+        "url": "https://github.com/RoadrunnerWMC/Reggie-Updated/releases/download/$version/reggie-updated-$version-windows-64-bit.zip"
+    }
+}
