@@ -40,19 +40,19 @@
         "}"
     ],
     "architecture": {
-    "64bit": {
-      "url": "https://github.com/Moulberry/PandoraLauncher/releases/download/v6.0.0/PandoraLauncher-Windows-x86_64-Portable.exe",
-      "hash": "717b6553879201bbb48bdf531b3e9cfcb884efae899e9457cafb8c263549ea26"
-    },
-    "checkver": {
-      "github": "https://github.com/Moulberry/PandoraLauncher"
-    },
-    "autoupdate": {
-      "architecture": {
         "64bit": {
-          "url": "https://github.com/Moulberry/PandoraLauncher/releases/download/$version/PandoraLauncher-Windows-x86_64-Portable.exe"
+            "url": "https://github.com/Moulberry/PandoraLauncher/releases/download/v6.0.0/PandoraLauncher-Windows-x86_64-Portable.exe",
+            "hash": "717b6553879201bbb48bdf531b3e9cfcb884efae899e9457cafb8c263549ea26"
+        },
+        "checkver": {
+            "github": "https://github.com/Moulberry/PandoraLauncher"
+        },
+        "autoupdate": {
+            "architecture": {
+                "64bit": {
+                    "url": "https://github.com/Moulberry/PandoraLauncher/releases/download/$version/PandoraLauncher-Windows-x86_64-Portable.exe"
+                }
+            }
         }
-      }
     }
-  }
 }
